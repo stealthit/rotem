@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:#181818}
+        </style>
+    </defs>
+    <g id="ic-player-mute" transform="translate(-698 -898)">
+        <g id="그룹_72" data-name="그룹 72" transform="translate(700.266 902.534)">
+            <path id="패스_60" data-name="패스 60" class="cls-2" d="M5.457 17.143H3.211a1.5 1.5 0 0 0-1.5 1.5v2.994a1.5 1.5 0 0 0 1.5 1.5h2.246z" transform="translate(-1.714 -12.67)"/>
+            <path id="빼기_4" data-name="빼기 4" class="cls-2" d="M-7329.561-869.6a1.491 1.491 0 0 1-.853-.266l-2.622-2.177 5-4.94v5.905a1.5 1.5 0 0 1-.882 1.331 1.491 1.491 0 0 1-.643.147zm-5.1-3.8-.815-.677v-5.987l5.2-4.205a1.483 1.483 0 0 1 .851-.266 1.509 1.509 0 0 1 .646.147 1.5 1.5 0 0 1 .748 1.331v3.11l-6.633 6.548z" transform="translate(7340.008 884.534)"/>
+            <path id="선_12" data-name="선 12" transform="translate(-.766 -1.034)" style="fill:none;stroke:#181818;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px" d="M0 17 17 0"/>
+        </g>
+    </g>
+</svg>

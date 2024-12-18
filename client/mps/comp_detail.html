@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer active">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="top" id="top"></div>
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 복합기 정보
+            </div>
+            <div class="page-title">
+                복합기 정보
+            </div>
+            <div class="comp-detail-content">
+                <div class="left">
+                    <div class="comp-img-box">
+                        <img src="./imges/img_comp_ex.png" alt="imgComp" />
+                    </div>
+                    <div class="comp-name">
+                        iR-ADV527
+                    </div>
+                    <ul class="comp-detail-tab-navi">
+                        <li class="active" data-id="compTab1">기본정보</li>
+                        <li data-id="compTab2">토너 교체이력</li>
+                        <li data-id="compTab3">복합기 카운터 정보</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="comp-detail-tab-content active" id="compTab1">
+                        <div class="comp-detail-title">
+                            기본정보
+                        </div>
+                        <div class="info-table">
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    복합기 IP
+                                </div>
+                                <div class="comp-info">
+                                    192.168.0.30
+                                </div>
+                                <div class="comp-info-title">
+                                    시리얼번호
+                                </div>
+                                <div class="comp-info">
+                                    22X00003
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    모델명
+                                </div>
+                                <div class="comp-info">
+                                    iR-ADV527
+                                </div>
+                                <div class="comp-info-title">
+                                    복합기 위치
+                                </div>
+                                <div class="comp-info">
+                                    10.1.112.163(22X0003)
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    프린트 수집번호
+                                </div>
+                                <div class="comp-info">
+                                    1200
+                                </div>
+                                <div class="comp-info-title">
+                                    프린트(로컬)수집번호
+                                </div>
+                                <div class="comp-info">
+                                    1
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    프린트(리포트) 수집번호
+                                </div>
+                                <div class="comp-info">
+                                    6
+                                </div>
+                                <div class="comp-info-title">
+                                    프린트(원격)수집번호
+                                </div>
+                                <div class="comp-info">
+                                    0
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    프린트(수신) 수집번호
+                                </div>
+                                <div class="comp-info">
+                                    6
+                                </div>
+                                <div class="comp-info-title">
+                                    복사 수집번호
+                                </div>
+                                <div class="comp-info">
+                                    0
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    스캔 수집번호
+                                </div>
+                                <div class="comp-info">
+                                    4
+                                </div>
+                                <div class="comp-info-title">
+                                    팩스 수집번호
+                                </div>
+                                <div class="comp-info">
+                                    22
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    사용자 부서
+                                </div>
+                                <div class="comp-info">
+                                    130
+                                </div>
+                                <div class="comp-info-title">
+                                    복합기 부서
+                                </div>
+                                <div class="comp-info">
+                                    6
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comp-detail-title">
+                            소모품/에러 정보
+                        </div>
+
+                        <div class="comp-table-group">
+                            <div class="table">
+                                <div class="table-title">
+                                    용지 정보
+                                </div>
+                                <div class="thead">
+                                    <span>급지 위치</span>
+                                    <span>용지 잔량</span>
+                                    <span>용지 크기</span>
+                                    <span>용지 종류</span>
+                                </div>
+                                <!-- <div class="tr">
+                                    <div class="td">카세트1</div>
+                                    <div class="td good">
+                                        <img src="./imges/ico_paper.png" alt="icoPaper" />
+                                        <span>양호</span>
+                                    </div>
+                                    <div class="td">A4</div>
+                                    <div class="td">보통용지</div>
+                                </div> -->
+                                <div class="table-scroll in_hg200">
+                                    <div class="tr">
+                                        <div class="td paper-loc-title" title="카세트111111111111111111111111111">카세트111111111111111111111111111</div>
+                                        <div class="td good">
+                                            <img src="./imges/ico_paper.png" alt="icoPaper" />
+                                            <span>양호</span>
+                                        </div>
+                                        <div class="td">A4</div>
+                                        <div class="td">보통용지</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td">카세트1</div>
+                                        <div class="td low">
+                                            <img src="./imges/ico-paper-low.png" alt="icoPaper" />
+                                            <span>부족</span>
+                                        </div>
+                                        <div class="td">A4</div>
+                                        <div class="td">보통용지</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td">카세트1</div>
+                                        <div class="td bad">
+                                            <img src="./imges/ico-paper-none.png" alt="icoPaper" />
+                                            <span>없음</span>
+                                        </div>
+                                        <div class="td">알수없음</div>
+                                        <div class="td">없음</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td">카세트1</div>
+                                        <div class="td bad">
+                                            <img src="./imges/ico-paper-none.png" alt="icoPaper" />
+                                            <span>없음</span>
+                                        </div>
+                                        <div class="td">알수없음</div>
+                                        <div class="td">없음</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td">카세트1</div>
+                                        <div class="td bad">
+                                            <img src="./imges/ico-paper-none.png" alt="icoPaper" />
+                                            <span>없음</span>
+                                        </div>
+                                        <div class="td">알수없음</div>
+                                        <div class="td">없음</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table">
+                                <div class="table-title">
+                                    토너 정보
+                                </div>
+                                <div class="thead">
+                                    <span>토너명</span>
+                                    <span>교체횟수</span>
+                                    <span class="long">잔량</span>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">블랙</div>
+                                    <div class="td">1</div>
+                                    <div class="td long">
+                                        <div class="fill-wrapper">
+                                            <div class="fill blk in_wd55p"></div>
+                                        </div>
+                                        <span>55%</span>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">시안</div>
+                                    <div class="td">0</div>
+                                    <div class="td long">
+                                        <div class="fill-wrapper">
+                                            <div class="fill cyan in_wd55p"></div>
+                                        </div>
+                                        <span>55%</span>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">마젠타</div>
+                                    <div class="td">0</div>
+                                    <div class="td long">
+                                        <div class="fill-wrapper">
+                                            <div class="fill mgt in_wd55p"></div>
+                                        </div>
+                                        <span>55%</span>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">옐로우</div>
+                                    <div class="td">0</div>
+                                    <div class="td long">
+                                        <div class="fill-wrapper">
+                                            <div class="fill ylw in_wd55p"></div>
+                                        </div>
+                                        <span>55%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table error-table">
+
+                                <div class="table-title">
+                                    에러정보
+                                </div>
+                                <div class="thead">
+                                    <span>에러명</span>
+                                </div>
+                                <div class="table-scroll in_hg200">
+                                    <div class="tr">
+                                        <div class="td"
+                                            title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntsed do eiusmod tempor incididunt">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididuntsed do eiusmod tempor incididunt</div>
+                                        <div class="td">
+                                            <p>2021-07-29</p>
+                                            <p>19:00:00</p>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td"
+                                            title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntsed do eiusmod tempor incididunt">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididuntsed do eiusmod tempor incididunt</div>
+                                        <div class="td">
+                                            <p>2021-07-30</p>
+                                            <p>14:44:44</p>
+                                        </div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td">-</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td">-</div>
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td">-</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comp-detail-tab-content no-ai" id="compTab2">
+                        <div class="comp-detail-title">
+                            토너 교체이력
+                        </div>
+                        <div class="table-scroll02">
+                            <table class="jb-table no-arrow">
+                            <tr class="jb-table-header-group">
+                                <th class="jb-table-cell jb-middle">
+                                    <p>시간</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>토너명</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>교체전잔량</p>
+                                </th>
+                            </tr>
+                            <!-- <div class="jb-table-row">
+                                <div class="jb-table-cell jb-middle">
+                                    <p>idididid</p>
+                                </div>
+                                <div class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </div>
+                                <div class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </div>
+                            </div> -->
+
+                            <tr>
+                                <td colspan="3" class="null-box">
+                                    <div>
+                                        <img src="./imges/ico_list_none.svg" alt="icoNull" />
+                                        <p>토너 교체이력이 없습니다.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        </div>
+                    </div>
+                    <div class="comp-detail-tab-content no-ai" id="compTab3">
+                        <div class="comp-detail-title">
+                            복합기 카운터 정보
+                        </div>
+                        <div class="table-scroll02">
+                            <table class="jb-table no-arrow">
+                            <tr class="jb-table-header-group">
+                                <th class="jb-table-cell jb-middle">
+                                    <p>합계</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>합계(대)</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>합계(소)</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>흑백</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>흑백(대)</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>흑백(소)</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>컬러</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>컬러(대)</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>컬러(소)</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>수집시간</p>
+                                </th>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                <p>10</p>  
+                              </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>6</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>6</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>6</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>6</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>10</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>6</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>0</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                        </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="goto-list-btn-row">
+                <a href="comp.html" class="bgcolor">목록</a>
+
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <script>
+        $(function () {
+            $(".comp-detail-tab-navi li").on("click", function () {
+                var id = $(this).data("id");
+                $(".comp-detail-tab-navi li").removeClass("active");
+                $(this).addClass("active");
+                $(".comp-detail-tab-content").removeClass("active");
+                $("#" + id).addClass("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

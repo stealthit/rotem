@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 758px)">
+    <link rel="stylesheet" href="./css/jquery-ui.theme.css">
+</head>
+<style>
+    .side-navi .side_side2{font-size: 12px;background-color: #ec2741;border-radius: 50%;padding: 0 6px 1px 4px;margin-left:10px;}
+    
+</style>
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-sidemenu"></button>
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print ">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval active">
+                <a href="#">
+                    <span>결재</span>
+                    <span class="side_side2">64</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a>
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a>
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a>
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting">
+                <a>
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="profile-title">결재</div>
+<div class="top">
+	<div class="user-info-box">
+        <div class="profile">
+            <button type="button" class="profile-dropdown"></button>
+        </div>
+        <div class="dropdown">
+            <div class="user-info">
+                <div class="user-top">
+                    <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                    <span class="division">I</span>
+                    <span class="position">슈퍼관리자</span>
+                </div>
+                <div class="user-bottom">
+                    <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                </div>
+            </div>
+            <button type="button" class="logout-btn">로그아웃</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 결재
+            </div>
+            <div class="page-title">
+                결재
+            </div>
+            <div class="tab-navi">
+                <div class="li active tab-li-content width-50" data-id="tab1">결재 진행함</div>
+                <div class="li tab-li-content width-50" data-id="tab2">결재 내역함</div>
+            </div>
+            <div class="tab-content active" id="tab1">
+                <div class="search-form">
+                    <form action="" method="post">
+                        <div class="input-content">
+                            <div class="input-row">
+                                <span class="title">조회기간</span>
+                                <div class="row-mobile">
+                                    <div class="form-input-group">
+                                        <input type="text" class="date" id="datepicker1" readonly>
+                                    </div>
+                                    <span class="date-division">~</span>
+                                    <div class="form-input-group">
+                                        <input type="text" class="date" id="datepicker2" readonly>
+                                    </div>
+                                </div>
+                                <div class="form-input-group radio-group">
+                                    <div class="square-radio-group">
+                                        <input type="radio" id="today" value="" name="radio-group" checked>
+                                        <label class="first" for="today"><span>오늘</span></label>
+                                        <input type="radio" id="7" value="" name="radio-group">
+                                        <label for="7"><span>7일</span></label>
+                                        <input type="radio" id="30" value="" name="radio-group">
+                                        <label for="30"><span>30일</span></label>
+                                        <input type="radio" id="90" value="" name="radio-group">
+                                        <label for="90"><span>90일</span></label>
+                                        <input type="radio" id="180" value="" name="radio-group">
+                                        <label class="last" for="180"><span>180일</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <span class="title">조회</span>
+                                <div class="row-mobile in_mr10">
+                                    <div class="form-input-group short-mobile">
+                                        <select>
+                                            <option value="">전체</option>
+                                            <option value="">결재대기</option>
+                                            <option value="">결재요청</option>
+                                            <option value="">싱신대기</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-input-group">
+                                        <select class="long">
+                                            <option value="">전체</option>
+                                            <option value="">기능 사용 결재</option>
+                                            <option value="">사용량 추가 결재</option>
+                                            <option value="">워터마크 해제 결재</option>
+                                            <option value="">개인정보 포함 문서 결재</option>
+                                            <option value="">개인정보 포함 문서 사전 결재</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row-mobile">
+                                    <div class="form-input-group short-mobile">
+                                        <select>
+                                            <option value="">문서ID</option>
+                                            <option value="">이름</option>
+                                            <option value="">문서 + 제목</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-input-group">
+                                        <input type="text" name="" value=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="submit-btn bgcolor" type="submit">조회</button>
+                    </form>
+                </div>
+                <!-- <div class="approval-btn-row">
+                    <a href="/canon/write_approval.html" class="plus-btn" >
+                        <img src="./imges/ico_plus.png" alt="icoPlus" />
+                        결재 문서 작성
+                    </a>
+                </div> -->
+                <div class="content-wrapper">
+                    <div class="button-row">
+                        <div class="left re-btn-wrap re-btn-wrap-m">
+                            <a href="/canon/write_approval.html" class="plus-btn bgcolor" >
+                                    <img src="./imges/ico_plus.png" alt="icoPlus" />
+                                    결재 문서 작성
+                                </a>
+                            
+                            <button class="exel" type="button"><img src="imges/ico_down_excel.png" />다운로드</button>
+                        </div>
+                        <div class="right ">
+                            <div class="list-info nomg">
+                                결재 진행 목록 (총 <span class="ftcolor">100</span>건)
+                            </div>
+                                
+                            <select>
+                                <option value="">15개씩</option>
+                                <option value="">30개씩</option>
+                                <option value="">50개씩</option>
+                                <option value="">100개씩</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-scroll01">
+                        <table class="jb-table no-arrow" summary="결재 문서 리스트">
+                            <colgroup>
+                              <col width="5%">
+                              <col width="15%">
+                              <col width="10%">
+                              <col width="20%">
+                              <col width="20%">
+                              <col width="20%">
+                              <col width="10%">
+                            </colgroup>
+                            <tr class="jb-table-header-group">
+                                <th class=" jb-table-cell jb-middle">
+
+                                    <input type="checkbox" name="check" id="cba" />
+                                    <label for="cba">
+                                        <span class="ico"></span>
+                                    </label>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p class="in_posi-8"><button type="button" class="arrow"></button>ID</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>이름</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>문서ID</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>요청일</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>결재유형</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>상태</p>
+                                </th>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check1" name="check" />
+                                    <label for="check1">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check2" />
+                                    <label for="check2">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check3" />
+                                    <label for="check3">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check4" />
+                                    <label for="check4">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check5" />
+                                    <label for="check5">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check6" />
+                                    <label for="check6">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check7" />
+                                    <label for="check7">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check8" />
+                                    <label for="check8">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check9" />
+                                    <label for="check9">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check10" />
+                                    <label for="check10">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="pagenation">
+                        <button type="button" class="back-end disabled"></button>
+                        <button type="button" class="back disabled"></button>
+                        <button type="button" class="number">1</button>
+                        <button type="button" class="number active">2</button>
+                        <button type="button" class="number">3</button>
+                        <button type="button" class="number">4</button>
+                        <button type="button" class="number">5</button>
+                        <button type="button" class="number mobile">6</button>
+                        <button type="button" class="number mobile">7</button>
+                        <button type="button" class="number mobile">8</button>
+                        <button type="button" class="number mobile">9</button>
+                        <button type="button" class="number mobile">10</button>
+                        <button type="button" class="next"></button>
+                        <button type="button" class="next-end"></button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content " id="tab2">
+                <div class="search-form">
+                    <form action="" method="post">
+                        <div class="input-content">
+                            <div class="input-row">
+                                <span class="title">조회기간</span>
+                                <div class="row-mobile">
+                                    <div class="form-input-group">
+                                        <input type="text" class="date" id="datepicker3" readonly>
+                                    </div>
+                                    <span class="date-division">~</span>
+                                    <div class="form-input-group">
+                                        <input type="text" class="date" id="datepicker4" readonly>
+                                    </div>
+                                </div>
+                                <div class="form-input-group radio-group">
+                                    <div class="square-radio-group">
+                                        <input type="radio" id="todaysecond" value="" name="radio-group" checked>
+                                        <label class="first" for="todaysecond"><span>오늘</span></label>
+                                        <input type="radio" id="7second" value="" name="radio-group">
+                                        <label for="7second"><span>7일</span></label>
+                                        <input type="radio" id="30second" value="" name="radio-group">
+                                        <label for="30second"><span>30일</span></label>
+                                        <input type="radio" id="90second" value="" name="radio-group">
+                                        <label for="90second"><span>90일</span></label>
+                                        <input type="radio" id="180second" value="" name="radio-group">
+                                        <label class="last" for="180second"><span>180일</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <span class="title">조회</span>
+                                <div class="row-mobile in_mr10">
+                                    <div class="form-input-group short-mobile">
+                                        <select>
+                                            <option value="">전체</option>
+                                            <option value="">결재대기</option>
+                                            <option value="">결재요청</option>
+                                            <option value="">싱신대기</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-input-group">
+                                        <select class="long">
+                                            <option value="">전체</option>
+                                            <option value="">기능 사용 결재</option>
+                                            <option value="">사용량 추가 결재</option>
+                                            <option value="">워터마크 해제 결재</option>
+                                            <option value="">개인정보 포함 문서 결재</option>
+                                            <option value="">개인정보 포함 문서 사전 결재</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row-mobile">
+                                    <div class="form-input-group short-mobile">
+                                        <select>
+                                            <option value="">문서ID</option>
+                                            <option value="">이름</option>
+                                            <option value="">문서 + 제목</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-input-group">
+                                        <input type="text" name="" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="submit-btn bgcolor" type="submit">조회</button>
+                    </form>
+                </div>
+
+                <div class="content-wrapper">
+                    <div class="button-row">
+                        <div class="left">
+                            <button class="down admin-de bgcolor" type="button" id="approvalConfirm">관리자 반려</button>
+                            <button class="exel" type="button"><img src="imges/ico_down_excel.png" />다운로드</button>
+                        </div>
+                        <div class="right ">
+                            <div class="list-info">
+                                결재 내역 목록 (총 <span class="ftcolor">100</span>건)
+                            </div>
+                            
+                            <select>
+                                <option value="">15개씩</option>
+                                <option value="">30개씩</option>
+                                <option value="">50개씩</option>
+                                <option value="">100개씩</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-scroll">
+                        <table class="jb-table no-arrow"  summary="결재 내역함">
+                            <colgroup>
+                              <col width="5%">
+                              <col width="15%">
+                              <col width="10%">
+                              <col width="20%">
+                              <col width="20%">
+                              <col width="20%">
+                              <col width="10%">
+                            </colgroup>
+                            <tr class="jb-table-header-group">
+                                <th class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="cba2" />
+                                    <label for="cba2">
+                                        <span class="ico"></span>
+                                    </label>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p class="in_posi-8"><button type="button" class="arrow"></button>ID</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>이름</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>문서ID</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>요청일</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>결재유형</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>상태</p>
+                                </th>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check11" />
+                                    <label for="check11">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check12" />
+                                    <label for="check12">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check13" />
+                                    <label for="check13">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check14" />
+                                    <label for="check14">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check15" />
+                                    <label for="check15">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check16" />
+                                    <label for="check16">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check17" />
+                                    <label for="check17">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check18" />
+                                    <label for="check18">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check19" />
+                                    <label for="check19">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>idididid</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check20" />
+                                    <label for="check20">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check21" />
+                                    <label for="check21">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check22" />
+                                    <label for="check22">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check23" />
+                                    <label for="check23">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재반려</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check24" />
+                                    <label for="check24">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="check25" />
+                                    <label for="check25">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                  <a href="write_approval.html" title="결재문서 작성"><p>idididid</p></a>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>document_id</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>개인정보 포함 문서 사전 결재</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>결재대기</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="pagenation">
+                        <button type="button" class="back-end disabled"></button>
+                        <button type="button" class="back disabled"></button>
+                        <button type="button" class="number">1</button>
+                        <button type="button" class="number active">2</button>
+                        <button type="button" class="number">3</button>
+                        <button type="button" class="number">4</button>
+                        <button type="button" class="number">5</button>
+                        <button type="button" class="number mobile">6</button>
+                        <button type="button" class="number mobile">7</button>
+                        <button type="button" class="number mobile">8</button>
+                        <button type="button" class="number mobile">9</button>
+                        <button type="button" class="number mobile">10</button>
+                        <button type="button" class="next"></button>
+                        <button type="button" class="next-end"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+
+    <div class="confirm-modal-background modal ">
+        <div class="confirm-modal-content height-auto">
+            <div class="title">
+                <span>상신</span>
+                <button type="button" class="modal-close-btn"></button>
+            </div>
+            <div class="content">관리자 반려처리 하시겠습니까?</div>
+            <div class="confirm-btn-group">
+                <button type="button" class="modal-cancel-btn">취소</button>
+                <button type="button" class="confirm-btn" onclick="openAlert()">확인</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/mobile.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting active">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+<div class="top">
+	<div class="user-info-box">
+        <div class="profile">
+            <button type="button" class="profile-dropdown"></button>
+        </div>
+        <div class="dropdown">
+            <div class="user-info">
+                <div class="user-top">
+                    <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                    <span class="division">I</span>
+                    <span class="position">슈퍼관리자</span>
+                </div>
+                <div class="user-bottom">
+                    <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                </div>
+            </div>
+            <button type="button" class="logout-btn">로그아웃</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 환경설정 > 서비스
+            </div>
+            <div class="page-title">
+                서비스
+            </div>
+            <div class="tab-content tmg26 active">
+                <div class="content-wrapper">
+                    <table class="jb-table no-arrow">
+                        <tr class="jb-table-header-group">
+                            <th class="jb-table-cell jb-middle">
+                                <p>서비스</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>버전정보</p>
+                            </th>
+                            <th class=" jb-table-cell jb-middle">
+                                <p>상태</p>
+                            </th>
+                        </tr>
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">통합웹</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                            </td>
+                        </tr>
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">가상 드라이버 서비스(LprReceiver)</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>중지됨</span>
+                                    </div>
+                                    <div class="switch">
+                                        <input type="hidden" value="N" />
+                                        <span class="text"></span>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">메일 전송 서비스</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>설치안됨</span>
+                                    </div>
+                                    <span class="not-down">미설치</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">인증서버</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>시작됨</span>
+                                    </div>
+                                    <div class="switch active">
+                                        <input type="hidden" value="Y" />
+                                        <span class="text"></span>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">스플 관리 서버</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>시작됨</span>
+                                    </div>
+                                    <div class="switch active">
+                                        <input type="hidden" value="Y" />
+                                        <span class="text"></span>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">출력 서버</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>시작됨</span>
+                                    </div>
+                                    <div class="switch active">
+                                        <input type="hidden" value="Y" />
+                                        <span class="text"></span>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">이미지 로그 서버</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>시작됨</span>
+                                    </div>
+                                    <div class="switch active">
+                                        <input type="hidden" value="Y" />
+                                        <span class="text"></span>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">스캔/팩스 문서 관리 웹</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>시작됨</span>
+                                    </div>
+                                    <div class="switch active">
+                                        <input type="hidden" value="Y" />
+                                        <span class="text"></span>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">수신 스캔/팩스 모니터링 서비스</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>시작됨</span>
+                                    </div>
+                                    <div class="switch active">
+                                        <input type="hidden" value="Y" />
+                                        <span class="text"></span>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">사용량 통계/디바이스 관리 웹</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>시작됨</span>
+                                    </div>
+                                    <div class="switch active">
+                                        <input type="hidden" value="Y" />
+                                        <span class="text"></span>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">E-LOG 서버</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>시작됨</span>
+                                    </div>
+                                    <div class="switch active">
+                                        <input type="hidden" value="Y" />
+                                        <span class="text"></span>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">보안단어 관리 웹</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>시작됨</span>
+                                    </div>
+                                    <div class="switch active">
+                                        <input type="hidden" value="Y" />
+                                        <span class="text"></span>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">OCR 처리 모듈</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>시작됨</span>
+                                    </div>
+                                    <div class="switch active">
+                                        <input type="hidden" value="Y" />
+                                        <span class="text"></span>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">OCR 분석 모듈</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>시작됨</span>
+                                    </div>
+                                    <div class="switch active">
+                                        <input type="hidden" value="Y" />
+                                        <span class="text"></span>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <p class="keep-all text-left">QR 서버</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle width-100">
+                                <p>3.2.0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <div class="flex">
+                                    <div class="state-input-group">
+                                        <span>시작됨</span>
+                                    </div>
+                                    <div class="switch active">
+                                        <input type="hidden" value="Y" />
+                                        <span class="text"></span>
+                                        <span class="circle"></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <script>
+        $(function () {
+            $(".comp-detail-tab-navi li").on("click", function () {
+                var id = $(this).data("id");
+                $(".comp-detail-tab-navi li").removeClass("active");
+                $(this).addClass("active");
+                $(".comp-detail-tab-content").removeClass("active");
+                $("#" + id).addClass("active");
+            });
+
+            $('.switch').on('click', function () {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                    $(this).find('input[type="hidden"]').val('N');
+                } else {
+                    $(this).addClass('active');
+                    $(this).find('input[type="hidden"]').val('Y');
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

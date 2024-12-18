@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#d7dde2;stroke-linecap:round;stroke-linejoin:round;stroke-width:3.429px}
+        </style>
+    </defs>
+    <g id="ic-payment_use" transform="translate(-735 -382)">
+        <g id="streamline-icon-computer-database-server-1_48x48" data-name="streamline-icon-computer-database-server-1@48x48" transform="translate(736.792 385.116)">
+            <g id="그룹_43" data-name="그룹 43">
+                <rect id="사각형_32" data-name="사각형 32" class="cls-2" width="34.415" height="15.884" rx="3.429"/>
+                <circle id="타원_12" data-name="타원 12" class="cls-2" cx="1.324" cy="1.324" transform="translate(6.618 6.618)" r="1.324"/>
+                <path id="선_5" data-name="선 5" class="cls-2" transform="translate(18.531 7.942)" d="M0 0h9.265"/>
+                <path id="패스_51" data-name="패스 51" class="cls-2" d="M4.362 24a2.647 2.647 0 0 0-2.647 2.647v10.589a2.647 2.647 0 0 0 2.647 2.647h29.12a2.647 2.647 0 0 0 2.647-2.647V26.647A2.647 2.647 0 0 0 33.482 24" transform="translate(-1.714 -8.116)"/>
+                <circle id="타원_13" data-name="타원 13" class="cls-2" cx="1.324" cy="1.324" transform="translate(6.618 22.502)" r="1.324"/>
+                <path id="선_6" data-name="선 6" class="cls-2" transform="translate(18.531 23.825)" d="M0 0h9.265"/>
+            </g>
+        </g>
+    </g>
+</svg>

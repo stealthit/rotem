@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/jquery.minicolors.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 정보</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting active">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+<div class="top">
+	<div class="user-info-box">
+        <div class="profile">
+            <button type="button" class="profile-dropdown"></button>
+        </div>
+        <div class="dropdown">
+            <div class="user-info">
+                <div class="user-top">
+                    <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                    <span class="division">I</span>
+                    <span class="position">슈퍼관리자</span>
+                </div>
+                <div class="user-bottom">
+                    <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                </div>
+            </div>
+            <button type="button" class="logout-btn">로그아웃</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 환경설정 > 워터마크 관리
+            </div>
+            <div class="page-title">
+                워터마크 관리
+            </div>
+            <form method="post">
+                <div class="watermark-detail-wrapper set">
+                    <p class="explain">복사 워터마크</p>
+                    <div class="watermark-detail-inner info-10 in_hg4515">
+                        <div class="thumbnail"></div>
+                        <div class="table-wrapper">
+                            <table class="watermark-detail-info">
+                                <tr>
+                                    <th>워터마크명</th>
+                                    <td><input type="text" /></td>
+                                </tr>
+                                <tr>
+                                    <th>출력자 외 복사 금지</th>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="">설정안함</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>위치</th>
+                                    <td>
+                                        <select name="" id="loc-select">
+                                            <option value="">위치선택</option>
+                                            <option value="">좌측-상단</option>
+                                            <option value="">중앙-상단</option>
+                                            <option value="">우측-상단</option>
+                                            <option value="">좌측-중앙</option>
+                                            <option value="">우측-중앙</option>
+                                            <option value="">좌측-하단</option>
+                                            <option value="">우측-하단</option>
+                                            <option value="">대각선</option>
+                                            <option value="">역대각선</option>
+                                            <option value="custom">사용자 정의</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>회전(각도)</th>
+                                    <td>
+                                        <input type="text" class="numberOnly" />
+                                        <span class="angle">(-360 ~ 360)</span>
+                                    </td>
+                                </tr>
+                                <tr class="textVer">
+                                    <th>컬러(R,G,B)</th>
+                                    <td class="palette-wrap">
+                                        <input type="text" class="demo" value="" placeholder="rgb(100, 100, 100)" />
+                                        <button type="button" class="palette-btn">직접 선택</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>투명도</th>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="">1</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>글꼴</th>
+                                    <td><input type="text" /></td>
+                                </tr>
+                                <tr>
+                                    <th>글자크기</th>
+                                    <td><input type="text" /></td>
+                                </tr>
+                                <tr>
+                                    <th>워터마크 입력</th>
+                                    <td>
+                                        <input type="text" />
+                                        <button type="button" class="text-pop-btn">메타 텍스트</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-btn-group in_mb40">
+                    <button type="button" class="cancel-btn bdcolor ftcolor">취소</button>
+                    <button type="button" class="add-btn bdcolor ftcolor">추가</button>
+                    <button type="button" class="confirm-btn bgcolor">완료</button>
+                </div>
+            </form>
+            <div class="watermark-detail-wrapper no-ai">
+                <p class="explain">워터마크 리스트</p>
+                <div class="button-row">
+                    <div class="left">
+                        <button class="margin-left" type="button">삭제</button>
+                    </div>
+                </div>
+                <div class="table-scroll1453">
+                   <table class="jb-table no-arrow">
+                    <colgroup>
+                        <col width="5%">
+                    </colgroup>
+                    <thead>
+                        <tr class="jb-table-header-group">
+                            <th scope="col" class="jb-table-cell jb-middle">
+                                <input type="checkbox" id="cba2" />
+                                <label for="cba2">
+                                    <span class="ico"></span>
+                                </label>
+                            </th>
+                            <th scope="col" class="jb-table-cell jb-middle">
+                                <p>워터마크명</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>종류</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>이미지여부</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>위치</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>회전(각도)</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>컬러(R,G,B)</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>워터마크</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>메타 텍스트</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>글꼴</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>글자크기</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>투명도</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="jb-table-row">
+                            <td class="jb-table-cell jb-middle">
+                                <input type="checkbox" id="1" name="check" />
+                                <label for="1">
+                                    <span class="ico"></span>
+                                </label></td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>idididid</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>프린트</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>텍스트</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>좌측-상단</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>360</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>100,100,100</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>워터마크</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>2021-05-28 00:00:00</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>굴림</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>0</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>3</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> 
+                </div>
+                
+                <div class="pagenation">
+                    <button type="button" class="back-end disabled"></button>
+                    <button type="button" class="back disabled"></button>
+                    <button type="button" class="number">1</button>
+                    <button type="button" class="number active">2</button>
+                    <button type="button" class="number">3</button>
+                    <button type="button" class="number">4</button>
+                    <button type="button" class="number">5</button>
+                    <button type="button" class="number">6</button>
+                    <button type="button" class="number">7</button>
+                    <button type="button" class="number">8</button>
+                    <button type="button" class="number">9</button>
+                    <button type="button" class="number">10</button>
+                    <button type="button" class="next"></button>
+                    <button type="button" class="next-end"></button>
+                </div>
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+    <!-- 팝업 -->
+    <div class="number-modal-background modal">
+        <div class="alert-modal-content">
+            <div class="title">
+                <span>알림</span>
+                <button type="button" class="modal-close-btn"></button>
+            </div>
+            <div class="content">
+                숫자만 입력 가능합니다.
+            </div>
+            <div class="confirm-btn-group">
+                <button type="button" class="confirm-btn bgcolor">확인</button>
+            </div>
+        </div>
+    </div>
+    <div class="security-add-modal-background sub-modal meta-text-modal">
+        <div class="security-add-modal-content ">
+            <div class="title">
+                <span>메타 텍스트</span>
+                <button type="button" class="sub-modal-close-btn"></button>
+            </div>
+            <form action="" method="post" class="approval-write-box">
+                <div class="approval-input-box margin approval-tab-content active">
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title">날짜 형식</div>
+                            <div class="approval-input-group">
+                                <input type="checkbox" name="" id="date">
+                                <label for="date"><span class="ico"></span></label>
+                                <span class="ex-text">2021-05-28 00:00:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title">복합기명</div>
+                            <div class="approval-input-group">
+                                <input type="checkbox" name="" id="name">
+                                <label for="name"><span class="ico"></span></label>
+                                <span class="ex-text">iR-ADV527 (1번 보관함)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title">문서명</div>
+                            <div class="approval-input-group">
+                                <input type="checkbox" name="" id="doc">
+                                <label for="doc"><span class="ico"></span></label>
+                                <span class="ex-text">Document Name</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title">컴퓨터명</div>
+                            <div class="approval-input-group">
+                                <input type="checkbox" name="" id="com">
+                                <label for="com"><span class="ico"></span></label>
+                                <span class="ex-text">LAPTOP-109RKIR5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title">IP</div>
+                            <div class="approval-input-group">
+                                <input type="checkbox" name="" id="ip">
+                                <label for="ip"><span class="ico"></span></label>
+                                <span class="ex-text">사용자 IP 주소</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title">UUID</div>
+                            <div class="approval-input-group">
+                                <input type="checkbox" name="" id="uuid">
+                                <label for="uuid" class="lb"><span class="ico in_mr8"></span>UUID사용</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title">사용자 데이터</div>
+                            <div class="approval-input-group flexwrap">
+                                <select>
+                                    <option value="">ID</option>
+                                    <option value="">이름</option>
+                                    <option value="">사번</option>
+                                    <option value="">부서코드</option>
+                                    <option value="">부서이름1</option>
+                                    <option value="">RESERVED1</option>
+                                </select>
+                                <button type="button" class="make-input-btn">입력</button>
+                                <input type="text" class="width-100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title">사용자 데이터 구분자</div>
+                            <div class="approval-input-group flexwrap">
+                                <select>
+                                    <option value="">+</option>
+                                    <option value="">/</option>
+                                    <option value="">-</option>
+                                    <option value="">|</option>
+                                    <option value="">&</option>
+                                </select>
+                                <button type="button" class="make-input-btn">입력</button>
+                                <input type="text" class="width-100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="confirm-btn-group">
+                    <button type="button" class="sub-modal-cancel-btn bdcolor ftcolor">취소</button>
+                    <button type="submit" class="confirm-btn bgcolor">확인</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="security-add-modal-background sub-modal loc-custom-modal">
+        <div class="security-add-modal-content meta-text-modal">
+            <div class="title">
+                <span>사용자 정의</span>
+                <button type="button" class="sub-modal-close-btn"></button>
+            </div>
+            <form action="" method="post" class="approval-write-box">
+                <div class="approval-input-box margin approval-tab-content active">
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title">위치(X,Y)</div>
+                            <div class="approval-input-group">
+                                <select class="in_mr10"> 
+                                    <option value="">100</option>
+                                    <option value="">200</option>
+                                    <option value="">300</option>
+                                </select>
+                                <select>
+                                    <option value="">100</option>
+                                    <option value="">200</option>
+                                    <option value="">300</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="confirm-btn-group">
+                    <button type="button" class="sub-modal-cancel-btn bdcolor ftcolor">취소</button>
+                    <button type="submit" class="confirm-btn bgcolor">확인</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/jquery.minicolors.min.js"></script>
+
+    <script>
+        $(function () {
+            // 팔레트 
+            $('.demo').minicolors({
+                format: 'rgb'
+            });
+            $('body').on('click', function (e) {
+                var paletteValue = $(e.target).parents('.palette-wrap').length;
+                if (paletteValue == 0) {
+                    $('.minicolors-panel').css('display', 'none');
+                    $('.palette-btn').text('직접 선택');
+                }
+            });
+            
+            $('.minicolors-input').click(function(){
+                $('.minicolors-panel').css('display','none');
+            })
+
+            $('.palette-btn').click(function () {
+                var palette = $('.minicolors-panel');
+                var paletteState = palette.css('display');
+                if (paletteState == 'none') {
+                    palette.show();
+                    $(this).text('확인');
+                } else {
+                    palette.hide();
+                    $(this).text('직접 선택');
+
+                }
+            });
+            // 메타테스트 팝업
+            $('.text-pop-btn').click(function () {
+                $('.meta-text-modal').addClass('active');
+                $('body').css('overflow','hidden');
+            })
+            // 메타텍스트 체크박스
+            $('.approval-input-group input').click(function () {
+                $(this).siblings('.ex-text').toggle();
+            })
+            // 메타테스트 입력버튼 생성
+            $('.make-input-btn').click(function () {
+                $(this).closest('.input-row').addClass('height-100');
+                $(this).siblings('input').show();
+            })
+            // 위치 - 사용자 정의 팝업
+            $('#loc-select').change(function () {
+                if (this.value == 'custom') {
+                    $('.loc-custom-modal').addClass('active');
+                    $('body').css('overflow','hidden');
+                }
+            })
+            // 추가 버튼 제한 팝업
+            $('.add-btn').click(function () {
+                if ($('table .jb-table-row').length = 1) {
+                    $('.number-modal-background .content').text('복사 워터마크는 1개의 워터마크만 추가가 가능합니다.');
+                    $('.number-modal-background').addClass('active');
+                }
+
+            })
+        });
+    </script>
+</body>
+
+</html>

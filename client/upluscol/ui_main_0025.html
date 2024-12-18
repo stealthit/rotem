@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U2 Collaboration</title>
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)" />
+  </head>
+  <style>
+    #project-tool-box {
+      z-index: 70;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #project-tool02-box {
+      z-index: 70;
+      position: absolute;
+      top: 1100px;
+      left: 0px;
+    }
+    #review-mini-box {
+      z-index: 70;
+      position: absolute;
+      top: 0;
+      left: 250px;
+    }
+    #progress-box {
+      z-index: 70;
+      position: absolute;
+      top: 150px;
+      left: 250px;
+    }
+    #file-edit-box {
+      z-index: 70;
+      position: absolute;
+      top: 0px;
+      left: 500px;
+    }
+
+    #file-del-box {
+      z-index: 70;
+      position: absolute;
+      top: 0px;
+      left: 1050px;
+    }
+    #file-move-box {
+      z-index: 70;
+      position: absolute;
+      top: 500px;
+      left: 0px;
+    }
+    #file-move-folder-box {
+      z-index: 70;
+      position: absolute;
+      top: 500px;
+      left: 600px;
+    }
+    /* ey211206 */
+    #file-get-box {
+      z-index: 70;
+      position: absolute;
+      top: 500px;
+      left: 1200px;
+    }
+    #file-drive-box {
+      z-index: 70;
+      position: absolute;
+      top: 500px;
+      left: 600px;
+    }
+    @media screen and (max-width: 768px) {
+      #project-tool-box {
+        z-index: 70;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      #review-mini-box {
+        z-index: 70;
+        position: absolute;
+        top: 450px;
+        left: 0px;
+      }
+      #progress-box {
+        z-index: 70;
+        position: absolute;
+        top: 700px;
+        left: 0px;
+      }
+      #file-edit-box {
+        z-index: 70;
+        position: absolute;
+        top: 900px;
+        left: 0px;
+      }
+
+      #file-del-box {
+        z-index: 70;
+        position: absolute;
+        top: 1150px;
+        left: 0px;
+      }
+      #file-move-box {
+        z-index: 70;
+        position: absolute;
+        top: 1400px;
+        left: 0px;
+      }
+      #file-move-folder-box {
+        z-index: 70;
+        position: absolute;
+        top: 1400px;
+        left: 0px;
+      }
+      /* ey211206 */
+      #file-get-box {
+        z-index: 70;
+        position: absolute;
+        top: 1550px;
+        left: 0px;
+      }
+    }
+  </style>
+
+  <body>
+    <!--edit-->
+    <ul class="menu-box active" id="project-tool-box">
+      <li>
+        <span class="share"></span><button type="button" id="">공유하기</button
+        ><i class="ic-arrow">메뉴더보기</i>
+      </li>
+      <li>
+        <span class="pen"></span><button type="button" id="">이름수정</button>
+      </li>
+      <li class="divBar">구분선</li>
+      <!--↓ 사용안되는 부분도 있습니다. 기능이 없을 땐, 이 셀을 none 바람-->
+      <li>
+        <span><i class="cyan"></i></span
+        ><button type="button" id="">Needs Review</button
+        ><i class="ic-arrow">메뉴더보기</i>
+      </li>
+      <!--↑ 사용안되는 부분도 있습니다. 기능이 없을 땐, 이 셀을 none 바람-->
+      <li>
+        <span class="move"></span><button type="button" id="">위치이동</button>
+      </li>
+      <li>
+        <span class="copy"></span><button type="button" id="">복사</button>
+      </li>
+      <li>
+        <span class="down"></span><button type="button" id="">다운로드</button>
+      </li>
+      <li class="divBar">구분선</li>
+      <li>
+        <span class="trash"></span><button type="button" id="">삭제</button>
+      </li>
+    </ul>
+
+    <!-- ey 211231 edit2-->
+    <ul class="menu-box active" id="project-tool02-box">
+      <li>
+        <span class="share"></span><button type="button" id="">공유하기</button
+        ><i class="ic-arrow">메뉴더보기</i>
+      </li>
+      <li>
+        <span class="pen"></span><button type="button" id="">이름수정</button>
+      </li>
+      <li class="divBar">구분선</li>
+      <!--↓ 사용안되는 부분도 있습니다. 기능이 없을 땐, 이 셀을 none 바람-->
+      <!-- <li>
+            <span><i class="cyan"></i></span
+            ><button type="button" id="">Needs Review</button
+            ><i class="ic-arrow">메뉴더보기</i>
+          </li> -->
+      <!--↑ 사용안되는 부분도 있습니다. 기능이 없을 땐, 이 셀을 none 바람-->
+      <li>
+        <span class="move"></span><button type="button" id="">위치이동</button>
+      </li>
+      <li>
+        <span class="copy"></span><button type="button" id="">복사</button>
+      </li>
+      <li>
+        <span class="down"></span><button type="button" id="">다운로드</button>
+      </li>
+      <li class="divBar">구분선</li>
+      <li>
+        <span class="trash"></span><button type="button" id="">삭제</button>
+      </li>
+    </ul>
+
+    <!--리뷰링크-->
+    <div class="menu-box active" id="review-mini-box">
+      <li>
+        <span class="review"></span
+        ><button type="button" id="">리뷰링크</button>
+      </li>
+      <li>
+        <span class="link"></span><button type="button" id="">링크</button>
+      </li>
+    </div>
+
+    <!--progress-->
+    <div class="menu-box active" id="progress-box">
+      <li>
+        <span><i class="white"></i></span
+        ><button type="button" id="">No Status</button>
+      </li>
+      <li>
+        <span><i class="cyan"></i></span
+        ><button type="button" id="">In Progress</button>
+      </li>
+      <li>
+        <span><i class="orange"></i></span
+        ><button type="button" id="">Needs Review</button>
+      </li>
+      <li>
+        <span><i class="green"></i></span
+        ><button type="button" id="">Approved</button>
+      </li>
+    </div>
+
+    <!--파일수정-->
+    <div class="menu-box active" id="file-edit-box">
+      <div class="mb-menu-box-title">
+        <p>이름 수정</p>
+        <button type="button" class="close-btn"></button>
+      </div>
+      <div class="img-con">
+        <div class="img"><img src="img/tmp_img.jpg" /></div>
+        <div class="input-con">
+          <input type="text" value="60 Second Cut.mp4" class="search-input02" />
+          <label>파일명을 입력하세요.</label>
+        </div>
+      </div>
+      <div>
+        <a href="#" class="btn_rect_white mw-100 tac" alt="취소">취소</a>
+        <a href="#" class="btn_rect_black mw-100 tac" alt="변경">변경</a>
+      </div>
+    </div>
+
+    <!--파일삭제-->
+    <div class="menu-box active" id="file-del-box">
+      <div class="mb-menu-box-title">
+        <p>파일 삭제</p>
+        <!--button type="button" class="close-btn"></button-->
+      </div>
+      <div class="img-con">
+        <div class="img"><img src="img/tmp_img.jpg" /></div>
+        <p><strong>'파일명.svg'</strong> 를 정말 삭제하시겠습니까?</p>
+      </div>
+      <div>
+        <a href="#" class="btn_rect_white mw-100 tac" alt="취소">취소</a>
+        <a href="#" class="btn_rect_black mw-100 tac" alt="수락">삭제</a>
+      </div>
+    </div>
+
+    <!--위치이동-->
+    <div class="menu-box active" id="file-move-box">
+      <div class="mb-menu-box-title">
+        <p>위치 이동</p>
+        <button type="button" class="close-btn"></button>
+      </div>
+      <div class="input-inner">
+        <select id="value-select" class="file-select">
+          <option value="" hidden>전체</option>
+          <option value="">옵션1</option>
+          <option value="">옵션2</option>
+        </select>
+        <input
+          type="text"
+          value=""
+          placeholder="검색어를 입력하세요"
+          class="search-input02"
+        />
+      </div>
+      <div class="input-list-inner">
+        <ul>
+          <li>
+            <button type="button">홍길동's Team</button>
+            <ul>
+              <li><button type="button">Project1</button></li>
+              <li><button type="button" class="active">Project1</button></li>
+              <li>
+                <button type="button">Project3</button>
+                <ul>
+                  <li>
+                    <!-- ey 220112 button추가-->
+                    <button type="button" class="folder-btn">
+                      folder
+                      <input
+                        type="text"
+                        placeholder="폴더명을 입력하세요"
+                        class="search-input02"
+                      />
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="button">홍길동's Team</button>
+            <ul>
+              <li><button type="button">Project1</button></li>
+              <li><button type="button" class="active">Project1</button></li>
+              <li>
+                <button type="button">Project3</button>
+                <ul>
+                  <li>
+                    <!-- ey 220112 button추가-->
+                    <button type="button" class="folder-btn">
+                      folder
+                      <input
+                        type="text"
+                        placeholder="폴더명을 입력하세요"
+                        class="search-input02"
+                      />
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="input-list-chkbox">
+        <input type="checkbox" name="" id="ck-file" checked /><label
+          for="ck-file"
+        ></label
+        >코멘트도 복사
+      </div>
+      <div class="btn-inner">
+        <div class="add-folder">
+          <span></span><button type="button" id="">폴더 추가</button>
+        </div>
+        <div class="btn-area">
+          <a href="#" class="btn_rect_white mw-100 tac" alt="취소">취소</a>
+          <a href="#" class="btn_rect_black mw-100 tac" alt="이동">이동</a>
+        </div>
+      </div>
+    </div>
+
+    <!--위치이동 폴더-->
+    <div class="menu-box active" id="file-move-folder-box">
+      <div class="mb-menu-box-title">
+        <p>위치 이동</p>
+        <button type="button" class="close-btn"></button>
+      </div>
+      <div class="input-inner">
+        <select id="value-select" class="file-select">
+          <option value="" hidden>전체</option>
+          <option value="">옵션1</option>
+          <option value="">옵션2</option>
+        </select>
+        <input
+          type="text"
+          value=""
+          placeholder="검색어를 입력하세요"
+          class="search-input02"
+        />
+      </div>
+      <div class="input-list-inner">
+        <ul>
+          <li class="label">프로젝트</li>
+          <li>
+            <span class="pjt"></span
+            ><button type="button" id="">Test프로젝트</button
+            ><label>홍길동's team</label>
+          </li>
+          <li class="label">폴더</li>
+          <li>
+            <span class="pjt-folder"></span
+            ><button type="button" id="">Test프로젝트</button
+            ><label>홍길동's team</label>
+          </li>
+          <li>
+            <span class="pjt-folder"></span
+            ><button type="button" id="">Test프로젝트</button
+            ><label>홍길동's team</label>
+          </li>
+        </ul>
+      </div>
+      <div class="btn-inner">
+        <div class="add-folder">
+          <span></span><button type="button" id="">폴더 추가</button>
+        </div>
+        <div class="btn-area">
+          <a href="#" class="btn_rect_white mw-100 tac" alt="취소">취소</a>
+          <a href="#" class="btn_rect_black mw-100 tac" alt="이동">이동</a>
+        </div>
+      </div>
+    </div>
+    <!--드라이브에서 가져오기 ey 211206-->
+    <div class="menu-box active" id="file-get-box">
+      <div class="mb-menu-box-title">
+        <p>드라이브에서 가져오기</p>
+        <button type="button" class="close-btn"></button>
+      </div>
+      <!-- ey 211209 추가 -->
+      <div class="input-inner">
+        <select id="value-select" class="file-select">
+          <option value="">드라이브 A</option>
+          <option value="">드라이브 B</option>
+          <option value="">드라이브 C</option>
+        </select>
+      </div>
+      <!-- ey 211216 input-list-inner 수정,
+          ey 211220 수정
+      -->
+      <div class="input-list-inner">
+        <ul>
+          <li class="folder-box">
+            <button type="button" class="">
+              <span class="folder"></span>폴더명
+            </button>
+            <input type="checkbox" name="" id="ck-file1" checked /><label
+              for="ck-file1"
+            ></label>
+            <ul>
+              <li>
+                <!-- button > div 변경 ey 211220 -->
+                <div>
+                  <span class="file"></span>
+                  <!-- ey 211221 파일명 p 안에 -->
+                  <p>파일명</p>
+                </div>
+                <input type="checkbox" name="" id="ck-file2" checked /><label
+                  for="ck-file2"
+                ></label>
+              </li>
+              <li>
+                <div>
+                  <span class="file"></span>
+                  <p>파일명</p>
+                </div>
+                <input type="checkbox" name="" id="ck-file3" checked /><label
+                  for="ck-file3"
+                ></label>
+              </li>
+              <!-- <ul>
+                <li class="folder-box">
+                  <button type="button" class="active">
+                    <span class="folder"></span>폴더명
+                  </button>
+                  <input type="checkbox" name="" id="ck-file1" checked /><label
+                    for="ck-file1"
+                  ></label>
+                  <ul>
+                    <li>
+                      <div>
+                        <span class="file"></span>
+                        <p>파일명</p>
+                      </div>
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="ck-file3"
+                        checked
+                      /><label for="ck-file3"></label>
+                    </li>
+                    <li>
+                      <div>
+                        <span class="file"></span>
+                        <p>파일명</p>
+                      </div>
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="ck-file3"
+                        checked
+                      /><label for="ck-file3"></label>
+                    </li>
+                  </ul>
+                </li>
+              </ul> -->
+            </ul>
+          </li>
+          <li>
+            <div><span class="file"></span>파일명</div>
+            <input type="checkbox" name="" id="ck-file4" checked /><label
+              for="ck-file4"
+            ></label>
+          </li>
+          <li class="folder-box">
+            <button type="button"><span class="folder"></span>폴더명</button>
+            <input type="checkbox" name="" id="ck-file4" checked /><label
+              for="ck-file4"
+            ></label>
+          </li>
+          <li class="folder-box">
+            <button type="button"><span class="folder"></span>폴더명</button>
+            <input type="checkbox" name="" id="ck-file5" checked /><label
+              for="ck-file5"
+            ></label>
+          </li>
+        </ul>
+      </div>
+      <div class="btn-inner">
+        <div class="btn-area">
+          <a href="#" class="btn_rect_white mw-100 tac" alt="취소">취소</a>
+          <a href="#" class="btn_rect_black mw-100 tac" alt="이동">업로드</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.001" height="16" viewBox="0 0 16.001 16">
+  <g id="ic-new-project" transform="translate(-16.714 -22.286)">
+    <rect id="guide" width="16" height="15.988" transform="translate(16.715 22.286)" fill="#fff" opacity="0"/>
+    <g id="그룹_103" data-name="그룹 103" transform="translate(16 21.571)">
+      <rect id="사각형_2151" data-name="사각형 2151" width="14" height="14" rx="1" transform="translate(1.714 1.714)" fill="none" stroke="#555" stroke-width="2"/>
+      <line id="선_25" data-name="선 25" x2="14" transform="translate(1.714 4.945)" fill="none" stroke="#555" stroke-linejoin="round" stroke-width="2"/>
+      <line id="선_26" data-name="선 26" x1="6.053" transform="translate(5.687 10.33)" fill="none" stroke="#555" stroke-linejoin="round" stroke-width="2"/>
+      <line id="선_27" data-name="선 27" y2="6.053" transform="translate(8.715 7.303)" fill="none" stroke="#555" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

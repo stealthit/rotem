@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISS 시스템</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <!--link rel="stylesheet" href="./css/unit.css">-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+  
+    <script>
+      //토스트
+      let removeToast;
+
+      function toast(string) {
+          const toast = document.getElementById("toast_action");
+
+          toast.classList.contains("active") ?
+              (clearTimeout(removeToast), removeToast = setTimeout(function () {
+                  document.getElementById("toast_action").classList.remove("active")
+              }, 1000)) :
+              removeToast = setTimeout(function () {
+                  document.getElementById("toast_action").classList.remove("active")
+              }, 1000)
+          toast.classList.add("active"),
+              toast.innerText = string
+      }
+    </script>
+
+  </head>
+<body>
+<div  style="position:relative">
+  <div id="toast_action" class="toast_action" ></div>
+  <div>
+  <a href="javascript:" class="btn_toast" id="toast_type01" onclick="toast('메세지는 이거예염');">토스트 클릭</a>
+
+  <a href="javascript:" class="btn_toast" id="toast_type02" onclick="toast('메세지는 이거예염2222');">토스트 클릭</a>
+</div>
+</div>
+<!--
+  <input type='checkbox' name='selectall1' value="selectall1" onclick='selectAll(this);'/> <b>Select All</b>  <br />
+  <input type='checkbox' name='check1' value="라인1" onclick='checkSelectAll();'/> 라인1 <br />
+  <input type='checkbox' name='check1' value="라인2" onclick='checkSelectAll();'/> 라인2  <br />
+  <input type='checkbox' name='check1' value="라인3" onclick='checkSelectAll();'/> 라인3
+  -->
+
+
+
+<input type="checkbox" id="fta1" value="checkAll1" name="checkAll1">
+<label for="fta1">
+    <span class="ico"></span>
+    <span class="text">선로</span>
+</label>
+<input type="checkbox" id="ft1_1" name="check1" >
+<label for="ft1_1">
+    <span class="ico"></span>
+    <span class="text"><div class="line_con line-4core"></div>통신선로</span>
+</label>
+<input type="checkbox" id="ft1_2" name="check1" >
+<label for="ft1_2">
+    <span class="ico"></span>
+    <span class="text"><div class="line_con line-elcore"></div>전기선로</span>
+</label>
+<input type="checkbox" id="ft1_3" name="check1" >
+<label for="ft1_3">
+    <span class="ico"></span>
+    <span class="text"><div class="line_con line-holecore"></div>관로</span>
+</label>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#fta1").click(function() {
+      if($("#fta1").is(":checked")) $("input[name=check1]").prop("checked", true);
+      else $("input[name=check1]").prop("checked", false);
+    });
+    
+    $("input[name=check1]").click(function() {
+      var total = $("input[name=check1]").length;
+      var checked = $("input[name=check1]:checked").length;
+      
+      if(total != checked) $("#fta1").prop("checked", false);
+      else $("#fta1").prop("checked", true); 
+    });
+  });
+</script>
+
+
+
+
+
+<script>
+  function checkSelectAll()  {
+  // 전체 체크박스
+  const checkboxes 
+    = document.querySelectorAll('input[name="check1"]');
+  // 선택된 체크박스
+  const checked 
+    = document.querySelectorAll('input[name="check1"]:checked');
+  // select all 체크박스
+  const selectAll 
+    = document.querySelector('input[name="selectall1"]');
+  
+  if(checkboxes.length === checked.length)  {
+    selectAll.checked = true;
+  }else {
+    selectAll.checked = false;
+  }
+
+}
+
+function selectAll(selectAll)  {
+  const checkboxes 
+     = document.getElementsByName('check1');
+  
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = selectAll.checked
+  })
+}
+</script>
+
+</body>
+</html>

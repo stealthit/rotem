@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.257" height="16" viewBox="0 0 16.257 16">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke:#555;stroke-linecap:square;stroke-width:1.4px;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="ic-left-payment-n" transform="translate(122.557 27.429)">
+        <g id="그룹_152" data-name="그룹 152" transform="translate(-122.429 -27.429)">
+            <path id="사각형_2178" data-name="사각형 2178" transform="translate(.571 2.571)" style="fill:none;stroke:#555;stroke-linecap:square;stroke-width:1.4px" d="M0 0h14.857v10.857H0z"/>
+            <path id="선_59" data-name="선 59" class="cls-3" transform="translate(.571 6.571)" d="M0 0h14.857"/>
+            <path id="선_60" data-name="선 60" class="cls-3" transform="translate(10.857 10.571)" d="M0 0h1.714"/>
+        </g>
+    </g>
+</svg>

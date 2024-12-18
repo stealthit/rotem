@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CULTURIT</title>  
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper" id="">
+  <!-- 팝업 -->
+
+  <div class="wrap">
+    <!-- 왼쪽 영역 -->
+    <header id="user-wrap">
+      <a href="main.html" class="logo"></a>
+      <div class="account">
+        <div class="account-top">
+          <div class="account-title"><span>홍길동</span>'s Account</div>
+          <button type="button" class="btn-setting"></button>
+        </div>
+        <button type="button" class="btn-rect-gray">로그아웃</button>
+      </div>
+      <div class="have-content">
+        <div class="have-conten01">
+          <ul>
+            <li>
+              <span class="ico-note"></span>
+            </li>
+            <li>총 보유곡</li>
+            <li>10</li>
+          </ul>
+        </div>
+        <div class="have-conten02">
+          <ul>
+            <li>
+              <span class="ico-down"></span>
+            </li>
+            <li>총 다운로드</li>
+            <li>100</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  
+    <!-- 탭 영역 -->
+    <section id="content-wrap">
+      <div class="tab_basic">
+        <div class="tab_list_wrap">
+          <div class="tab_list tab_active" data-tabnum="0">
+            <a href="#">노트에디팅</a>
+          </div>
+          <div class="tab_list" data-tabnum="1">
+            <a href="#">통계</a>
+          </div> 
+        </div>
+        <div class="tab_container">      
+          <!-- 노트에디팅 -->
+          <div class="tab_content note-game-pd02" id="note-editing">
+            <div class="note-sub-top">
+              <a href="note-game-pd.html" class="back-main"></a>
+              <div>
+                <button type="button" class="btn-key"></button>
+                <button type="button" class="btn-rect-blue">저장</button>
+              </div>
+            </div>
+            <div class="note-sub-content">
+              <div class="pd-bar">
+                <ul>
+                  <li>
+                    <button type="button" class="btn-play-stop"></button>
+                    <button type="button" class="btn-play"></button>
+                    <button type="button" class="btn-play-rec"></button>
+                  </li>
+                  <li>
+                    <p>23</p>
+                    <div>
+                      <button type="button" class="btn-arrow-p"></button>
+                      <p>120 bpm</p>
+                      <p>1/8</p>
+                      <button type="button" class="btn-arrow-n"></button>
+                    </div>
+                    <div>
+                      <span>퀸타이즈</span>
+                      <button type="button" class="btn-rect-gray on-off active">OFF</button>
+                    </div>
+                  </li>
+                  <li>
+                    <button type="button" class="btn-sound"></button>
+                    <div class="sound-bar">
+                      <div class="bar-gage"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pd-content">
+                <ul class="pd-content-left">
+                  <li>
+                    <p>드럼 / 초급</p>
+                    <div></div>
+                    <p>컬처릿 음악게임</p>
+                    <label for="input-img-file1" class="btn-rect-gray">+</label>
+                    <input type="file" id="input-img-file1" accept="image/gif,image/jpeg,image/jpg,image/png">
+                  </li>
+                  <li class="pd-file-info active">
+                    <ul>
+                      <li>1</li>
+                      <li>
+                        <p>File_name</p>
+                        <ul class="term2">
+                          <li class="current">M</li>
+                          <li>S</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="ico-bpm">BPM<br>120</div>
+                        <div class="sound-bar">
+                          <div class="bar-gage"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="pd-file-info">
+                    <ul>
+                      <li>2</li>
+                      <li>
+                        <p>File_name</p>
+                        <ul class="term2">
+                          <li>M</li>
+                          <li class="current">S</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div class="ico-bpm">BPM<br>120</div>
+                        <div class="sound-bar">
+                          <div class="bar-gage"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div>
+                      <p>가상악기</p>
+                      <span>[선택]</span>
+                    </div>
+                    <div>
+                      <div>
+                        <p>Mute, Solo</p>
+                        <ul class="term2">
+                          <li>M</li>
+                          <li class="current">S</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p>볼륨</p>
+                        <div class="sound-bar">
+                          <div class="bar-gage"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li><span>+</span> 트랙추가</li>
+                </ul>
+                <div class="pd-content-right">
+                  <div>
+                    <div>
+                      <button type="button" class="btn-down-size">축소</button>
+                      <button type="button" class="btn-up-size">확대</button>
+                    </div>
+                    <div>                      
+                      <button type="button" class="btn-pd01"></button>
+                      <button type="button" class="btn-pd02"></button>
+                    </div>
+                  </div>                  
+                  <div>
+                    <div></div>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 통계 -->
+          <div class="tab_content" id="statistics">
+            
+          </div>
+         </div>
+      </div>
+    </section> 
+  </div> 
+</div>
+<script>
+  //탭 메뉴
+  var tabList = document.querySelectorAll('.tab_list_wrap .tab_list')
+
+  Array.prototype.forEach.call(tabList, function(list) {
+
+    list.children[0].addEventListener('click', function(e) {
+      e.preventDefault()
+
+      var tabContent = document.querySelectorAll('.tab_container .tab_content')
+
+      var tabNum = this.parentElement.getAttribute('data-tabnum')
+
+      Array.prototype.forEach.call(tabContent, function(cont, i) {
+        cont.style.display = 'none'
+        tabList[i].className = 'tab_list'
+      })
+
+      tabContent[tabNum].style.display = 'block'
+
+      if(list.className.indexOf('tab_active') == -1) {
+        list.className = 'tab_list tab_active'
+      }
+    })
+  })
+</script>
+</body>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/common.js"></script>
+</html>

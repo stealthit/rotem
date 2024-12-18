@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:#181818}
+        </style>
+    </defs>
+    <g id="ic-player-pause" transform="translate(-43 -260)">
+        <rect id="사각형_2176" data-name="사각형 2176" class="cls-2" width="4" height="14" rx="1" transform="translate(49 265)"/>
+        <rect id="사각형_2177" data-name="사각형 2177" class="cls-2" width="4" height="14" rx="1" transform="translate(57 265)"/>
+    </g>
+</svg>

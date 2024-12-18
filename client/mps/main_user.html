@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 758px)">
+</head>
+<style>
+
+
+
+</style>
+
+<body class="responsive">
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-sidemenu"></button>
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home active">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a>
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a>
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a>
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting">
+                <a>
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper mu_profile">
+    <div class="top">
+      <div class="user-info-box">
+            <div class="profile">
+                <button type="button" class="profile-dropdown"></button>
+            </div>
+            <div class="dropdown">
+                <div class="user-info">
+                    <div class="user-top">
+                        <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                        <span class="division">I</span>
+                        <span class="position">슈퍼관리자</span>
+                    </div>
+                    <div class="user-bottom">
+                        <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                    </div>
+                </div>
+                <button type="button" class="logout-btn">로그아웃</button>
+            </div>
+        </div>
+    </div>
+
+        <div class="content">
+            
+            <div class="grid">
+                <div class="item row-2">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                4월 잔여 현황
+                            </div>
+                        </div>
+                        <div class="state-content">
+                            <div class="row">
+                                <div class="info">
+                                    <span>프린트 (흑백)</span>
+                                    <p><span class="bold">121</span><span> / 242 매</span></p>
+                                </div>
+                                <button type="button">추가요청</button>
+                                <div class="circle">
+                                    <div class="percent in_wd60 in_hg60">
+                                        <p class="in_dpn">80%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="info">
+                                    <span>프린트 (흑백)</span>
+                                    <p><span class="bold">121</span><span> / 242 매</span></p>
+                                </div>
+                                <button type="button">추가요청</button>
+                                <div class="circle">
+                                    <div class="percent in_wd60 in_hg60">
+                                        <p class="in_dpn">70%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="info">
+                                    <span>프린트 (흑백)</span>
+                                    <p><span class="bold">121</span><span> / 242 매</span></p>
+                                </div>
+                                <button type="button">추가요청</button>
+                                <div class="circle">
+                                    <div class="percent  in_wd60 in_hg60">
+                                        <p class="in_dpn">80%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="info">
+                                    <span>복사 (컬러)</span>
+                                    <p><span class="bold"></span><span>사용불가</span></p>
+                                </div>
+                                <div class="circle unavailable">
+                                    <div class="percent in_wd60 in_hg60">
+                                        <p class="in_dpn">0%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="info">
+                                    <span>스캔</span>
+                                    <p><span class="bold">∞</span><span> / 242 매</span></p>
+                                </div>
+                                <div class="circle infinite">
+                                    <div class="percent in_wd60 in_hg60">
+                                        <p class="in_dpn">0%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="info">
+                                    <span>팩스</span>
+                                    <p><span class="bold">∞</span><span> / 242 매</span></p>
+                                </div>
+                                <div class="circle infinite">
+                                    <div class="percent in_wd60 in_hg60">
+                                        <p class="in_dpn">∞</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                결재함
+                            </div>
+                        </div>
+                        <div class="payment-content">
+                            <div class="content">
+                                <p>결재 진행함</p>
+                                <span class="ftcolor">30</span>
+                                <div class="row">
+                                    <span>결재대기</span>
+                                    <span>10</span>
+                                </div>
+                                <div class="row">
+                                    <span>결재요청</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="row">
+                                    <span>상신대기</span>
+                                    <span class="red ftcolor">16</span>
+                                </div>
+                            </div>
+                            <div class="hr"></div>
+                            <div class="content">
+                                <p>결재 진행함</p>
+                                <span class="ftcolor">30</span>
+                                <div class="row">
+                                    <span>결재대기</span>
+                                    <span>10</span>
+                                </div>
+                                <div class="row">
+                                    <span>결재요청</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="row">
+                                    <span>상신대기</span>
+                                    <span class="red ftcolor">16</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                공지사항
+                            </div>
+                            <button class="expand"></button>
+                        </div>
+                        <div class="notice-content narrow">
+                            <ul>
+                                <!-- <li>
+                                    <span class="title"><a href="#">[일반공지] 개편안내입니다. 테스트 텍스트입니다.
+                                            테스트테스트테스트테스트테스트테스트테스트테스트</a></span>
+                                    <span class="date">2021-03-01</span>
+                                </li>
+                                <li>
+                                    <span class="title"><a href="#">[일반공지] 개편안내입니다. 테스트 텍스트입니다.
+                                            테스트테스트테스트테스트테스트테스트테스트테스트</a></span>
+                                    <span class="date">2021-03-01</span>
+                                </li>
+                                <li>
+                                    <span class="title"><a href="#">[일반공지] 개편안내입니다. 테스트 텍스트입니다.
+                                            테스트테스트테스트테스트테스트테스트테스트테스트</a></span>
+                                    <span class="date">2021-03-01</span>
+                                </li>
+                                <li>
+                                    <span class="title"><a href="#">[일반공지] 개편안내입니다. 테스트 텍스트입니다.
+                                            테스트테스트테스트테스트테스트테스트테스트테스트</a></span>
+                                    <span class="date">2021-03-01</span>
+                                </li> -->
+                                <!--게시글이 없을 때 예외처리-->
+                                
+                                 <li class="no-list">
+                                  <p>게시글이 없습니다.</p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                인쇄 대기 문서
+                            </div>
+                        </div>
+
+                        <div class="table-content">
+                            <div class="table">
+                                <div class="thead">
+                                    <div class="td">문서명</div>
+                                    <div class="td">요청일</div>
+                                    <div class="td">컬러정보</div>
+                                    <div class="td">문서크기</div>
+                                    <div class="td">매수</div>
+                                    <div class="td">부수</div>
+                                </div>
+                                <!--div class="tr">
+                                    <div class="td"><a href="#">영업파일039284.pptx</a></div>
+                                    <div class="td">21-04-20</div>
+                                    <div class="td">컬러</div>
+                                    <div class="td">12KB</div>
+                                    <div class="td">1</div>
+                                    <div class="td">1</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td"><a href="#">영업파일039284.pptx</a></div>
+                                    <div class="td">21-04-20</div>
+                                    <div class="td">컬러</div>
+                                    <div class="td">12KB</div>
+                                    <div class="td">1</div>
+                                    <div class="td">1</div>
+                                </div-->
+                                <!--파일리스트 없을때 예외처리-->
+                                
+                                <div class="tr_end">
+                                  <div class="td">
+                                    해당파일 없음
+                                  </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                스캔문서
+                            </div>
+                        </div>
+
+                        <div class="table-content">
+                            <div class="table">
+                                <div class="thead">
+                                    <div class="td">문서명</div>
+                                    <div class="td">메모</div>
+                                    <div class="td">형식</div>
+                                    <div class="td">페이지</div>
+                                    <div class="td">수신일지</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td"><a href="#">영업파일039284.pptx</a></div>
+                                    <div class="td">21-04-20</div>
+                                    <div class="td">xxx</div>
+                                    <div class="td">1</div>
+                                    <div class="td full">04-20 00:00:00</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td"><a href="#">영업파일039284.pptx</a></div>
+                                    <div class="td">21-04-20</div>
+                                    <div class="td">xxx</div>
+                                    <div class="td">1</div>
+                                    <div class="td full">04-20 00:00:00</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td"><a href="#">영업파일039284.pptx</a></div>
+                                    <div class="td">21-04-20</div>
+                                    <div class="td">xxx</div>
+                                    <div class="td">1</div>
+                                    <div class="td full">04-20 00:00:00</div>
+                                </div>
+                                <!--파일리스트 없을때 예외처리-->
+                                <!--
+                                <div class="tr_end">
+                                  <div class="td">
+                                    해당파일 없음
+                                  </div> 
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                사용자별 사용량
+                            </div>
+                            <button class="expand"></button>
+                        </div>
+                        <div class="user-usage-content">
+                            <canvas id="myChart1"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                부서별 사용량
+                            </div>
+                            <button class="expand"></button>
+                        </div>
+                        <div class="department-usage-content">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                팩스문서
+                            </div>
+                        </div>
+
+                        <div class="table-content">
+                            <div class="table">
+                                <div class="thead">
+                                    <div class="td">회선명</div>
+                                    <div class="td">문서명</div>
+                                    <div class="td">형식</div>
+                                    <div class="td">페이지</div>
+                                    <div class="td">수신일지</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">회선명</div>
+                                    <div class="td"><a href="#">영업파일039284.pptx</a></div>
+                                    <div class="td">xxx</div>
+                                    <div class="td">1</div>
+                                    <div class="td full">04-20 00:00:00</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">회선명</div>
+                                    <div class="td"><a href="#">영업파일039284.pptx</a></div>
+                                    <div class="td">xxx</div>
+                                    <div class="td">1</div>
+                                    <div class="td full">04-20 00:00:00</div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td">회선명</div>
+                                    <div class="td"><a href="#">영업파일039284.pptx</a></div>
+                                    <div class="td">xxx</div>
+                                    <div class="td">1</div>
+                                    <div class="td full">04-20 00:00:00</div>
+                                </div>
+                                <!--파일리스트 없을때 예외처리-->
+                                <!--
+                                <div class="tr_end">
+                                  <div class="td">
+                                    해당파일 없음
+                                  </div> 
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer class="main_footer">
+            <p>Copyright © 캐논코리아. All rights reserved.</p>
+            <div class="black_white_mode">                
+                <button type="button" class="black_mode_btn">다크 모드로 보기</button>
+            </div>
+        </footer>
+    </div>
+    <button type="button" class="setting-btn"></button>
+
+    <div class="dashboard-background" id="dashboard">
+        <div class="dashboard-wrapper">
+            <div class="dashboard">
+                <div class="title">
+                    대시보드 설정
+                </div>
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb" name="">
+                        <label for="cb">
+                            <span class="ico"></span>
+                            <span class="text">복합기 정보</span>
+                        </label>
+                        <!-- <button type="button" class="toggle-btn"></button> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb2" name="">
+                        <label for="cb2">
+                            <span class="ico"></span>
+                            <span class="text">공지사항</span>
+                        </label>
+                        <!-- <button type="button" class="toggle-btn"></button> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb3" name="">
+                        <label for="cb3">
+                            <span class="ico"></span>
+                            <span class="text">서비스 현황</span>
+                        </label>
+                        <!-- <button type="button" class="toggle-btn"></button> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb4" name="">
+                        <label for="cb4">
+                            <span class="ico"></span>
+                            <span class="text">사용자별 사용량</span>
+                        </label>
+                        <button type="button" class="toggle-btn"></button>
+                    </div>
+                    <div class="toggle-box">
+                        <div class="toggle-row">
+                            <span>사용량 기준일</span>
+                            <select>
+                                <option value="1d">1일</option>
+                                <option value="2d">2일</option>
+                                <option value="3d">3일</option>
+                                <option value="4d">4일</option>
+                                <option value="5d">5일</option>
+                                <option value="6d">6일</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span>기간</span>
+                            <select>
+                                <option value="1m">1개월</option>
+                                <option value="2m">2개월</option>
+                                <option value="2m">3개월</option>
+                                <option value="2m">4개월</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span></span>
+                            <p class="date">20210601 : 20210401-20210701</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb5" name="">
+                        <label for="cb5">
+                            <span class="ico"></span>
+                            <span class="text">복합기별 사용량</span>
+                        </label>
+                        <button type="button" class="toggle-btn"></button>
+                    </div>
+                    <div class="toggle-box">
+                        <div class="toggle-row">
+                            <span>사용량 기준일</span>
+                            <select>
+                                <option value="1d">1일</option>
+                                <option value="2d">2일</option>
+                                <option value="3d">3일</option>
+                                <option value="4d">4일</option>
+                                <option value="5d">5일</option>
+                                <option value="6d">6일</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span>기간</span>
+                            <select>
+                                <option value="1m">1개월</option>
+                                <option value="2m">2개월</option>
+                                <option value="2m">3개월</option>
+                                <option value="2m">4개월</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span></span>
+                            <p class="date">20210601 : 20210401-20210701</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb6" name="">
+                        <label for="cb6">
+                            <span class="ico"></span>
+                            <span class="text">부서별 사용량</span>
+                        </label>
+                        <button type="button" class="toggle-btn"></button>
+                    </div>
+                    <div class="toggle-box">
+                        <div class="toggle-row">
+                            <span>사용량 기준일</span>
+                            <select>
+                                <option value="1d">1일</option>
+                                <option value="2d">2일</option>
+                                <option value="3d">3일</option>
+                                <option value="4d">4일</option>
+                                <option value="5d">5일</option>
+                                <option value="6d">6일</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span>기간</span>
+                            <select>
+                                <option value="1m">1개월</option>
+                                <option value="2m">2개월</option>
+                                <option value="2m">3개월</option>
+                                <option value="2m">4개월</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span></span>
+                            <p class="date">20210601 : 20210401-20210701</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb7" name="">
+                        <label for="cb7">
+                            <span class="ico"></span>
+                            <span class="text">컬러별 사용량</span>
+                        </label>
+                        <button type="button" class="toggle-btn"></button>
+                    </div>
+                    <div class="toggle-box">
+                        <div class="toggle-row">
+                            <span>사용량 기준일</span>
+                            <select>
+                                <option value="1d">1일</option>
+                                <option value="2d">2일</option>
+                                <option value="3d">3일</option>
+                                <option value="4d">4일</option>
+                                <option value="5d">5일</option>
+                                <option value="6d">6일</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span>기간</span>
+                            <select>
+                                <option value="1m">1개월</option>
+                                <option value="2m">2개월</option>
+                                <option value="2m">3개월</option>
+                                <option value="2m">4개월</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span></span>
+                            <p class="date">20210601 : 20210401-20210701</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="secret-row">
+                    <span>보안단어 TOP5</span>
+                    <span>미설치</span>
+                </div>
+
+
+                <button type="button" class="setting-close-btn"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/mobile.js"></script>
+    <script src="./js/muuri.js"></script>
+    <script src="./js/web-animations.js"></script>
+    <script src="./js/chart.js"></script>
+    <script src="./js/raphael.js"></script>
+    <script src="./js/circleProgressBar.js"></script>
+    <script>
+
+        $(function () {
+
+            var grid = new Muuri('.grid', {
+                dragEnabled: true,
+                layoutOnInit: true,
+                itemDraggingClass: 'muuri-item-dragging',
+                dragHandle: '.handle',
+            });
+            // 게이지
+            $('.percent').percentageLoader({
+                strokeWidth: 4,
+                valElement: 'p',
+                fontSize: '13px',
+                fontWeight: 'normal'
+            });
+            // 차트
+            var options = {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    },
+                },
+                plugins: {
+                    legend: false
+                },
+                maintainAspectRatio: false
+            };
+            var ctx1 = document.getElementById('myChart1').getContext('2d');
+            var myChart1 = new Chart(ctx1, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 20, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132)',
+                            'rgba(54, 162, 235)',
+                            'rgba(255, 206, 86)',
+                            'rgba(75, 192, 192)',
+                            'rgba(153, 102, 255)',
+                            'rgba(255, 159, 64)'
+                        ],
+                        barThickness: 20,
+                    }]
+                },
+                options: options
+            });
+            var ctx2 = document.getElementById('myChart2').getContext('2d');
+            var myChart2 = new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132)',
+                            'rgba(54, 162, 235)',
+                            'rgba(255, 206, 86)',
+                            'rgba(75, 192, 192)',
+                            'rgba(153, 102, 255)',
+                            'rgba(255, 159, 64)'
+                        ],
+                        barThickness: 20,
+                    }]
+                },
+                options: options
+            });
+            $(window).bind("load", function() {
+            $('.black_mode_btn').css( "display", "flex" )  // css로 display: none 미리 설정 후
+        });
+
+        });
+    </script>
+</body>
+
+</html>

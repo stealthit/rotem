@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>U2 Collaboration</title>
+    <!--script  src="http://code.jquery.com/jquery-latest.min.js"></script-->
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <!--link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)"-->
+  </head>
+  <body>
+    <div class="wrapper" id="LC_Page_20000">
+      <!-- 팝업 -->
+
+      <!-- 내용 영역 -->
+      <section id="content-wrap">
+        <div class="layout-account-wrap">
+          <div id="lnb-wrap">
+            <div class="user-con">
+              <a href="#" class="tool-btn" id="user-type">홍길동 님</a>
+              <a href="#" class="btn_rect_gray tac" alt="소유한 계정"
+                >소유한 계정</a
+              >
+            </div>
+            <!--prev-->
+            <div class="account-btn-prev">
+              <a href="#"><span>아이콘</span>이전으로</a>
+            </div>
+            <!--nav-->
+            <nav>
+              <div class="nav-tit">계정정보</div>
+              <ul class="nav-ul">
+                <li>
+                  <a href="account_setting.html" class="active"
+                    ><span><img src="img/ic-setting.svg" /></span>계정설정</a
+                  >
+                </li>
+                <li>
+                  <a href="add_user.html"
+                    ><span><img src="img/ic-left-user-add-n.svg" /></span
+                    >사용자추가</a
+                  >
+                </li>
+                <li>
+                  <a href="team.html"
+                    ><span><img src="img/ic-left-team-n.svg" /></span>팀</a
+                  >
+                </li>
+                <li>
+                  <a href="account_info.html"
+                    ><span><img src="img/ic-left-payment-n.svg" /></span
+                    >결제정보</a
+                  >
+                </li>
+              </ul>
+              <div class="nav-tit">설정</div>
+              <ul class="nav-ul">
+                <li>
+                  <a href="profile.html"
+                    ><span><img src="img/ic-left-profile-n.svg" /></span
+                    >프로필</a
+                  >
+                </li>
+                <li>
+                  <a href="notice.html"
+                    ><span><img src="img/ic-left-alert-n.svg" /></span>알림</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- 컨텐츠 -->
+        <div class="content-wrap-inner">
+          <section id="header-wrap">
+            <header>
+              <div class="func-wrap">
+                <div class="func-mobile-list">
+                  <button type="button" id="tree-trigger-btn">리스트</button>
+                </div>
+                계정설정
+              </div>
+            </header>
+          </section>
+          <section id="content">
+            <!-- <div class="account-setting-wrap">
+          <div class="account-setting">
+            <ul>
+              <li>다운로드 권한</li>
+              <li>
+                <select class="select">
+                  <option selected>전체</option>
+                </select>
+              </li>
+            </ul>
+            <ul class="profile-position">
+              <li>안전한 공유</li>
+              <li>
+                <select class="select">
+                  <option selected>전체</option>
+                </select>
+              </li>
+            </ul>
+          </div> 
+        </div> -->
+            <div class="account-setting-wrap">
+              <div class="account-setting">
+                <div class="account-sub-title">다운로드 권한</div>
+                <ul class="account-cycle account-download">
+                  <li class="current">
+                    <figure>
+                      <div class="bg-rect">
+                        <div class="main-image">
+                          <img
+                            src="img/ic-user-multiple-s.png"
+                            alt="팀사용자"
+                          />
+                        </div>
+                        <div class="sel-image">
+                          <img src="img/ic-icon-select.svg" alt="체크" />
+                        </div>
+                      </div>
+                      <figcaption>팀사용자</figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <div class="bg-rect">
+                        <div class="main-image">
+                          <img src="img/ic-user-check-n.png" alt="협업사용자" />
+                        </div>
+                        <div class="sel-image">
+                          <img src="img/ic-icon-select.svg" alt="체크" />
+                        </div>
+                      </div>
+                      <figcaption>협업사용자</figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <div class="account-setting">
+                <div class="account-sub-title">안전한 공유</div>
+                <ul class="account-cycle account-share">
+                  <li class="current">
+                    <figure>
+                      <div class="bg-rect">
+                        <div class="main-image">
+                          <img
+                            src="img/ic-user-multiple-s.png"
+                            alt="팀사용자"
+                          />
+                        </div>
+                        <div class="sel-image">
+                          <img src="img/ic-icon-select.svg" alt="체크" />
+                        </div>
+                      </div>
+                      <figcaption>팀사용자</figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure>
+                      <div class="bg-rect">
+                        <div class="main-image">
+                          <img src="img/ic-user-check-n.png" alt="협업사용자" />
+                        </div>
+                        <div class="sel-image">
+                          <img src="img/ic-icon-select.svg" alt="체크" />
+                        </div>
+                      </div>
+                      <figcaption>협업사용자</figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var accSetting = document.querySelectorAll(".account-cycle li");
+
+        accSetting.forEach(function (data) {
+          data.addEventListener("click", function () {
+            if (data.classList.contains("current") > 0) {
+              data.classList.remove("current");
+              var oldCur = this.querySelector(".main-image img");
+              var oldImg = oldCur.src;
+              oldCur.src = oldImg.replace("-s.svg", "-n.svg");
+            } else {
+              data.classList.add("current");
+              var imgTag = this.querySelector(".main-image img");
+              var imgSrc = imgTag.src;
+              var newSrc = imgSrc.replace("-n.svg", "-s.svg");
+              imgTag.src = newSrc;
+            }
+          });
+        });
+        // var selCycle1 = document.querySelectorAll('.account-download li');
+        // var selCycle2 = document.querySelectorAll('.account-share li');
+
+        // selCycle1.forEach(function(data){
+        //   data.addEventListener('click',function(){
+        //     //old current 처리
+
+        //     let current = document.querySelector('.account-download li.current');
+        //     current.classList.remove('current');
+        //     var oldCur = current.querySelector('.main-image img');
+        //     var oldImg = oldCur.src;
+        //     oldCur.src =  oldImg.replace('-s.svg','-n.svg');
+
+        //     //new current 처리
+        //     data.classList.add('current');
+        //     var imgTag = this.querySelector('.main-image img');
+        //     var imgSrc = imgTag.src;
+        //     var newSrc = imgSrc.replace('-n.svg','-s.svg');
+        //     imgTag.src = newSrc;
+        //   });
+        // });
+
+        // selCycle2.forEach(function(data){
+        //   data.addEventListener('click',function(){
+        //     //old current 처리
+        //     let current = document.querySelector('.account-share li.current');
+        //     current.classList.remove('current');
+        //     var oldCur = current.querySelector('.main-image img');
+        //     var oldImg = oldCur.src;
+        //     oldCur.src =  oldImg.replace('-s.svg','-n.svg');
+
+        //     //new current 처리
+        //     data.classList.add('current');
+        //     var imgTag = this.querySelector('.main-image img');
+        //     var imgSrc = imgTag.src;
+        //     var newSrc = imgSrc.replace('-n.svg','-s.svg');
+        //     imgTag.src = newSrc;
+        //   });
+        // });
+      });
+    </script>
+  </body>
+</html>

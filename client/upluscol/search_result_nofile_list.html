@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>U2 Collaboration</title>
+    <!--script  src="http://code.jquery.com/jquery-latest.min.js"></script-->
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)" />
+  </head>
+  <body>
+    <div class="wrapper" id="LC_Page_10001">
+      <!-- 팝업 -->
+
+      <!-- 내용 영역 -->
+      <section id="content-wrap">
+        <!--lnb-load-->
+        <div class="layout-wrap">
+          <div id="lnb-wrap">
+            <div class="user-con">
+              <a href="#" class="tool-btn" id="user-type"
+                >홍길동 님 <i class="ic-arrow"></i
+              ></a>
+              <ul class="menu-box" id="user-type-box">
+                <li class="type-box-top">
+                  <div class="type-box01">
+                    <div class="ic-img-user"><p class="bg_violet">길동</p></div>
+                  </div>
+                  <div class="type-box02">
+                    <p>홍길동님</p>
+                    <p>hong@gmail.com</p>
+                  </div>
+                  <button type="button" class="close-btn"></button>
+                </li>
+                <li>
+                  <button type="button" id="file-name-btn">계정정보</button>
+                </li>
+                <li>
+                  <button type="button" id="file-date-btn">멤버추가</button>
+                </li>
+                <li><button type="button" id="file-size-btn">설정</button></li>
+                <li><button type="button" id="file-size-btn">FAQ</button></li>
+                <button type="button" class="btn_rect_white tac">
+                  Log out
+                </button>
+              </ul>
+            </div>
+            <!--search-->
+            <form id="search">
+              <div class="search-input-wrap">
+                <input
+                  type="text"
+                  placeholder="검색어를 입력하세요."
+                  class="search-input"
+                />
+                <button type="submit" class="search-btn">검색 버튼</button>
+              </div>
+            </form>
+            <!-- 드라이브 리스트 -->
+
+            <div class="drive-list-wrap">
+              <ul id="drive-list">
+                <!-- 내 드라이브 -->
+                <li id="my-drive" data-child="1">
+                  <i class="ic-arrow"></i>
+                  <button type="button" class="root_folder">
+                    홍길동's Team
+                  </button>
+                  <button type="button" class="circle_btn" alt="추가하기">
+                    추가
+                  </button>
+                  <ul class="child-node child1">
+                    <li class="parent-node" id="parent1-1" data-child="2">
+                      <button type="button">Project1</button>
+                    </li>
+                    <li>
+                      <button type="button">Project2</button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 컨텐츠 -->
+        <div class="content-wrap-inner">
+          <section id="header-wrap">
+            <header>
+              <div class="func-wrap">
+                <div class="func-mobile-list">
+                  <button type="button" id="tree-trigger-btn">리스트</button>
+                </div>
+                <div class="func-search-wrap">&nbsp;</div>
+                <ul class="func-profile-wrap">
+                  <li>
+                    <a href="#" class="ic-top-wrap ic-top-user">사용자</a>
+                  </li>
+                  <li><a href="#" class="ic-top-wrap ic-top-bell">알림</a></li>
+                </ul>
+              </div>
+            </header>
+          </section>
+          <div class="topper">
+            <div class="search-input-wrap">
+              <input
+                type="text"
+                placeholder="검색어를 입력하세요"
+                id="search-input"
+              />
+              <button type="submit" id="search-btn">
+                <img src="img/ic-search.svg" alt="" />
+              </button>
+            </div>
+            <a href="#" class="btn_rect_white tac hover-type" alt="필터">
+              <button type="button" class="tool-btn" id="search-filter">
+                <span class="filter">필터아이콘</span>필터
+              </button>
+              <div class="menu-box" id="search-filter-box">
+                <button type="button" id="filter-type" class="tool-btn">
+                  <span class="plus">+</span>필터추가
+                </button>
+              </div>
+              <div class="menu-box" id="filter-type-box">
+                <span class="minus">-</span>
+                <select name="" id="filter-select" class="filter-select">
+                  <option value="">필터선택</option>
+                </select>
+                <select name="" id="value-select" class="filter-select">
+                  <option value="" hidden>값 선택</option>
+                  <option value="">네</option>
+                  <option value="">아니오</option>
+                </select>
+                <button type="button">
+                  <span class="plus">+</span>필터추가
+                </button>
+              </div>
+              <div class="menu-box add" id="search-type-box">
+                <div class="search-input-wrap">
+                  <input type="text" placeholder="검색" id="search-input" />
+                  <button type="submit" id="search-btn">검색 버튼</button>
+                </div>
+                <ul>
+                  <li><button type="button" id="">파일타입</button></li>
+                  <li><button type="button" id="">보관함</button></li>
+                  <li><button type="button" id="">업로드 날짜</button></li>
+                  <li><button type="button" id="">삭제</button></li>
+                  <li><button type="button" id="">보안(비공개)</button></li>
+                  <li><button type="button" id="">프로젝트</button></li>
+                </ul>
+              </div>
+            </a>
+          </div>
+
+          <section id="content">
+            <div class="tabs_inner">
+              <ul class="tabs-info">
+                <ul id="tab-right-media" class="tabs-right-inner">
+                  <li class="data-info"><strong>6</strong> items</li>
+                  <li class="tool-btn-pc">
+                    <button type="button" id="file-type" class="tool-btn">
+                      파일타입
+                    </button>
+                    <ul class="menu-box" id="file-type-box">
+                      <li class="file-type-title">정렬 기준</li>
+                      <li>
+                        <button type="button" id="file-name-btn">이름순</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-date-btn">시간순</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-size-btn">
+                          파일 타입
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="tool-btn-m">
+                    <button type="button" id="file-type" class="tool-btn">
+                      타입
+                    </button>
+                    <ul class="menu-box" id="file-type-box">
+                      <li>
+                        <button type="button" id="file-name-btn">이름</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-date-btn">
+                          수정한 날짜
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-size-btn">크기</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button type="button" id="sort" class="tool-btn">
+                      <span class="gallery">정렬</span>
+                    </button>
+                    <ul class="menu-box" id="sort-box">
+                      <li>
+                        <span class="gallery"></span
+                        ><button type="button" id="sort-gallery-btn">
+                          갤러리로 보기
+                        </button>
+                      </li>
+                      <li>
+                        <span class="grid"></span
+                        ><button type="button" id="sort-grid-btn">
+                          그리드로 보기
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- <li><button type="button" id="view-more" class="more-btn">더보기</button></li> -->
+                </ul>
+              </ul>
+            </div>
+            <!--미디어 detail-->
+            <div class="content-inner">
+              <div class="no-result">
+                <div class="no-media-upload">
+                  <div class="no-media-img">
+                    <img src="img/img-search.svg" />
+                  </div>
+                  <p>파일이 없습니다.</p>
+                  <span
+                    >다른 검색어를 입력하시거나,<br />설정된 필터를
+                    삭제해보세요!</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <!--
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/script.js"></script>
+  --></body>
+  <!--
+<script>
+  
+$(document).on('click', '#filter-select', function () {
+    if ($('#search-type-box').css('display') == "block") {
+        $('#search-type-box').hide(100);
+    } else {
+        $('#search-type-box').show(100);
+    }
+
+});
+
+</script>
+--></html>

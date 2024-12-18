@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting active">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+      <div class="top">
+        <div class="user-info-box">
+              <div class="profile">
+                  <button type="button" class="profile-dropdown"></button>
+              </div>
+              <div class="dropdown">
+                  <div class="user-info">
+                      <div class="user-top">
+                          <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                          <span class="division">I</span>
+                          <span class="position">슈퍼관리자</span>
+                      </div>
+                      <div class="user-bottom">
+                          <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                      </div>
+                  </div>
+                  <button type="button" class="logout-btn">로그아웃</button>
+              </div>
+          </div>
+      </div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 환경설정 > 복합기 관리
+            </div>
+            <div class="page-title">
+                복합기 관리
+            </div>
+            <div class="tab-content tmg26 active">
+                <form action="" method="post">
+                    <div class="content-wrapper setting-wrapper">
+                        <div class="setting-title">
+                            복합기 일반
+                        </div>
+                        <div class="setting-table">
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title">INDEX</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" value="1" readonly />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="setting-table-title">디바이스 IP</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long numberOnly" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title">외부단말기 종류</div>
+                                    <div class="setting-table-content">
+                                        <select>
+                                            <option value="">DP4</option>
+                                            <option value="">DP4</option>
+                                            <option value="">DP4</option>
+                                            <option value="">DP4</option>
+                                            <option value="">DP4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="setting-table-title">외부 단말기 IP</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long numberOnly" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title">외부단말기 SN</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="setting-table-title">출력서버 PORT</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title">출력서버 IP</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long numberOnly" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="setting-table-title">인증시 자동 인쇄</div>
+                                    <div class="setting-table-content">
+                                        <select>
+                                            <option value="">사용안함</option>
+                                            <option value="">사용</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title ">인증사용</div>
+                                    <div class="setting-table-content">
+                                        <select class="print-select">
+                                            <option value="N">사용안함</option>
+                                            <option value="Y">사용</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="setting-table-title">통계사용</div>
+                                    <div class="setting-table-content">
+                                        <select class="statistics-select">
+                                            <option value="N">사용안함</option>
+                                            <option value="Y">사용</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setting-title print-content">
+                            출력
+                        </div>
+                        <div class="setting-table print-content">
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title">드라이버 명</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="setting-table-title">SsUUID 사용여부</div>
+                                    <div class="setting-table-content">
+                                        <select>
+                                            <option value="">사용안함</option>
+                                            <option value="">사용</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row height-auto">
+                                <div>
+                                    <div class="setting-table-title">드라이버 타입</div>
+                                    <div class="setting-table-content attach-wrap">
+                                        <div class="in_dpf in_bdb-n">
+                                          <script>
+                                            function check_opt() {
+                                                var obj = $("#driverType").val();
+                                                if(obj == ""){
+                                                  //$(".plus-row-btn").css('display','none');
+                                                  return false;
+                                                }
+                                            }
+                                        </script>  
+                                          <select class="long" id="driverType">
+                                                <option value="">선택하세요</option>
+                                                <option value="INCL1">INCL1</option>
+                                                <option value="INCL2">INCL2</option>
+                                                <option value="INCL3">INCL3</option>
+                                                <option value="INCL4">INCL4</option>
+                                                <option value="INCL5">INCL5</option>
+                                                <option value="INCL6">INCL6</option>
+                                            </select>
+                                            <button class="plus-row-btn" type="button" onclick="check_opt();"></button>
+                                        </div>
+                                        <ul class="attach-list">
+                                            <li>
+                                                <span>ekfjef@navsdfsdfsdfsdfsdfsdfser.com1</span>
+                                                <button class="del-btn"></button>
+                                            </li>
+                                            <li>
+                                                <span>ekfjef@naver.com2</span>
+                                                <button class="del-btn"></button>
+                                            </li>
+                                            <li>
+                                                <span>ekfjef@naver.com3</span>
+                                                <button class="del-btn"></button>
+                                            </li>
+                                            <li>
+                                                <span>ekfjef@naver.com4</span>
+                                                <button class="del-btn"></button>
+                                            </li>
+                                            <li>
+                                                <span>ekfjef@naver.com5</span>
+                                                <button class="del-btn"></button>
+                                            </li>
+                                            <li>
+                                                <span>ekfjef@naver.com6</span>
+                                                <button class="del-btn"></button>
+                                            </li>
+                                            <li>
+                                                <span>ekfjef@naver.com</span>
+                                                <button class="del-btn"></button>
+                                            </li>
+                                            <li>
+                                                <span>ekfjef@naver.com</span>
+                                                <button class="del-btn"></button>
+                                            </li>
+                                            <li>
+                                                <span>ekfjef@naver.com</span>
+                                                <button class="del-btn"></button>
+                                            </li>
+                                            <li>
+                                                <span>ekfjef@naver.com</span>
+                                                <button class="del-btn"></button>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setting-title statistics-content">
+                            통계
+                        </div>
+                        <div class="setting-table statistics-content">
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title">시리얼번호</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="setting-table-title">모델명</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title">디바이스위치</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="setting-table-title">그룹</div>
+                                    <div class="setting-table-content">
+                                        <select>
+                                            <option value="">업데이트 안함</option>
+                                            <option value="">업데이트</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title">프린트 수집번호</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="setting-table-title">프린트(로컬) 수집번호</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title">프린트(리포트) 수집번호</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="setting-table-title">프린트(원격) 수집번호</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title">프린트(수신) 수집번호</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="setting-table-title">복사 수집번호</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title">스캔 수집번호</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="setting-table-title">팩스 수집번호</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="long" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="submit-btn-group">
+                          <button type="button" class="confirm-btn bgcolor" onclick="openAlert();">
+                              저장
+                          </button>
+                      </div>
+                      </div>
+                    
+                </form>
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+        <!-- <div class="security-add-modal-background sub-modal">
+            <div class="security-add-modal-content">
+                <div class="title">
+                    <span>보안단어 추가</span>
+                    <button type="button" class="sub-modal-close-btn"></button>
+                </div>
+                <form action="" method="post" class="approval-write-box">
+                    <div class="approval-input-box margin approval-tab-content active">
+                        <div class="row">
+                            <div class="input-row">
+                                <div class="title">형식</div>
+                                <div class="approval-input-group">
+                                    <div class="input-group radio-group">
+                                        <div class="circle-radio-group">
+                                            <div class="radio-group">
+                                                <input type="radio" id="typeWord" name="radio-group-type" checked="">
+                                                <label for="typeWord">보안단어</label>
+                                            </div>
+                                            <div class="radio-group">
+                                                <input type="radio" id="typeInfo" name="radio-group-type">
+                                                <label for="typeInfo">개인정보 패턴</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-row">
+                                <div class="title">명칭</div>
+                                <div class="approval-input-group">
+                                    <div class="input-group disabled">
+                                        <input type="text" value="" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-row">
+                                <div class="title">카테고리</div>
+                                <div class="approval-input-group">
+                                    <select>
+                                        <option value="">선택</option>
+                                        <option value="">선택</option>
+                                        <option value="">선택</option>
+                                        <option value="">선택</option>
+                                        <option value="">선택</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-row">
+                                <div class="title">패턴값</div>
+                                <div class="approval-input-group">
+                                    <div class="input-group width-100">
+                                        <input type="text" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-row">
+                                <div class="title">임계값</div>
+                                <div class="approval-input-group">
+                                    <div class="input-group short">
+                                        <input type="text" value="">
+                                    </div>
+                                    <span class="unit">이상</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-row">
+                                <div class="title">사용여부</div>
+                                <div class="approval-input-group">
+                                    <div class="input-group radio-group">
+                                        <div class="circle-radio-group">
+                                            <div class="radio-group">
+                                                <input type="radio" id="use" name="radio-group-use" checked="">
+                                                <label for="use">사용</label>
+                                            </div>
+                                            <div class="radio-group">
+                                                <input type="radio" id="notUse" name="radio-group-use">
+                                                <label for="notUse">미사용</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="confirm-btn-group">
+                        <button type="button" class="sub-modal-cancel-btn">취소</button>
+                        <button type="button" class="confirm-btn" onclick="openAlert()">확인</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="security-modal-background modal">
+            <div class="security-modal-content">
+                <div class="title">
+                    <span>보안단어</span>
+                    <button type="button" class="modal-close-btn"></button>
+                </div>
+                <div class="search-form">
+                    <form action="" method="post">
+                        <div class="input-content">
+                            <div class="input-row">
+                                <span class="title">조회</span>
+                                <div class="form-input-group radio-group">
+                                    <div class="circle-radio-group">
+                                        <div class="radio-group">
+                                            <input type="radio" id="testModal1" name="radio-group-modal-security"
+                                                checked="">
+                                            <label for="testModal1">보안단어</label>
+                                        </div>
+                                        <div class="radio-group">
+                                            <input type="radio" id="testModal2" name="radio-group-modal-security">
+                                            <label for="testModal2">개인정보 패턴</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-input-group">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <span class="title">사용여부</span>
+                                <div class="form-input-group">
+                                    <select>
+                                        <option value="">ALL</option>
+                                        <option value="">사용</option>
+                                        <option value="">미사용</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="submit-btn" type="submit">조회</button>
+                    </form>
+                </div>
+                <div class="content-wrapper">
+                    <div class="list-info">
+                        보안단어 목록 (총 <span>100</span>건)
+                    </div>
+                    <div class="button-row">
+                        <div class="left">
+                            <button class="down" type="button" id="addSecurity">추가</button>
+                            <button class="delete" type="button">삭제</button>
+                        </div>
+                        <div class="right">
+                            <button class="exel" type="button"><img src="imges/ico_down_excel.png">다운로드</button>
+                            <select>
+                                <option value="">15개씩</option>
+                                <option value="">30개씩</option>
+                                <option value="">50개씩</option>
+                                <option value="">100개씩</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="jb-table">
+                        <div class="jb-table-header-group">
+                            <div class=" jb-table-cell jb-middle">
+
+                                <input type="checkbox" id="cba">
+                                <label for="cba">
+                                    <span class="ico"></span>
+                                </label>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p><button type="button" class="arrow"></button>형식</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p><button type="button" class="arrow down"></button>명칭</p>
+                            </div>
+                            <div class=" jb-table-cell jb-middle">
+                                <p><button type="button" class="arrow"></button>카테고리</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p><button type="button" class="arrow down"></button>패턴값</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p><button type="button" class="arrow"></button>임계값</p>
+                            </div>
+                            <div class=" jb-table-cell jb-middle">
+                                <p><button type="button" class="arrow down"></button>사용여부</p>
+                            </div>
+                            <div class=" jb-table-cell jb-middle">
+                                <p><button type="button" class="arrow down"></button>등록자</p>
+                            </div>
+                            <div class=" jb-table-cell jb-middle">
+                                <p><button type="button" class="arrow down"></button>등록일시</p>
+                            </div>
+                        </div>
+                        <div class="jb-table-row">
+                            <div class=" jb-table-cell jb-middle">
+                                <input type="checkbox" id="check1">
+                                <label for="check1">
+                                    <span class="ico"></span>
+                                </label>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>보안단어</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p><a>명칭</a></p>
+                            </div>
+                            <div class=" jb-table-cell jb-middle">
+                                <p>생년월일</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>\d[2]-(0[1-9]1[0-9][12][0-9][(3[01])</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>1</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>사용</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>홍길동</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>2021-04-20 00:00:00</p>
+                            </div>
+                        </div>
+                        <div class="jb-table-row">
+                            <div class=" jb-table-cell jb-middle">
+                                <input type="checkbox" id="check1">
+                                <label for="check1">
+                                    <span class="ico"></span>
+                                </label>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>보안단어</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p><a>명칭</a></p>
+                            </div>
+                            <div class=" jb-table-cell jb-middle">
+                                <p>생년월일</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>\d[2]-(0[1-9]1[0-9][12][0-9][(3[01])</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>1</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>사용</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>홍길동</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>2021-04-20 00:00:00</p>
+                            </div>
+                        </div>
+                        <div class="jb-table-row">
+                            <div class=" jb-table-cell jb-middle">
+                                <input type="checkbox" id="check1">
+                                <label for="check1">
+                                    <span class="ico"></span>
+                                </label>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>보안단어</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p><a>명칭</a></p>
+                            </div>
+                            <div class=" jb-table-cell jb-middle">
+                                <p>생년월일</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>\d[2]-(0[1-9]1[0-9][12][0-9][(3[01])</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>1</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>사용</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>홍길동</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>2021-04-20 00:00:00</p>
+                            </div>
+                        </div>
+                        <div class="jb-table-row">
+                            <div class=" jb-table-cell jb-middle">
+                                <input type="checkbox" id="check1">
+                                <label for="check1">
+                                    <span class="ico"></span>
+                                </label>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>보안단어</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p><a>명칭</a></p>
+                            </div>
+                            <div class=" jb-table-cell jb-middle">
+                                <p>생년월일</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>\d[2]-(0[1-9]1[0-9][12][0-9][(3[01])</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>1</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>사용</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>홍길동</p>
+                            </div>
+                            <div class="jb-table-cell jb-middle">
+                                <p>2021-04-20 00:00:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagenation">
+                        <button type="button" class="back-end disabled"></button>
+                        <button type="button" class="back disabled"></button>
+                        <button type="button" class="number">1</button>
+                        <button type="button" class="number active">2</button>
+                        <button type="button" class="number">3</button>
+                        <button type="button" class="number">4</button>
+                        <button type="button" class="number">5</button>
+                        <button type="button" class="number">6</button>
+                        <button type="button" class="number">7</button>
+                        <button type="button" class="number">8</button>
+                        <button type="button" class="number">9</button>
+                        <button type="button" class="number">10</button>
+                        <button type="button" class="next"></button>
+                        <button type="button" class="next-end"></button>
+
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>      
+        <div class="alert-modal-background modal">
+            <div class="alert-modal-content">
+                <div class="title">
+                    <span>알림</span>
+                    <button type="button" class="modal-close-btn"></button>
+                </div>
+                <div class="content">
+                    저장 하였습니다.
+                </div>
+                <div class="confirm-btn-group">
+                    <button type="button" class="confirm-btn bgcolor">확인</button>
+                </div>
+            </div>
+        </div>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <script src="./js/common.js"></script>
+
+        <script>
+            $(function () {
+                if ($('select.print-select').val() === 'Y') {
+                    $('.print-content').css('display', 'block');
+                } else {
+                    $('.print-content').css('display', 'none');
+                }
+
+                $('select.print-select').on('change', function () {
+                    if ($(this).val() === 'Y') {
+                        $('.print-content').css('display', 'block');
+                    } else {
+                        $('.print-content').css('display', 'none');
+                    }
+                })
+
+                if ($('select.statistics-select').val() === 'Y') {
+                    $('.statistics-content').css('display', 'block');
+                } else {
+                    $('.statistics-content').css('display', 'none');
+                }
+
+                $('select.statistics-select').on('change', function () {
+                    if ($(this).val() === 'Y') {
+                        $('.statistics-content').css('display', 'block');
+                    } else {
+                        $('.statistics-content').css('display', 'none');
+                    }
+                });
+
+                // 드라이버 타입
+                var template;
+                $('#driverType').on('change', function () {
+                    var typeValue = $(this).val();
+                    if(typeValue == ""){
+                      template = "";
+                      $(".plus-row-btn").css('display','none');
+                    }else{
+                      $(".plus-row-btn").css('display','block');
+                      template =`<li><span>${typeValue}</span><button class="del-btn"></button></li>`;
+                      return template;
+                    }
+                    
+                })
+                $('.plus-row-btn').click(function () {
+                    var $ul = $(this).closest('.setting-table-content').find('.attach-list');
+                    $ul.append(template);
+                })
+
+             
+            });
+        </script>
+</body>
+
+</html>

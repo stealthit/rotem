@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="개발 기획 디자인 운영" name="description" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="스텔스인터렉티브" />
+    <meta
+      property="og:description"
+      content="WEB&APP 개발, 디지털 컨설팅, 영상, 그래픽, 서비스운영 등"
+    />
+    <meta
+      property="og:image"
+      content="http://www.stealthinteractive.co.kr/stealth.png"
+    />
+    <meta property="og:url" content="http://www.stealthinteractive.co.kr" />
+    <link rel="canonical" href="http://www.stealthinteractive.co.kr" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="description" content="Coral - Onepage portfolio Template" />
+    <meta name="author" content="esrat" />
+    <!-- Fontawseom Icon CSS -->
+    <link rel="stylesheet" href="assets/css/all.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <title>스텔스인터렉티브</title>
+
+    <!-- kakao -->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  </head>
+
+  <body id="page-top">
+    <!-- NAVBAR
+    ================================================= -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark navbar-togglable fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <h2>
+            <!--<i class="fa fa-fighter-jet fa-flip-horizontal"></i>&nbsp;-->STEALTH
+          </h2>
+        </a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon-bar">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!-- Links -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#page-top"> home </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio"> work </a>
+            </li>
+
+            <!--
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#feature">
+                            features
+                        </a>
+                    </li>
+-->
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#service">
+                services
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about"> about </a>
+            </li>
+
+            <!--
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#solutions">
+                            Solutions
+                        </a>
+                    </li>
+					
+-->
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">
+                contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- / .navbar-collapse -->
+      </div>
+      <!-- / .container -->
+    </nav>
+
+    <!-- HERO
+    ================================================== -->
+    <section class="section section-top section-full">
+      <!-- Cover -->
+      <div
+        class="bg-cover"
+        style="background-image: url(assets/img/main/main.jpg)"
+      ></div>
+
+      <!-- Overlay -->
+      <div class="bg-overlay"></div>
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-10 col-lg-7">
+            <div class="banner-content">
+              <!-- Preheading -->
+              <!--
+                        <p class="text-white text-uppercase text-center text-xs">
+                            Meet <span>John Doe</span>
+                        </p>
+                        -->
+              <!-- Heading -->
+              <br /><br /><br />
+
+              <h1
+                class="text-white text-center mb-4 display-4 font-weight-bold"
+              >
+                <b>스텔스인터렉티브</b>
+              </h1>
+
+              <!-- Subheading -->
+
+              <p class="lead text-white text-center mb-5">
+                기술력의 차이가 새로운 문화를 창조 합니다.<br />New Digital
+                Content Providers
+              </p>
+
+              <!-- Button -->
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SECTIONS
+    ================================================== -->
+    <!-- PAGES
+    ================================================== -->
+
+    <!-- ======= Cta Section ======= -->
+
+    <!--
+  <section class="section bg-gray">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-12 col-lg-9 text-center">
+
+            <h3><B>고객의 서비스가 나아갈 방향을 제시합니다.</B></h3><br>
+
+			<B>1.무료 방문 상담<br>
+			2.업무별 담당 전문 디렉터 배치<br>
+			3.합리적인 가격 제시</B>
+            <br>
+
+          </div>
+        </div>
+
+						<p class="text-center mb-0" >
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_JH3IZXA9vICtYJfa0y9t-_ZtNfrP9uvRLwz_N98b2HoaBw/viewform" class="btn btn-primary" target="_blank">
+                               무료상담신청
+                            </a>
+                        </p>
+
+
+
+
+      </div>
+    </section>
+
+ -->
+
+    <!-- ABOUT
+    ================================================== -->
+    <section class="section bg-light" id="portfolio">
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-8 col-lg-7 text-center">
+            <!-- Heading -->
+            <h2 class="lg-title mb-2">work</h2>
+
+            ※진행중이거나 비공개 프로젝트의 경우 내용은 보실 수 없습니다.
+            <!-- Subheading -->
+            <!--
+					<p class="mb-5">
+                        I updated my portfolio with latest work and enriched portfolio to show.
+                    </p>
+                    -->
+          </div>
+        </div>
+        <!-- / .row -->
+
+        <div class="row justify-content-center">
+
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/abrand/dm.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>에이브랜드</h4>
+                <span class="work-cat">[진행중]디어마이테이스트 서비스 운영</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="ooo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div> 
+
+		<div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/dev.jpg" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>주영네트워크</h4>
+                <span class="work-cat">[진행중]창업플랫폼 서비스 컨설팅</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="ooo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div> 
+
+
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/dev.jpg" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>KT</h4>
+                <span class="work-cat">[진행중]통합광고플랫폼 고도화</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="ooo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div> 
+
+
+
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/dev.jpg" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>반복유니버스</h4>
+                <span class="work-cat">[진행중]학습솔루션 개발 컨설팅</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="ooo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div> 
+
+		  
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/obigo1/ai.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>오비고</h4>
+                <span class="work-cat">Mobis_Proactive AI Simulator</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/obigo1.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div> 
+
+
+
+
+
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/aice/aice.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>KT</h4>
+                <span class="work-cat">AICE 플랫폼 서비스</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/aice.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div> 
+
+
+
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/tapi1/tp.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>타피루즈</h4>
+                <span class="work-cat">TAPI 진단평가 시스템</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="ooo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div> 
+
+
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/gt/gt.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>골든트리투자자문</h4>
+                <span class="work-cat">GT WM 서비스</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/gt.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div> 
+
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/pcn/fiss.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>PCN</h4>
+                <span class="work-cat">FISS 시스템 고도화</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="ooo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div> 
+
+		  		 <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/cjenm/cjenm.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>CJ E&M</h4>
+                <span class="work-cat">BDP 시스템 고도화</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/cjenm.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div> 
+	  
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/obigo/if.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>오비고</h4>
+                <span class="work-cat">자율주행차량용 Infotainment Cabin</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/obigo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div> 
+
+
+		 <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/comma/chon.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>콤마존</h4>
+                <span class="work-cat">촌장 플랫폼 서비스 홍보사이트</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/comma1.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div> 
+
+
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/gs/gs.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>지에스티</h4>
+                <span class="work-cat">출입관리시스템 컨설팅</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="ooo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div> 
+		  
+		  <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/jce/jcedu.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>JC 자연과학연구소</h4>
+                <span class="work-cat">JC 교육플랫폼 서비스</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/jcedu.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+		  <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/ktds/ktds.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>KT</h4>
+                <span class="work-cat">KT 통합광고플랫폼</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/ktds.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/ub/ub.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>유비스토리</h4>
+                <span class="work-cat">우리사이 서비스</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/ub.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+		 <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/ktid/ktid.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>KT</h4>
+                <span class="work-cat">ADID관리시스템</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="ooo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div> 
+
+		 <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/db/db.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>도부마스크</h4>
+                <span class="work-cat">도부몰</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="ooo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div> 
+
+
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/hk/main.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>에이치케이넷츠</h4>
+                <span class="work-cat">EC-모니터 쇼핑몰솔루션 컨설팅</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/ec.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+<!--
+           <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/en/en1.png" alt="portfolio" />
+              <div class="portfolio-content">
+                <h4>영어토익</h4>
+                <span class="work-cat">학생용 융합 뷰어 프로그램</span>
+              </div>
+              <div class="overlay-content">
+                <a href="ooo.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div> 
+-->
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/group.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>KT</h4>
+                <span class="work-cat">KT 로봇관제시스템</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/ktrm.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+  
+
+
+		  <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/comma/comma.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>콤마존</h4>
+                <span class="work-cat">촌장 플랫폼 서비스</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/comma.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/luxpm/luxpm.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>AJ대원</h4>
+                <span class="work-cat">그룹웨어 시스템</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/aj.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/pcn/pcn01.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>PCN</h4>
+                <span class="work-cat">영상식 AVC 제어기 제어부 SW</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="ooo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/seah/seah.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>컬처릿</h4>
+                <span class="work-cat">세아제강 그룹웨어 서비스</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/seah.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/ar/arlook.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>ARLOOK</h4>
+                <span class="work-cat">StageCloud 서비스</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/arlook.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/tapi/tapi.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>타피루즈그룹</h4>
+                <span class="work-cat">웹진단평가 시스템</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/tapi.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/cul/cul.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>컬처릿</h4>
+                <span class="work-cat">게임 음악제작 서비스</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/cul.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img
+                src="assets/img/lgu2/LGU2.png"
+                alt="portfolio"
+                class="lg_img_size"
+                style="width: 350px; height: 233px"
+              />
+
+              <div class="portfolio-content">
+                <h4>LG유플러스</h4>
+                <span class="work-cat">U2 콜라보레이션 서비스</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/u2col.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/danusis/danusis.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>다누시스</h4>
+                <span class="work-cat">드론관제 시스템</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/danu.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/pcn/pcn.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>PCN</h4>
+                <span class="work-cat">FISS 시스템</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/fiss.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/lg/lgud.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>LG유플러스</h4>
+                <span class="work-cat">U2 Drive 서비스</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/lgdrive.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/sf/sf.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>컬처릿</h4>
+                <span class="work-cat">Shdow-Fit 앱</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="ooo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/ck/ck.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>캐논코리아</h4>
+                <span class="work-cat">솔루션 관리 시스템</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/canon.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/po/po0.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>LG유플러스</h4>
+                <span class="work-cat">홍보 포스터</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/po.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/lg/u2.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>LG유플러스</h4>
+                <span class="work-cat">U2.life 서비스</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="ooo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/samsung/sam.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>엘피아이팀</h4>
+                <span class="work-cat">삼촌아트워크맵 하이브리드앱 개발</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="ooo.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/samsung/s1.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>삼성생명</h4>
+                <span class="work-cat">실버패스 브로셔</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/samsung1.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img//samsung/samsung.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>삼성생명</h4>
+                <span class="work-cat">간병인&요양원 중개 플랫폼서비스</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/samsung.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/help/help.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>에스앤씨플랫폼</h4>
+                <span class="work-cat">가사도우미 시스템</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/help.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/eng/eng.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>영어Lab</h4>
+                <span class="work-cat">영어전문학원 홈페이지</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/englab.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/jce/jce.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>JC메디컬</h4>
+                <span class="work-cat">학원플레너 관리시스템</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/jce.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/sp/mobile1.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>SHOPPLUS</h4>
+                <span class="work-cat">SHOPPLUS 앱,관리자 시스템</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/shopplus.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/hd/hdstore.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>에이치디텔레콤</h4>
+                <span class="work-cat">앱 스토어</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/hdstore.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/tp/tp.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>투핑</h4>
+                <span class="work-cat">관광객을 위한 쇼핑 플랫폼</span>
+              </div>
+              <div class="overlay-content">
+                <!--<a href="help.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/welcome/welcome.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>시그널에이</h4>
+                <span class="work-cat">웰컴저축은행 중금리대출 모바일웹 </span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/welcome.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/sinhan/uiing.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>신한카드</h4>
+                <span class="work-cat"
+                  >온라인 패널 전용 라운지 Renewal 컨설팅</span
+                >
+              </div>
+              <div class="overlay-content">
+                <!--<a href="jce.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/eonm/eonm.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>이온엠솔루션</h4>
+                <span class="work-cat">이온엠솔루션 홍보페이지</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/eonm.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/jc/jc.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>JC애드</h4>
+                <span class="work-cat">JC애드 홈페이지</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/jcm.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/sb/sb.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>Stillbuying</h4>
+                <span class="work-cat">캠핌용품렌탈 플랫폼</span>
+              </div>
+              <div class="overlay-content">
+                <!-- <a href="stillbuying.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/hd/hdbr.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>에이치디텔레콤</h4>
+                <span class="work-cat">브로셔 제작</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/hdbr.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/is/is.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>비오라쎄</h4>
+                <span class="work-cat">화장품 홍보영상</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/is.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/hd/hdmenu.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>에이치디텔레콤</h4>
+                <span class="work-cat">Menu mob. 사용자, 관리자시스템</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/hdmenu.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/vk/vk.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>지어소프트</h4>
+                <span class="work-cat">Visit Korea 홈페이지 컨설팅</span>
+              </div>
+              <div class="overlay-content">
+                <!-- <a href="hdmenu.html"><i class="fa fa-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/whowho/whowho.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>후후앤컴퍼니</h4>
+                <span class="work-cat">후후앱 UI 현행화</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/whowho.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/kth/kth.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>KTH</h4>
+                <span class="work-cat">CSA 시스템 컨설팅</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/kth.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/lg/lgi0.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>LG이노텍</h4>
+                <span class="work-cat">센서앱 개발</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/lgi0.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/lg/lgi.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>LG이노텍</h4>
+                <span class="work-cat">HRS 뷰어 프로그램 개발</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/lgi.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/skpm/skpm.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>라임레슨</h4>
+                <span class="work-cat">강사, 수강생 매칭플랫폼 개발</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/skpm.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/kocca/kocca1.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>한국콘텐츠진흥원</h4>
+                <span class="work-cat">디렉토리북 제작</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/kocca.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/kocca/koccaop.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>한국콘텐츠진흥원</h4>
+                <span class="work-cat">IP 융복합매칭데이 네트워킹 운영</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/kocca1.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/korail/korail.png" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>퍼스터데이타</h4>
+                <span class="work-cat">코레일유통 앱서비스</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/korail.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/eonm/eo.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>이온엠솔루션</h4>
+                <span class="work-cat">병원진료 보험수납 키오스크</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/eo.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/da/da1.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>대림</h4>
+                <span class="work-cat">대림 그룹웨어 컨설팅 </span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/da.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/riss/riss.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>한국교육학술정보원</h4>
+                <span class="work-cat">한국교육학술정보원 홈페이지</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/riss.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+<!--
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/sga/sga.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>SGA</h4>
+                <span class="work-cat">SGA 보안 관제시스템</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/sga.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/han/han.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>한국선주상호보험</h4>
+                <span class="work-cat">한국선주상호보험 홈페이지</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/han.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+            <div class="portfolio-block">
+              <img src="assets/img/4dx/4dx.jpg" alt="portfolio" />
+
+              <div class="portfolio-content">
+                <h4>CGV</h4>
+                <span class="work-cat">CGV 4DX 모니터링 시스템</span>
+              </div>
+              <div class="overlay-content">
+                <a href="work/4dx.html"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+-->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COMINGSOON
+    ================================================== -->
+    <section class="section" id="comingsoon">
+      <div class="container">
+        <div class="left-box">
+          <div>STEALTH OPEN</div>
+          <div>Dr. JOB</div>
+        </div>
+        <div class="right-box">COMING SOON</div>
+      </div>
+    </section>
+
+    <!-- SERVICES
+    ================================================== -->
+    <section class="section" id="service">
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-8 col-lg-7 text-center">
+            <!-- Heading -->
+            <h2 class="lg-title mb-2">services</h2>
+
+            <!-- Subheading -->
+            <!--
+                    <p class="mb-5">
+                        Industry Leading Managed Services and Staffing Solutions
+                    </p>
+                    -->
+          </div>
+        </div>
+        <!-- / .row -->
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+            <div class="service-block d-flex">
+              <div class="service-icon">
+                <i class="fa fa-cogs"></i>
+              </div>
+              <div class="service-content">
+                <h4>DEVELOPMENT</h4>
+                <p>
+                  홈페이지 제작 및 개발 <br />
+                  앱서비스 제작 및 개발<br />Server개발 : Node.js, java, php,
+                  .net(c#)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+            <div class="service-block d-flex">
+              <div class="service-icon">
+                <i class="fa fa-code"></i>
+              </div>
+              <div class="service-content">
+                <h4>Publishing</h4>
+                <p>
+                  PC, MOBILE HTML & CSS <br />
+                  JQuery & JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+            <div class="service-block d-flex">
+              <div class="service-icon">
+                <i class="fa fa-laptop"></i>
+              </div>
+              <div class="service-content">
+                <h4>PLANNING & DESIGN</h4>
+                <p>
+                  UI & UX 기획 및 컨설팅<br />
+                  2D & 3D 디자인 <br />
+                  편집 & 패키지 디자인
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--
+                <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+                    <div class="service-block d-flex">
+                        <div class="service-icon">
+                            <i class="fa fa-leaf"></i>
+                        </div>
+                        <div class="service-content ">
+                            <h4>SERVICE OPERATING</h4>
+                            <p>웹 & 앱 서비스 컨설팅<br>시스템 운영<br>플랫폼 및 사이트 운영</p>
+                        </div>
+                    </div>
+                </div>
+-->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial
+
+    <section class="section bg-dark" id="testimonial">
+               <div class="caousel-inner">
+                   <div class="container">
+                         <div class="row">
+                           <div class="col-lg-8 m-auto">
+                            <div class="carousel-item active text-center test-content">
+<br>	
+<br>
+<br>
+
+                        <img src="assets/img/about/mk.jpg" width="300px" height="300px">
+
+
+                        <p class="lead text-white text-center mb-5">
+                        최근에는 웹사이트, 모바일, 디지털 마케팅, 광고, 영상, 프로모션, 브로슈어, 패키지 등 수 많은 <br>업무가 동시에 진행이 되고 있습니다.  
+고객의  서비스, 브랜드와 마케팅을 <br>일관 되면서도 다양한 컬러를 낼 수 있는 통합 크리에이티브 플랫폼이 꼭 필요합니다.<br>
+ 스텔스인터렉티브는 고객의 서비스와 브랜드에 통합적으로 반응하고 함께하는<br> 최고의 퍼포먼스를 제공합니다.                      </p>
+
+
+
+
+
+            <div class="row justy-content-center">
+                 <div class="col-lg-3 col-md-6">
+                    <div class="text-center feature-block">
+                        <div class="feature-icon-block mb-4">
+                            <i class="fa fa-code"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center feature-block">
+                        <div class="feature-icon-block mb-4">
+                            <i class="fa fa-ad"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center feature-block">
+                        <div class="feature-icon-block mb-4">
+                            <i class="fa fa-video"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center feature-block">
+                        <div class="feature-icon-block mb-4">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+	-->
+
+    <!-- ABOUT
+    ================================================== -->
+    <section class="section bg-light" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about-img">
+              <img src="assets/img/about/1.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="about-content">
+              <b
+                >"논리적이고 냉철하게 변화되는 시장에 누구보다 빠르게
+                도전합니다."</b
+              >
+              <p>
+                급성장하는 사회적 변화와 끊임없이 진화하고 변화되는 플랫폼,
+                미디어, 서비스의 환경에서 계속적으로 발전하고 성장하고 있습니다.
+                고객이 원하는 니즈를 정확히 파악하여 독창적인 느낌, 감각적인
+                표현, 감성적이며 다양한 시각과 관점을 기반으로 차별화된 서비스와
+                전략을 제시합니다. 고객 중심으로 함께 성장하고 변화시키는
+                조력자가 될것 입니다.
+              </p>
+
+              <ul class="list-unstyled skill-list">
+                <li>DEVELOPMENT</li>
+                <li>PUBLISHING</li>
+                <li>PLANNING & DESIGN</li>
+
+                <!--<li>PSD Template Design</li>-->
+              </ul>
+
+              <!--<p>Have any query ? <a href="#">Contact Now</a></p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mt-5 align-items-center">
+          <div class="col-lg-6 col-md-6">
+            <div class="about-content-2">
+              <p>
+                POINT.01<br />전략 분석을 통한 인사이트 발견과 컨셉 제작,
+                실구현까지 체계적인 프로세스를 통해 독창적이고 크레이티브한
+                결과물을 창출합니다.
+              </p>
+              <p>
+                POINT.02<br />여러 분야에서 뛰어난 활동을 한 디렉터들이 최선의
+                결과물을 위해 끊임없는 연구를 통해 프로페셔널하게 일하고
+                있습니다.
+              </p>
+              <p>
+                POINT.03<br />고객만족을 위한 빠른 피드백과 프로토타입을 작업
+                전단계에서 확정하여 프로젝트의 퀄리티를 높이고 리스크와 일정을
+                감소시켜 드립니다.
+              </p>
+
+              <!-- <a href="#" class="btn btn-primary">Services</a>-->
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="about-img">
+              <img src="assets/img/about/2.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions
+    ================================================== -->
+
+    <!--	
+	<section class="section" id="solutions">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6 col-lg-4 ">
+
+
+                    <h2 class="lg-title mb-2 ">
+                    Provide the best solution. 
+                    </h2>
+
+
+                    <p class="my-4 ">
+                        만들고 싶은 서비스가 있으세요? 스텔스인터렉티브와 함께 하세요. 여러분에게 최적의 솔루션을 제공합니다.
+                    </p>
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_JH3IZXA9vICtYJfa0y9t-_ZtNfrP9uvRLwz_N98b2HoaBw/viewform" class="btn btn-primary" target="_blank">상담신청</a>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="pricing-block">
+                        <h2>MOBILE</h2>
+                        <ul class="list-unstyled">
+                            <li>iOS</li>
+                            <li>Android</li>
+                            <li>Windows</li>
+                            <li>Cross Platform</li>
+                            <li>Mobile Web</li>
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="pricing-block">
+                        <h2>WEB</h2>
+
+                        <ul class="list-unstyled">
+                            <li>HTML 5</li>
+                            <li>Jquery</li>
+                            <li>React</li>
+                            <li>CSS 3</li>
+                            <li>AngularJS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+       </div>
+    </section>
+
+-->
+
+    <!-- Edu
+
+    <section class="section bg-light" id="edu">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="assets/img/about/teach.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ">
+                    <div class="about-content">
+                        <b>실무에 필요한 작업 관련하여 업무 실력 향상 및 도움을 드리기 위해 기획, 디자인, 개발 세미나도 해드립니다. </b>
+          <p>기업에서는 빠르게 서비스를 만들어야 합니다. 하지만, 신입, 경력자들이 새로운 업무에 적응하는것과 더불어, 프로젝트에 투입되었을때 맡은 업무를
+		  빠르게 이해하면서 만들어 나가는게 쉽지가 않습니다. 저희 스텔스인터렉티브에서는 그런 환경에 놓여서 어려움을 겪고 있는 분들께 조금이나마 도움이 되고자 실무에
+		  효율적인 세미나를 해드리고 있습니다.</p>
+
+
+                        <ul class="list-unstyled skill-list ">
+						    <li>UI, UX 기획<a href="ui.html" >[내용]</a></li>
+                            <li>웹, 앱 디자인<a href="design.html" >[내용]</a></li>
+                            <li>앱개발, 웹개발<a href="dev.html" >[내용]</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    ================================================== -->
+
+    <!-- MARKETING
+    <section class="section bg-light" id="about">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="assets/img/about/sns.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ">
+                    <div class="about-content">
+                        <b>A부터 Z까지 책임집니다.</b>
+
+          <p>모든 프로젝트에서는 기획부터 디자인, 개발, 마케팅으로 이어지는 모든 단계에서 무엇 하나도 중요하지 않은 파트가 없습니다.
+		  하지만, 마지막에 서비스를 마무리 하면서 마케팅을 조금이라도 간과하고 넘어가게 되면 지금까지의 노력과 시간, 결국 비용까지 손해를 보게 됩니다.<br>
+
+
+						    <p><B>페이스북, 인스타그램</B> : 광고를 통해 고객의 원하는 방향을 타켓층 대상으로 인지도를 높일수 있습니다. </p>
+						    <p><B>네이버 키워드, 검색</B> : 서비스 및 제품을 찾는 고객에게 클릭을 통해 해당 사이트로의 진입율을 높여야 합니다. </p>
+						    <p><B>유튜브</B> : 구독자를 대상으로한 서비스 및 제품의 홍보효과를 높이며 이슈화 하는데 효율적입니다. </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+ -->
+
+    <!-- Testimonial
+    ================================================== -->
+    <section class="section bg-dark" id="testimonial">
+      <div class="carousel slide" id="review-slider" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            data-target="#review-slider"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#review-slider" data-slide-to="1"></li>
+          <li data-target="#review-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="caousel-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 m-auto">
+                <div class="carousel-item active text-center test-content">
+                  <!--
+								<div class="client-img">
+                                    <img src="assets/img/review/tes-1.jpg" alt="" class="img-fluid ">
+                                </div>
+                                -->
+                  <p class="lead">
+                    고객과의 커뮤니케이션을 중요시하는 담당자의 노력으로
+                    프로젝트를<br />
+                    성공적으로 수행했습니다.
+                  </p>
+
+                  <div class="client-text">
+                    <h3>LG이노텍</h3>
+                    <h6>개발책임</h6>
+                  </div>
+                </div>
+
+                <div class="carousel-item text-center test-content">
+                  <!--
+								<div class="client-img">
+                                    <img src="assets/img/review/tes-2.jpg" alt="" class="img-fluid ">
+                                </div>
+								-->
+                  <p class="lead">
+                    고민했던 부분을 잘 만들어주셔서 너무 감사드립니다.<br />많은
+                    사용자들이 편하게 사용할 것 같습니다.
+                  </p>
+
+                  <div class="client-text">
+                    <h3>에이치디텔레콤</h3>
+                    <h6>디자인팀장</h6>
+                  </div>
+                </div>
+
+                <div class="carousel-item text-center test-content">
+                  <!--
+                                <div class="client-img">
+                                    <img src="assets/img/review/tes-3.jpg" alt="" class="img-fluid ">
+                                </div>
+                                -->
+                  <p class="lead">
+                    프로젝트 시작부터 끝까지 성심성의껏 해주셔서 잘 마무리
+                    했습니다.<br />프로젝트의 성공을 함께 해서 기쁩니다.
+                  </p>
+
+                  <div class="client-text">
+                    <h3>이온엠솔루션</h3>
+                    <h6>개발이사</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact
+    ================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-8 col-lg-8 text-center">
+            <!-- Heading -->
+            <h2 class="lg-title mb-2">contact</h2>
+
+            <!-- Subheading -->
+            <!--
+                    <p class="mb-5">
+                        Our duty towards you is to share our experience we're reaching in our work path with you.
+                    </p>
+                    -->
+          </div>
+        </div>
+        <!-- / .row -->
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form
+              action="mail.php"
+              method="post"
+              id="main_contact_form"
+              class="contact__form"
+            >
+              <!-- form message -->
+              <div class="row">
+                <div class="col-12">
+                  <div
+                    class="alert alert-success contact__msg"
+                    style="display: none"
+                    role="alert"
+                  >
+                    Your message was sent successfully.
+                  </div>
+                </div>
+              </div>
+              <!-- end message -->
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="form-control"
+                      placeholder="이름을 입력하세요"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="이메일주소를 입력하세요 *"
+                      required="required"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="subject"
+                      id="subject"
+                      class="form-control"
+                      placeholder="제목을 입력하세요 *"
+                      required="required"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="6"
+                      class="form-control"
+                      placeholder="문의내용을 입력하세요"
+                      required="required"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="submit text-center">
+                    <input
+                      name="submit"
+                      type="submit"
+                      class="btn btn-primary btn-lg"
+                      value="메시지보내기"
+                    />
+                    <!--<p class="pt-3">* We will not spam on you inbox.</p>-->
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="top-padding bg-dark">
+      <!--Content -->
+      <div class="container">
+        <div class="row align-self-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <!-- Brand -->
+              <a href="#" class="footer-brand text-white"> STEALTH </a>
+              <!--<p>In expedita sapiente cumque enim dicta similique, animi adipisci quia et quo quod numquam, veniam eligendi reprehenderit .</p>-->
+            </div>
+          </div>
+
+          <div class="col-lg-2 ml-lg-auto col-md-2">
+            <!-- Links -->
+            <ul class="footer-link list-unstyled ml-0 justify-content-end">
+              <li>
+                <a href="#about" class="text-white"> About </a>
+              </li>
+              <li>
+                <a href="#service" class="text-white"> Services </a>
+              </li>
+              <li>
+                <a href="#portfolio" class="text-white"> Portfolio </a>
+              </li>
+              <!-- <li>
+                            <a href="news.html" class="text-white">
+                                News
+                            </a>
+                        </li>
+                       -->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <!-- Links -->
+            <ul class="footer-link list-unstyled ml-0 justify-content-end">
+              <li>
+                P. 070-4101-0008 <br />
+                M. O10-6720-0007 <br />
+                A. 서울 강서구 마곡동 797-9 508호<br />
+              </li>
+
+              <!-- kakao-->
+
+              <div align="left" id="kakao-talk-channel-chat-button"></div>
+              <script type="text/javascript">
+                //<![CDATA[
+                // 사용할 앱의 JavaScript 키를 설정해 주세요.
+                Kakao.init("f40087523bd5cc80b7f97c7f881c4b2f");
+                // 카카오톡 채널 1:1채팅 버튼을 생성합니다.
+                Kakao.Channel.createChatButton({
+                  container: "#kakao-talk-channel-chat-button",
+                  channelPublicId: "_GkkFT", // 카카오톡 채널 홈 URL에 명시된 id로 설정합니다.
+                });
+                //]]>
+              </script>
+            </ul>
+          </div>
+        </div>
+        <!-- / .row -->
+
+        <div class="row justify-content-md-center footer-copy">
+          <div class="col-lg-8 col-md-6 col-sm-6 text-center">
+            <p class="lead text-white-50">
+              &copy;Copyright, STEALTH. All rights reserved.<br /><font size="2"
+                >Design and Developed by Esrat</font
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Global JS -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!-- Theme JS -->
+    <script src="assets/js/theme.js"></script>
+
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+      if (!wcs_add) var wcs_add = {};
+      wcs_add["wa"] = "61943fc220ddf0";
+      if (window.wcs) {
+        wcs_do();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>U2 Collaboration</title>
+    <!--script  src="http://code.jquery.com/jquery-latest.min.js"></script-->
+
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!--link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)"-->
+  </head>
+  <body>
+    <div class="wrapper" id="LC_Page_20000">
+      <!-- 팝업 -->
+
+      <!-- 내용 영역 -->
+      <section id="content-wrap">
+        <div class="layout-account-wrap">
+          <div id="lnb-wrap">
+            <div class="user-con">
+              <a href="#" class="tool-btn" id="user-type">홍길동 님</a>
+              <a href="#" class="btn_rect_gray tac" alt="소유한 계정"
+                >소유한 계정</a
+              >
+            </div>
+            <!--prev-->
+            <div class="account-btn-prev">
+              <a href="#"><span>아이콘</span>이전으로</a>
+            </div>
+            <!--nav-->
+            <nav>
+              <div class="nav-tit">계정정보</div>
+              <ul class="nav-ul">
+                <li>
+                  <a href="account_setting.html" class="active"
+                    ><span><img src="img/ic-setting.svg" /></span>계정설정</a
+                  >
+                </li>
+                <li>
+                  <a href="add_user.html"
+                    ><span><img src="img/ic-left-user-add-n.svg" /></span
+                    >사용자추가</a
+                  >
+                </li>
+                <li>
+                  <a href="team.html"
+                    ><span><img src="img/ic-left-team-n.svg" /></span>팀</a
+                  >
+                </li>
+                <li>
+                  <a href="account_info.html"
+                    ><span><img src="img/ic-left-payment-n.svg" /></span
+                    >결제정보</a
+                  >
+                </li>
+              </ul>
+              <div class="nav-tit">설정</div>
+              <ul class="nav-ul">
+                <li>
+                  <a href="profile.html"
+                    ><span><img src="img/ic-left-profile-n.svg" /></span
+                    >프로필</a
+                  >
+                </li>
+                <li>
+                  <a href="notice.html"
+                    ><span><img src="img/ic-left-alert-n.svg" /></span>알림</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="content-wrap-inner">
+          <section id="header-wrap">
+            <header>
+              <div class="func-wrap">
+                <div class="func-mobile-list">
+                  <button type="button" id="tree-trigger-btn">리스트</button>
+                </div>
+                알림설정
+              </div>
+            </header>
+          </section>
+          <section id="content">
+            <div class="notice-setting">
+              <div class="notice-sub-title">
+                <div class="email">이메일</div>
+                <div class="cycle">수신주기</div>
+              </div>
+              <ul class="notice-cycle">
+                <li class="time1">
+                  <figure>
+                    <div class="bg-rect">
+                      <div class="main-image">
+                        <img src="img/ic-watch-15-n.svg" alt="" />
+                      </div>
+                      <div class="sel-image">
+                        <img src="img/ic-icon-select.svg" alt="" />
+                      </div>
+                    </div>
+                    <figcaption>15분</figcaption>
+                  </figure>
+                </li>
+                <li class="time2">
+                  <figure>
+                    <div class="bg-rect">
+                      <div class="main-image">
+                        <img src="img/ic-watch-30-n.svg" alt="" />
+                      </div>
+                      <div class="sel-image">
+                        <img src="img/ic-icon-select.svg" alt="" />
+                      </div>
+                    </div>
+                    <figcaption>30분</figcaption>
+                  </figure>
+                </li>
+                <li class="time3 current">
+                  <figure>
+                    <div class="bg-rect">
+                      <div class="main-image">
+                        <img src="img/ic-watch-hour-s.svg" alt="" />
+                      </div>
+                      <div class="sel-image">
+                        <img src="img/ic-icon-select.svg" alt="" />
+                      </div>
+                    </div>
+                    <figcaption>매시간</figcaption>
+                  </figure>
+                </li>
+                <li class="time4">
+                  <figure>
+                    <div class="bg-rect">
+                      <div class="main-image">
+                        <img src="img/ic-watch-day-n.svg" alt="" />
+                      </div>
+                      <div class="sel-image">
+                        <img src="img/ic-icon-select.svg" alt="" />
+                      </div>
+                    </div>
+                    <figcaption>일일</figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <!-- <script src="js/script.js"></script>     -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var selCycle = document.querySelectorAll(".notice-cycle li");
+
+        selCycle.forEach(function (data) {
+          data.addEventListener("click", function () {
+            //old current 처리
+            let current = document.querySelector(".notice-cycle li.current");
+            current.classList.remove("current");
+            var oldCur = current.querySelector(".main-image img");
+            var oldImg = oldCur.src;
+            oldCur.src = oldImg.replace("-s.svg", "-n.svg");
+
+            //new current 처리
+            data.classList.add("current");
+            var imgTag = this.querySelector(".main-image img");
+            var imgSrc = imgTag.src;
+            var newSrc = imgSrc.replace("-n.svg", "-s.svg");
+            imgTag.src = newSrc;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

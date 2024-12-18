@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="606.724" height="77.586" viewBox="0 0 606.724 77.586">
+    <path data-name="패스 2465" d="m0 0 29.086 38.793L0 77.587h284.362l29.086-38.794L284.362 0z" style="opacity:.15;fill:#5f56c6"/>
+    <path data-name="패스 2465" d="m0 0 29.086 38.793L0 77.587h284.362l29.086-38.794L284.362 0z" transform="translate(293.276)" style="opacity:.15;fill:#5f56c6"/>
+    <g data-name="그룹 20013">
+        <text transform="translate(167 48.378)" style="font-size:31px;font-family:NotoSansCJKkr-Bold,Noto Sans CJK KR;font-weight:700;fill:#5f56c6"><tspan x="-28.52" y="0">결제</tspan></text>
+        <g data-name="그룹 20012" transform="translate(85.662 18.444)">
+            <rect data-name="사각형 137616" width="36" height="38" rx="18" transform="translate(.338 -.064)" style="opacity:.3;fill:#5f56c6"/>
+            <text data-name="4" transform="translate(18.338 25.936)" style="fill:#fff;font-size:20px;font-family:NotoSansCJKkr-Black,Noto Sans CJK KR;font-weight:800"><tspan x="-6.09" y="0">4</tspan></text>
+        </g>
+    </g>
+    <g data-name="그룹 20013">
+        <text transform="translate(461 48.378)" style="font-size:31px;font-family:NotoSansCJKkr-Bold,Noto Sans CJK KR;font-weight:700;fill:#5f56c6"><tspan x="-28.52" y="0">완료</tspan></text>
+        <g data-name="그룹 20012" transform="translate(378.662 18.444)">
+            <rect data-name="사각형 137616" width="37" height="38" rx="18.5" transform="translate(.338 -.064)" style="opacity:.3;fill:#5f56c6"/>
+            <text data-name="5" transform="translate(19.338 25.936)" style="fill:#fff;font-size:20px;font-family:NotoSansCJKkr-Black,Noto Sans CJK KR;font-weight:800"><tspan x="-6.09" y="0">5</tspan></text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>U2 Collaboration</title>
+    <!--script  src="http://code.jquery.com/jquery-latest.min.js"></script-->
+    
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style_shin.css">
+    <!--link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)"-->
+</head>
+<body>
+<div class="wrapper" id="LC_Page_20000">
+  <!-- 팝업 -->
+  <div class="tab_basic menu-box">
+    <div class="tab_list_wrap">
+      <div class="tab_list tab_active" data-tabnum="0">
+        <a href="#">활성사용자</a>
+      </div>
+      <div class="tab_list" data-tabnum="1">
+        <a href="#">대기사용자</a>
+      </div> 
+    </div>
+    <div class="tab_container">          
+      <div class="tab_content">
+        <div class="tab-search">
+          <p>Total <span>2</span></p>
+          <input type="text" class="search-input02" placeholder="이름, 이메일을 입력하세요">
+          <button href="#" class="btn_rect_white tac" alt="검색">검색</button>
+        </div>  
+        <table class="tb-layout">
+          <colgroup>
+            <col width="15%">
+            <col width="25%">
+            <col width="">
+          </colgroup>
+          <tr>
+            <th>순번</th>
+            <th>이름</th>
+            <th>이메일</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>강나라</td>
+            <td>kang@gmail.com</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>홍길동</td>
+            <td>kang@gmail.com</td>
+          </tr>
+          <!-- 데이터 없음 -->
+          <!-- <tr>
+            <td colspan="3">데이터가 없습니다.</td>
+          </tr> -->
+        </table>        
+      </div>
+      <div class="tab_content">
+        <div class="tab-search">
+          <p>Total <span>2</span></p>
+          <input type="text" class="search-input02" placeholder="이름, 이메일을 입력하세요">
+          <button href="#" class="btn_rect_white tac" alt="검색">검색</button>
+        </div>  
+        <table class="tb-layout">
+          <colgroup>
+            <col width="15%">
+            <col width="25%">
+            <col width="">
+          </colgroup>
+          <tr>
+            <th>순번</th>
+            <th>이름</th>
+            <th>이메일</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>강나라</td>
+            <td>kang@gmail.com</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>홍길동</td>
+            <td>kang@gmail.com</td>
+          </tr>
+        </table>      
+      </div>
+    </div>
+  </div>
+
+  <!-- 내용 영역 -->
+  <section id="content-wrap">
+    <!--lnb-load-->
+    <div class="layout-account-wrap">
+      <div id="lnb-wrap">
+        <div class="user-con"><a href="#" class="tool-btn" id="user-type">홍길동 님</a> <a href="#" class="btn_rect_gray tac" alt="소유한 계정">소유한 계정</a></div>
+        <!--prev-->
+        <div class="account-btn-prev">
+          <a href="#"><span>아이콘</span>이전으로</a>
+        </div>
+        <!--nav-->
+        <nav>
+          <div class="nav-tit">계정정보</div>
+          <ul class="nav-ul">
+            <li><a href="account_setting.html" class="active"><span><img src="img/ic-setting.svg"></span>계정설정</a></li>
+            <li><a href="add_user.html"><span><img src="img/ic-left-user-add-n.svg"></span>사용자추가</a></li>
+            <li><a href="team.html" ><span><img src="img/ic-left-team-n.svg"></span>팀</a></li>
+            <li><a href="account_info.html"><span><img src="img/ic-left-payment-n.svg"></span>결제정보</a></li>
+          </ul>
+          <div class="nav-tit">설정</div>
+          <ul class="nav-ul">
+            <li><a href="profile.html"><span><img src="img/ic-left-profile-n.svg"></span>프로필</a></li>
+            <li><a href="notice.html"><span><img src="img/ic-left-alert-n.svg"></span>알림</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- 컨텐츠 -->
+    <div class="content-wrap-inner">
+      <section id="header-wrap">
+        <header>
+          <div class="func-wrap">
+            <div class="func-mobile-list"><button type="button" id="tree-trigger-btn">리스트</button></div>
+            사용자 추가
+            <ul class="func-add-wrap">
+                <li>
+                  <button id="coll-ctr" class="tool-btn" alt="협업 관리">협업 관리</button>
+                  <div class="menu-box" id="coll-ctr-box">
+                    <div class="coll-top">
+                      <p>협업관리</p>
+                      <button type="button" class="close-btn"></button>            
+                    </div>        
+                    <div class="tab_basic">
+                      <div class="tab_list_wrap">
+                        <div class="tab_list tab_active" data-tabnum="0">
+                          <a href="#">활성사용자</a>
+                        </div>
+                        <div class="tab_list" data-tabnum="1">
+                          <a href="#">대기사용자</a>
+                        </div> 
+                      </div>
+                      <div class="tab_container">          
+                        <div class="tab_content">
+                          <div class="tab-search">
+                            <p>Total <span>2</span></p>
+                            <input type="text" class="search-input02" placeholder="이름, 이메일을 입력하세요">
+                            <button href="#" class="btn_rect_white tac" alt="검색">검색</button>
+                          </div>  
+                          <table class="tb-layout">
+                            <colgroup>
+                              <col width="15%">
+                              <col width="25%">
+                              <col width="*">
+                            </colgroup>
+                            <tr>
+                              <th>순번</th>
+                              <th>이름</th>
+                              <th>이메일</th>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>강나라</td>
+                              <td>kang@gmail.com</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>홍길동</td>
+                              <td>kang@gmail.com</td>
+                            </tr>
+                            <!-- 데이터 없음 -->
+                            <!-- <tr>
+                              <td colspan="3">데이터가 없습니다.</td>
+                            </tr> -->
+                          </table>        
+                        </div>
+                        <div class="tab_content">
+                          <div class="tab-search">
+                            <p>Total <span>2</span></p>
+                            <input type="text" class="search-input02" placeholder="이름, 이메일을 입력하세요">
+                            <button href="#" class="btn_rect_white tac" alt="검색">검색</button>
+                          </div>  
+                          <table class="tb-layout">
+                            <colgroup>
+                              <col width="15%">
+                              <col width="25%">
+                              <col width="">
+                            </colgroup>
+                            <tr>
+                              <th>순번</th>
+                              <th>이름</th>
+                              <th>이메일</th>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>강나라</td>
+                              <td>kang@gmail.com</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>홍길동</td>
+                              <td>kang@gmail.com</td>
+                            </tr>
+                          </table>      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>  
+                <li>
+                  <a href="invite_user.html"><button class="btn_rect_black" alt="사용자초대"><span>+</span>사용자초대</button></a>
+                </li>
+            </ul>  
+          </div>
+        </header>
+      </section>
+      <section id="content">
+        <div class="add-user-wrap">
+          <div class="add-user-search">
+            <select class="select">
+              <option selected>전체</option>
+              <option value="">이름</option>
+              <option value="">최종접속</option>
+              <option value="">권한</option>            
+            </select>     
+            <input type="text" class="search-input02" placeholder="이름, 이메일을 입력하세요">
+            <button href="#" class="btn_rect_white tac" alt="검색">검색</button>
+          </div>
+          <table class="tb-layout add-user-tb" summary="사용자추가">
+            <colgroup>
+              <col width="3%">
+              <col width="67%">
+              <col width="15%">
+              <col width="15%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>
+                  <input type="checkbox" name="" id="ck-tb-team"><label for="ck-tb-team"></label>
+                </th>
+                <th>이름</th>
+                <th>최종접속</th>
+                <th>권한</th>
+              </tr>
+            </thead>
+            <tbody>                
+              <tr>
+                <td>
+                  <input type="checkbox" id="ck-1"><label for="ck-1"></label>
+                </td>
+                <td class="table-user">
+                  <div class="ic-img-user"><p class="bg_none">사람</p></div>
+                  <ul>
+                    <li>강나라</li>
+                    <li>kang@gamail.com</li>
+                  </ul>
+                </td>
+                <td>초대</td>
+                <td><a href="#">- -</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="ck-2"><label for="ck-2"></label>
+                </td>
+                <td class="table-user">
+                  <div class="ic-img-user"><p class="bg_violet">길동</p></div>
+                  <ul>
+                    <li>홍길동</li>
+                    <li>kang@gamail.com</li>
+                  </ul>
+                </td>
+                <td>20분전 접속</td>
+                <td>
+                  <button class="btn_rect_black01 tac" alt="권한">관리자(홍길동)</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="ck-3"><label for="ck-3"></label>
+                </td>
+                <td class="table-user">
+                  <div class="ic-img-user"><p class="bg_none">사람</p></div>
+                  <ul>
+                    <li>강나라</li>
+                    <li>kang@gamail.com</li>
+                  </ul>
+                </td>
+                <td>20분전 접속</td>
+                <td>
+                  <a href="#">- -</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="ck-4"><label for="ck-4"></label>
+                </td>
+                <td class="table-user">
+                  <div class="ic-img-user"><p class="bg_none">사람</p></div>
+                  <ul>
+                    <li>강나라</li>
+                    <li>kang@gamail.com</li>
+                  </ul>
+                </td>
+                <td>20분전 접속</td>
+                <td><a href="#">- -</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="ck-5"><label for="ck-5"></label>
+                </td>
+                <td class="table-user">
+                  <div class="ic-img-user"><p class="bg_none">사람</p></div>
+                  <ul>
+                    <li>강나라</li>
+                    <li>kang@gamail.com</li>
+                  </ul>
+                </td>
+                <td>20분전 접속</td>
+                <td><a href="#">- -</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="ck-6"><label for="ck-6"></label>
+                </td>
+                <td class="table-user">
+                  <div class="ic-img-user"><p class="bg_none">사람</p></div>
+                  <ul>
+                    <li>강나라</li>
+                    <li>kang@gamail.com</li>
+                  </ul>
+                </td>
+                <td>20분전 접속</td>
+                <td><a href="#">- -</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="ck-7"><label for="ck-7"></label>
+                </td>
+                <td class="table-user">
+                  <div class="ic-img-user"><p class="bg_none">사람</p></div>
+                  <ul>
+                    <li>강나라</li>
+                    <li>kang@gamail.com</li>
+                  </ul>
+                </td>
+                <td>20분전 접속</td>
+                <td><a href="#">- -</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="ck-8"><label for="ck-8"></label>
+                </td>
+                <td class="table-user">
+                  <div class="ic-img-user"><p class="bg_none">사람</p></div>
+                  <ul>
+                    <li>강나라</li>
+                    <li>kang@gamail.com</li>
+                  </ul>
+                </td>
+                <td>20분전 접속</td>
+                <td><a href="#">- -</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="ck-9"><label for="ck-9"></label>
+                </td>
+                <td class="table-user">
+                  <div class="ic-img-user"><p class="bg_none">사람</p></div>
+                  <ul>
+                    <li>강나라</li>
+                    <li>kang@gamail.com</li>
+                  </ul>
+                </td>
+                <td>20분전 접속</td>
+                <td><a href="#">- -</a></td>
+              </tr>
+            </tbody>              
+          </table> 
+          <div class="add-user-footer">
+            <div class="pagenation">
+              <button class="page-prev-end disabled"></button>
+              <button class="page-prev disabled"></button>
+              <ul>                
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>                  
+              </ul>
+              <button class="page-next"></button>
+              <button class="page-next-end"></button>
+            </div>
+            <button class="btn_rect_white tac" alt="삭제">삭제</button>
+          </div>
+        </div>          
+      </section>
+    </div>
+    <div class="menu-box" id="au-wait-box">
+      <ul>
+        <li>
+          <button type="button" class="close-btn"></button>
+        </li>
+        <li>
+          <div class="ic-img-user-64"><p class="bg_none"></p></div>
+          <p>대기사용자</p>
+          <p>kang@gmail.com</p>
+        </li>
+        <li>
+          <p>접속정보 : <span>38분전</span></p>
+          <p>위치 : <span>- -</span></p>
+        </li>
+        <li>
+          <button class="btn_rect_white tac" alt="삭제">삭제</button>
+        </li>
+      </ul>
+    </div> 
+                              
+  </section>    
+</div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+
+      //탭 메뉴
+    var tabList = document.querySelectorAll('.tab_list_wrap .tab_list')
+
+      Array.prototype.forEach.call(tabList, function(list) {
+
+        list.children[0].addEventListener('click', function(e) {
+          e.preventDefault()
+
+          var tabContent = document.querySelectorAll('.tab_container .tab_content')
+
+          var tabNum = this.parentElement.getAttribute('data-tabnum')
+
+          Array.prototype.forEach.call(tabContent, function(cont, i) {
+            cont.style.display = 'none'
+            tabList[i].className = 'tab_list'
+          })
+
+          tabContent[tabNum].style.display = 'block'
+
+          if(list.className.indexOf('tab_active') == -1) {
+            list.className = 'tab_list tab_active'
+          }
+        })
+      })
+
+        // checkbox 전체 선택/해제
+        var ckTableTeam = document.getElementById('ck-tb-team');
+
+        ckTableTeam.addEventListener('change',function(){
+            var tbodyCK = document.querySelectorAll('tbody input[type="checkbox"]');
+            var bChecked = this.checked;
+
+            tbodyCK.forEach(function(el){                
+                    el.checked = bChecked;
+            });                        
+        });
+
+  </script>
+</body>
+
+</html>

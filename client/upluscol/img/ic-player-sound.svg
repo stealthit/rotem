@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:#181818}.cls-3{fill:none;stroke:#181818;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="ic-player-sound" transform="translate(2.266 4.534)">
+        <path id="패스_60" data-name="패스 60" class="cls-2" d="M5.457 17.143H3.211a1.5 1.5 0 0 0-1.5 1.5v2.994a1.5 1.5 0 0 0 1.5 1.5h2.246z" transform="translate(-1.714 -12.67)"/>
+        <path id="패스_61" data-name="패스 61" class="cls-2" d="m11.286 17.36 5.069 4.206a1.527 1.527 0 0 0 2.38-1.213V8.378a1.405 1.405 0 0 0-2.245-1.213l-5.2 4.206" transform="translate(-6.759 -6.899)"/>
+        <path id="패스_62" data-name="패스 62" class="cls-3" d="M42.857 13.714a6.557 6.557 0 0 1 1.5 4.491 10.359 10.359 0 0 1-1.5 5.239" transform="translate(-24.894 -10.739)"/>
+        <path id="패스_63" data-name="패스 63" class="cls-3" d="M36 18.857a3.278 3.278 0 0 1 .748 2.245A3.278 3.278 0 0 1 36 23.348" transform="translate(-21.03 -13.636)"/>
+    </g>
+</svg>

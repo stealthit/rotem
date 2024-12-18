@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CULTURIT</title>  
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper" id="">
+  <!-- 팝업 -->
+
+  <div class="wrap">
+    <!-- 왼쪽 영역 -->
+    <header id="user-wrap">
+      <a href="main.html" class="logo"></a>
+      <div class="account">
+        <div class="account-top">
+          <div class="account-title"><span>홍길동</span>'s Account</div>
+          <button type="button" class="btn-setting"></button>
+        </div>
+        <button type="button" class="btn-rect-gray">로그아웃</button>
+      </div>
+      <div class="have-content">
+        <div class="have-conten01">
+          <ul>
+            <li>
+              <span class="ico-note"></span>
+            </li>
+            <li>총 보유곡</li>
+            <li>10</li>
+          </ul>
+        </div>
+        <div class="have-conten02">
+          <ul>
+            <li>
+              <span class="ico-down"></span>
+            </li>
+            <li>총 다운로드</li>
+            <li>100</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  
+    <!-- 탭 영역 -->
+    <section id="content-wrap">
+      <div class="tab_basic">
+        <div class="tab_list_wrap">
+          <div class="tab_list tab_active" data-tabnum="0">
+            <a href="#">노트에디팅</a>
+          </div>
+          <div class="tab_list" data-tabnum="1">
+            <a href="#">통계</a>
+          </div> 
+        </div>
+        <div class="tab_container">      
+          <!-- 노트에디팅 -->
+          <div class="tab_content note-call-launch" id="note-editing">
+            <div class="note-sub-top">
+              <a href="main.html" class="back-main"></a>
+            </div>
+            <div class="note-sub-content">
+              <ul>
+                <li>곡명</li>
+                <li>파일명XXX...</li>                      
+              </ul>
+              <ul>
+                  <li>게임선택</li>
+                  <li>A게임</li>
+              </ul>
+              <ul>
+                  <li>가상악기</li>
+                  <li>Snare Drum</li>
+              </ul>
+              <ul>
+                  <li>유료,무료</li>
+                  <li>무료</li>
+              </ul> 
+            </div>
+            <div class="note-sub-bottom">
+              <div>
+                <button type="button" class="btn-el-gray">앱출시요청</button>
+              </div>
+              <div>
+                <button type="button" class="btn-el-gray">목록</button>
+                <button type="button" class="btn-el-blue">저장</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 통계 -->
+          <div class="tab_content" id="statistics">
+            
+          </div>
+         </div>
+      </div>
+    </section> 
+  </div> 
+</div>
+<script>
+  //탭 메뉴
+  var tabList = document.querySelectorAll('.tab_list_wrap .tab_list')
+
+  Array.prototype.forEach.call(tabList, function(list) {
+
+    list.children[0].addEventListener('click', function(e) {
+      e.preventDefault()
+
+      var tabContent = document.querySelectorAll('.tab_container .tab_content')
+
+      var tabNum = this.parentElement.getAttribute('data-tabnum')
+
+      Array.prototype.forEach.call(tabContent, function(cont, i) {
+        cont.style.display = 'none'
+        tabList[i].className = 'tab_list'
+      })
+
+      tabContent[tabNum].style.display = 'block'
+
+      if(list.className.indexOf('tab_active') == -1) {
+        list.className = 'tab_list tab_active'
+      }
+    })
+  })
+</script>
+</body>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/common.js"></script>
+</html>

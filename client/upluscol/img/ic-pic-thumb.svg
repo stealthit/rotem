@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#dbdfe6"/>
+            <stop offset="1" stop-color="#c5cacf"/>
+        </linearGradient>
+        <clipPath id="clip-path">
+            <path id="패스_28411" data-name="패스 28411" d="M62.962 29.03V18H16v44.119h46.962z" transform="translate(-16 -18)" style="fill:#8f949a"/>
+        </clipPath>
+        <style>
+            .cls-6{fill:#a7afb9}
+        </style>
+    </defs>
+    <g id="ic-pic-thumb" transform="translate(.109)">
+        <path id="guide" transform="translate(-.109)" style="fill:none" d="M0 0h64v64H0z"/>
+        <path id="패스_28414" data-name="패스 28414" d="M65.816 12H17.98A5.98 5.98 0 0 0 12 17.98v47.836a5.98 5.98 0 0 0 5.98 5.98h47.836a5.98 5.98 0 0 0 5.98-5.98V17.98a5.98 5.98 0 0 0-5.98-5.98z" transform="translate(-10.006 -9.898)" style="fill:url(#linear-gradient)"/>
+        <path id="패스_28422" data-name="패스 28422" d="M63.836 28.464V18H16v41.857h47.836z" transform="translate(-8.027 -9.918)" style="fill:#fff;opacity:.5"/>
+        <g id="마스크_그룹_3" data-name="마스크 그룹 3" transform="translate(8.41 8.519)" style="clip-path:url(#clip-path)">
+            <path id="패스_28415" data-name="패스 28415" class="cls-6" d="M13.99 52.61H65.2v-4.6a63.159 63.159 0 0 0-4.822-7.631c-1.726-2.187-4.3-2.8-6.551-.12l-4.037 4.163L40.986 32.4c-3.279-4.477-8.644-4.477-11.923 0z" transform="translate(-16.94 -8.491)"/>
+            <ellipse id="타원_72" data-name="타원 72" class="cls-6" cx="4.306" cy="4.624" rx="4.306" ry="4.624" transform="translate(31.156 8.201)"/>
+        </g>
+    </g>
+</svg>

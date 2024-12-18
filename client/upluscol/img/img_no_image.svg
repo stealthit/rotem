@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="136" viewBox="0 0 240 136">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#eaecee"/>
+            <stop offset="1" stop-color="#e2e6ec"/>
+        </linearGradient>
+        <style>
+            .cls-2{fill:url(#linear-gradient)}
+        </style>
+    </defs>
+    <g id="img_no_image" transform="translate(-32.985 -90.871)">
+        <path id="사각형_23" data-name="사각형 23" d="M10 0h220a10 10 0 0 1 10 10v126H0V10A10 10 0 0 1 10 0z" transform="translate(32.985 90.871)" style="fill:#eff2f4"/>
+        <path id="패스_8" data-name="패스 8" class="cls-2" d="M14.985 266.354 89.467 201.7l85.65 85.65H14.985z" transform="translate(18 -60.483)"/>
+        <path id="패스_9" data-name="패스 9" d="M286.55 331.072h26.543l-75.525-49.255z" transform="translate(-93.433 -104.201)" style="fill:#1f394e;opacity:.1"/>
+        <path id="패스_10" data-name="패스 10" class="cls-2" d="M366.419 220.071 292.3 151.709l-54.729 59.107 75.525 49.255h53.326z" transform="translate(-93.433 -33.2)"/>
+        <circle id="타원_8" data-name="타원 8" class="cls-2" cx="12.314" cy="12.314" r="12.314" transform="translate(59.44 111.638)"/>
+    </g>
+</svg>

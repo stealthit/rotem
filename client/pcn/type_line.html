@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISS 시스템 - 콤포넌트</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/unit.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./css/jquery-ui.theme.css">
+       
+        
+    
+</head>
+<body>
+    <div class="modal_all_wrap" id="modalIdStandard" style="display:block">
+        <div class="modal_con_wrap modal_standard_wrap">
+            <div class="modal_title">
+                <h1>함체상세정보</h1>
+                <a href="#" class="modal_close_btn" id="standard_btn">닫기</a>
+            </div>
+            <div class="modal_con">
+              <!--tab -->
+              <div class="tap_type05_wrap">
+                <input id="tab51" type="radio" name="tab_item51">
+                <label class="tab_item br_first" for="tab51">상세정보</label>
+                <input id="tab52" type="radio" name="tab_item51">
+                <label class="tab_item br_mid" for="tab52">이력관리</label>
+                <input id="tab53" type="radio" name="tab_item51">
+                <label class="tab_item br_mid" for="tab53">관련자료</label>
+                <input id="tab54" type="radio" name="tab_item51" checked>
+                <label class="tab_item br_last" for="tab54">선번장</label>
+                <div class="tab_content" id="tab51_content">
+                  <div class="modal_stitle no_btm_line">
+                    <h2>도면 - 1:0</h2>
+                  </div>
+                  <div class="modal_scon">
+                    <div class="line_conect_con">
+                      <span>※ 선로를 선택해 주십시오</span>
+                      <!--라인-->
+                      <div class="icon-standard line-type01-map01">Icon-함체</div>
+                      <p class="line-type01-txt01">함체_1075</p>
+
+                      <p class="line-type01-txt02">97_통신선로</p>
+                      <div class="line-type01-line01">1번라인</div>
+
+                      <div class="icon-standard line-type01-map02 active">Icon-함체</div>
+                      <p class="line-type01-txt03">함체_1075</p>                           
+                    </div>
+                  </div>
+                  <div class="modal_stitle no_btm_line">
+                    <h2>도면 - 1:1</h2>
+                  </div>
+                  <div class="modal_scon">
+                    <div class="line_conect_con">
+                      <span>※ 선로를 선택해 주십시오</span>
+                      <!--라인-->
+                      <div class="icon-standard line-type02-map01">Icon-함체</div>
+                      <p class="line-type02-txt01">함체_1075</p>
+
+                      <p class="line-type02-txt02">97_통신선로</p>
+                      <div class="line-type02-line01">1번라인</div>  
+
+                      <div class="icon-standard line-type02-map02 active">Icon-함체</div>
+                      <p class="line-type02-txt03">함체_1075</p>
+
+                      <p class="line-type02-txt04">97_통신선로</p>
+                      <div class="line-type02-line02">2번라인</div>
+
+                      <div class="icon-standard line-type02-map03">Icon-함체</div>                          
+                      <p class="line-type02-txt05">함체_1075</p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="tab_content" id="tab52_content">
+                    <div class="modal_stitle no_btm_line">
+                        <h2>도면 - 1:2</h2>
+                      </div>
+                      <div class="modal_scon">
+                        <div class="line_conect_con">
+                          <span>※ 선로를 선택해 주십시오</span>
+                          <!--라인-->
+                          <div class="icon-standard line-type03-map01">Icon-함체</div>
+                          <p class="line-type03-txt01">함체_1075</p>
+
+                          <p class="line-type03-txt02">97_통신선로</p>
+                          <div class="line-type03-line01">1번라인</div>  
+
+                          <div class="icon-standard line-type03-map02 active">Icon-함체</div>
+                          <p class="line-type03-txt03">함체_1075</p>
+
+                          <p class="line-type03-txt04">97_통신선로</p>
+                          <div class="line-type03-line02">2번라인</div>
+
+                          <div class="line-type03-line03 ">3번라인</div>
+                          <p class="line-type03-txt05">함체_1075</p>
+
+                          <div class="icon-standard line-type03-map03">Icon-함체</div>                          
+                          <p class="line-type03-txt06">함체_1075</p>
+
+                          <div class="icon-standard line-type03-map04">Icon-함체</div>
+                          <p class="line-type03-txt07">함체_1075</p>
+                        </div>
+                      </div>
+                      <div class="modal_stitle no_btm_line">
+                        <h2>도면 - 2:2</h2>
+                      </div>
+                      <div class="modal_scon">
+                        <div class="line_conect_con">
+                          <span>※ 선로를 선택해 주십시오</span>
+                          <!--라인-->
+                          <div class="icon-standard line-type04-map01">Icon-함체</div>
+                          <p class="line-type04-txt01">함체_1075</p>
+
+                          <div class="icon-standard line-type04-map02">Icon-함체</div>
+                          <p class="line-type04-txt02">함체_1075</p>
+
+                          <p class="line-type04-txt03">97_통신선로</p>
+                          <div class="line-type04-line01">1번라인</div>  
+
+                          <p class="line-type04-txt04">97_통신선로</p>
+                          <div class="line-type04-line02">2번라인</div>  
+
+                          <div class="icon-standard line-type04-map03 active">Icon-함체</div>
+                          <p class="line-type04-txt05">함체_1075</p>
+
+                          <p class="line-type04-txt06">97_통신선로</p>
+                          <div class="line-type04-line03">3번라인</div>
+
+                          <p class="line-type04-txt07">97_통신선로</p>
+                          <div class="line-type04-line04">4번라인</div>
+
+                          <div class="icon-standard line-type04-map04">Icon-함체</div>                          
+                          <p class="line-type04-txt08">함체_1075</p>
+
+                          <div class="icon-standard line-type04-map05">Icon-함체</div>
+                          <p class="line-type04-txt09">함체_1075</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="tab_content" id="tab53_content">
+                    <div class="modal_stitle no_btm_line">
+                        <h2>도면 - 2:3</h2>
+                      </div>
+                      <div class="modal_scon">
+                        <div class="line_conect_con">
+                          <span>※ 선로를 선택해 주십시오</span>
+                          <!--라인-->
+                          <div class="icon-standard line-type05-map01">Icon-함체</div>
+                          <p class="line-type05-txt01">함체_1075</p>
+
+                          <div class="icon-standard line-type05-map02">Icon-함체</div>
+                          <p class="line-type05-txt02">함체_1075</p>
+
+                          <p class="line-type05-txt03">97_통신선로</p>
+                          <div class="line-type05-line01">1번라인</div>  
+
+                          <p class="line-type05-txt04">97_통신선로</p>
+                          <div class="line-type05-line02">2번라인</div>  
+
+                          <div class="icon-standard line-type05-map03 active">Icon-함체</div>
+                          <p class="line-type05-txt05">함체_1075</p>
+
+                          <p class="line-type05-txt06">97_통신선로</p>
+                          <div class="line-type05-line03">3번라인</div>
+
+                          <p class="line-type05-txt07">97_통신선로</p>
+                          <div class="line-type05-line04">4번라인</div>
+                          
+                          <p class="line-type05-txt08">97_통신선로</p>
+                          <div class="line-type05-line05">5번라인</div>
+
+                          <div class="icon-standard line-type05-map04">Icon-함체</div>                          
+                          <p class="line-type05-txt09">함체_1075</p>
+                          
+                          <div class="icon-standard line-type05-map05">Icon-함체</div>                          
+                          <p class="line-type05-txt10">함체_1075</p>
+
+                          <div class="icon-standard line-type05-map06">Icon-함체</div>
+                          <p class="line-type05-txt11">함체_1075</p>
+                        </div>
+                      </div>
+                      <div class="modal_stitle no_btm_line">
+                        <h2>도면 - 3:3</h2>
+                      </div>
+                      <div class="modal_scon">
+                        <div class="line_conect_con">
+                          <span>※ 선로를 선택해 주십시오</span>
+                          <!--라인-->
+                          <div class="icon-standard line-type06-map01">Icon-함체</div>
+                          <p class="line-type06-txt01">함체_1075</p>
+
+                          <div class="icon-standard line-type06-map02">Icon-함체</div>                          
+                          <p class="line-type06-txt02">함체_1075</p>
+
+                          <div class="icon-standard line-type06-map03">Icon-함체</div>
+                          <p class="line-type06-txt03">함체_1075</p>
+
+                          <p class="line-type06-txt04">97_통신선로</p>
+                          <div class="line-type06-line01">1번라인</div>  
+
+                          <p class="line-type06-txt05">97_통신선로</p>
+                          <div class="line-type06-line02">4번라인</div>
+
+                          <p class="line-type06-txt06">97_통신선로</p>
+                          <div class="line-type06-line03">2번라인</div>  
+
+                          <div class="icon-standard line-type06-map04 active">Icon-함체</div>
+                          <p class="line-type06-txt07">함체_1075</p>
+
+                          <p class="line-type06-txt08">97_통신선로</p>
+                          <div class="line-type06-line04">3번라인</div>
+
+                          <p class="line-type06-txt09">97_통신선로</p>
+                          <div class="line-type06-line05">4번라인</div>
+                          
+                          <p class="line-type06-txt10">97_통신선로</p>
+                          <div class="line-type06-line06">5번라인</div>
+
+                          <div class="icon-standard line-type06-map05">Icon-함체</div>                          
+                          <p class="line-type06-txt11">함체_1075</p>
+                          
+                          <div class="icon-standard line-type06-map06">Icon-함체</div>                          
+                          <p class="line-type06-txt12">함체_1075</p>
+
+                          <div class="icon-standard line-type06-map07">Icon-함체</div>
+                          <p class="line-type06-txt13">함체_1075</p>
+                        </div>
+                      </div>
+                
+                </div>
+                <div class="tab_content" id="tab54_content">
+                  <div class="modal_stitle no_btm_line">
+                      <h2>도면 - 3:4</h2>
+                    </div>
+                    <div class="line_conect_con">
+                      <span>※ 선로를 선택해 주십시오</span>
+                      <!--라인-->
+                      <div class="icon-standard line-type07-map01">Icon-함체</div>
+                      <p class="line-type07-txt01">함체_1075</p>
+
+                      <div class="icon-standard line-type07-map02">Icon-함체</div>                          
+                      <p class="line-type07-txt02">함체_1075</p>
+
+                      <div class="icon-standard line-type07-map03">Icon-함체</div>
+                      <p class="line-type07-txt03">함체_1075</p>
+
+                      <p class="line-type07-txt04">97_통신선로</p>
+                      <div class="line-type07-line01">1번라인</div>  
+
+                      <p class="line-type07-txt05">97_통신선로</p>
+                      <div class="line-type07-line02">2번라인</div>
+
+                      <p class="line-type07-txt06">97_통신선로</p>
+                      <div class="line-type07-line03">3번라인</div>  
+
+                      <div class="icon-standard line-type07-map04 active">Icon-함체</div>
+                      <p class="line-type07-txt07">함체_1075</p>
+
+                      <p class="line-type07-txt08">97_통신선로</p>
+                      <div class="line-type07-line04">4번라인</div>
+
+                      <p class="line-type07-txt09">97_통신선로</p>
+                      <div class="line-type07-line05">5번라인</div>
+
+                      <p class="line-type07-txt10">97_통신선로</p>
+                      <div class="line-type07-line06">6번라인</div>
+                      
+                      <p class="line-type07-txt11">97_통신선로</p>
+                      <div class="line-type07-line07">7번라인</div>
+
+                      <div class="icon-standard line-type07-map05">Icon-함체</div>                          
+                      <p class="line-type07-txt12">함체_1075</p>
+                      
+                      <div class="icon-standard line-type07-map06">Icon-함체</div>                          
+                      <p class="line-type07-txt13">함체_1075</p>
+
+                      <div class="icon-standard line-type07-map07">Icon-함체</div>                          
+                      <p class="line-type07-txt14">함체_1075</p>
+
+                      <div class="icon-standard line-type07-map08">Icon-함체</div>
+                      <p class="line-type07-txt15">함체_1075</p>
+                    </div>
+                    <div class="modal_stitle no_btm_line">
+                      <h2>도면 - 4:4</h2>
+                    </div>
+                    <div class="modal_scon">
+                      <div class="line_conect_con">
+                        <span>※ 선로를 선택해 주십시오</span>
+                        <!--라인-->
+                        <div class="icon-standard line-type08-map01">Icon-함체</div>
+                        <p class="line-type08-txt01">함체_1075</p>
+  
+                        <div class="icon-standard line-type08-map02">Icon-함체</div>                          
+                        <p class="line-type08-txt02">함체_1075</p>
+
+                        <div class="icon-standard line-type08-map03">Icon-함체</div>                          
+                        <p class="line-type08-txt03">함체_1075</p>
+  
+                        <div class="icon-standard line-type08-map04">Icon-함체</div>
+                        <p class="line-type08-txt04">함체_1075</p>
+  
+                        <p class="line-type08-txt05">97_통신선로</p>
+                        <div class="line-type08-line01">1번라인</div>  
+  
+                        <p class="line-type08-txt06">97_통신선로</p>
+                        <div class="line-type08-line02">2번라인</div>
+
+                        <p class="line-type08-txt07">97_통신선로</p>
+                        <div class="line-type08-line03">3번라인</div>
+  
+                        <p class="line-type08-txt08">97_통신선로</p>
+                        <div class="line-type08-line04">4번라인</div>  
+  
+                        <div class="icon-standard line-type08-map05 active">Icon-함체</div>
+                        <p class="line-type08-txt09">함체_1075</p>
+  
+                        <p class="line-type08-txt10">97_통신선로</p>
+                        <div class="line-type08-line05">5번라인</div>
+  
+                        <p class="line-type08-txt11">97_통신선로</p>
+                        <div class="line-type08-line06">6번라인</div>
+  
+                        <p class="line-type08-txt12">97_통신선로</p>
+                        <div class="line-type08-line07">7번라인</div>
+                        
+                        <p class="line-type08-txt13">97_통신선로</p>
+                        <div class="line-type08-line08">8번라인</div>
+  
+                        <div class="icon-standard line-type08-map06">Icon-함체</div>                          
+                        <p class="line-type08-txt14">함체_1075</p>
+                        
+                        <div class="icon-standard line-type08-map07">Icon-함체</div>                          
+                        <p class="line-type08-txt15">함체_1075</p>
+  
+                        <div class="icon-standard line-type08-map08">Icon-함체</div>                          
+                        <p class="line-type08-txt16">함체_1075</p>
+  
+                        <div class="icon-standard line-type08-map09">Icon-함체</div>
+                        <p class="line-type08-txt17">함체_1075</p>
+                      </div>
+                    </div>
+              <div class="tab_content" id="tab54_content">
+                <div class="modal_stitle no_btm_line">
+                  <h2>도면 - 3:4</h2>
+                </div>
+                <div class="modal_scon">
+                  <div class="line_conect_con">
+                    <span>※ 선로를 선택해 주십시오</span>
+                    <!--라인-->
+                    <div class="icon-standard line-type03-map01">Icon-함체</div>
+                    <p class="line-type03-txt01">함체_1075</p>
+                    <div class="icon-standard line-type03-map02 active">Icon-함체</div>
+                    <p class="line-type03-txt02">97_통신선로</p>
+                    <div class="icon-standard line-type03-map03">Icon-함체</div>
+                    <p class="line-type03-txt03">함체_1075</p>
+                    <div class="icon-standard line-type03-map04">Icon-함체</div>
+                    <p class="line-type03-txt04">97_통신선로</p>
+                    <div class="line-type03-line01">&nbsp;</div>
+                    <p class="line-type03-txt05">함체_1075</p>
+                    <div class="line-type03-line02">&nbsp;</div>
+                    <p class="line-type03-txt06">함체_1075</p>
+                    <div class="line-type03-line03 ">&nbsp;</div>
+                    <p class="line-type03-txt07">함체_1075</p>
+                  </div>
+                </div>
+                <div class="modal_stitle no_btm_line">
+                  <h2>도면 - 4:4</h2>
+                </div>
+                <div class="modal_scon">
+                  <div class="line_conect_con">
+                    <span>※ 선로를 선택해 주십시오</span>
+                    <!--라인-->
+                    <div class="icon-standard line-type03-map01">Icon-함체</div>
+                    <p class="line-type03-txt01">함체_1075</p>
+                    <div class="icon-standard line-type03-map02 active">Icon-함체</div>
+                    <p class="line-type03-txt02">97_통신선로</p>
+                    <div class="icon-standard line-type03-map03">Icon-함체</div>
+                    <p class="line-type03-txt03">함체_1075</p>
+                    <div class="icon-standard line-type03-map04">Icon-함체</div>
+                    <p class="line-type03-txt04">97_통신선로</p>
+                    <div class="line-type03-line01">&nbsp;</div>
+                    <p class="line-type03-txt05">함체_1075</p>
+                    <div class="line-type03-line02">&nbsp;</div>
+                    <p class="line-type03-txt06">함체_1075</p>
+                    <div class="line-type03-line03 ">&nbsp;</div>
+                    <p class="line-type03-txt07">함체_1075</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  <script src="./js/script.js"></script>
+</body>
+<html

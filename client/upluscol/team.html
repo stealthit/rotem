@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>U2 Collaboration</title>
+    <!--script  src="http://code.jquery.com/jquery-latest.min.js"></script-->
+
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style_account.css" rel="stylesheet" />
+    <!--link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)"-->
+  </head>
+  <body>
+    <div class="wrapper" id="LC_Page_20000">
+      <!-- 팝업 -->
+      <div class="menu-box team-add-team" id="-box">
+        <div class="modal-title">
+          <h2>팀 만들기</h2>
+          <button class="btn-modal-close">
+            <img src="img/ic-x-bt.svg" alt="" />
+          </button>
+        </div>
+        <div class="modal-content">
+          <div class="team-name">
+            <span>이름</span>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="팀 이름을 입력하세요"
+            />
+            <span class="err-name">팀 이름을 입력하세요.</span>
+          </div>
+          <div class="team-user">
+            <span>사용자</span>
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="이메일 주소를 입력하세요"
+            />
+          </div>
+        </div>
+        <div class="modal-bottom">
+          <a class="btn_rect_white mw-100 tac btn-cancel" alt="취소">취소</a>
+          <a class="btn_rect_black mw-100 tac btn-confirm" alt="확인">확인</a>
+        </div>
+      </div>
+      <!-- 내용 영역 -->
+      <section id="content-wrap">
+        <div class="layout-account-wrap">
+          <div id="lnb-wrap">
+            <div class="user-con">
+              <a href="#" class="tool-btn" id="user-type">홍길동 님</a>
+              <a href="#" class="btn_rect_gray tac" alt="소유한 계정"
+                >소유한 계정</a
+              >
+            </div>
+            <!--prev-->
+            <div class="account-btn-prev">
+              <a href="#"><span>아이콘</span>이전으로</a>
+            </div>
+            <!--nav-->
+            <nav>
+              <div class="nav-tit">계정정보</div>
+              <ul class="nav-ul">
+                <li>
+                  <a href="account_setting.html" class="active"
+                    ><span><img src="img/ic-setting.svg" /></span>계정설정</a
+                  >
+                </li>
+                <li>
+                  <a href="add_user.html"
+                    ><span><img src="img/ic-left-user-add-n.svg" /></span
+                    >사용자추가</a
+                  >
+                </li>
+                <li>
+                  <a href="team.html"
+                    ><span><img src="img/ic-left-team-n.svg" /></span>팀</a
+                  >
+                </li>
+                <li>
+                  <a href="account_info.html"
+                    ><span><img src="img/ic-left-payment-n.svg" /></span
+                    >결제정보</a
+                  >
+                </li>
+              </ul>
+              <div class="nav-tit">설정</div>
+              <ul class="nav-ul">
+                <li>
+                  <a href="profile.html"
+                    ><span><img src="img/ic-left-profile-n.svg" /></span
+                    >프로필</a
+                  >
+                </li>
+                <li>
+                  <a href="notice.html"
+                    ><span><img src="img/ic-left-alert-n.svg" /></span>알림</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="content-wrap-inner">
+          <section id="header-wrap">
+            <header>
+              <div class="func-wrap">
+                <div class="func-mobile-list">
+                  <button type="button" id="tree-trigger-btn">리스트</button>
+                </div>
+                팀
+                <button
+                  href="#"
+                  class="btn_rect_black mw-100 tac add-team"
+                  alt="팀추가"
+                >
+                  <span>+</span>팀추가
+                </button>
+              </div>
+            </header>
+          </section>
+          <section id="content">
+            <div id="team-no-data" class="no-data">
+              <div class="no-data-wrap">
+                <div class="no-data-img">
+                  <img src="img/img-request.svg" alt="" />
+                </div>
+                <div>만들어진 팀이 없습니다.</div>
+              </div>
+            </div>
+            <div class="team-wrap">
+              <table class="tb-layout" id="tb-team" summary="팀목록">
+                <colgroup>
+                  <col width="3%" />
+                  <col width="57%" />
+                  <col width="20%" />
+                  <col width="10%" />
+                  <col width="10%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>
+                      <input type="checkbox" name="" id="ck-tb-team" /><label
+                        for="ck-tb-team"
+                      ></label>
+                    </th>
+                    <th>이름</th>
+                    <th class="tac">멤버</th>
+                    <th class="tac" colspan="2">설정</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <div class="pagenation">
+                <button class="page-prev-end disabled"></button>
+                <button class="page-prev disabled"></button>
+                <ul>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">9</a></li>
+                  <li><a href="#">10</a></li>
+                </ul>
+                <button class="page-next"></button>
+                <button class="page-next-end"></button>
+                <button class="btn-sel-delete btn_rect_white">삭제</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <!-- <script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>     -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        //isData 값이 true 이면 팀데이타 내역, false이면 데이타 없음 이미지
+        var isData = true;
+        if (isData) {
+          document.getElementById("team-no-data").style.display = "none";
+          document.querySelector(".team-wrap").style.display = "";
+        } else {
+          document.getElementById("team-no-data").style.display = "";
+          document.querySelector(".team-wrap").style.display = "none";
+        }
+
+        var teamTableData = [
+            ["project team", "1"],
+            ["project team", "1"],
+            ["project team", "1"],
+            ["project team", "1"],
+            ["project team", "1"],
+            ["project team", "1"],
+            ["project team", "1"],
+            ["project team", "1"],
+            ["project team", "1"],
+            ["project team", "1"],
+          ],
+          tbTeam = document.getElementById("tb-team");
+        setTableBody(teamTableData, tbTeam);
+
+        function setTableBody(tableData) {
+          tableData.forEach(function (data, idx) {
+            var addTag = "",
+              ckIdx = idx + 1;
+            addTag += "<tr>";
+            data.forEach(function (el, i) {
+              switch (i) {
+                // case 0 : addTag += '<tr><td><input type="checkbox" for></td>';
+                case 0:
+                  addTag +=
+                    '<tr><td><input type="checkbox" id="ck-' +
+                    ckIdx +
+                    '"><label for="ck-' +
+                    ckIdx +
+                    '"></label></td>';
+
+                  addTag += "<td>" + el + "</td>";
+                  break;
+                case 1:
+                  addTag += '<td class="tac">' + el + "</td>";
+                  addTag +=
+                    '<td class="tac"><button class="btn-modify "></button></td>';
+                  addTag +=
+                    '<td><button class="btn-delete" type="button"></button></td></tr>';
+                  break;
+              }
+            });
+            addTag += "</tr>";
+            var tbody = document.querySelector("tbody");
+            tbody.innerHTML += addTag;
+          });
+        }
+
+        // checkbox 전체 선택/해제
+        var ckTableTeam = document.getElementById("ck-tb-team");
+        ckTableTeam.addEventListener("change", function () {
+          var tbodyCK = document.querySelectorAll(
+            'tbody input[type="checkbox"]'
+          );
+          var bChecked = this.checked;
+
+          tbodyCK.forEach(function (el) {
+            el.checked = bChecked;
+          });
+        });
+
+        var addTeamModal = document.querySelector(".team-add-team");
+        var addTeam = document.querySelector(".add-team");
+        var btnCancel = document.querySelector(".team-add-team .btn-cancel");
+        var btnClose = document.querySelector(
+          ".team-add-team .btn-modal-close"
+        );
+        var btnConfirm = document.querySelector(".team-add-team .btn-confirm");
+        //팀추가
+        addTeam.addEventListener("click", function () {
+          event.preventDefault();
+          addTeamModal.style.display = "block";
+        });
+        btnCancel.addEventListener("click", function () {
+          event.preventDefault();
+          addTeamModal.style.display = "none";
+        });
+        btnClose.addEventListener("click", function () {
+          event.preventDefault();
+          addTeamModal.style.display = "none";
+        });
+        btnConfirm.addEventListener("click", function () {
+          event.preventDefault();
+          addTeamModal.style.display = "none";
+        });
+        //삭제버튼 클릭
+        document
+          .querySelector(".btn-sel-delete")
+          .addEventListener("click", function () {
+            if (confirm("삭제하시겠습니까?") == true) {
+              // addTeamModal.style.display = 'none';
+            } else {
+            }
+          });
+      });
+    </script>
+  </body>
+</html>

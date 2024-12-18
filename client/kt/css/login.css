@@ -1,0 +1,73 @@
+@charset "UTF-8";
+.wrapper { background-color: #f2f7ff; width: 1920px; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+/********************* login **********************/
+.login-wrap { width: 1000px; margin: 0 auto; /* X버튼 생성 텍스트 인풋 */ }
+.login-wrap .ic-id { background: url(../assets/login_id_normal.svg) no-repeat 95% center; padding-right: 48px; }
+.login-wrap .ic-id.error { border: 1px solid #d06062; background: #fff url(../assets/c_ic_login_warning.svg) no-repeat 96% center; }
+.login-wrap .ic-id:disabled { background: url(../assets/login_id_disabled.svg) no-repeat 95% center; padding-right: 48px; }
+.login-wrap .ic-pw { background: url(../assets/ic_login_passwoard_normal.svg) no-repeat 95% center; padding-right: 48px; }
+.login-wrap .ic-pw.error { border: 1px solid #d06062; background: #fff url(../assets/c_ic_login_warning.svg) no-repeat 96% center; }
+.login-wrap .ic-pw:disabled { background: url(../assets/ic_login_passwoard_disabled.svg) no-repeat 95% center; padding-right: 48px; }
+.login-wrap .input-wrap { position: relative; }
+.login-wrap .input-wrap .btn-clear { position: absolute; right: 16px; top: 12px; display: none; }
+.login-wrap input[type="text"], .login-wrap input[type="password"] { width: 100%; height: 48px; border: 1px solid #bcbfc7; border-radius: 4px; background-color: #fff; padding: 0 16px; padding-right: 48px; color: rgba(20, 31, 64, 0.8); }
+.login-wrap input[type="text"]:hover, .login-wrap input[type="password"]:hover { border: 1px solid #8c8c8c; }
+.login-wrap input[type="text"]::-webkit-input-placeholder, .login-wrap input[type="password"]::-webkit-input-placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
+.login-wrap input[type="text"]:-ms-input-placeholder, .login-wrap input[type="password"]:-ms-input-placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
+.login-wrap input[type="text"]::-ms-input-placeholder, .login-wrap input[type="password"]::-ms-input-placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
+.login-wrap input[type="text"]::placeholder, .login-wrap input[type="password"]::placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
+.login-wrap input[type="text"]:focus, .login-wrap input[type="password"]:focus { border: 1px solid #141f40; }
+.login-wrap input[type="text"].error, .login-wrap input[type="password"].error { border: 1px solid #d06062; }
+.login-wrap input[type="text"]:disabled, .login-wrap input[type="password"]:disabled { background-color: #f9fafd; border: 1px solid #bcbfc7; color: rgba(20, 31, 64, 0.2); }
+.login-wrap input[type="text"]:disabled::-webkit-input-placeholder, .login-wrap input[type="password"]:disabled::-webkit-input-placeholder { color: rgba(20, 31, 64, 0.2); }
+.login-wrap input[type="text"]:disabled:-ms-input-placeholder, .login-wrap input[type="password"]:disabled:-ms-input-placeholder { color: rgba(20, 31, 64, 0.2); }
+.login-wrap input[type="text"]:disabled::-ms-input-placeholder, .login-wrap input[type="password"]:disabled::-ms-input-placeholder { color: rgba(20, 31, 64, 0.2); }
+.login-wrap input[type="text"]:disabled::placeholder, .login-wrap input[type="password"]:disabled::placeholder { color: rgba(20, 31, 64, 0.2); }
+.login-wrap input[type="checkbox"] { display: none; }
+.login-wrap input[type="checkbox"] + label { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: #141f40; cursor: pointer; }
+.login-wrap input[type="checkbox"] + label > .ico { background: url(../assets/ic_checkbox_default.svg) no-repeat center/cover; width: 20px; height: 20px; display: inline-block; margin-right: 10px; }
+.login-wrap input[type="checkbox"]:checked + label > .ico { background: url(../assets/ic_checkbox_selected.svg) no-repeat center/cover; width: 20px; height: 20px; display: inline-block; }
+.login-wrap input[type="checkbox"]:checked:disabled + label > .ico { background: url(../assets/ic_checkbox_selected_disabled.svg) no-repeat center/cover; width: 20px; height: 20px; display: inline-block; }
+.login-wrap input[type="checkbox"]:disabled + label > .ico { background: url(../assets/ic_checkbox_disabled.svg) no-repeat center/cover; width: 20px; height: 20px; display: inline-block; }
+.login-wrap select { -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; font-size: 14px; letter-spacing: -0.35px; text-align: left; color: rgba(40, 42, 63, 0.83); text-overflow: ellipsis; background: url(../assets/ico-dropdown.png) no-repeat center right 10px; border-radius: 4px; border: solid 1px #bcbfc7; background-color: #fff; padding: 0 16px; height: 38px; }
+.login-wrap select option { height: 35px; font-size: 14px; letter-spacing: -0.35px; color: rgba(20, 31, 64, 0.83); border: solid 1px #bcbfc7; }
+.login-wrap .login-box { width: 1000px; height: 630px; border-radius: 14px; -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05); box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05); background-color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.login-wrap .login-box .login-main { width: 450px; padding: 102px 40px 88px 40px; text-align: center; }
+.login-wrap .login-box .login-main img { padding: 0 49px; margin-bottom: 71px; }
+.login-wrap .login-box .login-main input { margin-bottom: 12px; }
+.login-wrap .login-box .login-main span { letter-spacing: -0.35px; }
+.login-wrap .login-box .login-main .prevention { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.login-wrap .login-box .login-main .prevention .pre-img { width: 180px; height: 50px; background-color: #000; }
+.login-wrap .login-box .login-main .prevention .pre-icon { margin: 0 10px 0 8px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.login-wrap .login-box .login-main .prevention .pre-input { width: 154px; }
+.login-wrap .login-box .login-main .btn-ell-blue { margin-bottom: 20px; margin-top: 22px; }
+.login-wrap .login-box .login-main .login-option { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.login-wrap .login-box .login-main .login-option .checkbox { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.login-wrap .login-box .login-main .login-option .new-account { color: #00aace; text-decoration: underline; }
+.login-wrap .login-box .login-main .login-option .new-account::after { content: ""; position: absolute; width: 16px; height: 16px; background: url(../assets/ic_arrow_hyperlink_right.svg) no-repeat center center/cover; margin-top: 3px; }
+.login-wrap .login-box .login-img { position: relative; }
+.login-wrap .login-box .login-img .img-text { position: absolute; bottom: 110px; left: 100px; text-align: center; }
+.login-wrap .login-box .login-img .img-text p:first-child { font-size: 24px; color: #fff; font-weight: 500; margin-bottom: 12px; }
+.login-wrap .login-box .login-img .img-text p:last-child { font-size: 15px; color: #fff; }
+.login-wrap .login-footer { text-align: center; }
+.login-wrap .login-footer ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 10px; margin-top: 28px; }
+.login-wrap .login-footer ul li { margin-right: 10px; font-size: 13px; color: #141f40; cursor: pointer; }
+.login-wrap .login-footer ul li::after { content: ""; position: absolute; width: 1px; height: 10px; background-color: #bfc2c8; margin-left: 10px; margin-top: 5px; }
+.login-wrap .login-footer ul li:last-child:after { width: 0; }
+.login-wrap .login-footer .address { color: #616366; font-size: 13px; margin-top: 16px; }
+
+/* 셀렉트 */
+.selectBox { width: 300px; position: relative; }
+.selectBox.disable .label { border: 1px solid #bcbfc7; color: rgba(20, 31, 64, 0.2); background: #f9fafd url(../assets/ic_dropdown_arrow_down_disabled.svg) no-repeat 96% center; }
+.selectBox.disable .label:hover { border: 1px solid #bcbfc7; }
+.selectBox .label { width: 100%; text-align: left; border: 1px solid #bcbfc7; height: 38px; border-radius: 4px; padding: 0 48px 0 16px; color: rgba(20, 31, 64, 0.8); background: #fff url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat 96% center; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.selectBox .label:hover { border: 1px solid #8c8c8c; }
+.selectBox .label.active { border: 1px solid #2a3d72; }
+.selectBox .optionList { width: 100%; border: 1px solid #2a3d72; background-color: #fff; border-radius: 4px; height: 190px; overflow-y: auto; position: absolute; top: 46px; display: none; }
+.selectBox .optionList::-webkit-scrollbar { width: 2px; border-radius: 1px; }
+.selectBox .optionList::-webkit-scrollbar-thumb { background-color: rgba(20, 31, 64, 0.5); border-radius: 1px; }
+.selectBox .optionList .optionItem { padding: 8px 16px 10px 16px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.selectBox .optionList .optionItem:hover { background-color: rgba(27, 192, 218, 0.1); color: #00aace; font-weight: 600; }
+
+/*# sourceMappingURL=login.css.map */

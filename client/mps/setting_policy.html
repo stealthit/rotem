@@ -1,0 +1,2272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tree.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting active">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+<div class="top">
+	<div class="user-info-box">
+        <div class="profile">
+            <button type="button" class="profile-dropdown"></button>
+        </div>
+        <div class="dropdown">
+            <div class="user-info">
+                <div class="user-top">
+                    <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                    <span class="division">I</span>
+                    <span class="position">슈퍼관리자</span>
+                </div>
+                <div class="user-bottom">
+                    <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                </div>
+            </div>
+            <button type="button" class="logout-btn">로그아웃</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 환경설정 > 정책관리
+            </div>
+            <div class="page-title">
+                정책관리
+            </div>
+            <div class="setting-policy-content">
+                <div class="left">
+                    <div class="setting-policy-left-title">
+                        정책
+                    </div>
+                    <div class="policy-list-box">
+                        <a href="#" class="active">
+                            <div class="type user">
+                                사용자
+                            </div>
+                            <span>안녕하세요 테스트 정책입니다. 아주긴 정책입니다. 테스트입니다. 아아아아키키키키키키키키키</span>
+                        </a>
+                        <a href="#">
+                            <div class="type dpt">
+                                부서
+                            </div>
+                            <span>xxx정책1</span>
+                        </a>
+                        <a href="#">
+                            <div class="type comp">
+                                복합기
+                            </div>
+                            <span>xxx정책1</span>
+                        </a>
+                        <a href="#">
+                            <div class="type project">
+                                프로젝트
+                            </div>
+                            <span>xxx정책1</span>
+                        </a>
+                    </div>
+                    <button type="button" class="add-policy-btn bgcolor bdcolor">
+                        <img src="./imges/ico_add_w.png" alt="icoAdd" />
+                        <span>정책추가</span>
+                    </button>
+                </div>
+                <div class="right">
+                    <div class="tab-navi">
+                        <div class="li active tab-li-content" data-id="tab1">정책</div>
+                        <div class="li tab-li-content" data-id="tab2">대상자</div>
+                        <div class="li tab-li-content" data-id="tab3">프로젝트</div>
+                        <div class="li tab-li-content" data-id="tab4">복합기</div>
+                    </div>
+                    <div class="setting-policy-tab-content tab-content active" id="tab1">
+                        <div class="info-table">
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    정책속성
+                                </div>
+                                <div class="comp-info">
+                                    사용자
+                                </div>
+                            </div>
+                            <div class="row bdbn">
+                                <div class="comp-info-title">
+                                    정책명
+                                </div>
+                                <div class="comp-info">
+                                    xxx정책1
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title-large">
+                                    제한량
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    흑백 프린트 제한량
+                                </div>
+                                <div class="comp-info">
+                                    무제한
+                                </div>
+                                <div class="comp-info-title">
+                                    컬러 프린트 제한량
+                                </div>
+                                <div class="comp-info">
+                                    무제한
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    흑백 복사 제한량
+                                </div>
+                                <div class="comp-info">
+                                    무제한
+                                </div>
+                                <div class="comp-info-title">
+                                    컬러 복사 제한량
+                                </div>
+                                <div class="comp-info">
+                                    무제한
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    스캔 제한량
+                                </div>
+                                <div class="comp-info">
+                                    무제한
+                                </div>
+                                <div class="comp-info-title">
+                                    팩스 제한량
+                                </div>
+                                <div class="comp-info">
+                                    무제한
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    사용량 초과시<br>제한사용
+                                </div>
+                                <div class="comp-info">
+                                    프린트 제한안함
+                                </div>
+                                <div class="comp-info-title">
+                                    복사 사용량 초과시<br>제한사용
+                                </div>
+                                <div class="comp-info">
+                                    복사 제한안함
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title-large">
+                                    사용량 알림
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    사용량경고<br>알림메일 사용
+                                </div>
+                                <div class="comp-info">
+                                    사용안함
+                                </div>
+                                <div class="comp-info-title">
+                                    사용량초과<br>알림메일 사용
+                                </div>
+                                <div class="comp-info">
+                                    사용안함
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title-large">
+                                    워터마크
+                                </div>
+                            </div>
+                            <div class="row height-auto">
+                                <div class="comp-info-title">
+                                    프린트 워터마크
+                                </div>
+                                <div class="comp-info">
+                                    <div class="sub-row">
+                                        <span class="name noline">xxx워터마크12345-xxx워터마크12345</span>
+                                        
+                                    </div>
+                                    <div class="sub-row">
+                                        <div class="watermark-box"><img src="./imges/img_watermark_ex.png"
+                                                alt="imgWatermark" /></div>
+                                        <span class="text"><span class="etc etc2">[예외사용]</span>사용</span>
+                                    </div>
+                                </div>
+                                <div class="comp-info-title">
+                                    스캔 워터마크
+                                </div>
+                                <!-- <div class="comp-info">
+                                    <div class="sub-row">
+                                        <span class="text">사용안함</span>
+                                    </div>
+                                </div> -->
+                                <div class="comp-info">
+                                    <div class="sub-row">
+                                        <span class="name">상단형 워터마크</span>
+
+                                    </div>
+                                    <div class="sub-row">
+                                        <div class="watermark-box"><img src="./imges/img_watermark_ex.png"
+                                                alt="imgWatermark" /></div>
+                                        <span class="text"><span class="etc etc2">[예외사용]</span>사용</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row height-auto">
+                                <div class="comp-info-title">
+                                    복사 워터마크
+                                </div>
+                                <div class="comp-info">
+                                    <div class="sub-row">
+                                        <span class="name">상단형 워터마크</span>
+
+                                    </div>
+                                    <div class="sub-row">
+                                        <div class="watermark-box"><img src="./imges/img_watermark_ex.png"
+                                                alt="imgWatermark" /></div>
+                                        <span class="text"><span class="etc etc2">[예외사용]</span>사용</span>
+                                    </div>
+                                </div>
+                                <div class="comp-info-title">
+                                    QR코드 워터마크
+                                </div>
+                                <!-- <div class="comp-info">
+                                    <div class="sub-row">
+                                        <span class="text">사용안함</span>
+                                    </div>
+                                </div> -->
+                                <div class="comp-info">
+                                    <div class="sub-row">
+                                        <span class="name">상단형 워터마크</span>
+
+                                    </div>
+                                    <div class="sub-row">
+                                        <div class="watermark-box"><img src="./imges/img_watermark_ex.png"
+                                                alt="imgWatermark" /></div>
+                                        <span class="text"><span class="etc etc2">[예외사용]</span>사용</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title-large">
+                                    QCR 정책
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    QCR 정책
+                                </div>
+                                <div class="comp-info">
+                                    미사용
+                                </div>
+                                <div class="comp-info-title">
+                                    이메일 정책
+                                </div>
+                                <div class="comp-info">
+                                    개인정보
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title-large">
+                                    스캔/팩스함
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="comp-info-title">
+                                    등록한 팩스함
+                                </div>
+                                <div class="comp-info">
+                                    1번 팩스함
+                                </div>
+                                <div class="comp-info-title">
+                                    등록한 스캔함
+                                </div>
+                                <div class="comp-info">
+                                    1번 스캔함
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="setting-policy-tab-content tab-content" id="tab2">
+                        <div class="search-form">
+                            <form action="" method="post">
+                                <div class="input-content">
+                                    <div class="input-row">
+                                        <span class="title long">사용자 조회</span>
+                                        <div class="form-input-group">
+                                            <select>
+                                                <option value="">ID</option>
+                                                <option value="">이름</option>
+                                                <option value="">부서 ID</option>
+                                                <option value="">부서명</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-input-text-group">
+                                            <input type="text" name="" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="submit-btn  bgcolor" type="submit">조회</button>
+                            </form>
+                        </div>
+                        <div class="setting-btn-row">
+                            <span>조회결과</span>
+
+                        </div>
+                        <div class="content-wrapper">
+
+                            <div class="button-row ">
+                                <div class="left">
+                                    <button class="plus-btn  bgcolor" type="button" id="addSubjectBtn">
+                                        <img src="./imges/ico_plus.png" alt="icoPlus">
+                                        대상추가
+                                    </button>
+                                    <button class="down updateLimitBtn in_ml10" type="button" >제한량
+                                        변경</button>
+                                </div>
+                                <div class="right">
+                                    <div class="list-info">
+                                        xxx정책1 대상자 (총 <span class="ftcolor">100</span>건)
+                                    </div>
+                                    <select>
+                                        <option value="">15개씩</option>
+                                        <option value="">30개씩</option>
+                                        <option value="">50개씩</option>
+                                        <option value="">100개씩</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="table-scroll1212">
+                               <table class="jb-table no-arrow">
+                                <tr class="jb-table-header-group">
+                                    <th class=" jb-table-cell jb-middle">
+
+                                        <input type="checkbox" id="cba3">
+                                        <label for="cba3">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p class="in_posi-8"><button type="button" class="arrow"></button>ID</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p>이름</p>
+                                    </th>
+                                    <th class=" jb-table-cell jb-middle">
+                                        <p>부서ID</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p>부서명</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p>정책</p>
+                                    </th>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check41">
+                                        <label for="check41">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>1000</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>기술연수소</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                  <td class=" jb-table-cell jb-middle">
+                                      <input type="checkbox" name="check" id="check41">
+                                      <label for="check41">
+                                          <span class="ico"></span>
+                                      </label>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                      <p>idididid</p>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                      <p>홍길동</p>
+                                  </td>
+                                  <td class=" jb-table-cell jb-middle">
+                                      <p>1000</p>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                    <p>기술연수소</p>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                      <p>xxx정책1</p>
+                                  </td>
+                              </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check42">
+                                        <label for="check42">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>1000</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle ">
+                                        <p>기술연수소</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check43">
+                                        <label for="check43">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>1000</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle ">
+                                        <p>기술연수소</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check44">
+                                        <label for="check44">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>1000</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle ">
+                                        <p>기술연수소</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check45">
+                                        <label for="check45">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>1000</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle ">
+                                        <p>기술연수소</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                            </table> 
+                            </div>
+                            
+                            <div class="pagenation">
+                                <button type="button" class="back-end disabled"></button>
+                                <button type="button" class="back disabled"></button>
+                                <button type="button" class="number">1</button>
+                                <button type="button" class="number active">2</button>
+                                <button type="button" class="number">3</button>
+                                <button type="button" class="number">4</button>
+                                <button type="button" class="number">5</button>
+                                <button type="button" class="number">6</button>
+                                <button type="button" class="number">7</button>
+                                <button type="button" class="number">8</button>
+                                <button type="button" class="number">9</button>
+                                <button type="button" class="number">10</button>
+                                <button type="button" class="next"></button>
+                                <button type="button" class="next-end"></button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setting-policy-tab-content tab-content" id="tab3">
+                        <div class="search-form">
+                            <form action="" method="post">
+                                <div class="input-content">
+                                    <div class="input-row">
+                                        <span class="title long">프로젝트 조회</span>
+                                        <div class="form-input-group policy_select">
+                                            <select>
+                                                <option value="">프로젝트명</option>
+                                                <option value="">프로젝트 코드</option>
+                                                <option value="">PM ID</option>
+                                                <option value="">PM</option>
+                                                <option value="">ID</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-input-text-group">
+                                            <input type="text" name="" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="submit-btn  bgcolor" type="submit">조회</button>
+                            </form>
+                        </div>
+                        <div class="setting-btn-row">
+                            <span>조회결과</span>
+
+                        </div>
+                        <div class="content-wrapper">
+
+                            <div class="button-row">
+                                <div class="left">
+                                    <button class="plus-btn  bgcolor plus-project in_mr10" type="button" id="addProjectBtn">
+                                        <img src="./imges/ico_plus.png" alt="icoPlus">
+                                        프로젝트 추가
+                                    </button>
+                                    <button class="down updateLimitBtn" type="button">제한량 변경</button>
+                                </div>
+                                <div class="right">
+                                    <div class="list-info">
+                                        xxx정책 1 프로젝트 목록 (총 <span class="ftcolor">100</span>건)
+                                    </div>
+                                    <select>
+                                        <option value="">15개씩</option>
+                                        <option value="">30개씩</option>
+                                        <option value="">50개씩</option>
+                                        <option value="">100개씩</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="table-scroll1212">
+                              <table class="jb-table no-arrow">
+                                <tr class="jb-table-header-group">
+                                    <th class=" jb-table-cell jb-middle">
+
+                                        <input type="checkbox" id="cbaProject">
+                                        <label for="cbaProject">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p class="in_posi-8"><button type="button" class="arrow"></button>프로젝트 코드</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p>프로젝트명</p>
+                                    </th>
+                                    <th class=" jb-table-cell jb-middle">
+                                        <p>PM</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p>PM ID</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p>정책</p>
+                                    </th>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" id="project1" name="check">
+                                        <label for="project1">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                  <td class=" jb-table-cell jb-middle">
+                                      <input type="checkbox" id="project1" name="check">
+                                      <label for="project1">
+                                          <span class="ico"></span>
+                                      </label>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                      <p>xxx</p>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                      <p>xxx</p>
+                                  </td>
+                                  <td class=" jb-table-cell jb-middle">
+                                      <p>xxx</p>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                      <p>ididid</p>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                      <p>xxx정책1</p>
+                                  </td>
+                              </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" id="62" name="check">
+                                        <label for="62">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" id="63" name="check">
+                                        <label for="63">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" id="64" name="check">
+                                        <label for="64">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" id="65" name="check">
+                                        <label for="65">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                            </table>  
+                            </div>
+                            
+                            <div class="pagenation">
+                                <button type="button" class="back-end disabled"></button>
+                                <button type="button" class="back disabled"></button>
+                                <button type="button" class="number">1</button>
+                                <button type="button" class="number active">2</button>
+                                <button type="button" class="number">3</button>
+                                <button type="button" class="number">4</button>
+                                <button type="button" class="number">5</button>
+                                <button type="button" class="number">6</button>
+                                <button type="button" class="number">7</button>
+                                <button type="button" class="number">8</button>
+                                <button type="button" class="number">9</button>
+                                <button type="button" class="number">10</button>
+                                <button type="button" class="next"></button>
+                                <button type="button" class="next-end"></button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setting-policy-tab-content tab-content" id="tab4">
+                        <div class="search-form">
+                            <form action="" method="post">
+                                <div class="input-content">
+                                    <div class="input-row">
+                                        <span class="title">조회</span>
+                                        <div class="form-input-group  policy_select">
+                                            <select>
+                                                <option value="">시리얼 번호</option>
+                                                <option value="">복합기 IP</option>
+                                                <option value="">모델명</option>
+                                                <option value="">복합기 위치</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-input-text-group">
+                                            <input type="text" name="" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="submit-btn  bgcolor" type="submit">조회</button>
+                            </form>
+                        </div>
+                        <div class="setting-btn-row">
+                            <span>조회결과</span>
+
+                        </div>
+                        <div class="content-wrapper">
+
+                            <div class="button-row">
+                                <div class="left">
+                                    <button class="plus-btn  bgcolor in_mr10" type="button" id="addCompBtn">
+                                        <img src="./imges/ico_plus.png" alt="icoPlus">
+                                        복합기 추가
+                                    </button>
+                                    <button class="down updateLimitBtn" type="button">제한량 변경</button>
+                                </div>
+                                <div class="right">
+                                    <div class="list-info">
+                                        결재 진행 목록 (총 <span class="ftcolor">100</span>건)
+                                    </div>
+                                    <select>
+                                        <option value="">15개씩</option>
+                                        <option value="">30개씩</option>
+                                        <option value="">50개씩</option>
+                                        <option value="">100개씩</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="table-scroll1212">
+                                <table class="jb-table no-arrow">
+                                <tr class="jb-table-header-group">
+                                    <th class=" jb-table-cell jb-middle">
+
+                                        <input type="checkbox" id="cba55">
+                                        <label for="cba55">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p class="in_posi-8"><button type="button" class="arrow"></button>복합기 IP</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p>시리얼번호</p>
+                                    </th>
+                                    <th class=" jb-table-cell jb-middle">
+                                        <p>모델명</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p>복합기 위치</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p>정책</p>
+                                    </th>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="71">
+                                        <label for="71">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>10.1.112.108</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>3AJ00002</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>iR-ADV C5750/5760</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>10.1.112.108</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                  <td class=" jb-table-cell jb-middle">
+                                      <input type="checkbox" name="check" id="71">
+                                      <label for="71">
+                                          <span class="ico"></span>
+                                      </label>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                      <p>10.1.112.108</p>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                      <p>3AJ00002</p>
+                                  </td>
+                                  <td class=" jb-table-cell jb-middle">
+                                      <p>iR-ADV C5750/5760</p>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                      <p>10.1.112.108</p>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                      <p>xxx정책1</p>
+                                  </td>
+                              </tr>
+                              <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" name="check" id="71">
+                                    <label for="71">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.108</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>3AJ00002</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>iR-ADV C5750/5760</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.108</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>xxx정책1</p>
+                                </td>
+                            </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="72">
+                                        <label for="72">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>10.1.112.108</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>3AJ00002</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>iR-ADV C5750/5760</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>10.1.112.108</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="73">
+                                        <label for="73">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>10.1.112.108</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>3AJ00002</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>iR-ADV C5750/5760</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>10.1.112.108</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="74">
+                                        <label for="74">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>10.1.112.108</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>3AJ00002</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>iR-ADV C5750/5760</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>10.1.112.108</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx정책1</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            </div>
+                            
+                            <div class="pagenation">
+                                <button type="button" class="back-end disabled"></button>
+                                <button type="button" class="back disabled"></button>
+                                <button type="button" class="number">1</button>
+                                <button type="button" class="number active">2</button>
+                                <button type="button" class="number">3</button>
+                                <button type="button" class="number">4</button>
+                                <button type="button" class="number">5</button>
+                                <button type="button" class="number">6</button>
+                                <button type="button" class="number">7</button>
+                                <button type="button" class="number">8</button>
+                                <button type="button" class="number">9</button>
+                                <button type="button" class="number">10</button>
+                                <button type="button" class="next"></button>
+                                <button type="button" class="next-end"></button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-btn-group">
+                <button type="button" class="cancel-btn bdcolor ftcolor" onclick=deleteModal();>
+                    삭제
+                </button>
+                <a href="/canon/setting_policy_input.html" class="confirm-btn bgcolor in_ml10 in_linehg45">
+                    수정
+                </a>
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+    <div class="setting-subject-modal-background comp-modal modal">
+        <div class="setting-subject-modal-content">
+            <div class="title">
+                <span>복합기 추가</span>
+                <button type="button" class="modal-close-btn"></button>
+            </div>
+            <form action="" method="post">
+                <div class="search-form">
+                    <span class="title">조회</span>
+                    <div class="form-input-group">
+                        <select>
+                            <option value="">시리얼 번호</option>
+                            <option value="">복합기 IP</option>
+                            <option value="">모델명</option>
+                            <option value="">복합기 위치</option>
+                        </select>
+                    </div>
+                    <div class="form-input-text-group">
+                        <input type="text" name="" value="">
+                    </div>
+                    <button class="submit-btn bgcolor" type="submit">조회</button>
+                </div>
+            </form>
+            <form action="" method="post">
+                <div class="setting-subject-modal-content-bottom height365">
+                    <div class="middle">
+                        <div class="top-box">
+                            <button class="down no-arrow" type="button">정책 적용</button>
+                            <select>
+                                <option value="">15개씩</option>
+                                <option value="">30개씩</option>
+                                <option value="">50개씩</option>
+                                <option value="">100개씩</option>
+                            </select>
+                        </div>
+
+                        <div class="table-scroll in_hg450 in_mt15 spi_max02">
+                            <table class="jb-table no-arrow">
+                                <tr class="jb-table-header-group">
+                                    <th class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" id="cba5">
+                                        <label for="cba5">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p class="in_posi-8"><button type="button" class="arrow"></button>프로젝트 코드</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p>프로젝트 명</p>
+                                    </th>
+                                    <th class=" jb-table-cell jb-middle">
+                                        <p></button>PM</p>
+                                    </th>
+                                    <th class=" jb-table-cell jb-middle">
+                                        <p></button>PM ID</p>
+                                    </th>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" id="check1" name="check">
+                                        <label for="check1">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check2">
+                                        <label for="check2">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check3">
+                                        <label for="check3">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check4">
+                                        <label for="check4">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check5">
+                                        <label for="check5">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check6">
+                                        <label for="check6">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check7">
+                                        <label for="check7">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check8">
+                                        <label for="check8">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check9">
+                                        <label for="check9">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check10">
+                                        <label for="check10">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="pagenation">
+                            <button type="button" class="back-end disabled"></button>
+                            <button type="button" class="back disabled"></button>
+                            <button type="button" class="number">1</button>
+                            <button type="button" class="number active">2</button>
+                            <button type="button" class="number">3</button>
+                            <button type="button" class="number">4</button>
+                            <button type="button" class="number">5</button>
+                            <button type="button" class="number">6</button>
+                            <button type="button" class="number">7</button>
+                            <button type="button" class="number">8</button>
+                            <button type="button" class="number">9</button>
+                            <button type="button" class="next"></button>
+                            <button type="button" class="next-end"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="setting-subject-modal-background project-modal modal">
+        <div class="setting-subject-modal-content">
+            <div class="title">
+                <span>프로젝트 추가</span>
+                <button type="button" class="modal-close-btn"></button>
+            </div>
+            <form action="" method="post">
+                <div class="search-form">
+                    <span class="title">조회</span>
+                    <div class="form-input-group">
+                        <select>
+                            <option value="">프로젝트명</option>
+                            <option value="">프로젝트 코드</option>
+                            <option value="">PM</option>
+                        </select>
+                    </div>
+                    <div class="form-input-text-group">
+                        <input type="text" name="" value="">
+                    </div>
+                    <button class="submit-btn bgcolor" type="submit">조회</button>
+                </div>
+            </form>
+            <form action="" method="post">
+                <div class="setting-subject-modal-content-bottom height365">
+                    <div class="middle">
+                        <div class="top-box">
+                            <button class="down no-arrow" type="button">정책 적용</button>
+                            <select>
+                                <option value="">15개씩</option>
+                                <option value="">30개씩</option>
+                                <option value="">50개씩</option>
+                                <option value="">100개씩</option>
+                            </select>
+                        </div>
+
+                        <div class="table-scroll in_hg400 in_mt15 spi_max02">
+                            <table class="jb-table">
+                                <tr class="jb-table-header-group">
+                                    <th class=" jb-table-cell jb-middle">
+
+                                        <input type="checkbox" id="cba4">
+                                        <label for="cba4">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p><button type="button" class="arrow"></button>프로젝트 코드</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p>프로젝트 명</p>
+                                    </th>
+                                    <th class=" jb-table-cell jb-middle">
+                                        <p>PM</p>
+                                    </th>
+                                    <th class=" jb-table-cell jb-middle">
+                                        <p>PM ID</p>
+                                    </th>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check12">
+                                        <label for="check12">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check26">
+                                        <label for="check26">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check32">
+                                        <label for="check32">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check72">
+                                        <label for="check72">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check52">
+                                        <label for="check52">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check62">
+                                        <label for="check62">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check63">
+                                        <label for="check63">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check82">
+                                        <label for="check82">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check92">
+                                        <label for="check92">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check102">
+                                        <label for="check102">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>xxx</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>ididid</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="pagenation">
+                            <button type="button" class="back-end disabled"></button>
+                            <button type="button" class="back disabled"></button>
+                            <button type="button" class="number">1</button>
+                            <button type="button" class="number active">2</button>
+                            <button type="button" class="number">3</button>
+                            <button type="button" class="number">4</button>
+                            <button type="button" class="number">5</button>
+                            <button type="button" class="number">6</button>
+                            <button type="button" class="number">7</button>
+                            <button type="button" class="number">8</button>
+                            <button type="button" class="number">9</button>
+                            <button type="button" class="next"></button>
+                            <button type="button" class="next-end"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="setting-subject-modal-background add-subject-modal-background modal">
+        <div class="setting-subject-modal-content">
+            <div class="title">
+                <span>대상자 추가</span>
+                <button type="button" class="modal-close-btn"></button>
+            </div>
+            <form action="" method="post">
+                <div class="search-form">
+                    <span class="title">조회</span>
+                    <div class="form-input-group policy_select">
+                        <select >
+                            <option value="">문서ID</option>
+                            <option value="">이름</option>
+                            <option value="">문서 + 제목</option>
+                        </select>
+                    </div>
+                    <div class="form-input-text-group">
+                        <input type="text" name="" value="">
+                    </div>
+                    <button class="submit-btn bgcolor" type="submit">조회</button>
+                </div>
+            </form>
+            <form action="" method="post">
+                <div class="setting-subject-modal-content-bottom height365">
+                    <div class="left">
+                        <div class="title">
+                            CKBS
+                        </div>
+                        <div class="check-box-content  tree-wrapper longer">
+                            <div id="jstree-div"></div>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="top-box">
+                            <button class="down no-arrow" type="button">정책 적용</button>
+                            <select>
+                                <option value="">15개씩</option>
+                                <option value="">30개씩</option>
+                                <option value="">50개씩</option>
+                                <option value="">100개씩</option>
+                            </select>
+                        </div>
+
+                        <div class="table-scroll in_hg536 in_mt15 spi_max">
+                            <table class="jb-table no-arrow">
+                                <tr class="jb-table-header-group">
+                                    <th class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" id="cba8">
+                                        <label for="cba8">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p class="in_posi-8"><button type="button" class="arrow"></button>ID</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p></button>이름</p>
+                                    </th>
+                                    <th class=" jb-table-cell jb-middle">
+                                        <p></button>정책</p>
+                                    </th>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check11">
+                                        <label for="check11">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check21">
+                                        <label for="check21">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check31">
+                                        <label for="check31">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check41">
+                                        <label for="check41">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check51">
+                                        <label for="check51">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check61">
+                                        <label for="check61">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check71">
+                                        <label for="check71">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check81">
+                                        <label for="check81">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check91">
+                                        <label for="check91">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check101">
+                                        <label for="check101">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="pagenation">
+                            <button type="button" class="back-end disabled"></button>
+                            <button type="button" class="back disabled"></button>
+                            <button type="button" class="number">1</button>
+                            <button type="button" class="number active">2</button>
+                            <button type="button" class="number">3</button>
+                            <button type="button" class="number">4</button>
+                            <button type="button" class="number">5</button>
+                            <button type="button" class="number">6</button>
+                            <button type="button" class="number">7</button>
+                            <button type="button" class="number">8</button>
+                            <button type="button" class="number">9</button>
+                            <button type="button" class="next"></button>
+                            <button type="button" class="next-end"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--제한량 변경 팝업--> 
+    <div class="limit-update-modal-background sub-modal" >
+      <div class="limit-update-modal-content wd590">
+        <div class="title">
+            <span>제한량 변경</span>
+            <button type="button" class="sub-modal-close-btn"></button>
+        </div>
+        <form action="" method="post" class="approval-write-box">
+            <div class="approval-input-box margin approval-tab-content active">
+                <div class="row">
+                    <div class="input-row">
+                        <div class="title">흑백 프린트 제한</div>
+                        <!--div class="comp-info">
+                          <div class="radio-group">
+                              <input class="limit-radio" data-id="Y" type="radio" id="onPrintMainBnk"
+                                  name="radio-group-main-bnk-print" checked="">
+                              <label for="onPrintMainBnk">제한</label>
+                          </div>
+                          <div class="input-group short">
+                              <input type="text" class="numberOnly" />
+                          </div>
+                          <div class="radio-group">
+                              <input class="limit-radio" data-id="N" type="radio" id="offPrintMainBnk"
+                                  name="radio-group-main-bnk-print">
+                              <label for="offPrintMainBnk">제한안함</label>
+                          </div>
+                        </div-->
+
+                        <div class="approval-input-group">
+                            <div class="input-group radio-group add_size">
+                                <div class="circle-radio-group">
+                                    <div class="radio-group">
+                                        <input class="limit-radio" data-id="Y" type="radio" id="offBnk"  name="radio-group-main-bnk-print" checked="">
+                                        <label for="offBnk">제한</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input class="limit-radio" data-id="N" type="radio" id="onBnk" name="radio-group-main-bnk-print">
+                                        <label for="onBnk">제한안함</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group01 short">
+                                <input type="text" value="" placeholder="제한량" class="numberOnly">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-row">
+                        <div class="title">흑백 복사 제한</div>
+                        <div class="approval-input-group">
+                            <div class="input-group radio-group add_size">
+                                <div class="circle-radio-group">
+                                    <div class="radio-group">
+                                        <input class="limit-radio" data-id="Y" type="radio" id="offBnk01"  name="radio-group-main-bnk-print01" checked="">
+                                        <label for="offBnk01">제한</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input class="limit-radio" data-id="N" type="radio" id="onBnk01" name="radio-group-main-bnk-print01">
+                                        <label for="onBnk01">제한안함</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group01 short">
+                                <input type="text" value="" placeholder="제한량" class="numberOnly">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-row">
+                        <div class="title">컬러 프린트 제한</div>
+                        <div class="approval-input-group">
+                            <div class="input-group radio-group add_size">
+                                <div class="circle-radio-group">
+                                    <div class="radio-group">
+                                        <input type="radio" id="offColor" name="radio-group-color">
+                                        <label for="offColor">제한</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" id="onColor" name="radio-group-color" checked="">
+                                        <label for="onColor">제한안함</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-row">
+                        <div class="title">컬러 복사 제한</div>
+                        <div class="approval-input-group">
+                            <div class="input-group radio-group add_size">
+                                <div class="circle-radio-group ">
+                                    <div class="radio-group">
+                                        <input type="radio" id="offColorCopy" name="radio-group-color-copy">
+                                        <label for="offColorCopy">제한</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" id="onColorCopy" name="radio-group-color-copy"
+                                            checked="">
+                                        <label for="onColorCopy">제한안함</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-row">
+                        <div class="title">스캔 제한</div>
+                        <div class="approval-input-group">
+                            <div class="input-group radio-group add_size">
+                                <div class="circle-radio-group">
+                                    <div class="radio-group">
+                                        <input type="radio" id="offScan" name="radio-group-scan">
+                                        <label for="offScan">제한</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" id="onScan" name="radio-group-scan" checked="">
+                                        <label for="onScan">제한안함</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-row">
+                        <div class="title">팩스 제한</div>
+                        <div class="approval-input-group">
+                            <div class="input-group radio-group add_size">
+                                <div class="circle-radio-group">
+                                    <div class="radio-group">
+                                        <input type="radio" id="offFax" name="radio-group-fax">
+                                        <label for="offFax">제한</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" id="onFax" name="radio-group-fax" checked="">
+                                        <label for="onFax">제한안함</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="confirm-btn-group">
+                <button type="button" class="sub-modal-cancel-btn">취소</button>
+                <button type="button" class="confirm-btn">저장</button>
+            </div>
+        </form>
+    </div>
+</div>
+    <!-- 팝업 -->
+    <div class="alert-modal-background modal">
+        <div class="alert-modal-content">
+            <div class="title">
+                <span>알림</span>
+                <button type="button" class="modal-close-btn"></button>
+            </div>
+            <div class="content">
+                저장 하였습니다.
+            </div>
+            <div class="confirm-btn-group">
+                <button type="button" class="confirm-btn">확인</button>
+            </div>
+        </div>
+    </div>
+    <div class="number-modal-background modal">
+        <div class="alert-modal-content">
+            <div class="title">
+                <span>알림</span>
+                <button type="button" class="modal-close-btn"></button>
+            </div>
+            <div class="content">
+                숫자만 입력 가능합니다.
+            </div>
+            <div class="confirm-btn-group">
+                <button type="button" class="confirm-btn">확인</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/jstree.js"></script>
+    <script>
+        $(function () {
+            $(".setting-policy-tab-navi li").on("click", function () {
+                var id = $(this).data("id");
+                $(".setting-policy-tab-navi li").removeClass("active");
+                $(this).addClass("active");
+                $(".setting-policy-tab-content").removeClass("active");
+                $("#" + id).addC가ass("active");
+            });
+
+            // 대상자 추가
+            $('#addSubjectBtn').on('click', function () {
+              window.scrollTo(0,0); //강제상단스크롤
+                $('.add-subject-modal-background').addClass('active');
+                $('body').css('overflow', 'hidden');
+            })
+            // 프로젝트 추가
+            $('#addProjectBtn').on('click', function () {
+                window.scrollTo(0,0); //강제상단스크롤
+                $('.project-modal').addClass('active');
+                $('body').css('overflow', 'hidden');
+            })
+            // 복합기 추가
+            $('#addCompBtn').on('click', function () {
+                window.scrollTo(0,0); //강제상단스크롤
+                $('.comp-modal').addClass('active');
+                $('body').css('overflow', 'hidden');
+            })
+            $('.updateLimitBtn').on('click', function () {
+                window.scrollTo(0,0); //강제상단스크롤
+                $('.limit-update-modal-background').addClass('active');
+                $('body').css('overflow', 'hidden');
+            })
+            // 제한량변경 팝업
+            $('.limit-update-modal-content .confirm-btn-group .confirm-btn').click(function () {
+                var confirmModal = $('.alert-modal-background');
+                $('.alert-modal-background .content').text('저장 하였습니다.')
+                confirmModal.addClass('active');
+                $('.alert-modal-background .confirm-btn').click(function () {
+                    console.log($(this));
+                    $('.limit-update-modal-background').removeClass('active');
+                })
+            })
+
+            $('input.limit-radio').on('change', function () {
+                var parent = $(this).parents('.approval-input-group').find('.input-group01');
+                if ($(this).data('id') === 'Y') {
+                    parent.removeClass('disabled');
+                    parent.find('input[type="text"]').attr("disabled", false);
+                    parent.find('input[type="text"]').val("");
+                } else {
+                    parent.addClass('disabled');
+                    parent.find('input[type="text"]').attr("disabled", true);
+                    parent.find('input[type="text"]').val("-");
+
+                }
+            })
+
+
+            $('#jstree-div').jstree({
+                "core": {
+                    'data': [{
+                            "id": "ajson1",
+                            "parent": "#",
+                            "text": "Simple root node"
+                        },
+                        {
+                            "id": "ajson2",
+                            "parent": "#",
+                            "text": "Root node 2"
+                        },
+                        {
+                            "id": "ajson3",
+                            "parent": "ajson2",
+                            "text": "Child 1"
+                        },
+                        {
+                            "id": "ajson4",
+                            "parent": "ajson2",
+                            "text": "Child 2"
+                        },
+                        {
+                            "id": "ajson5",
+                            "parent": "ajson2",
+                            "text": "Child 3"
+                        },
+                        {
+                            "id": "ajson6",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+                        {
+                            "id": "ajson7",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+                        {
+                            "id": "ajson8",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+                        {
+                            "id": "ajson9",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+
+                        {
+                            "id": "ajson10",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+
+                        {
+                            "id": "ajson11",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+
+                        {
+                            "id": "ajson12",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+
+                        {
+                            "id": "ajson13",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+
+                        {
+                            "id": "ajson14",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+
+                        {
+                            "id": "ajson15",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+
+
+                    ]
+                },
+                "plugins": ["wholerow", "checkbox"],
+
+            });
+        });
+
+        function deleteModal() {
+            $(".alert-modal-background .content").text("삭제했습니다");
+            $(".alert-modal-background").addClass("active");
+        }
+    </script>
+</body>
+
+</html>

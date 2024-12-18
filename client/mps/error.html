@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 758px)">
+</head>
+
+<body>
+
+    <div class="wrapper in_ml0 in_wd100">
+
+        <div class="content sub">
+            <div class="error-wrapper">
+                <div class="error-content">
+                    <img src="./imges/ico_list_none.svg" alt="icoNull">
+                    <p>페이지를 찾을 수 없습니다.</p>
+                    <span>이용에 불편을 드려 죄송합니다.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="user-update-modal-background sub-modal">
+        <div class="user-update-modal-content">
+            <div class="title">
+                <span>사용자 정보 변경</span>
+                <button type="button" class="sub-modal-close-btn"></button>
+            </div>
+            <form action="" method="post" class="approval-write-box">
+                <div class="approval-input-box margin approval-tab-content active">
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title">ID</div>
+                            <div class="approval-input-group">
+                                <div class="input-group long">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title">이전 비밀번호</div>
+                            <div class="approval-input-group">
+                                <div class="input-group">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title">새 비밀번호</div>
+                            <div class="approval-input-group">
+                                <div class="input-group">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-row height-auto">
+                            <div class="title">새 비밀번호 확인</div>
+                            <div class="approval-input-group">
+                                <div class="input-group">
+                                    <input type="text">
+                                </div>
+                                <p class="error">비밀번호가 일치하지 않습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="confirm-btn-group">
+                    <button type="button" class="sub-modal-cancel-btn">취소</button>
+                    <button type="button" class="confirm-btn" onclick="openAlert()">확인</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/mobile.js"></script>
+
+    <script>
+        $(function () {
+
+            $('#updateUserBtn').on('click', function () {
+                $('.user-update-modal-background').addClass('active');
+            })
+        });
+
+    </script>
+</body>
+
+</html>

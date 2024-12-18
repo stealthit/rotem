@@ -1,0 +1,351 @@
+<div class="content-wrap-inner">
+    <div class="topper wide">
+        <div class="top-right">
+            <button type="button" id="sort" class="tool-btn">정렬</button>
+            <button type="button" id="view-type" class="tool-btn"><span></span></button>
+            <ul class="menu-box" id="sort-box">
+                <li><button type="button" id="sort-name-btn">이름</button></li>
+                <li><button type="button" id="sort-date-btn">수정한 날짜</button></li>
+                <li><button type="button" id="sort-size-btn">크기</button></li>
+            </ul>
+            <ul class="menu-box" id="view-type-box">
+                <li>
+                    <i></i><button type="button" id="view-gallery-btn">갤러리로 보기</button>
+                </li>
+                <li>
+                    <i></i><button type="button" id="view-grid-btn">그리드로 보기</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <div class="content-inner">
+            <div class="srch-result">
+            <div class="srch-result-text">
+                <span>"파일명"</span> 검색결과
+            </div>
+            <div class="button-row">
+                <div class="left">
+                    <button type="button" id="share-this-btn2" class="only-file"><img src="img/ic-share.svg"
+                            alt="공유아이콘"><span>공유</span></button>
+                    <button type="button"><img src="img/ic-uplaod.svg"
+                            alt="다운로드아이콘"><span>다운로드</span></button>
+                    <button type="button" id="del-this-btn2"><img src="img/ic-trash.svg"
+                            alt="삭제아이콘"><span>삭제</span></button>
+                    <button type="button" id="move-this-btn2"><img src="img/ic-move.svg"
+                            alt="이동아이콘"><span>이동</span></button>
+                    <button type="button" id="copy-this-btn2"><img src="img/ic-copy.svg"
+                            alt="복사아이콘"><span>복사</span></button>
+                    <div class="right mobile">
+                        <span id="total-file-num"></span>
+                        <button type="button" id="close-this-btn"></button>
+                    </div>
+                </div>
+            </div>
+            <table class="table my-drive-table">
+                <colgroup>
+                    <col width="4%">
+                    <col width="30%">
+                    <col width="20%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="25%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="table-cell check-cell" scope="col">
+                            <input type="checkbox" id="cba" />
+                            <label for="cba">
+                                <span class="ico"></span>
+                            </label>
+                        </th>
+                        <th class="table-cell tb-name" scope="col">
+                            <span>이름<button type="button" class="arrow down"></button></span>
+                        </th>
+                        <th class="table-cell wide" scope="col">
+                            <span>수정한 날짜<button type="button" class="arrow"></button></span>
+                        </th>
+                        <th class="table-cell wide" scope="col">
+                            <span>마지막 수정자<button type="button" class="arrow"></button></span>
+                        </th>
+                        <th class="table-cell wide" scope="col">
+                            <span>위치<button type="button" class="arrow"></button></span>
+                        </th>
+                        <th class="table-cell wide" scope="col">
+                            <span>크기<button type="button" class="arrow"></button></span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="highlight">
+                    <tr data-name="폴더명_01">
+                        <td class="table-cell check-cell">
+                            <input type="checkbox" id="check1" name="folder" class="all" />
+                            <label for="check1">
+                                <span class="ico"></span>
+                            </label>
+                        </td>
+                        <td class="table-cell">
+                            <img src="img/ic-folder.svg" alt="폴더아이콘">
+                            <div class="tb-name-box">
+                                <p>폴더명_01</p>
+                                <p class="mobile tb-time">24시간 전</p>
+                            </div>
+                        </td>
+                        <td class="table-cell wide">
+                            <span>24시간 전</span>
+                        </td>
+                        <td class="table-cell wide">
+                            <span>홍길동</span>
+                        </td>
+                        <td class="table-cell wide">
+                            <a href="#">폴더명</a>
+                        </td>
+                        <td class="table-cell wide tb">
+                            <span>000.00</span>
+                        </td>
+                    </tr>
+                    <tr data-name="폴더명_02">
+                        <td class="table-cell check-cell">
+                            <input type="checkbox" id="check2" name="folder" class="all" />
+                            <label for="check2">
+                                <span class="ico"></span>
+                            </label>
+                        </td>
+                        <td class="table-cell">
+                            <img src="img/ic-folder.svg" alt="폴더아이콘">
+                            <div class="tb-name-box">
+                                <p>폴더명_02</p>
+                                <p class="mobile tb-time">24시간 전</p>
+                            </div>
+                        </td>
+                        <td class="table-cell wide">
+                            <span>24시간 전</span>
+                        </td>
+                        <td class="table-cell wide">
+                            <span>홍길동</span>
+                        </td>
+                        <td class="table-cell wide">
+                            <a href="#">폴더명</a>
+                        </td>
+                        <td class="table-cell wide tb">
+                            <span>000.00</span>
+                        </td>
+                    </tr>
+                    <tr data-name="폴더명_03">
+                        <td class="table-cell check-cell">
+                            <input type="checkbox" id="check3" name="folder" class="all" />
+                            <label for="check3">
+                                <span class="ico"></span>
+                            </label>
+                        </td>
+                        <td class="table-cell">
+                            <img src="img/ic-folder.svg" alt="폴더아이콘">
+                            <div class="tb-name-box">
+                                <p>폴더명_03</p>
+                                <p class="mobile tb-time">24시간 전</p>
+                            </div>
+                        </td>
+                        <td class="table-cell wide">
+                            <span>24시간 전</span>
+                        </td>
+                        <td class=" table-cell wide">
+                            <span>홍길동</span>
+                        </td>
+                        <td class="table-cell wide">
+                            <a href="#">폴더명</a>
+                        </td>
+                        <td class="table-cell wide tb">
+                            <span>000.00</span>
+                        </td>
+                    </tr>
+                    <tr data-name="파일명_01.avi">
+                        <td class="table-cell check-cell">
+                            <input type="checkbox" id="check4" name="file" class="all" />
+                            <label for="check4">
+                                <span class="ico"></span>
+                            </label>
+                        </td>
+                        <td class="table-cell">
+                            <span class="i-exl icon"></span>
+                            <div class="tb-name-box">
+                                <p>파일명_01.avi</p>
+                                <p class="mobile tb-time">24시간 전</p>
+                            </div>
+                        </td>
+                        <td class="table-cell wide">
+                            <span>24시간 전</span>
+                        </td>
+                        <td class=" table-cell wide">
+                            <span>홍길동</span>
+                        </td>
+                        <td class="table-cell wide">
+                            <a href="#">폴더명</a>
+                        </td>
+                        <td class="table-cell wide kb">
+                            <span>000</span>
+                        </td>
+                    </tr>
+                    <tr data-name="파일명_02.xls">
+                        <td class="table-cell check-cell">
+                            <input type="checkbox" id="check5" name="file" class="all" />
+                            <label for="check5">
+                                <span class="ico"></span>
+                            </label>
+                        </td>
+                        <td class="table-cell">
+                            <span class="i-psd icon"></span>
+                            <div class="tb-name-box">
+                                <p>파일명_02.xls</p>
+                                <p class="mobile tb-time">06-23 00:00:00</p>
+                            </div>
+                        </td>
+                        <td class="table-cell wide">
+                            <span>06-23 00:00:00</span>
+                        </td>
+                        <td class=" table-cell wide">
+                            <span>홍길동</span>
+                        </td>
+                        <td class="table-cell wide">
+                            <a href="#">폴더명</a>
+                        </td>
+                        <td class="table-cell wide mb">
+                            <span>000</span>
+                        </td>
+                    </tr>
+                    <tr data-name="파일명_03.pdf">
+                        <td class="table-cell check-cell">
+                            <input type="checkbox" id="check6" name="file" class="all" />
+                            <label for="check6">
+                                <span class="ico"></span>
+                            </label>
+                        </td>
+                        <td class="table-cell">
+                            <span class="i-pdf icon"></span>
+                            <div class="tb-name-box">
+                                <p>파일명_03.pdf</p>
+                                <p class="mobile tb-time">06-23 00:00:00</p>
+                            </div>
+                        </td>
+                        <td class="table-cell wide">
+                            <span>06-23 00:00:00</span>
+                        </td>
+                        <td class=" table-cell wide">
+                            <span>홍길동</span>
+                        </td>
+                        <td class="table-cell wide">
+                            <a href="#">폴더명</a>
+                        </td>
+                        <td class="table-cell wide mb">
+                            <span>000</span>
+                        </td>
+                    </tr>
+                    <tr data-name="파일명_04.jpg">
+                        <td class="table-cell check-cell">
+                            <input type="checkbox" id="check7" name="file" class="all" />
+                            <label for="check7">
+                                <span class="ico"></span>
+                            </label>
+                        </td>
+                        <td class="table-cell">
+                            <span class="i-ppt icon"></span>
+                            <div class="tb-name-box">
+                                <p>파일명_04.jpg</p>
+                                <p class="mobile tb-time">06-23 00:00:00</p>
+                            </div>
+                        </td>
+                        <td class="table-cell wide">
+                            <span>06-23 00:00:00</span>
+                        </td>
+                        <td class=" table-cell wide ">
+                            <span>홍길동</span>
+                        </td>
+                        <td class="table-cell wide">
+                            <a href="#">폴더명</a>
+                        </td>
+                        <td class="table-cell wide gb">
+                            <span>000.00</span>
+                        </td>
+                    </tr>
+                    <tr data-name="파일명_05.pptx">
+                        <td class="table-cell check-cell">
+                            <input type="checkbox" id="check8" name="file" class="all" />
+                            <label for="check8">
+                                <span class="ico"></span>
+                            </label>
+                        </td>
+                        <td class="table-cell">
+                            <span class="i-video icon"></span>
+                            <div class="tb-name-box">
+                                <p>파일명_05.pptx</p>
+                                <p class="mobile tb-time">2019-03-01</p>
+                            </div>
+                        </td>
+                        <td class="table-cell wide">
+                            <span>2019-03-01</span>
+                        </td>
+                        <td class=" table-cell wide">
+                            <span>홍길동</span>
+                        </td>
+                        <td class="table-cell wide">
+                            <a href="#">폴더명</a>
+                        </td>
+                        <td class="table-cell wide gb">
+                            <span>000.00</span>
+                        </td>
+                    </tr>
+                    <tr data-name="파일명_06.psd">
+                        <td class="table-cell check-cell">
+                            <input type="checkbox" id="check9" name="file" class="all" />
+                            <label for="check9">
+                                <span class="ico"></span>
+                            </label>
+                        </td>
+                        <td class="table-cell">
+                            <span class="i-video icon"></span>
+                            <div class="tb-name-box">
+                                <p>파일명_06.psd</p>
+                                <p class="mobile tb-time">06-23 00:00:00</p>
+                            </div>
+                        </td>
+                        <td class="table-cell wide">
+                            <span>2019-03-01</span>
+                        </td>
+                        <td class=" table-cell wide">
+                            <span>홍길동</span>
+                        </td>
+                        <td class="table-cell wide">
+                            <a href="#">폴더명</a>
+                        </td>
+                        <td class="table-cell wide tb">
+                            <span>000.00</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="drag-upload-box">
+                <form action="">
+                    <p>파일을 업로드하려면 여기로 끌어오세요.</p>
+                </form>
+            </div>
+        
+        <ul id="rmenu"></ul>
+        </div>
+    </div>
+    </div>
+</div>
+
+/* 0016 */
+.srch-result .table-cell a{
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+}
+.table tbody tr.active a{
+    color: #fff;
+}
+
+/* 0016 모바일 css */
+.srch-result .check-cell{
+    display: none;
+}
+.srch-result-text{padding-left: 22px;}

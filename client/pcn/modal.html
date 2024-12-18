@@ -1,0 +1,3215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISS 시스템 - 콤포넌트</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/unit.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./css/jquery-ui.theme.css">
+       
+        
+    
+</head>
+<body>
+<!--함체 상세정보 -->
+<div class="modal_all_wrap" id="modalIdStandard">
+  <div class="modal_con_wrap modal_standard_wrap">
+      <div class="modal_title">
+          <h1>함체상세정보</h1>
+          <a href="#" class="modal_close_btn" id="standard_btn">닫기</a>
+      </div>
+      <div class="modal_con">
+        <!--tab -->
+        <div class="tap_type05_wrap">
+          <input id="tab51" type="radio" name="tab_item51" checked>
+          <label class="tab_item br_first" for="tab51">상세정보</label>
+          <input id="tab52" type="radio" name="tab_item51">
+          <label class="tab_item br_mid" for="tab52">이력관리</label>
+          <input id="tab53" type="radio" name="tab_item51">
+          <label class="tab_item br_mid" for="tab53">관련자료</label>
+          <input id="tab54" type="radio" name="tab_item51">
+          <label class="tab_item br_last" for="tab54">선번장</label>
+          <div class="tab_content" id="tab51_content">
+              <!-- 기본정보 -->
+              <div class="modal_stitle no_btm_line">
+                  <h2>기본정보</h2>
+              </div>
+              <div class="modal_scon">
+                <div class="modal_con_cont">
+                  <div class="row">
+                    <div class="row_title">함체 ID </div>
+                    <div class="row_content">함체_1855</div>
+                  </div>
+                  <div class="row">
+                    <div class="row_title">관리번호 <span class="star">*</span></div>
+                    <div class="row_content"><input type="text" class="input_type01" value="ididid"></div>
+                  </div>
+                  <div class="row">
+                    <div class="row_title">함체명</div>
+                    <div class="row_content"><input type="text" class="input_type01" value="홍길동"></div>
+                  </div>
+                  <div class="row">
+                    <div class="row_title">함체규격</div>
+                    <div class="row_content"><input type="text" class="input_type01" value="홍길동"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- 사업정보 -->
+              <div class="modal_stitle no_btm_line">
+                <h2>사업정보</h2>
+              </div>
+              <div class="modal_scon">
+                <div class="modal_con_cont table_scroll">
+                  <table>
+                    <colgroup>
+                      <col width="22%">
+                      <col width="*">
+                      <col width="18%">
+                      <col width="25%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>공고번호</th>
+                        <th>사업명</th>
+                        <th>준공일자</th>
+                        <th>시공사</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>202107290001</td>
+                        <td>BIT 구축사업</td>
+                        <td>2021-04-23</td>
+                        <td>(주)피씨엔</td>
+                      </tr>
+                      <tr>
+                        <td>202107290001</td>
+                        <td>CCTV 구축사업 1ck</td>
+                        <td>2021-04-23</td>
+                        <td>스텔스 인터랙티브</td>
+                      </tr>
+                      <tr>
+                        <td>202107290001</td>
+                        <td>CCTV 이설사업</td>
+                        <td>2021-04-23</td>
+                        <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- 기타 -->
+              <div class="modal_stitle no_btm_line">
+                <h2>기타</h2>
+              </div>
+              <div class="modal_scon">
+                <div class="modal_con_cont">
+                  <div class="row">
+                    <div class="row_title">필드명 1</div>
+                    <div class="row_content"><input type="password" class="input_type01" value /></div>
+                  </div>
+                  <div class="row">
+                    <div class="row_title">필드명 2</div>
+                    <div class="row_content"><input type="text" class="input_type01" value="ididid"></div>
+                  </div>
+                  <div class="row">
+                    <div class="row_title">필드명 3</div>
+                    <div class="row_content"><input type="text" class="input_type01" value="홍길동"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 수전 목록 -->
+              <!-- <div class="modal_stitle no_btm_line">
+                <h2>수전목록</h2>
+              </div>
+              <div class="modal_scon">
+                <div class="modal_con_cont table_scroll">
+                  <table>
+                    <colgroup>
+                      <col width="33.333%">
+                      <col width="33.333%">
+                      <col width="33.333%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>선로ID</th>
+                        <th>규격</th>
+                        <th>XXXX</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>XXXX</td>
+                      </tr>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>XXXX</td>
+                      </tr>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>XXXX</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div> -->
+              
+              <!-- 접속케이블 목록 -->
+              <!-- <div class="modal_stitle no_btm_line">
+                <h2>접속케이블 목록</h2>
+              </div>
+              <div class="modal_scon">
+                <div class="modal_con_cont table_scroll">
+                  <table>
+                    <colgroup>
+                      <col width="33.333%">
+                      <col width="33.333%">
+                      <col width="33.333%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>선로ID</th>
+                        <th>규격</th>
+                        <th>XXXX</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>XXXX</td>
+                      </tr>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>XXXX</td>
+                      </tr>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>XXXX</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div> -->
+
+              <!-- 수전+공가off 목록 -->
+               <!-- <div class="modal_stitle no_btm_line">
+                <h2>수전목록</h2>
+              </div>
+              <div class="modal_scon">
+                <div class="modal_con_cont table_scroll">
+                  <table>
+                    <colgroup>
+                      <col width="33.333%">
+                      <col width="33.333%">
+                      <col width="33.333%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>선로ID</th>
+                        <th>규격</th>
+                        <th>XXXX</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>XXXX</td>
+                      </tr>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>XXXX</td>
+                      </tr>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>XXXX</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="modal_stitle no_btm_line">
+                <h2>공가선로 목록</h2>
+              </div>
+              <div class="modal_scon">
+                <div class="modal_con_cont table_scroll">
+                  <table>
+                    <colgroup>
+                      <col width="22%">
+                      <col width="*">
+                      <col width="18%">
+                      <col width="25%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>선로ID</th>
+                        <th>규격</th>
+                        <th>승인여부</th>
+                        <th>연결접속점</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>승인</td>
+                        <td>XXXX-XXXX</td>
+                      </tr>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>비승인</td>
+                        <td>XXXX-XXXX</td>
+                      </tr>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>&nbsp;</td>
+                        <td>XXXX-XXXX</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div> -->
+
+              <!-- 수전+공가on 목록 -->
+              <!-- <div class="modal_stitle no_btm_line">
+                <h2>수전목록</h2>
+              </div>
+              <div class="modal_scon">
+                <div class="modal_con_cont table_scroll">
+                  <table>
+                    <colgroup>
+                      <col width="33.333%">
+                      <col width="33.333%">
+                      <col width="33.333%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>선로ID</th>
+                        <th>규격</th>
+                        <th>XXXX</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>XXXX</td>
+                      </tr>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>XXXX</td>
+                      </tr>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td>XXXX</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="modal_stitle no_btm_line">
+                <h2>공가선로 목록</h2>
+              </div>
+              <div class="modal_scon">
+                <div class="modal_con_cont table_scroll">
+                  <table>
+                    <colgroup>
+                      <col width="22%">
+                      <col width="*">
+                      <col width="18%">
+                      <col width="25%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>선로ID</th>
+                        <th>규격</th>
+                        <th>승인여부</th>
+                        <th>연결접속점</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td class="gong_td">
+                          <div class="select_type01">
+                            <span class="selected"></span>
+                            <span class="selectArrow">화살표</span>
+                            <div class="selectOptions">
+                              <span class="selectOption" value="Option 1">승인</span>
+                              <span class="selectOption" value="Option 2">미승인</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>XXXX-XXXX</td>
+                      </tr>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td class="gong_td">
+                          <div class="select_type01">
+                            <span class="selected"></span>
+                            <span class="selectArrow">화살표</span>
+                            <div class="selectOptions">
+                              <span class="selectOption" value="Option 1">승인</span>
+                              <span class="selectOption" value="Option 2">미승인</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>XXXX-XXXX</td>
+                      </tr>
+                      <tr>
+                        <td>선로ID</td>
+                        <td>24C</td>
+                        <td class="gong_td">
+                          <div class="select_type01">
+                            <span class="selected"></span>
+                            <span class="selectArrow">화살표</span>
+                            <div class="selectOptions">
+                              <span class="selectOption" value="Option 1">승인</span>
+                              <span class="selectOption" value="Option 2">미승인</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>XXXX-XXXX</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div> -->
+
+
+              <div class="modal_btn">
+                <button type="button" class="cancel_btn" id="standard_btn01">취소</button>
+                <button type="button" class="save_btn">저장</button>
+              </div>
+          </div>
+          <div class="tab_content" id="tab52_content">
+            <div class="modal_stitle">
+              <h2>이력정보</h2>
+            </div>
+            <div class="modal_scon">
+              <div class="modal_con_cont">
+                <table>
+                  <colgroup>
+                    <col width="8%">
+                    <col width="18%">
+                    <col width="16%">
+                    <col width="13%">
+                    <col width="15%">
+                    <col width="*">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>날짜</th>
+                      <th>시간</th>
+                      <th>사용자</th>
+                      <th>분류</th>
+                      <th>상세내용</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>2021-07-27</td>
+                      <td>14:25:30</td>
+                      <td>이중관</td>
+                      <td>신규입력</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2021-07-26</td>
+                      <td>10:15:30</td>
+                      <td>이중관</td>
+                      <td>위치이동</td>
+                      <td>좌표변경(위치이동)</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2021-07-26</td>
+                      <td>10:15:30</td>
+                      <td>이중관</td>
+                      <td>위치이동</td>
+                      <td>좌표변경(위치이동)</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2021-07-26</td>
+                      <td>10:15:30</td>
+                      <td>이중관</td>
+                      <td>위치이동</td>
+                      <td>좌표변경(위치이동)</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2021-07-26</td>
+                      <td>10:15:30</td>
+                      <td>이중관</td>
+                      <td>위치이동</td>
+                      <td>좌표변경(위치이동)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagenation_wrap">
+                <a href="#" class="page_arrow page_first">처음</a>
+                <a href="#" class="page_arrow page_prev">이전</a>
+                <ul class="page_ul">
+                  <li><a href="#" class="active">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">9</a></li>
+                  <li><a href="#">10</a></li>
+                </ul>
+                <a href="#" class="page_arrow page_next">다음</a>
+                <a href="#" class="page_arrow page_last">마지막</a>
+              </div>
+            </div>
+            <div class="modal_btn">
+              <button type="button" class="cancel_btn" id="standard_btn02">취소</button>
+              <button type="button" class="save_btn">저장</button>
+            </div>
+          </div>
+          <div class="tab_content" id="tab53_content">
+            <div class="modal_stitle">
+                <h2>관련자료</h2>
+                <button class="btn_type01">자료등록</button>
+            </div>
+            <div class="modal_scon">
+              <div class="modal_con_cont">
+                <table>
+                  <colgroup>
+                    <col width="8%">
+                    <col width="*%">
+                    <col width="15%">
+                    <col width="18%">
+                    <col width="12%">
+                    <col width="12%">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>등록일시</th>
+                      <th>사용자</th>
+                      <th>분류</th>
+                      <th>첨부파일</th>
+                      <th>삭제</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>2021-07-27 14:25:30</td>
+                      <td>이중관</td>
+                      <td>준공도서</td>
+                      <td><button type="button" class="down_btn">다운로드</button></td>
+                      <td><button type="button" class="delete_btn">삭제</button></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>2021-07-27 14:25:30</td>
+                      <td>이중관</td>
+                      <td>준공도서</td>
+                      <td><button type="button" class="down_btn">다운로드</button></td>
+                      <td><button type="button" class="delete_btn">삭제</button></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>2021-07-27 14:25:30</td>
+                      <td>이중관</td>
+                      <td>준공도서</td>
+                      <td><button type="button" class="down_btn">다운로드</button></td>
+                      <td><button type="button" class="delete_btn">삭제</button></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>2021-07-27 14:25:30</td>
+                      <td>이중관</td>
+                      <td>준공도서</td>
+                      <td><button type="button" class="detailview_btn">상세보기</button></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>2021-07-27 14:25:30</td>
+                      <td>이중관</td>
+                      <td>준공도서</td>
+                      <td><button type="button" class="down_btn">다운로드</button></td>
+                      <td><button type="button" class="delete_btn">삭제</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagenation_wrap">
+                <a href="#" class="page_arrow page_first">처음</a>
+                <a href="#" class="page_arrow page_prev">이전</a>
+                <ul class="page_ul">
+                  <li><a href="#" class="active">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">9</a></li>
+                  <li><a href="#">10</a></li>
+                </ul>
+                <a href="#" class="page_arrow page_next">다음</a>
+                <a href="#" class="page_arrow page_last">마지막</a>
+              </div>
+            </div>
+            <div class="modal_btn">
+              <button type="button" class="cancel_btn" id="standard_btn03">취소</button>
+              <button type="button" class="save_btn">저장</button>
+            </div>
+          </div>
+          <div class="tab_content" id="tab54_content">
+            <div class="modal_stitle no_btm_line">
+              <h2>도면</h2>
+            </div>
+            <div class="modal_scon">
+              <!--1:0-->
+              <div class="line_conect_con" style="display:none">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type01-map01">Icon-함체</div>
+                <p class="line-type01-txt01">함체_1075</p>
+
+                <p class="line-type01-txt02">97_통신선로</p>
+                <div class="line-type01-line01">1번라인</div>
+
+                <div class="icon-standard line-type01-map02 active">Icon-함체</div>
+                <p class="line-type01-txt03">함체_1075</p>                           
+              </div>
+              <!--1:1-->
+              <div class="line_conect_con" style="display:none">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type02-map01">Icon-함체</div>
+                <p class="line-type02-txt01">함체_1075</p>
+
+                <p class="line-type02-txt02">97_통신선로</p>
+                <div class="line-type02-line01">1번라인</div>  
+
+                <div class="icon-standard line-type02-map02 active">Icon-함체</div>
+                <p class="line-type02-txt03">함체_1075</p>
+
+                <p class="line-type02-txt04">97_통신선로</p>
+                <div class="line-type02-line02">2번라인</div>
+
+                <div class="icon-standard line-type02-map03">Icon-함체</div>                          
+                <p class="line-type02-txt05">함체_1075</p>
+
+              </div>
+              <!--1:2-->
+              <div class="line_conect_con" style="display:none">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type03-map01">Icon-함체</div>
+                <p class="line-type03-txt01">함체_1075</p>
+
+                <p class="line-type03-txt02">97_통신선로</p>
+                <div class="line-type03-line01">1번라인</div>  
+
+                <div class="icon-standard line-type03-map02 active">Icon-함체</div>
+                <p class="line-type03-txt03">함체_1075</p>
+
+                <p class="line-type03-txt04">97_통신선로</p>
+                <div class="line-type03-line02">2번라인</div>
+
+                <div class="line-type03-line03 ">3번라인</div>
+                <p class="line-type03-txt05">함체_1075</p>
+
+                <div class="icon-standard line-type03-map03">Icon-함체</div>                          
+                <p class="line-type03-txt06">함체_1075</p>
+
+                <div class="icon-standard line-type03-map04">Icon-함체</div>
+                <p class="line-type03-txt07">함체_1075</p>
+              </div>
+              <!--2:2-->
+              <div class="line_conect_con" style="display:none">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type04-map01">Icon-함체</div>
+                <p class="line-type04-txt01">함체_1075</p>
+
+                <div class="icon-standard line-type04-map02">Icon-함체</div>
+                <p class="line-type04-txt02">함체_1075</p>
+
+                <p class="line-type04-txt03">97_통신선로</p>
+                <div class="line-type04-line01">1번라인</div>  
+
+                <p class="line-type04-txt04">97_통신선로</p>
+                <div class="line-type04-line02">2번라인</div>  
+
+                <div class="icon-standard line-type04-map03 active">Icon-함체</div>
+                <p class="line-type04-txt05">함체_1075</p>
+
+                <p class="line-type04-txt06">97_통신선로</p>
+                <div class="line-type04-line03">3번라인</div>
+
+                <p class="line-type04-txt07">97_통신선로</p>
+                <div class="line-type04-line04">4번라인</div>
+
+                <div class="icon-standard line-type04-map04">Icon-함체</div>                          
+                <p class="line-type04-txt08">함체_1075</p>
+
+                <div class="icon-standard line-type04-map05">Icon-함체</div>
+                <p class="line-type04-txt09">함체_1075</p>
+              </div>
+              <!--2:3-->
+              <div class="line_conect_con" style="display:none">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type05-map01">Icon-함체</div>
+                <p class="line-type05-txt01">함체_1075</p>
+
+                <div class="icon-standard line-type05-map02">Icon-함체</div>
+                <p class="line-type05-txt02">함체_1075</p>
+
+                <p class="line-type05-txt03">97_통신선로</p>
+                <div class="line-type05-line01">1번라인</div>  
+
+                <p class="line-type05-txt04">97_통신선로</p>
+                <div class="line-type05-line02">2번라인</div>  
+
+                <div class="icon-standard line-type05-map03 active">Icon-함체</div>
+                <p class="line-type05-txt05">함체_1075</p>
+
+                <p class="line-type05-txt06">97_통신선로</p>
+                <div class="line-type05-line03">3번라인</div>
+
+                <p class="line-type05-txt07">97_통신선로</p>
+                <div class="line-type05-line04">4번라인</div>
+                
+                <p class="line-type05-txt08">97_통신선로</p>
+                <div class="line-type05-line05">5번라인</div>
+
+                <div class="icon-standard line-type05-map04">Icon-함체</div>                          
+                <p class="line-type05-txt09">함체_1075</p>
+                
+                <div class="icon-standard line-type05-map05">Icon-함체</div>                          
+                <p class="line-type05-txt10">함체_1075</p>
+
+                <div class="icon-standard line-type05-map06">Icon-함체</div>
+                <p class="line-type05-txt11">함체_1075</p>
+              </div>
+              <!--3:3-->
+              <div class="line_conect_con" style="display:none">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type06-map01">Icon-함체</div>
+                <p class="line-type06-txt01">함체_1075</p>
+
+                <div class="icon-standard line-type06-map02">Icon-함체</div>                          
+                <p class="line-type06-txt02">함체_1075</p>
+
+                <div class="icon-standard line-type06-map03">Icon-함체</div>
+                <p class="line-type06-txt03">함체_1075</p>
+
+                <p class="line-type06-txt04">97_통신선로</p>
+                <div class="line-type06-line01">1번라인</div>  
+
+                <p class="line-type06-txt05">97_통신선로</p>
+                <div class="line-type06-line02">4번라인</div>
+
+                <p class="line-type06-txt06">97_통신선로</p>
+                <div class="line-type06-line03">2번라인</div>  
+
+                <div class="icon-standard line-type06-map04 active">Icon-함체</div>
+                <p class="line-type06-txt07">함체_1075</p>
+
+                <p class="line-type06-txt08">97_통신선로</p>
+                <div class="line-type06-line04">3번라인</div>
+
+                <p class="line-type06-txt09">97_통신선로</p>
+                <div class="line-type06-line05">4번라인</div>
+                
+                <p class="line-type06-txt10">97_통신선로</p>
+                <div class="line-type06-line06">5번라인</div>
+
+                <div class="icon-standard line-type06-map05">Icon-함체</div>                          
+                <p class="line-type06-txt11">함체_1075</p>
+                
+                <div class="icon-standard line-type06-map06">Icon-함체</div>                          
+                <p class="line-type06-txt12">함체_1075</p>
+
+                <div class="icon-standard line-type06-map07">Icon-함체</div>
+                <p class="line-type06-txt13">함체_1075</p>
+              </div>
+              <!--3:4-->
+              <div class="line_conect_con" style="display:none">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type07-map01">Icon-함체</div>
+                <p class="line-type07-txt01">함체_1075</p>
+
+                <div class="icon-standard line-type07-map02">Icon-함체</div>                          
+                <p class="line-type07-txt02">함체_1075</p>
+
+                <div class="icon-standard line-type07-map03">Icon-함체</div>
+                <p class="line-type07-txt03">함체_1075</p>
+
+                <p class="line-type07-txt04">97_통신선로</p>
+                <div class="line-type07-line01">1번라인</div>  
+
+                <p class="line-type07-txt05">97_통신선로</p>
+                <div class="line-type07-line02">2번라인</div>
+
+                <p class="line-type07-txt06">97_통신선로</p>
+                <div class="line-type07-line03">3번라인</div>  
+
+                <div class="icon-standard line-type07-map04 active">Icon-함체</div>
+                <p class="line-type07-txt07">함체_1075</p>
+
+                <p class="line-type07-txt08">97_통신선로</p>
+                <div class="line-type07-line04">4번라인</div>
+
+                <p class="line-type07-txt09">97_통신선로</p>
+                <div class="line-type07-line05">5번라인</div>
+
+                <p class="line-type07-txt10">97_통신선로</p>
+                <div class="line-type07-line06">6번라인</div>
+                
+                <p class="line-type07-txt11">97_통신선로</p>
+                <div class="line-type07-line07">7번라인</div>
+
+                <div class="icon-standard line-type07-map05">Icon-함체</div>                          
+                <p class="line-type07-txt12">함체_1075</p>
+                
+                <div class="icon-standard line-type07-map06">Icon-함체</div>                          
+                <p class="line-type07-txt13">함체_1075</p>
+
+                <div class="icon-standard line-type07-map07">Icon-함체</div>                          
+                <p class="line-type07-txt14">함체_1075</p>
+
+                <div class="icon-standard line-type07-map08">Icon-함체</div>
+                <p class="line-type07-txt15">함체_1075</p>
+              </div>
+              <!--4:4-->
+              <div class="line_conect_con">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type08-map01">Icon-함체</div>
+                <p class="line-type08-txt01">함체_1075</p>
+
+                <div class="icon-standard line-type08-map02">Icon-함체</div>                          
+                <p class="line-type08-txt02">함체_1075</p>
+
+                <div class="icon-standard line-type08-map03">Icon-함체</div>                          
+                <p class="line-type08-txt03">함체_1075</p>
+
+                <div class="icon-standard line-type08-map04">Icon-함체</div>
+                <p class="line-type08-txt04">함체_1075</p>
+
+                <p class="line-type08-txt05">97_통신선로</p>
+                <div class="line-type08-line01">1번라인</div>  
+
+                <p class="line-type08-txt06">97_통신선로</p>
+                <div class="line-type08-line02">2번라인</div>
+
+                <p class="line-type08-txt07">97_통신선로</p>
+                <div class="line-type08-line03">3번라인</div>
+
+                <p class="line-type08-txt08">97_통신선로</p>
+                <div class="line-type08-line04">4번라인</div>  
+
+                <div class="icon-standard line-type08-map05 active">Icon-함체</div>
+                <p class="line-type08-txt09">함체_1075</p>
+
+                <p class="line-type08-txt10">97_통신선로</p>
+                <div class="line-type08-line05">5번라인</div>
+
+                <p class="line-type08-txt11">97_통신선로</p>
+                <div class="line-type08-line06">6번라인</div>
+
+                <p class="line-type08-txt12">97_통신선로</p>
+                <div class="line-type08-line07">7번라인</div>
+                
+                <p class="line-type08-txt13">97_통신선로</p>
+                <div class="line-type08-line08">8번라인</div>
+
+                <div class="icon-standard line-type08-map06">Icon-함체</div>                          
+                <p class="line-type08-txt14">함체_1075</p>
+                
+                <div class="icon-standard line-type08-map07">Icon-함체</div>                          
+                <p class="line-type08-txt15">함체_1075</p>
+
+                <div class="icon-standard line-type08-map08">Icon-함체</div>                          
+                <p class="line-type08-txt16">함체_1075</p>
+
+                <div class="icon-standard line-type08-map09">Icon-함체</div>
+                <p class="line-type08-txt17">함체_1075</p>
+              </div>
+            </div>
+            <div class="modal_stitle no_btm_line">
+              <h2>선번장</h2>
+              <div class="stitle_btn_con">
+                <button type="button" class="btn_type01 go_modal_connect">연결하기</button>
+                <button type="button" class="btn_type02">일괄 직결</button>
+                <button type="button" class="btn_type02 go_modal_connectd">연결끊기</button>
+              </div>
+            </div>
+            <div class="modal_scon">
+              <div class="modal_con_cont">
+                <table class="table_type_standard">
+                  <colgroup>
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="*">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="12%">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <!--색상코드는 라인별로-->
+                      <!--
+                      .core4_bgc / .core12_bgc {background-color:#ff6c00}
+                      .core24_bgc / .core36_bgc / .core48_bgc{background-color:#a619ff}
+                      .core72_bgc / .core96_bgc{background-color:#14a419}
+                      .core144_bgc / .core288_bgc{background-color:#ff0000}
+                      .coreel_bgc{background-color:#000000}
+                      .corehole_bgc{background-color:#007aba}
+                      -->
+                      <th colspan="3" class="btm_line brm_line"><span class="cores_bgc"></span>선택선로 ID:97_통신선로</th>
+                      <th rowspan="2" class="brm_line">RING정보</th>
+                      <th colspan="3" class="btm_line"><span class="cores01_bgc"></span>선택선로 ID:97_통신선로</th>
+                    </tr>
+                    <tr>
+                      <th>선로ID</th>
+                      <th>규격</th>
+                      <th class="brm_line">인입선번</th>
+                      <th>선로ID</th>
+                      <th>규격</th>
+                      <th>인입선번</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0</td>
+                      <td>24C</td>
+                      <td class="brm_line">1</td>
+                      <td class="brm_line">RING정보</td>
+                      <td>0</td>
+                      <td>24C</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>0</td>
+                      <td>24C</td>
+                      <td class="brm_line">1</td>
+                      <td class="brm_line">RING정보</td>
+                      <td>0</td>
+                      <td>24C</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>0</td>
+                      <td>24C</td>
+                      <td class="brm_line">1</td>
+                      <td class="brm_line">RING정보</td>
+                      <td>0</td>
+                      <td>24C</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="modal_btn">
+              <button type="button" class="cancel_btn"  id="standard_btn04">취소</button>
+              <button type="button" class="save_btn">저장</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!--연결하기 모달-->
+<div class="modal_all_wrap" id="modalIdConnect">
+  <div class="modal_con_wrap modal_connect_wrap">
+    <div class="modal_title">
+        <h1>연결하기</h1>
+        <a href="#" class="modal_close_btn" id="connect_btn">닫기</a>
+    </div>
+    <div class="modal_con">
+      <div class="modal_stitle no_btm_line">
+        <h2>연결박스</h2>
+      </div>
+      <!--연결박스-->
+      <div class="line_conect_con">
+        <table class="table_type_connect_top">
+          <colgroup>
+            <col width="7.5%">
+            <col width="8%">
+            <col width="8%">
+            <col width="4%">
+            <col width="10%">
+            <col width="*">
+            <col width="10%">
+            <col width="7.5%">
+            <col width="8%">
+            <col width="8%">
+            <col width="4%">
+          </colgroup>
+          <thead>
+            <tr>
+              <!--색상코드는 라인별로-->
+              <!--
+              .core4_bgc / .core12_bgc {background-color:#ff6c00}
+              .core24_bgc / .core36_bgc / .core48_bgc{background-color:#a619ff}
+              .core72_bgc / .core96_bgc{background-color:#14a419}
+              .core144_bgc / .core288_bgc{background-color:#ff0000}
+              .coreel_bgc{background-color:#000000}
+              .corehole_bgc{background-color:#007aba}
+              -->
+              <th colspan="4" class="btom_line btm_line"><span class="cores_bgc"></span>선택선로 ID:97_통신선로</th>
+              <th rowspan="2" class="th_no_cell">&nbsp;</th>
+              <th rowspan="2" class="btom_line btm_line">RING 정보</th>
+              <th rowspan="2" class="th_no_cell">&nbsp;</th>
+              <th colspan="4" class="btom_line btm_line"><span class="cores01_bgc"></span>선택선로 ID:97_통신선로</th>
+            </tr>
+            <tr>
+              <th class="btm_line">선로ID</th>
+              <th class="btm_line">규격</th>
+              <th class="btm_line">인입선번</th>
+              <th class="btm_line">&nbsp;</th>
+              
+              <th class="btm_line">선로ID</th>
+              <th class="btm_line">규격</th>
+              <th class="btm_line">인입선번</th>
+              <th class="btm_line">&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="4">
+                <ul class="connect_cell">
+                 <li class="cell_id">0</li>
+                 <li class="cell_size">24c</li>
+                 <li class="cell_line">1</li>
+                 <li class="cell_close"><a href="#" class="btn-input-delete">삭제</a></li>
+                </ul>
+              </td>
+              <td><div class="connect_line_dash">라인</div></td>
+              <td>
+                <div class="select_type_linecon">
+                  <span class="selected"></span>
+                  <span class="selectArrow">화살표</span>
+                  <div class="selectOptions" >
+                    <span class="selectOption" value="Option 1">선택</span>
+                    <span class="selectOption" value="Option 2">직접입력</span>
+                  </div>
+                </div>
+              </td>
+              <td><div class="connect_line_dash">라인</div></td>
+              <td colspan="4">
+                <ul class="connect_cell">
+                  <li class="cell_id">0</li>
+                  <li class="cell_size">24c</li>
+                  <li class="cell_line">1</li>
+                  <li class="cell_close"><a href="#" class="btn-input-delete">삭제</a></li>
+                 </ul>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <ul class="connect_cell">
+                  <li class="cell_id">0</li>
+                  <li class="cell_size">24c</li>
+                  <li class="cell_line">1</li>
+                  <li class="cell_close"><a href="#" class="btn-input-delete">삭제</a></li>
+                 </ul>
+              </td>
+              <td><div class="connect_line_dash">라인</div></td>
+              <td><div class="mattch">CCTV</div></td>
+              <td><div class="connect_line_dash">라인</div></td>
+              <td colspan="4">
+                <ul class="connect_cell">
+                  <li class="cell_id">0</li>
+                  <li class="cell_size">24c</li>
+                  <li class="cell_line">1</li>
+                  <li class="cell_close"><a href="#" class="btn-input-delete">삭제</a></li>
+                 </ul>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <ul class="connect_cell">
+                  <li class="cell_id">0</li>
+                  <li class="cell_size">24c</li>
+                  <li class="cell_line">1</li>
+                  <li class="cell_close"><a href="#" class="btn-input-delete">삭제</a></li>
+                 </ul>
+              </td>
+              <td><div class="connect_line_dash">라인</div></td>
+              <td><div class="no_mattch">불일치</div></td>
+              <td><div class="connect_line_dash">라인</div></td>
+              <td colspan="4">
+                <ul class="connect_cell">
+                  <li class="cell_id">0</li>
+                  <li class="cell_size">24c</li>
+                  <li class="cell_line">1</li>
+                  <li class="cell_close"><a href="#" class="btn-input-delete">삭제</a></li>
+                 </ul>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <ul class="connect_cell">
+                  <li class="cell_id">0</li>
+                  <li class="cell_size">24c</li>
+                  <li class="cell_line">1</li>
+                  <li class="cell_close"><a href="#" class="btn-input-delete">삭제</a></li>
+                 </ul>
+              </td>
+              <td><div class="connect_line_dash">라인</div></td>
+              <td>
+                <div class="input_type01_inbtn_c"><input type="text" class="input_type01_inbtn"><a href="#" class="btn-input-delete">삭제</a></div>
+              </td>
+              <td><div class="connect_line_dash">라인</div></td>
+              <td colspan="4">
+                <ul class="connect_cell">
+                  <li class="cell_id">0</li>
+                  <li class="cell_size">24c</li>
+                  <li class="cell_line">1</li>
+                  <li class="cell_close"><a href="#" class="btn-input-delete">삭제</a></li>
+                 </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal_btn">
+        <button type="button" class="cancel_btn" id="connect_btn01">취소</button>
+        <button type="button" class="cancel_btn">초기화</button>
+        <button type="button" class="save_btn">저장</button>
+      </div>
+    </div>
+    <!--연결테이블-->  
+    <div class="modal_scon_connect">
+      <div class="modal_con_cont_small">
+        <table class="table_type_connect">
+          <colgroup>
+            <col width="20%">
+            <col width="20%">
+            <col width="20%">
+            <col width="*">
+            <col width="20%">
+          </colgroup>
+          <thead>
+            <tr>
+              <!--색상코드는 라인별로-->
+              <!--
+              .core4_bgc / .core12_bgc {background-color:#ff6c00}
+              .core24_bgc / .core36_bgc / .core48_bgc{background-color:#a619ff}
+              .core72_bgc / .core96_bgc{background-color:#14a419}
+              .core144_bgc / .core288_bgc{background-color:#ff0000}
+              .coreel_bgc{background-color:#000000}
+              .corehole_bgc{background-color:#007aba}
+              -->
+              <th colspan="5" class="btm_line"><span class="cores_bgc"></span>선택선로 ID:97_통신선로</th>
+            </tr>
+            <tr>
+              <th>선로ID</th>
+              <th>규격</th>
+              <th>인입선번</th>
+              <th>RING 정보</th>
+              <th>연결박스</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>24C</td>
+              <td>1</td>
+              <td>-</td>
+              <td><a class="btn_insert">삽입</a></td>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>24C</td>
+              <td>1</td>
+              <td>-</td>
+              <td><a class="btn_insert">삽입</a></td>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>24C</td>
+              <td>1</td>
+              <td>-</td>
+              <td><a class="btn_insert">삽입</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal_con_cont_small">
+        <table class="table_type_connect">
+          <colgroup>
+            <col width="20%">
+            <col width="20%">
+            <col width="20%">
+            <col width="*">
+            <col width="20%">
+          </colgroup>
+          <thead>
+            <tr>
+              <!--색상코드는 라인별로-->
+              <!--
+              .core4_bgc / .core12_bgc {background-color:#ff6c00}
+              .core24_bgc / .core36_bgc / .core48_bgc{background-color:#a619ff}
+              .core72_bgc / .core96_bgc{background-color:#14a419}
+              .core144_bgc / .core288_bgc{background-color:#ff0000}
+              .coreel_bgc{background-color:#000000}
+              .corehole_bgc{background-color:#007aba}
+              -->
+              <th colspan="5" class="btm_line"><span class="cores01_bgc"></span>선택선로 ID:97_통신선로</th>
+            </tr>
+            <tr>
+              <th>선로ID</th>
+              <th>규격</th>
+              <th>인입선번</th>
+              <th>RING 정보</th>
+              <th>연결박스</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>24C</td>
+              <td>1</td>
+              <td>-</td>
+              <td><a class="btn_insert">삽입</a></td>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>24C</td>
+              <td>1</td>
+              <td>-</td>
+              <td><a class="btn_insert">삽입</a></td>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>24C</td>
+              <td>1</td>
+              <td>-</td>
+              <td><a class="btn_insert">삽입</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--연결하기 끊기 -->
+<div class="modal_all_wrap" id="modalIdConnectd">
+  <div class="modal_con_wrap modal_connectd_wrap">
+      <div class="modal_title">
+        <h1>연결하기 끊기</h1>
+        <a href="#" class="modal_close_btn" id="connectd_btn">닫기</a>
+      </div>
+      <div class="modal_scon">
+        <div class="modal_con_cont">
+          <table class="table_type_connectd">
+            <colgroup>
+              <col width="8%">
+              <col width="12%">
+              <col width="12%">
+              <col width="12%">
+              <col width="*">
+              <col width="12%">
+              <col width="12%">
+              <col width="12%">
+            </colgroup>
+            <thead>
+              <tr>
+                <!--색상코드는 라인별로-->
+                <!--
+                .core4_bgc / .core12_bgc {background-color:#ff6c00}
+                .core24_bgc / .core36_bgc / .core48_bgc{background-color:#a619ff}
+                .core72_bgc / .core96_bgc{background-color:#14a419}
+                .core144_bgc / .core288_bgc{background-color:#ff0000}
+                .coreel_bgc{background-color:#000000}
+                .corehole_bgc{background-color:#007aba}
+                -->
+                <th rowspan="2" class="brm_line"><input type="checkbox" id="cid1" /><label for="cid1"><span class="ico"></span></label></th>
+                <th colspan="3" class="btm_line brm_line"><span class="cores_bgc"></span>선택선로 ID:97_통신선로</th>
+                <th rowspan="2" class="brm_line">RING정보</th>
+                <th colspan="3" class="btm_line"><span class="cores01_bgc"></span>선택선로 ID:97_통신선로</th>
+              </tr>
+              <tr>
+                <th>선로ID</th>
+                <th>규격</th>
+                <th class="brm_line">인입선번</th>
+                <th>선로ID</th>
+                <th>규격</th>
+                <th>인입선번</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="brm_line"><input type="checkbox" id="cid1-1" name="check" /><label for="cid1-1"><span class="ico"></span></label></td>
+                <td>0</td>
+                <td>24C</td>
+                <td class="brm_line">1</td>
+                <td class="brm_line">RING정보</td>
+                <td>0</td>
+                <td>24C</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td class="brm_line"><input type="checkbox" id="cid1-2" name="check"/><label for="cid1-2"><span class="ico"></span></label></td>
+                <td>0</td>
+                <td>24C</td>
+                <td class="brm_line">1</td>
+                <td class="brm_line">RING정보</td>
+                <td>0</td>
+                <td>24C</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td class="brm_line"><input type="checkbox" id="cid1-3" name="check"/><label for="cid1-3"><span class="ico"></span></label></td>
+                <td>0</td>
+                <td>24C</td>
+                <td class="brm_line">1</td>
+                <td class="brm_line">RING정보</td>
+                <td>0</td>
+                <td>24C</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal_btn">
+        <button type="button" class="cancel_btn" id="connectd_btn01">취소</button>
+        <button type="button" class="save_btn">연결끊기</button>
+      </div>
+  </div>
+</div> 
+
+<!--BIT 상세정보 -->
+<div class="modal_all_wrap" id="modalIdBIT">
+  <div class="modal_con_wrap modal_bit_wrap">
+      <div class="modal_title">
+          <h1>BIT 상세정보</h1>
+          <a href="#" class="modal_close_btn" id="bit_btn">닫기</a>
+      </div>
+      <div class="modal_con">
+        <!--tab -->
+        <div class="tap_type07_wrap">
+          <input id="tab71" type="radio" name="tab_item7" checked>
+          <label class="tab_item br_first" for="tab71">기본정보</label>
+          <input id="tab72" type="radio" name="tab_item7">
+          <label class="tab_item br_mid" for="tab72">이력관리</label>
+          <input id="tab73" type="radio" name="tab_item7">
+          <label class="tab_item br_mid" for="tab73">관련자료</label>
+          <input id="tab74" type="radio" name="tab_item7">
+          <label class="tab_item br_mid" for="tab74">선번장</label>
+          <input id="tab75" type="radio" name="tab_item7">
+          <label class="tab_item br_last" for="tab75">광스위치</label>
+          <div class="tab_content" id="tab71_content">
+              <div class="modal_stitle no_btm_line">
+                  <h2>기본정보</h2>
+              </div>
+              <div class="modal_scon">
+                <div class="modal_con_cont">
+                  <div class="row">
+                    <div class="row_title">함체 ID </div>
+                    <div class="row_content">함체_1855</div>
+                  </div>
+                  <div class="row">
+                    <div class="row_title">관리번호 <span class="star">*</span></div>
+                    <div class="row_content"><input type="text" class="input_type01" value="ididid"></div>
+                  </div>
+                  <div class="row">
+                    <div class="row_title">함체명</div>
+                    <div class="row_content"><input type="text" class="input_type01" value="홍길동"></div>
+                  </div>
+                  <div class="row">
+                    <div class="row_title">함체규격</div>
+                    <div class="row_content"><input type="text" class="input_type01" value="홍길동"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal_stitle no_btm_line">
+                <h2>사업정보</h2>
+              </div>
+              <div class="modal_scon">
+                <div class="modal_con_cont table_scroll">
+                  <table>
+                    <colgroup>
+                      <col width="22%">
+                      <col width="*">
+                      <col width="18%">
+                      <col width="25%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>공고번호</th>
+                        <th>사업명</th>
+                        <th>준공일자</th>
+                        <th>시공사</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>202107290001</td>
+                        <td>BIT 구축사업</td>
+                        <td>2021-04-23</td>
+                        <td>(주)피씨엔</td>
+                      </tr>
+                      <tr>
+                        <td>202107290001</td>
+                        <td>CCTV 구축사업 1ck</td>
+                        <td>2021-04-23</td>
+                        <td>스텔스 인터랙티브</td>
+                      </tr>
+                      <tr>
+                        <td>202107290001</td>
+                        <td>CCTV 이설사업</td>
+                        <td>2021-04-23</td>
+                        <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="modal_stitle no_btm_line">
+                <h2>기타</h2>
+              </div>
+              <div class="modal_scon">
+                <div class="modal_con_cont">
+                  <div class="row">
+                    <div class="row_title">필드명 1</div>
+                    <div class="row_content"><input type="password" class="input_type01" value /></div>
+                  </div>
+                  <div class="row">
+                    <div class="row_title">필드명 2</div>
+                    <div class="row_content"><input type="text" class="input_type01" value="ididid"></div>
+                  </div>
+                  <div class="row">
+                    <div class="row_title">필드명 3</div>
+                    <div class="row_content"><input type="text" class="input_type01" value="홍길동"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal_btn">
+                <button type="button" class="cancel_btn" id="bit_btn01">취소</button>
+                <button type="button" class="save_btn">저장</button>
+              </div>
+          </div>
+          <div class="tab_content" id="tab72_content">
+            <div class="modal_stitle">
+              <h2>이력정보</h2>
+            </div>
+            <div class="modal_scon">
+              <div class="modal_con_cont">
+                <table>
+                  <colgroup>
+                    <col width="8%">
+                    <col width="18%">
+                    <col width="16%">
+                    <col width="13%">
+                    <col width="15%">
+                    <col width="*">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>날짜</th>
+                      <th>시간</th>
+                      <th>사용자</th>
+                      <th>분류</th>
+                      <th>상세내용</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>2021-07-27</td>
+                      <td>14:25:30</td>
+                      <td>이중관</td>
+                      <td>신규입력</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2021-07-26</td>
+                      <td>10:15:30</td>
+                      <td>이중관</td>
+                      <td>위치이동</td>
+                      <td>좌표변경(위치이동)</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2021-07-26</td>
+                      <td>10:15:30</td>
+                      <td>이중관</td>
+                      <td>위치이동</td>
+                      <td>좌표변경(위치이동)</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2021-07-26</td>
+                      <td>10:15:30</td>
+                      <td>이중관</td>
+                      <td>위치이동</td>
+                      <td>좌표변경(위치이동)</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2021-07-26</td>
+                      <td>10:15:30</td>
+                      <td>이중관</td>
+                      <td>위치이동</td>
+                      <td>좌표변경(위치이동)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagenation_wrap">
+                <a href="#" class="page_arrow page_first">처음</a>
+                <a href="#" class="page_arrow page_prev">이전</a>
+                <ul class="page_ul">
+                  <li><a href="#" class="active">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">9</a></li>
+                  <li><a href="#">10</a></li>
+                </ul>
+                <a href="#" class="page_arrow page_next">다음</a>
+                <a href="#" class="page_arrow page_last">마지막</a>
+              </div>
+            </div>
+            <div class="modal_btn">
+              <button type="button" class="cancel_btn" id="bit_btn02">취소</button>
+              <button type="button" class="save_btn">저장</button>
+            </div>
+          </div>
+          <div class="tab_content" id="tab73_content">
+            <div class="modal_stitle">
+                <h2>관련자료</h2>
+                <button class="btn_type01">자료등록</button>
+            </div>
+            <div class="modal_scon">
+              <div class="modal_con_cont">
+                <table>
+                  <colgroup>
+                    <col width="8%">
+                    <col width="*%">
+                    <col width="15%">
+                    <col width="18%">
+                    <col width="12%">
+                    <col width="12%">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>등록일시</th>
+                      <th>사용자</th>
+                      <th>분류</th>
+                      <th>첨부파일</th>
+                      <th>삭제</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>2021-07-27 14:25:30</td>
+                      <td>이중관</td>
+                      <td>준공도서</td>
+                      <td><button type="button" class="down_btn">다운로드</button></td>
+                      <td><button type="button" class="delete_btn">삭제</button></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>2021-07-27 14:25:30</td>
+                      <td>이중관</td>
+                      <td>준공도서</td>
+                      <td><button type="button" class="down_btn">다운로드</button></td>
+                      <td><button type="button" class="delete_btn">삭제</button></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>2021-07-27 14:25:30</td>
+                      <td>이중관</td>
+                      <td>준공도서</td>
+                      <td><button type="button" class="down_btn">다운로드</button></td>
+                      <td><button type="button" class="delete_btn">삭제</button></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>2021-07-27 14:25:30</td>
+                      <td>이중관</td>
+                      <td>준공도서</td>
+                      <td><button type="button" class="detailview_btn">상세보기</button></td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>2021-07-27 14:25:30</td>
+                      <td>이중관</td>
+                      <td>준공도서</td>
+                      <td><button type="button" class="down_btn">다운로드</button></td>
+                      <td><button type="button" class="delete_btn">삭제</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagenation_wrap">
+                <a href="#" class="page_arrow page_first">처음</a>
+                <a href="#" class="page_arrow page_prev">이전</a>
+                <ul class="page_ul">
+                  <li><a href="#" class="active">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">9</a></li>
+                  <li><a href="#">10</a></li>
+                </ul>
+                <a href="#" class="page_arrow page_next">다음</a>
+                <a href="#" class="page_arrow page_last">마지막</a>
+              </div>
+            </div>
+            <div class="modal_btn">
+              <button type="button" class="cancel_btn" id="bit_btn03">취소</button>
+              <button type="button" class="save_btn">저장</button>
+            </div>
+          </div>
+          <div class="tab_content" id="tab74_content">
+            <div class="modal_stitle no_btm_line">
+              <h2>도면</h2>
+            </div>
+            <div class="modal_scon">
+              <!--1:0-->
+              <div class="line_conect_con" style="display: none;">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type01-map01">Icon-함체</div>
+                <p class="line-type01-txt01">함체_1075</p>
+
+                <p class="line-type01-txt02">97_통신선로</p>
+                <div class="line-type01-line01">1번라인</div>
+
+                <div class="icon-standard line-type01-map02 active">Icon-함체</div>
+                <p class="line-type01-txt03">함체_1075</p>                           
+              </div>
+              <!--1:1-->
+              <div class="line_conect_con" style="display:none">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type02-map01">Icon-함체</div>
+                <p class="line-type02-txt01">함체_1075</p>
+
+                <p class="line-type02-txt02">97_통신선로</p>
+                <div class="line-type02-line01">1번라인</div>  
+
+                <div class="icon-standard line-type02-map02 active">Icon-함체</div>
+                <p class="line-type02-txt03">함체_1075</p>
+
+                <p class="line-type02-txt04">97_통신선로</p>
+                <div class="line-type02-line02">2번라인</div>
+
+                <div class="icon-standard line-type02-map03">Icon-함체</div>                          
+                <p class="line-type02-txt05">함체_1075</p>
+
+              </div>
+              <!--1:2-->
+              <div class="line_conect_con" style="display:none">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type03-map01">Icon-함체</div>
+                <p class="line-type03-txt01">함체_1075</p>
+
+                <p class="line-type03-txt02">97_통신선로</p>
+                <div class="line-type03-line01">1번라인</div>  
+
+                <div class="icon-standard line-type03-map02 active">Icon-함체</div>
+                <p class="line-type03-txt03">함체_1075</p>
+
+                <p class="line-type03-txt04">97_통신선로</p>
+                <div class="line-type03-line02">2번라인</div>
+
+                <div class="line-type03-line03 ">3번라인</div>
+                <p class="line-type03-txt05">함체_1075</p>
+
+                <div class="icon-standard line-type03-map03">Icon-함체</div>                          
+                <p class="line-type03-txt06">함체_1075</p>
+
+                <div class="icon-standard line-type03-map04">Icon-함체</div>
+                <p class="line-type03-txt07">함체_1075</p>
+              </div>
+              <!--2:2-->
+              <div class="line_conect_con" style="display:none">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type04-map01">Icon-함체</div>
+                <p class="line-type04-txt01">함체_1075</p>
+
+                <div class="icon-standard line-type04-map02">Icon-함체</div>
+                <p class="line-type04-txt02">함체_1075</p>
+
+                <p class="line-type04-txt03">97_통신선로</p>
+                <div class="line-type04-line01">1번라인</div>  
+
+                <p class="line-type04-txt04">97_통신선로</p>
+                <div class="line-type04-line02">2번라인</div>  
+
+                <div class="icon-standard line-type04-map03 active">Icon-함체</div>
+                <p class="line-type04-txt05">함체_1075</p>
+
+                <p class="line-type04-txt06">97_통신선로</p>
+                <div class="line-type04-line03">3번라인</div>
+
+                <p class="line-type04-txt07">97_통신선로</p>
+                <div class="line-type04-line04">4번라인</div>
+
+                <div class="icon-standard line-type04-map04">Icon-함체</div>                          
+                <p class="line-type04-txt08">함체_1075</p>
+
+                <div class="icon-standard line-type04-map05">Icon-함체</div>
+                <p class="line-type04-txt09">함체_1075</p>
+              </div>
+              <!--2:3-->
+              <div class="line_conect_con" style="display:none">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type05-map01">Icon-함체</div>
+                <p class="line-type05-txt01">함체_1075</p>
+
+                <div class="icon-standard line-type05-map02">Icon-함체</div>
+                <p class="line-type05-txt02">함체_1075</p>
+
+                <p class="line-type05-txt03">97_통신선로</p>
+                <div class="line-type05-line01">1번라인</div>  
+
+                <p class="line-type05-txt04">97_통신선로</p>
+                <div class="line-type05-line02">2번라인</div>  
+
+                <div class="icon-standard line-type05-map03 active">Icon-함체</div>
+                <p class="line-type05-txt05">함체_1075</p>
+
+                <p class="line-type05-txt06">97_통신선로</p>
+                <div class="line-type05-line03">3번라인</div>
+
+                <p class="line-type05-txt07">97_통신선로</p>
+                <div class="line-type05-line04">4번라인</div>
+                
+                <p class="line-type05-txt08">97_통신선로</p>
+                <div class="line-type05-line05">5번라인</div>
+
+                <div class="icon-standard line-type05-map04">Icon-함체</div>                          
+                <p class="line-type05-txt09">함체_1075</p>
+                
+                <div class="icon-standard line-type05-map05">Icon-함체</div>                          
+                <p class="line-type05-txt10">함체_1075</p>
+
+                <div class="icon-standard line-type05-map06">Icon-함체</div>
+                <p class="line-type05-txt11">함체_1075</p>
+              </div>
+              <!--3:3-->
+              <div class="line_conect_con" style="display:none">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type06-map01">Icon-함체</div>
+                <p class="line-type06-txt01">함체_1075</p>
+
+                <div class="icon-standard line-type06-map02">Icon-함체</div>                          
+                <p class="line-type06-txt02">함체_1075</p>
+
+                <div class="icon-standard line-type06-map03">Icon-함체</div>
+                <p class="line-type06-txt03">함체_1075</p>
+
+                <p class="line-type06-txt04">97_통신선로</p>
+                <div class="line-type06-line01">1번라인</div>  
+
+                <p class="line-type06-txt05">97_통신선로</p>
+                <div class="line-type06-line02">4번라인</div>
+
+                <p class="line-type06-txt06">97_통신선로</p>
+                <div class="line-type06-line03">2번라인</div>  
+
+                <div class="icon-standard line-type06-map04 active">Icon-함체</div>
+                <p class="line-type06-txt07">함체_1075</p>
+
+                <p class="line-type06-txt08">97_통신선로</p>
+                <div class="line-type06-line04">3번라인</div>
+
+                <p class="line-type06-txt09">97_통신선로</p>
+                <div class="line-type06-line05">4번라인</div>
+                
+                <p class="line-type06-txt10">97_통신선로</p>
+                <div class="line-type06-line06">5번라인</div>
+
+                <div class="icon-standard line-type06-map05">Icon-함체</div>                          
+                <p class="line-type06-txt11">함체_1075</p>
+                
+                <div class="icon-standard line-type06-map06">Icon-함체</div>                          
+                <p class="line-type06-txt12">함체_1075</p>
+
+                <div class="icon-standard line-type06-map07">Icon-함체</div>
+                <p class="line-type06-txt13">함체_1075</p>
+              </div>
+              <!--3:4-->
+              <div class="line_conect_con" style="display:none">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type07-map01">Icon-함체</div>
+                <p class="line-type07-txt01">함체_1075</p>
+
+                <div class="icon-standard line-type07-map02">Icon-함체</div>                          
+                <p class="line-type07-txt02">함체_1075</p>
+
+                <div class="icon-standard line-type07-map03">Icon-함체</div>
+                <p class="line-type07-txt03">함체_1075</p>
+
+                <p class="line-type07-txt04">97_통신선로</p>
+                <div class="line-type07-line01">1번라인</div>  
+
+                <p class="line-type07-txt05">97_통신선로</p>
+                <div class="line-type07-line02">2번라인</div>
+
+                <p class="line-type07-txt06">97_통신선로</p>
+                <div class="line-type07-line03">3번라인</div>  
+
+                <div class="icon-standard line-type07-map04 active">Icon-함체</div>
+                <p class="line-type07-txt07">함체_1075</p>
+
+                <p class="line-type07-txt08">97_통신선로</p>
+                <div class="line-type07-line04">4번라인</div>
+
+                <p class="line-type07-txt09">97_통신선로</p>
+                <div class="line-type07-line05">5번라인</div>
+
+                <p class="line-type07-txt10">97_통신선로</p>
+                <div class="line-type07-line06">6번라인</div>
+                
+                <p class="line-type07-txt11">97_통신선로</p>
+                <div class="line-type07-line07">7번라인</div>
+
+                <div class="icon-standard line-type07-map05">Icon-함체</div>                          
+                <p class="line-type07-txt12">함체_1075</p>
+                
+                <div class="icon-standard line-type07-map06">Icon-함체</div>                          
+                <p class="line-type07-txt13">함체_1075</p>
+
+                <div class="icon-standard line-type07-map07">Icon-함체</div>                          
+                <p class="line-type07-txt14">함체_1075</p>
+
+                <div class="icon-standard line-type07-map08">Icon-함체</div>
+                <p class="line-type07-txt15">함체_1075</p>
+              </div>
+              <!--4:4-->
+              <div class="line_conect_con">
+                <span>※ 선로를 선택해 주십시오</span>
+                <!--라인-->
+                <div class="icon-standard line-type08-map01">Icon-함체</div>
+                <p class="line-type08-txt01">함체_1075</p>
+
+                <div class="icon-standard line-type08-map02">Icon-함체</div>                          
+                <p class="line-type08-txt02">함체_1075</p>
+
+                <div class="icon-standard line-type08-map03">Icon-함체</div>                          
+                <p class="line-type08-txt03">함체_1075</p>
+
+                <div class="icon-standard line-type08-map04">Icon-함체</div>
+                <p class="line-type08-txt04">함체_1075</p>
+
+                <p class="line-type08-txt05">97_통신선로</p>
+                <div class="line-type08-line01">1번라인</div>  
+
+                <p class="line-type08-txt06">97_통신선로</p>
+                <div class="line-type08-line02">2번라인</div>
+
+                <p class="line-type08-txt07">97_통신선로</p>
+                <div class="line-type08-line03">3번라인</div>
+
+                <p class="line-type08-txt08">97_통신선로</p>
+                <div class="line-type08-line04">4번라인</div>  
+
+                <div class="icon-standard line-type08-map05 active">Icon-함체</div>
+                <p class="line-type08-txt09">함체_1075</p>
+
+                <p class="line-type08-txt10">97_통신선로</p>
+                <div class="line-type08-line05">5번라인</div>
+
+                <p class="line-type08-txt11">97_통신선로</p>
+                <div class="line-type08-line06">6번라인</div>
+
+                <p class="line-type08-txt12">97_통신선로</p>
+                <div class="line-type08-line07">7번라인</div>
+                
+                <p class="line-type08-txt13">97_통신선로</p>
+                <div class="line-type08-line08">8번라인</div>
+
+                <div class="icon-standard line-type08-map06">Icon-함체</div>                          
+                <p class="line-type08-txt14">함체_1075</p>
+                
+                <div class="icon-standard line-type08-map07">Icon-함체</div>                          
+                <p class="line-type08-txt15">함체_1075</p>
+
+                <div class="icon-standard line-type08-map08">Icon-함체</div>                          
+                <p class="line-type08-txt16">함체_1075</p>
+
+                <div class="icon-standard line-type08-map09">Icon-함체</div>
+                <p class="line-type08-txt17">함체_1075</p>
+              </div>
+            </div>
+            <div class="modal_stitle no_btm_line">
+              <h2>선번장</h2>
+              <div class="stitle_btn_con">
+                <button type="button" class="btn_type01 go_modal_connect">연결하기</button>
+                <button type="button" class="btn_type02">일괄 직결</button>
+                <button type="button" class="btn_type02 go_modal_connectd">연결끊기</button>
+              </div>
+            </div>
+            <div class="modal_scon">
+              <div class="modal_con_cont">
+                <table class="table_type_standard">
+                  <colgroup>
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="*">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="12%">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <!--색상코드는 라인별로-->
+                      <!--
+                      .core4_bgc / .core12_bgc {background-color:#ff6c00}
+                      .core24_bgc / .core36_bgc / .core48_bgc{background-color:#a619ff}
+                      .core72_bgc / .core96_bgc{background-color:#14a419}
+                      .core144_bgc / .core288_bgc{background-color:#ff0000}
+                      .coreel_bgc{background-color:#000000}
+                      .corehole_bgc{background-color:#007aba}
+                      -->
+                      <th colspan="3" class="btm_line brm_line"><span class="cores_bgc"></span>선택선로 ID:97_통신선로</th>
+                      <th rowspan="2" class="brm_line">RING정보</th>
+                      <th colspan="3" class="btm_line"><span class="cores01_bgc"></span>선택선로 ID:97_통신선로</th>
+                    </tr>
+                    <tr>
+                      <th>선로ID</th>
+                      <th>규격</th>
+                      <th class="brm_line">인입선번</th>
+                      <th>선로ID</th>
+                      <th>규격</th>
+                      <th>인입선번</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0</td>
+                      <td>24C</td>
+                      <td class="brm_line">1</td>
+                      <td class="brm_line">RING정보</td>
+                      <td>0</td>
+                      <td>24C</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>0</td>
+                      <td>24C</td>
+                      <td class="brm_line">1</td>
+                      <td class="brm_line">RING정보</td>
+                      <td>0</td>
+                      <td>24C</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>0</td>
+                      <td>24C</td>
+                      <td class="brm_line">1</td>
+                      <td class="brm_line">RING정보</td>
+                      <td>0</td>
+                      <td>24C</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="modal_btn">
+              <button type="button" class="cancel_btn"  id="bit_btn04">취소</button>
+              <button type="button" class="save_btn">저장</button>
+            </div>
+          </div>
+          <div class="tab_content" id="tab75_content">
+            <div class="modal_stitle no_btm_line">
+              <h2>광스위치 정보</h2>
+            </div>
+            <div class="modal_scon">
+              <div class="modal_con_cont">
+                <div class="row">
+                  <div class="row_title">IP 주소</div>
+                  <div class="row_content"><input type="password" class="input_type01" value /></div>
+                </div>
+                <div class="row">
+                  <div class="row_title">제조사</div>
+                  <div class="row_content">
+                    <div class="select_type_c">
+                      <span class="selected"></span>
+                      <span class="selectArrow">화살표</span>
+                      <div class="selectOptions" >
+                        <span class="selectOption" value="Option 1">선택</span>
+                        <span class="selectOption" value="Option 2">Option 1</span>
+                        <span class="selectOption" value="Option 3">Option 2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="row_title">모델</div>
+                  <div class="row_content">
+                    <div class="select_type_m">
+                      <span class="selected"></span>
+                      <span class="selectArrow">화살표</span>
+                      <div class="selectOptions" >
+                        <span class="selectOption" value="Option 1">선택</span>
+                        <span class="selectOption" value="Option 2">Option 1</span>
+                        <span class="selectOption" value="Option 3">Option 2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal_stitle no_btm_line">
+              <h2>포트정보</h2>
+              <div class="stitle_btn_con port_txt"><span class="bit_port_c">Connected</span>Connected<span class="bit_port_dc">Disconnected</span>Disconnected<span class="bit_port_d">Down</span>Down</div>
+            </div>
+            <div class="modal_scon">
+              <div class="modal_con_cont">
+                <table class="port_table">
+                  <colgroup>
+                    <col width="*%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">                  
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>Port #</th>
+                      <th>1</th>
+                      <th>2</th>
+                      <th>3</th>
+                      <th>4</th>
+                      <th>5</th>
+                      <th>6</th>
+                      <th>7</th>
+                      <th>8</th>
+                      <th>9</th>
+                      <th>10</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Type</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>                      
+                    </tr>
+                    <tr>
+                      <td>State</td>
+                      <td><span class="bit_port_c">Connected</span></td>
+                      <td><span class="bit_port_dc">Connected</span></td>
+                      <td><span class="bit_port_d">Connected</span></td>
+                      <td><span class="bit_port_c">Connected</span></td>
+                      <td><span class="bit_port_dc">Connected</span></td>
+                      <td><span class="bit_port_d">Connected</span></td>
+                      <td><span class="bit_port_c">Connected</span></td>
+                      <td><span class="bit_port_dc">Connected</span></td>
+                      <td><span class="bit_port_d">Connected</span></td>
+                      <td><span class="bit_port_c">Connected</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal_con_cont">
+                <table class="port_table">
+                  <colgroup>
+                    <col width="*%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">
+                    <col width="8.2%">                  
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>Port #</th>
+                      <th>1</th>
+                      <th>2</th>
+                      <th>3</th>
+                      <th>4</th>
+                      <th>5</th>
+                      <th>6</th>
+                      <th>7</th>
+                      <th>8</th>
+                      <th>9</th>
+                      <th>10</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Type</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>
+                      <td>RJ45</td>                      
+                    </tr>
+                    <tr>
+                      <td>State</td>
+                      <td><span class="bit_port_c">Connected</span></td>
+                      <td><span class="bit_port_dc">Connected</span></td>
+                      <td><span class="bit_port_d">Connected</span></td>
+                      <td><span class="bit_port_c">Connected</span></td>
+                      <td><span class="bit_port_dc">Connected</span></td>
+                      <td><span class="bit_port_d">Connected</span></td>
+                      <td><span class="bit_port_c">Connected</span></td>
+                      <td><span class="bit_port_dc">Connected</span></td>
+                      <td><span class="bit_port_d">Connected</span></td>
+                      <td><span class="bit_port_c">Connected</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+            <div class="modal_btn">
+              <button type="button" class="cancel_btn" id="bit_btn05">취소</button>
+              <button type="button" class="save_btn">저장</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!--선로 상세정보 -->
+<div class="modal_all_wrap" id="modalIdLine">
+  <div class="modal_con_wrap modal_line_wrap">
+    <div class="modal_title">
+      <h1>선로 상세정보</h1>
+      <a href="#" class="modal_close_btn" id="line_btn">닫기</a>
+    </div>
+    <div class="modal_con">
+      <!--tab -->
+      <div class="tap_type06_wrap">
+      <input id="tab61" type="radio" name="tab_item6" checked>
+      <label class="tab_item br_first" for="tab61">상세정보</label>
+      <input id="tab62" type="radio" name="tab_item6">
+      <label class="tab_item br_mid" for="tab62">코어정보</label>
+      <input id="tab63" type="radio" name="tab_item6">
+      <label class="tab_item br_last" for="tab63">관련자료</label>
+        <div class="tab_content" id="tab61_content">
+          <div class="modal_stitle no_btm_line">
+            <h2>기본정보</h2>
+          </div>
+          <div class="modal_scon">
+            <div class="modal_con_cont">
+              <div class="row">
+                <div class="row_title">선로명</div>
+                <div class="row_content">
+                  <input type="text" class="input_type01" value />
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_title">접속점</div>
+                <div class="row_content">
+                  <p><span>M_BC_0003</span> - <span>M_BC_0004</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_title">위치</div>
+                <div class="row_content">
+                  <div class="radio-group">
+                    <input type="radio" id="line1" name="1">
+                    <label for="line1" class="chk_label">가공</label>
+                  </div>
+                  <div class="radio-group">
+                    <input type="radio" id="line12" name="1">
+                    <label for="line12" class="chk_label">지중</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_title">규격</div>
+                <div class="row_content">
+                  <div class="select_type_linecon">
+                    <span class="selected"></span>
+                    <span class="selectArrow">화살표</span>
+                    <div class="selectOptions" >
+                      <span class="selectOption" value="Option 1">4 Core</span>
+                      <span class="selectOption" value="Option 2">Option 1</span>
+                      <span class="selectOption" value="Option 3">Option 2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_title">길이</div>
+                <div class="row_content">
+                  <input type="text" class="input_type01" value />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="cancel_btn" id="line_btn01">취소</button>
+            <button type="button" class="save_btn">저장</button>
+          </div>      
+        </div>
+        <div class="tab_content" id="tab62_content">
+          <div class="modal_stitle no_btm_line">
+            <h2>코어정보</h2>
+          </div>
+          <div class="modal_scon">
+            <table>
+              <colgroup>
+                <col width="33.333%">
+                <col width="33.333%">
+                <col width="33.333%">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>연결접속점</th>
+                  <th>현재선로</th>
+                  <th>연결접속점</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>M_BC_0003</td>
+                  <td>59_통신선로</td>
+                  <td>M_BC_0004</td>
+                </tr>
+              </tbody>  
+            </table>  
+            <table class="second_table">
+              <colgroup>
+                <col width="33.333%">
+                <col width="33.333%">
+                <col width="33.333%">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>접속 코어</th>
+                  <th>코어 List</th>
+                  <th>접속코어</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Core 1</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>Core 2</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>      
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="cancel_btn" id="line_btn02">취소</button>
+            <button type="button" class="save_btn">저장</button>
+          </div>    
+        </div>            
+        <div class="tab_content" id="tab63_content">
+          <div class="modal_stitle no_btm_line">
+            <h2>기본정보</h2>
+          </div>
+          <div class="modal_scon">
+            <div class="modal_con_cont">
+              <div class="row">
+                <div class="row_title">선로명</div>
+                <div class="row_content">
+                  <input type="text" class="input_type01" value="" />
+                </div>
+              </div>
+              <div class="row row_ta">
+                <div class="row_title">기타</div>
+                <div class="row_content">
+                  <div class="ta_type01_area"><textarea class="ta_type01">텍스트area</textarea></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="cancel_btn" id="line_btn03">취소</button>
+            <button type="button" class="save_btn">저장</button>
+          </div>      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--알람 LIST -->
+<div class="modal_all_wrap" id="modalIdAlert">
+  <div class="modal_con_wrap modal_alert_wrap">
+    <div class="modal_title">
+      <h1>알람 LIST</h1>
+      <a href="#" class="modal_close_btn" id="alert_btn">닫기</a>
+    </div>
+    <div class="modal_con">
+      <div class="row tab_row1">
+        <div class="row_title">검색</div>
+        <div class="row_content">
+          <input type="text" class="input_type01" value="" />
+        </div>
+      </div>
+      <div class="modal_btn">
+        <button type="button" class="btn_type01">조회하기</button>
+      </div>
+      <table>
+        <colgroup>
+          <col width="15%">
+          <col width="10%">
+          <col width="7%">
+          <col width="11%">
+          <col width="14%">
+          <col width="12%">
+          <col width="15%">
+          <col width="9%">
+          <col width="7%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th><button type="button" class="up_arrow"></button>발생시간</th>
+            <th>심각도</th>
+            <th><button type="button" class="down_arrow"></button>상태</th>
+            <th><button type="button" class="down_arrow"></button>아이피</th>
+            <th><button type="button" class="down_arrow"></button>시설물관리번호</th>
+            <th><button type="button" class="down_arrow"></button>스위치종류</th>
+            <th><button type="button" class="down_arrow"></button>장애</th>
+            <th><button type="button" class="down_arrow"></button>기간</th>
+            <th><button type="button" class="down_arrow"></button>처리</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2021-00-00 00:00</td>
+            <td><button type="button" class="red_btn">중증장애</button></td>
+            <td>장애</td>
+            <td>00.00.00.00</td>
+            <td>110129_CCTV</td>
+            <td>&nbsp;</td>
+            <td>Disconnected</td>
+            <td>000000초</td>
+            <td>아니오</td>
+          </tr>
+          <tr>
+            <td>2021-00-00 00:00</td>
+            <td><button type="button" class="red_btn">중증장애</button></td>
+            <td>장애</td>
+            <td>00.00.00.00</td>
+            <td>110129_CCTV</td>
+            <td>&nbsp;</td>
+            <td>Disconnected</td>
+            <td>000000초</td>
+            <td>아니오</td>
+          </tr>
+          <tr>
+            <td>2021-00-00 00:00</td>
+            <td><button type="button" class="red_btn">중증장애</button></td>
+            <td>장애</td>
+            <td>00.00.00.00</td>
+            <td>110129_CCTV</td>
+            <td>&nbsp;</td>
+            <td>Disconnected</td>
+            <td>000000초</td>
+            <td>아니오</td>
+          </tr>
+          <tr>
+            <td>2021-00-00 00:00</td>
+            <td><button type="button" class="red_btn">중증장애</button></td>
+            <td>장애</td>
+            <td>00.00.00.00</td>
+            <td>110129_CCTV</td>
+            <td>&nbsp;</td>
+            <td>Disconnected</td>
+            <td>000000초</td>
+            <td>아니오</td>
+          </tr>
+          <tr>
+            <td>2021-00-00 00:00</td>
+            <td><button type="button" class="red_btn">중증장애</button></td>
+            <td>장애</td>
+            <td>00.00.00.00</td>
+            <td>110129_CCTV</td>
+            <td>&nbsp;</td>
+            <td>Disconnected</td>
+            <td>000000초</td>
+            <td>아니오</td>
+          </tr>
+          <tr>
+            <td>2021-00-00 00:00</td>
+            <td><button type="button" class="red_btn">중증장애</button></td>
+            <td>장애</td>
+            <td>00.00.00.00</td>
+            <td>110129_CCTV</td>
+            <td>&nbsp;</td>
+            <td>Disconnected</td>
+            <td>000000초</td>
+            <td>아니오</td>
+          </tr>
+          <tr>
+            <td>2021-00-00 00:00</td>
+            <td><button type="button" class="red_btn">중증장애</button></td>
+            <td>장애</td>
+            <td>00.00.00.00</td>
+            <td>110129_CCTV</td>
+            <td>&nbsp;</td>
+            <td>Disconnected</td>
+            <td>000000초</td>
+            <td>아니오</td>
+          </tr>
+          <tr>
+            <td>2021-00-00 00:00</td>
+            <td><button type="button" class="red_btn">중증장애</button></td>
+            <td>장애</td>
+            <td>00.00.00.00</td>
+            <td>110129_CCTV</td>
+            <td>&nbsp;</td>
+            <td>Disconnected</td>
+            <td>000000초</td>
+            <td>아니오</td>
+          </tr>          
+        </tbody>
+      </table>
+    </div>
+    <div class="modal_btn">
+      <button type="button" class="cancel_btn" id="alert_btn01">닫기</button>
+    </div>   
+  </div>
+</div>
+
+<!--사업관리 -->
+<div class="modal_all_wrap" id="modalIdBusiness">
+  <div class="modal_con_wrap modal_business_wrap">
+    <div class="modal_title">
+      <h1>사업관리</h1>
+      <a href="#" class="modal_close_btn" id="business_btn">닫기</a>
+    </div>
+    <div class="modal_con">
+      <div class="modal_stitle no_btm_line">
+        <h2>사업 List</h2>
+        <button class="btn_type01 go_modal_businessd">등록</button>
+      </div>
+      <table>
+        <colgroup>
+          <col width="17%">
+          <col width="*">
+          <col width="15%">
+          <col width="*">
+          <col width="10%">
+          <col width="13%">
+          <col width="10%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>공고번호</th>
+            <th>사업명</th>
+            <th>준공일자</th>
+            <th>시공사</th>
+            <th>준공도서</th>
+            <th>연관시설물</th>
+            <th>삭제</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>202107290001</td>
+            <td><a href="#">BIT구축사업</a></td>
+            <td>2021-04-23</td>
+            <td>(주)피씨엔</td>
+            <td><button type="button" class="down_btn">다운로드</button></td>
+            <td>000 건</td>
+            <td><button type="button" class="delete_btn">삭제</button></td>
+          </tr>
+          <tr>
+            <td>202107290001</td>
+            <td><a href="#">CCTV구축사업 1차</a></td>
+            <td>2021-04-23</td>
+            <td>스텔스인터랙티브</td>
+            <td><button type="button" class="detailview_btn">상세보기</button></td>
+            <td>000 건</td>
+            <td><button type="button" class="delete_btn">다운로드</button></td>
+          </tr>
+          <tr>
+            <td>202107290001</td>
+            <td><a href="#">CCTV 이설사업</a></td>
+            <td>2021-04-23</td>
+            <td>&nbsp;</td>
+            <td><button type="button" class="down_btn">다운로드</button></td>
+            <td>000 건</td>
+            <td><button type="button" class="delete_btn">삭제</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="modal_stitle no_btm_line">
+        <h2>시설물 List</h2>
+      </div>
+      <table>
+        <colgroup>
+          <col width="*">
+          <col width="20%">
+          <col width="17%">
+          <col width="16%">
+          <col width="10%">
+          <col width="10%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>공고번호/사업명</th>
+            <th>준공일자</th>
+            <th>종류</th>
+            <th>관리번호</th>
+            <th>상세정보</th>
+            <th>위치</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">202107290001<br>/ CCTV구축사업 1차</td>
+            <td rowspan="3">2021-04-13</td>
+            <td>CCTV</td>
+            <td>CCTV_1</td>
+            <td><button type="button" class="detailview_btn">상세보기</button></td>
+            <td><button type="button" class="location_btn">위치보기</button></td>
+          </tr>
+          <tr>
+            <td>함체</td>
+            <td>함체_1</td>
+            <td><button type="button" class="detailview_btn">상세보기</button></td>
+            <td><button type="button" class="location_btn">위치보기</button></td>
+          </tr>
+          <tr>
+            <td>IP주</td>
+            <td>IP주_1</td>
+            <td><button type="button" class="detailview_btn">상세보기</button></td>
+            <td><button type="button" class="location_btn">위치보기</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal_btn">
+      <button type="button" class="cancel_btn" id="business_btn01">취소</button>
+      <button type="button" class="save_btn">저장</button>
+    </div>
+  </div>
+  <!--삭제 모달-->
+  <div class="modal_all_wrap" id="modalIdClean">
+    <div class="modal_con_wrap modal_clean_wrap">
+        <div class="modal_alert_con">
+          삭제 하시겠습니까?
+        </div>
+        <div class="modal_btn">
+          <button class="btn_type04 btn_clean_ok rmg10">확인</button>
+          <button class="btn_type03 btn_clean_cancel" id="clean_btn">취소</button>
+        </div>
+    </div>
+  </div>  
+  <!--//삭제 모달-->
+</div>        
+
+
+<!--사업관리등록 -->
+<div class="modal_all_wrap" id="modalIdBusinessd">
+  <div class="modal_con_wrap modal_businessd_wrap">
+    <div class="modal_title">
+      <h1>사업관리등록</h1>
+      <a href="#" class="modal_close_btn" id="businessd_btn">닫기</a>
+    </div>
+    <div class="modal_con">
+      <div class="modal_con_cont">
+        <ul class="row_list">
+          <li>
+            <div class="row_title">공고번호<span class="star">*</span></div>
+            <div class="row_content"><input type="password" class="input_type01" value /> </div>
+          </li>
+          <li>
+            <div class="row_title">사업명<span class="star">*</span></div>
+            <div class="row_content"><input type="password" class="input_type01" value /></div>
+          </li>
+          <li>
+            <div class="row_title">준공일자</div>
+            <div class="row_content"><input type="text" class="input_type_cal01" id="datepicker3" readonly></div>
+          </li>
+          <li>
+            <div class="row_title">시공사</div>
+            <div class="row_content"><input type="text" class="input_type01" value /></div>
+          </li>
+          <li>
+            <div class="row_title">준공도서</div>
+            <div class="row_file_content">
+              <div class="filebox01 preview-image">
+                <input class="input_type_file" value="" disabled="disabled" placeholder="C:\ProgramData\image">
+                <label for="input-img-file1" >파일선택</label>
+                <input type="file" id="input-img-file1" class="upload-hidden" accept="image/gif,image/jpeg,image/jpg,image/png,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,.pdf">
+              </div>
+              <ul class="row_file_list">
+                <!--li>
+                  <button class="file_upload_del">삭제</button>
+                  <div class="img_area"></div>
+                </li>
+                <li>
+                  <button class="file_upload_del">삭제</button>
+                  <div class="img_area"></div>
+                </li>
+                <li>
+                  <button class="file_upload_del">삭제</button>
+                  <div class="img_area"></div>
+                </li>
+                <li>
+                  <button class="file_upload_del">삭제</button>
+                  <div class="img_area"></div>
+                </li>
+                <li>
+                  <button class="file_upload_del">삭제</button>
+                  <div class="img_area"></div>
+                </li-->
+              </ul>
+              </div>
+            </li>
+            <li>
+              <div class="row_title">연관시설물<br>등록</div>
+              <div class="row_file_content">
+                <button class="exel_btn">샘플 파일</button>  
+                <div class="filebox01 preview-image">
+                  <input class="input_type_file" value="" disabled="disabled"
+                      placeholder="C:\ProgramData\image">
+                  <label for="input-img-file1" >파일선택</label>
+                  <input type="file" id="input-img-file1" class="upload-hidden" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel">
+                </div>      
+              </div>          
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal_btn">
+      <button type="button" class="cancel_btn" id="businessd_btn01">취소</button>
+      <button type="button" class="save_btn">저장</button>
+    </div>
+  </div>
+</div>
+
+<!--환경설정 -->
+<div class="modal_all_wrap" id="modalIdSetting">
+  <div class="modal_con_wrap modal_setting_wrap">
+    <div class="modal_title">
+      <h1>환경설정</h1>
+      <a href="#" class="modal_close_btn" id="setting_btn">닫기</a>
+    </div>
+    <div class="modal_con">
+      <!--tab -->
+      <div class="tap_type05_wrap">
+        <input id="tab511" type="radio" name="tab_item5" checked>
+        <label class="tab_item br_first" for="tab511">NMS장비관리</label>
+        <input id="tab521" type="radio" name="tab_item5">
+        <label class="tab_item br_mid" for="tab521">지도설정</label>
+        <input id="tab531" type="radio" name="tab_item5">
+        <label class="tab_item br_mid" for="tab531">로그관리</label>
+        <input id="tab541" type="radio" name="tab_item5">
+        <label class="tab_item br_last" for="tab541">사용자관리</label>
+        <div class="tab_content" id="tab511_content">
+          <div class="row tab_row1">
+            <div class="row_title">검색</div>
+            <div class="row_content"><input type="text" class="input_type01" value /></div>
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="btn_type01">조회하기</button>
+          </div>
+          <div class="file_btn">
+            <button type="button" class="exel_btn">장비 추가</button>
+            <button type="button" class="exel_btn">샘플 파일</button>
+          </div>
+          <table>
+            <colgroup>
+              <col width="14%">
+              <col width="*">
+              <col width="7%">
+              <col width="14%">
+              <col width="14%">
+              <col width="7%">
+              <col width="7%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>제조사</th>
+                <th>NMS장비명</th>
+                <th>포트</th>
+                <th>읽기커뮤니티</th>
+                <th>쓰기커뮤니티</th>
+                <th>확인</th>
+                <th>삭제</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagenation_wrap">
+            <a href="#" class="page_arrow page_first">처음</a>
+            <a href="#" class="page_arrow page_prev">이전</a>
+            <ul class="page_ul">
+              <li><a href="#" class="active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+              <li><a href="#">10</a></li>
+            </ul>
+            <a href="#" class="page_arrow page_next">다음</a>
+            <a href="#" class="page_arrow page_last">마지막</a>
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="cancel_btn" id="setting_btn01">닫기</button>
+          </div>   
+        </div>
+        <div class="tab_content" id="tab521_content">
+          <div class="top_button_tab2">
+            <button class="btn_type03">초기화</button>
+            <button class="btn_type01">저장</button>
+          </div>
+          <div class="modal_con_tab2">
+            <ul class="row_list">
+              <li>
+                <div class="row_title">초기 위치 설정</div>
+                <div class="row_content">
+                  <div class="row_con_t"><span>위도</span><input type="text" class="input_type01" value="123.123.123"></div>                  
+                  <div class="row_con_t"><span>경도</span><input type="text" class="input_type01" value="123.123.123"></div>
+                </div>
+              </li>
+              <li>
+                <div class="row_title">지도 레벨 설정</div>
+              <div class="row_content">
+                <div class="row_con_t"><span>최대</span><input type="text" class="input_type01" value="00"></div>                  
+                <div class="row_con_t"><span>최소</span><input type="text" class="input_type01" value="00"></div>
+              </div>
+              </li>
+              <li class="row_h">
+                <div class="row_title">객체 조정</div>
+                <div class="row_content">
+                  <p>레벨별 객체 표시 설정</p>
+                  <div class="level_box_con">
+                    <div class="level_box">
+                      <button class="level_top">확대</button>
+                      <div class="level_scroll">
+                        <input type="range" list="tickmarks" class="level_scroll_input">
+                        <datalist id="tickmarks">
+                          <option value="0"></option>
+                          <option value="10"></option>
+                          <option value="20"></option>
+                          <option value="30"></option>
+                          <option value="40"></option>
+                          <option value="50"></option>
+                          <option value="60"></option>
+                          <option value="70"></option>
+                          <option value="80"></option>
+                          <option value="90"></option>
+                          <option value="100"></option>
+                        </datalist>
+                      </div>
+                      <button class="level_btm">축소</button>
+                    </div>
+                    <div class="level_sbox">
+                      <ul class="filter_ul">
+                        <li>
+                          <input type="checkbox" id="cb7" name="">
+                            <label for="cb7">
+                                <span class="ico"></span>
+                                <span class="text"><div class="line_con line-4core"></div>통신선로</span>
+                            </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="cb71" name="">
+                            <label for="cb71">
+                                <span class="ico"></span>
+                                <span class="text"><div class="line_con line-elcore"></div>전기선로</span>
+                            </label>
+                        </li>
+                        <li><input type="checkbox" id="cb72" name="">
+                          <label for="cb72">
+                              <span class="ico"></span>
+                              <span class="text"><div class="line_con line-holecore"></div>관로</span>
+                          </label>
+                        </li>
+                        <li class="labelList">
+                          <input type="checkbox" id="cb2-1" name="">
+                            <label for="cb2-1">
+                              <span class="ico"></span>
+                              <span class="text">전주</span>
+                          </label>
+                        </li>
+                        <li class="smallList">
+                          <input type="checkbox" id="cb2-1-2" name="">
+                            <label for="cb2-1-2">
+                                <span class="ico"></span>
+                                <span class="text"><div class="icon-pole-01">Icon-전주-한전주</div>한전주</span>
+                            </label>
+                        </li>
+                        <li class="smallList">
+                          <input type="checkbox" id="cb2-1-3" name="">
+                          <label for="cb2-1-3">
+                              <span class="ico"></span>
+                              <span class="text"><div class="icon-pole-02">Icon-전주-IP주</div>IP주</span>
+                          </label>
+                        </li>
+                        <li class="labelList">
+                          <input type="checkbox" id="cb2-1-4" name="">
+                          <label for="cb2-1-4">
+                              <span class="ico"></span>
+                              <span class="text"><div class="icon-traffic">Icon-교통신호제어기</div>TR</span>
+                          </label>
+                        </li>
+                        <li  class="labelList">
+                          <input type="checkbox" id="cb2-1-5" name="">
+                            <label for="cb2-1-5">
+                                <span class="ico"></span>
+                                <span class="text"><div class="icon-standard">Icon-함체</div>함체</span>
+                            </label>
+                        </li>
+                        <li  class="labelList">
+                          <input type="checkbox" id="cb2-1-6" name="">
+                          <label for="cb2-1-6">
+                              <span class="ico"></span>
+                              <span class="text">인수공</span>
+                          </label>
+                        </li>
+                        <li class="smallList">
+                          <input type="checkbox" id="cb2-1-8" name="">
+                            <label for="cb2-1-8">
+                                <span class="ico"></span>
+                                <span class="text"><div class="icon-ing"></div>인공</span>
+                            </label>
+                        </li>
+                        <li class="smallList">
+                          <input type="checkbox" id="cb2-1-9" name="">
+                          <label for="cb2-1-9">
+                              <span class="ico"></span>
+                              <span class="text"><div class="icon-sug"></div>수공</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            </ul>
+            
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="cancel_btn" id="setting_btn02">닫기</button>
+          </div>   
+        </div>
+        <div class="tab_content" id="tab531_content">
+            <div class="modal_con_tab3">
+              <div class="row">
+                <div class="row_title">조회기간</div>
+                <div class="row_content"><input type="text" class="input_type_cal01" id="datepicker1" readonly>
+                  <span class="span_padding">~</span>
+                  <input type="text" class="input_type_cal01" id="datepicker2" readonly>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_title">로그종류</div>
+                <div class="row_content">
+                  <div class="select_type01">
+                    <span class="selected"></span>
+                    <span class="selectArrow">화살표</span>
+                    <div class="selectOptions">
+                      <span class="selectOption" value="Option 1">NMS 로그</span>
+                      <span class="selectOption" value="Option 2">Option 1</span>
+                      <span class="selectOption" value="Option 3">Option 2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal_btn log_file">
+              <button type="button" class="btn_type01">로그 파일 다운로드</button>
+            </div>
+        </div>
+        <div class="tab_content" id="tab541_content">
+          <div class="row tab_row1">
+            <div class="row_title">검색</div>
+            <div class="row_content"><input type="text" class="input_type01" value /></div>
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="btn_type01">조회하기</button>
+          </div>
+          <div class="up_right_btn">
+            <button type="button" class="btn_type01">회원추가</button>
+          </div>
+          <table>
+            <colgroup>
+              <col width="26%">
+              <col width="24%">
+              <col width="18%">
+              <col width="9%">
+              <col width="23%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>
+                  <div class="flex_center">
+                    <button type="button" class="up_arrow"></button>
+                    <p>아이디</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="flex_center">
+                    <button type="button" class="down_arrow"></button>
+                    <p>이름</p>
+                  </div>                    
+                </th>
+                <th>수정</th>
+                <th>삭제</th>
+                <th>비밀번호 변경</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td></tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagenation_wrap">
+            <a href="#" class="page_arrow page_first">처음</a>
+            <a href="#" class="page_arrow page_prev">이전</a>
+            <ul class="page_ul">
+              <li><a href="#" class="active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+              <li><a href="#">10</a></li>
+            </ul>
+            <a href="#" class="page_arrow page_next">다음</a>
+            <a href="#" class="page_arrow page_last">마지막</a>
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="cancel_btn" id="setting_btn03">닫기</button>
+          </div> 
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--사용자수정 -->
+<div class="modal_all_wrap" id="modalIdUmodi">
+  <div class="modal_con_wrap modal_usermodi_wrap">
+      <div class="modal_title">
+          <h1>사용자 수정</h1>
+          <a href="#" class="modal_close_btn" id="usermodi_btn">닫기</a>
+      </div>
+      <div class="modal_con">
+        <div class="modal_con_cont">
+          
+          <div class="row">
+            <div class="row_title">관리자 비밀번호 <span class="star">*</span></div>
+            <div class="row_content"><input type="password" class="input_type01" value /></div>
+          </div>
+          <div class="row">
+            <div class="row_title">아이디</div>
+            <div class="row_content"><input type="text" class="input_type01" value="ididid"></div>
+          </div>
+          <div class="row">
+            <div class="row_title">이름</div>
+            <div class="row_content"><input type="text" class="input_type01" value="홍길동"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal_btn">
+        <button type="button" class="cancel_btn" id="usermodi_btn01">취소</button>
+        <button type="button" class="save_btn">저장</button>
+      </div>
+  </div>
+</div>
+
+
+<!--비밀번호변경 -->
+<div class="modal_all_wrap" id="modalIdUpass">
+  <div class="modal_con_wrap modal_userpass_wrap">
+      <div class="modal_title">
+          <h1>비밀번호 변경</h1>
+          <a href="#" class="modal_close_btn" id="userpass_btn">닫기</a>
+      </div>
+      <div class="modal_con">
+        <div class="modal_con_cont">
+          <div class="row">
+            <div class="row_title">관리자 비밀번호 <span class="star">*</span></div>
+            <div class="row_content"><input type="password" class="input_type01" value /></div>
+          </div>
+          <div class="row">
+            <div class="row_title">비밀번호<span class="star">*</span></div>
+            <div class="row_content"><input type="password" class="input_type01" value /></div>
+          </div>
+          <div class="row">
+            <div class="row_title">확인 비밀번호<span class="star">*</span></div>
+            <div class="row_content"><input type="password" class="input_type01" value /></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal_btn">
+        <button type="button" class="cancel_btn" id="userpass_btn01">취소</button>
+        <button type="button" class="save_btn">저장</button>
+      </div>
+  </div>
+</div>
+
+<!--즐겨찾기 추가 모달-->
+<div class="modal_all_wrap" id="modalIdBookmark">
+  <div class="modal_con_wrap modal_bookmark_wrap">
+      <div class="modal_alert_con">
+        즐겨찾기에 추가 되었습니다.
+      </div>
+      <div class="modal_btn">
+        <button class="btn_type04 btn_clean_ok rmg10">확인</button>
+      </div>
+  </div>
+</div>  
+<!--//즐겨찾기 추가 모달-->   
+<!--즐겨찾기 추가 모달-->
+<div class="modal_all_wrap" id="modalIdBookmarkno">
+  <div class="modal_con_wrap modal_bookmarkno_wrap">
+      <div class="modal_alert_con">
+        즐겨찾기가 삭제 되었습니다.
+      </div>
+      <div class="modal_btn">
+        <button class="btn_type04 btn_clean_ok rmg10">확인</button>
+      </div>
+  </div>
+</div>  
+<!--//즐겨찾기 추가 모달-->   
+
+
+<div style="width:100%;position:relative">
+<a href="#" class="btn_type01 go_modal_standard" style="width:500px;">함체 상세 정보 UI_01_0006~08</a>&nbsp;
+<a href="#" class="btn_type01 go_modal_connect" style="width:500px;">연결하기 UI_01_0009</a>&nbsp;
+<a href="#" class="btn_type01 go_modal_connectd" style="width:500px;">연결하기 끊기 UI_01_0009~10</a>&nbsp;
+<a href="#" class="btn_type01 go_modal_bit" style="width:500px;">BIT 상세정보 UI_01_0011</a>&nbsp;
+<a href="#" class="btn_type01 go_modal_line" style="width:500px;">선로 상세정보 UI_01_0012~13</a>&nbsp;
+<a href="#" class="btn_type01 go_modal_alert" style="width:500px;">알람 LIST UI_01_0014</a>&nbsp;
+<a href="#" class="btn_type01 go_modal_business" style="width:500px;">사업관리 UI_01_0015</a>&nbsp;
+<a href="#" class="btn_type01 go_modal_businessd" style="width:500px;">사업관리등록 UI_01_0016</a>&nbsp;
+<a href="#" class="btn_type01 go_modal_setting" style="width:500px;">환경설정 UI_01_0017~20</a>&nbsp;
+<a href="#" class="btn_type01 go_modal_usermodi" style="width:500px;">사용자수정 UI_01_0020</a>&nbsp;
+<a href="#" class="btn_type01 go_modal_userpass" style="width:500px;">비밀번호 수정</a>&nbsp;
+</div>
+
+
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

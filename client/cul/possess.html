@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CULTURIT</title>  
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper" id="">
+  <!-- 팝업 -->
+
+  <div class="wrap">
+    <!-- 왼쪽 영역 -->
+    <header id="user-wrap">
+      <a href="main.html" class="logo"></a>
+      <div class="account">
+        <div class="account-top">
+          <div class="account-title"><span>홍길동</span>'s Account</div>
+          <button type="button" class="btn-setting"></button>
+        </div>
+        <button type="button" class="btn-rect-gray">로그아웃</button>
+      </div>
+      <div class="have-content">
+        <div class="have-conten01">
+          <ul>
+            <li>
+              <span class="ico-note"></span>
+            </li>
+            <li>총 보유곡</li>
+            <li>10</li>
+          </ul>
+        </div>
+        <div class="have-conten02">
+          <ul>
+            <li>
+              <span class="ico-down"></span>
+            </li>
+            <li>총 다운로드</li>
+            <li>100</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  
+    <!-- 탭 영역 -->
+    <section id="content-wrap">
+      <div class="tab_basic">
+        <div class="tab_list_wrap">
+          <div class="tab_list" data-tabnum="0">
+            <a href="#">노트에디팅</a>
+          </div>
+          <div class="tab_list tab_active" data-tabnum="1">
+            <a href="#">통계</a>
+          </div> 
+        </div>
+        <div class="tab_container">    
+          <!-- 노트에디팅 -->      
+          <div class="tab_content" id="note-editing">
+
+          </div>
+          <!-- 통계 -->
+          <div class="tab_content" id="statistics">
+            <div class="st-sub-top">
+              <a href="main.html" class="sub-top-fst">현황요약</a>
+              <p><img src="./img/ic-back.png" alt="arrow">총 보유곡</p>
+            </div>
+            <div class="st-sub-date">
+              <div>
+                <div class="date-search">
+                  <ul class="term">
+                      <li>최근 1일</li>
+                      <li class="current">7일</li>
+                      <li>30일</li>
+                      <li>직접입력</li>
+                  </ul>
+                  <div class="input-date">
+                    <input type="date" class="start-date" id="datePicker">
+                    <span>-</span>
+                    <input type="date" class="end-date" id="datePicker1">														
+                  </div>
+                  <div class="search-input-wrap">
+                    <button type="submit" id="search-btn">검색 버튼</button>
+                    <input type="text" placeholder="검색어를 입력하세요" id="search-input" />
+                  </div>
+                  <button type="button" class="btn-rect-blue">조회</button>
+                </div>
+              </div>
+            </div>
+            <div class="st-sub-possess">
+              <div class="st-sub-po-top">
+                <div>
+                  <h3>총 보유곡 현황</h3>
+                  <p>전체 <span>100</span>건</p>
+                </div>
+                <div>
+                  <select class="select-rec">
+                    <option value="">10개씩 보기</option>
+                    <option value="">30개씩 보기</option>
+                    <option value="">50개씩 보기</option>
+                    <option value="">100개씩 보기</option>
+                  </select>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="tb-layout" summary="인기 다운로드현황">
+                  <colgroup>
+                    <col width="10%">
+                    <col width="25%">
+                    <col width="30%">
+                    <col width="">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>순위</th>
+                      <th>곡명</th>
+                      <th>생성일</th>
+                      <th>연결된 게임</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>$게임명$</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>$게임명$</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>$게임명$</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>$게임명$</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>$게임명$</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>$게임명$</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>$게임명$</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>$게임명$</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>$게임명$</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>$게임명$</td>
+                    </tr>
+                  </tbody> 
+                  <!-- 조회 결과 없을 경우 -->
+                  <!-- <tbody class="table-no-list">
+                    <tr>
+                      <td colspan="4">
+                        <div>
+                          <span class="ico-no-list"></span>
+                          <p>조회조건 결과가 없습니다.</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>           -->
+                </table>
+              </div>  
+              <div class="pagenation">
+                <button class="page-prev-end disabled"></button>
+                <button class="page-prev disabled"></button>
+                <ul>                
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li class="page-mobile"><a href="#">6</a></li>
+                  <li class="page-mobile"><a href="#">7</a></li>
+                  <li class="page-mobile"><a href="#">8</a></li>
+                  <li class="page-mobile"><a href="#">9</a></li>
+                  <li class="page-mobile"><a href="#">10</a></li>
+                </ul>
+                <button class="page-next"></button>
+                <button class="page-next-end"></button>
+              </div>      
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+  </div>
+</div> 
+<script>
+  //탭 메뉴
+  var tabList = document.querySelectorAll('.tab_list_wrap .tab_list')
+
+  Array.prototype.forEach.call(tabList, function(list) {
+
+    list.children[0].addEventListener('click', function(e) {
+      e.preventDefault()
+
+      var tabContent = document.querySelectorAll('.tab_container .tab_content')
+
+      var tabNum = this.parentElement.getAttribute('data-tabnum')
+
+      Array.prototype.forEach.call(tabContent, function(cont, i) {
+        cont.style.display = 'none'
+        tabList[i].className = 'tab_list'
+      })
+
+      tabContent[tabNum].style.display = 'block'
+
+      if(list.className.indexOf('tab_active') == -1) {
+        list.className = 'tab_list tab_active'
+      }
+    })
+  })
+
+</script>
+</body>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/common.js"></script>
+</html>

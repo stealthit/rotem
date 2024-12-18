@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.256" height="18.256" viewBox="0 0 18.256 18.256">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:none;stroke:#181818;stroke-width:2px}.cls-2{stroke-linejoin:round}.cls-3{stroke-linecap:square}
+        </style>
+    </defs>
+    <g id="ic-player-shrink" transform="translate(.128 .128)">
+        <path id="guide" style="fill:none" d="M0 0h18v18H0z"/>
+        <path id="선_17" data-name="선 17" class="cls-2" transform="translate(.579 12.239)" d="M0 5.182 5.182 0"/>
+        <path id="패스_77" data-name="패스 77" class="cls-3" d="M3.429 32.571h4.534v4.534" transform="translate(-2.202 -20.333)"/>
+        <path id="선_18" data-name="선 18" class="cls-2" transform="translate(12.239 12.239)" d="M5.182 5.182 0 0"/>
+        <path id="패스_78" data-name="패스 78" class="cls-3" d="M37.106 32.571h-4.535v4.534" transform="translate(-20.332 -20.333)"/>
+        <path id="선_19" data-name="선 19" class="cls-2" transform="translate(.579 .579)" d="m0 0 5.182 5.182"/>
+        <path id="패스_79" data-name="패스 79" class="cls-3" d="M3.429 7.963h4.534V3.429" transform="translate(-2.202 -2.202)"/>
+        <path id="선_20" data-name="선 20" class="cls-2" transform="translate(12.239 .579)" d="M5.182 0 0 5.182"/>
+        <path id="패스_80" data-name="패스 80" class="cls-3" d="M37.106 7.963h-4.535V3.429" transform="translate(-20.332 -2.202)"/>
+    </g>
+</svg>

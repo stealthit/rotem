@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>U2 Collaboration</title>
+    <!--script  src="http://code.jquery.com/jquery-latest.min.js"></script-->
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)" />
+  </head>
+  <body>
+    <div class="wrapper" id="LC_Page_10000">
+      <!-- 내용 영역 -->
+      <section id="content-wrap">
+        <!-- modal -->
+        <!-- 팝업 -->
+        <div id="mv-preview-big">
+          <div class="menu-box active pc">
+            <div class="mv_header">
+              <h1>60 Second Cut.mp4</h1>
+              <button
+                type="button"
+                class="ctl-rect ctl-fullSize"
+                title="전체화면"
+              >
+                전체화면
+              </button>
+            </div>
+            <div class="mv"></div>
+            <div class="progress-wrap">
+              <span class="ic-progress">circle</span>
+              <progress class="play-progress" value="20" max="100">
+                progress
+              </progress>
+            </div>
+            <div class="control-wrap">
+              <div class="ctl-left">
+                <button class="ctl-rect ctl-play" title="재생하기">재생</button>
+                <!--button class="ctl-rect ctl-play pause" title="정지하기">정지하기</button-->
+                <button class="ctl-rect ctl-repeat" title="반복재생">
+                  repeat
+                </button>
+                <!--button class="ctl-rect ctl-repeat repeat" title="반복해제">repeat 정지</button-->
+                <div class="ctl-volumn-con">
+                  <button class="ctl-rect ctl-volumn" title="음소거">
+                    볼륨
+                  </button>
+                  <!--button class="ctl-rect ctl-volumn mute" title="음소거 해제">볼륨</button-->
+                  <progress class="volumn-progress" value="20" max="100">
+                    progress
+                  </progress>
+                </div>
+              </div>
+              <div class="ctl-right">
+                <button type="button" class="ctl-type-btn">Standard</button>
+                <div class="ctl-timeline"><span>00:55</span> / 00:53</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="layout-wrap">
+          <!--lnb-->
+          <div id="lnb-wrap">
+            <div class="user-con">
+              <a href="#" class="tool-btn" id="user-type"
+                >홍길동 님 <i class="ic-arrow"></i
+              ></a>
+              <ul class="menu-box" id="user-type-box">
+                <li class="type-box-top">
+                  <div class="type-box01">
+                    <div class="ic-img-user"><p class="bg_violet">길동</p></div>
+                  </div>
+                  <div class="type-box02">
+                    <p>홍길동님</p>
+                    <p>hong@gmail.com</p>
+                  </div>
+                  <button type="button" class="close-btn"></button>
+                </li>
+                <li>
+                  <button type="button" id="file-name-btn">계정정보</button>
+                </li>
+                <li class="account-mobile">
+                  <button type="button" id="file-date-btn">멤버추가</button>
+                </li>
+                <li class="account-mobile">
+                  <button type="button" id="file-size-btn">설정</button>
+                </li>
+                <li><button type="button" id="file-size-btn">FAQ</button></li>
+                <button type="button" class="btn_rect_white tac">
+                  Log out
+                </button>
+              </ul>
+            </div>
+            <!--search-->
+            <form id="search">
+              <div class="search-input-wrap">
+                <input
+                  type="text"
+                  placeholder="검색어를 입력하세요."
+                  class="search-input"
+                />
+                <button type="submit" class="search-btn">검색 버튼</button>
+              </div>
+            </form>
+            <!-- 드라이브 리스트 -->
+
+            <div class="drive-list-wrap">
+              <ul id="drive-list">
+                <!-- 내 드라이브 -->
+
+                <li id="my-drive" data-child="1">
+                  <i class="ic-arrow"></i>
+                  <button type="button" class="root_folder">
+                    홍길동's Team
+                  </button>
+                  <button type="button" class="circle_btn" alt="추가하기">
+                    추가
+                  </button>
+                  <ul class="child-node child1">
+                    <li class="parent-node" id="parent1-1" data-child="2">
+                      <button type="button">Project1</button>
+                    </li>
+                    <li>
+                      <button type="button">Project2</button>
+                    </li>
+                  </ul>
+                </li>
+                <li id="my-drive1" data-child="1">
+                  <i class="ic-arrow"></i>
+                  <button type="button" class="root_folder">
+                    리뷰공유 프로젝트
+                  </button>
+                  <ul class="child-node child1">
+                    <li class="parent-node" id="parent1-1" data-child="2">
+                      <button type="button">Project1</button>
+                    </li>
+                    <li>
+                      <button type="button">Project2</button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--//lnb-->
+        </div>
+
+        <!-- 컨텐츠 -->
+        <div class="content-wrap-inner">
+          <section id="header-wrap">
+            <header>
+              <div class="func-wrap">
+                <div class="func-mobile-list">
+                  <button type="button" id="tree-trigger-btn">리스트</button>
+                </div>
+                <div class="func-search-wrap">
+                  <input
+                    type="text"
+                    placeholder="jump to project of file"
+                    class="search-input"
+                  />
+                </div>
+                <ul class="func-profile-wrap">
+                  <li>
+                    <a href="#" class="ic-top-wrap ic-top-user">사용자</a>
+                  </li>
+                  <li><a href="#" class="ic-top-wrap ic-top-bell">알림</a></li>
+                </ul>
+              </div>
+            </header>
+          </section>
+          <div class="topper">
+            <ul class="top-state">
+              <li>홍</li>
+              <li><a href="#">Project1</a></li>
+              <li>Locations</li>
+            </ul>
+            <div class="top-right">
+              <a href="#" class="circle_add_btn" alt="사용자 추가"
+                >사용자 추가</a
+              >
+              <div class="user-wrap">
+                <div class="ic-img-user"><p class="bg_none">유저</p></div>
+                <div class="ic-img-user"><p class="bg_none">사람</p></div>
+                <div class="ic-img-user"><p class="bg_violet">길동</p></div>
+              </div>
+              <a href="#" class="btn_rect_black" alt="Share">Share</a>
+              <a href="#" class="btn_rect_white02 tac" alt="New"
+                >New<span>+</span></a
+              >
+            </div>
+          </div>
+
+          <section id="content">
+            <div class="tabs_inner">
+              <ul class="tabs">
+                <li
+                  class="current"
+                  data-tab="tab-media"
+                  data-stab="tab-right-media"
+                >
+                  미디어
+                </li>
+                <li class="" data-tab="tab-review" data-stab="tab-right-review">
+                  리뷰링크
+                </li>
+                <li class="" data-tab="tab-link" data-stab="tab-right-link">
+                  링크
+                </li>
+              </ul>
+              <ul class="tabs-info">
+                <ul id="tab-right-media" class="tabs-right-inner current">
+                  <!--li class="data-info"><strong>6</strong> items, <strong>8.33</strong> MB</li-->
+                  <li class="tool-btn-pc">
+                    <button type="button" id="file-type" class="tool-btn">
+                      파일타입
+                    </button>
+                    <ul class="menu-box" id="file-type-box">
+                      <li class="file-type-title">정렬 기준</li>
+                      <li>
+                        <button type="button" id="file-name-btn">이름순</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-date-btn">시간순</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-size-btn">
+                          파일 타입
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="tool-btn-m">
+                    <button type="button" id="file-type" class="tool-btn">
+                      타입
+                    </button>
+                    <ul class="menu-box" id="file-type-box">
+                      <li>
+                        <button type="button" id="file-name-btn">이름</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-date-btn">
+                          수정한 날짜
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-size-btn">크기</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button type="button" id="sort" class="tool-btn">
+                      <span class="gallery">정렬</span>
+                    </button>
+                    <ul class="menu-box" id="sort-box">
+                      <li>
+                        <span class="gallery"></span
+                        ><button type="button" id="sort-gallery-btn">
+                          갤러리로 보기
+                        </button>
+                      </li>
+                      <li>
+                        <span class="grid"></span
+                        ><button type="button" id="sort-grid-btn">
+                          그리드로 보기
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button type="button" id="view-more" class="more-btn">
+                      더보기
+                    </button>
+                  </li>
+                </ul>
+
+                <ul id="tab-right-review" class="tabs-right-inner">
+                  <li class="tool-btn-pc">
+                    <button type="button" id="create-type" class="tool-btn">
+                      파일타입
+                    </button>
+                    <ul class="menu-box" id="create-type-box">
+                      <li class="file-type-title">정렬 기준</li>
+                      <li>
+                        <button type="button" id="file-name-btn">이름순</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-date-btn">시간순</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-size-btn">
+                          파일 타입
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- <li><button type="button" id="create-type" class="tool-btn">생성일</button>
+                  <ul class="menu-box" id="create-type-box">
+                    <li><button type="button" id="create-date-btn">생성일</button></li>
+                  </ul>
+                </li> -->
+                  <li>
+                    <button type="button" id="view-more" class="more-btn">
+                      더보기
+                    </button>
+                  </li>
+                </ul>
+
+                <ul id="tab-right-link" class="tabs-right-inner">
+                  <li>
+                    <button type="button" id="create-type01" class="tool-btn">
+                      생성일
+                    </button>
+                    <ul class="menu-box" id="create-type01-box">
+                      <li>
+                        <button type="button" id="create-date01-btn">
+                          생성일
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button type="button" id="view-more" class="more-btn">
+                      더보기
+                    </button>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <!--미디어 detail-->
+            <div id="tab-media" class="tabs-inner content-inner current">
+              <ul class="media-ul">
+                <!--타입별-->
+                <!-- 일반 : type01-->
+                <!-- 프리뷰없음 : type02-->
+                <!-- 프리뷰3개이상 : type03-->
+                <!-- 폴더만 : type04-->
+                <li>
+                  <a href="">
+                    <section class="file-pv type01">
+                      <div class="info-rect status">
+                        <i class="orange"></i>Needs Review
+                      </div>
+                      <div class="info-rect timeline">00:54</div>
+                      <img src="img/tmp_img.jpg" />
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <section class="file-pv type01">
+                      <div class="info-rect status">
+                        <i class="cyan"></i>in Progress
+                      </div>
+                      <div class="info-rect timeline">00:54</div>
+                      <img src="img/tmp_img.jpg" />
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <section class="file-pv type03">
+                      <div class="pv-img01"><img src="img/tmp_img.jpg" /></div>
+                      <div class="pv-img02"><img src="img/tmp_img.jpg" /></div>
+                      <div class="pv-img03">
+                        <div class="bg">+ 2</div>
+                        <img src="img/tmp_img.jpg" />
+                      </div>
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <section class="file-pv type03">
+                      <div class="pv-img01"><img src="img/tmp_img.jpg" /></div>
+                      <div class="pv-img02"><img src="img/tmp_img.jpg" /></div>
+                      <div class="pv-img03">
+                        <div class="bg">+ 2</div>
+                        <img src="img/tmp_img.jpg" />
+                      </div>
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <section class="file-pv type01">
+                      <div class="info-rect status">
+                        <i class="green"></i>Approved
+                      </div>
+                      <div class="info-rect timeline">00:54</div>
+                      <img src="img/tmp_img.jpg" />
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <section class="file-pv type04">폴더없음</section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">Untitled Folder</div>
+                      <div class="file-date">
+                        No Items
+                        <!--div class="file-msg">4</div-->
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <section class="file-pv type01">
+                      <div class="info-rect01">
+                        <div class="ic-people">사람들</div>
+                        <!--div class="ic-lock">잠김</div-->
+                      </div>
+                      <div class="info-rect status">
+                        <i class="orange"></i>Needs Review
+                      </div>
+                      <div class="info-rect timeline">00:54</div>
+                      <img src="img/tmp_img.jpg" />
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <section class="file-pv type01">
+                      <!--div class="info-rect status"><i class="orange"></i>Needs Review</div-->
+                      <div class="info-rect timeline">00:54</div>
+                      <img src="img/tmp_img.jpg" />
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <section class="file-pv type02">이미지없음</section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--리뷰링크 detail-->
+            <div id="tab-review" class="tabs-inner content-inner">
+              <table class="tb-layout tb-review" summary="리뷰링크">
+                <colgroup>
+                  <col width="56px" />
+                  <col width="*" />
+                  <col width="15%" />
+                  <col width="10%" />
+                  <col width="5%" />
+                  <col width="5%" />
+                  <col width="20%" />
+                </colgroup>
+                <tr>
+                  <th scope="col" colspan="2">이름</th>
+                  <th scope="col">생성일</th>
+                  <th scope="col" class="tac">생성자</th>
+                  <th scpee="col" class="tac">
+                    <img src="img/ic-view-on.svg" />
+                  </th>
+                  <th scope="col">활성</th>
+                  <th scope="col">링크</th>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="img-folder"
+                      ><img src="img/img-folder.svg"
+                    /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span><span>4 items</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--링크 detail-->
+            <div id="tab-link" class="tabs-inner content-inner">
+              <table class="tb-layout tb-review" summary="링크">
+                <colgroup>
+                  <col width="56px" />
+                  <col width="*" />
+                  <col width="15%" />
+                  <col width="10%" />
+                  <col width="5%" />
+                  <col width="5%" />
+                  <col width="20%" />
+                </colgroup>
+                <tr>
+                  <th scope="col" colspan="2">이름</th>
+                  <th scope="col">생성일</th>
+                  <th scope="col" class="tac">생성자</th>
+                  <th scpee="col" class="tac">
+                    <img src="img/ic-view-on.svg" />
+                  </th>
+                  <th scope="col">활성</th>
+                  <th scope="col">링크</th>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="img-folder"
+                      ><img src="img/img-folder.svg"
+                    /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span><span>4 items</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <!--
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/script.js"></script>
+  --></body>
+</html>

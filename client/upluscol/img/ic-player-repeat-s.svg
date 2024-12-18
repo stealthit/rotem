@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#419bf9;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="ic-player-repeat-s" transform="translate(-674 -898)">
+        <g id="그룹_71" data-name="그룹 71" transform="translate(678.641 902.641)">
+            <path id="패스_67" data-name="패스 67" class="cls-2" d="m30.857 1.714 2.83 2.83-2.83 2.83" transform="translate(-21.234 -1.714)"/>
+            <path id="패스_68" data-name="패스 68" class="cls-2" d="M1.714 13.682v-2.264a1.132 1.132 0 0 1 1.132-1.132h11.322" transform="translate(-1.714 -7.455)"/>
+            <path id="패스_69" data-name="패스 69" class="cls-2" d="m11.4 34.8-2.83-2.83 2.83-2.83" transform="translate(-6.307 -20.086)"/>
+            <path id="패스_70" data-name="패스 70" class="cls-2" d="M21.025 27.429v2.264a1.132 1.132 0 0 1-1.132 1.132H8.571" transform="translate(-6.307 -18.937)"/>
+        </g>
+    </g>
+</svg>

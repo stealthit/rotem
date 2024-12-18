@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>U2 Collaboration</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)">
+</head>
+<style>
+  #join-ask-box{z-index:70;position:absolute;top:0;left:0}
+  #accept-ok-box{z-index:70;position:absolute;top:0;left:400px;}
+  #accpet-no-box{z-index:70;position:absolute;top:250px;left:400px;}
+  #join-ask-no-box{z-index:70;position:absolute;top:0px;left:850px;}
+  #alert-msg-box{z-index:70;position:absolute;top:500px;left:0px;}
+  #alert-msg-no-box{z-index:70;position:absolute;top:500px;left:400px;}
+  #alert-msg-clear-box{z-index:70;position:absolute;top:500px;left:850px;}
+  #invite-team-box{z-index:70;position:absolute;top:1000px;left:0px;}
+
+
+  @media screen and (max-width:768px){
+    #join-ask-box{z-index:70;position:absolute;top:0;left:0}
+    #accept-ok-box{z-index:70;position:absolute;top:450px;left:0px;}
+    #accpet-no-box{z-index:70;position:absolute;top:700px;left:0px;}
+    #join-ask-no-box{z-index:70;position:absolute;top:950px;left:0px;}
+    #alert-msg-box{z-index:70;position:absolute;top:1400px;left:0px;}
+    #alert-msg-no-box{z-index:70;position:absolute;top:1850px;left:0px;}
+    #alert-msg-clear-box{z-index:70;position:absolute;top:2300px;left:0px;}
+    #invite-team-box{z-index:70;position:absolute;top:2750px;left:0px;}
+  }
+</style>
+
+<body>
+  <!--가입요청-->
+  <div class="menu-box active" id="join-ask-box">
+    <div class="mb-menu-box-title">
+      <p>가입요청</p>
+    </div>
+    <div class="mb-alert-box-content">
+      <ul>
+        <li>
+          <p class="mb-al-type">협업요청</p>
+          <span>8시간 전</span>
+        </li> 
+        <li>
+          <div>
+            <div class="ic-img-user"><p class="bg_violet">길동</p></div>
+            <span>홍길동</span>
+          </div>
+          <p class="b-name">60 Second Cut.mp4</p>
+        </li>       
+        <li>
+          <a href="#" class="btn_rect_red" alt="거절">거절</a>
+          <a href="#" class="btn_rect_green" alt="거절">수락</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p class="mb-al-type">협업요청</p>
+          <span>2021-09-11</span>
+        </li> 
+        <li>
+          <div>
+            <div class="ic-img-user"><p class="bg_none">유저</p></div>
+            <span>홍길동</span>
+          </div>
+          <p class="b-name">60 Second Cut.mp4</p>
+        </li>       
+        <li>
+          <a href="#" class="btn_rect_red" alt="거절">거절</a>
+          <a href="#" class="btn_rect_green" alt="거절">수락</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--요청수락-->
+  <div class="menu-box active" id="accept-ok-box">
+    <div class="mb-menu-box-title">
+      <p>요청 수락</p>
+      <button type="button" class="close-btn"></button>
+    </div>
+    <p>'<span>60 Second Cut.mp4</span>' 협업을 수락하시겠습니까?</p>
+    <div>
+      <a href="#" class="btn_rect_white mw-100 tac" alt="취소">취소</a>
+      <a href="#" class="btn_rect_black mw-100 tac" alt="수락">수락</a>
+    </div>
+  </div>
+
+  <!--요청거절-->
+  <div class="menu-box active" id="accpet-no-box">
+    <div class="mb-menu-box-title">
+      <p>요청 거절</p>
+      <button type="button" class="close-btn"></button>
+    </div>
+    <p>'<span>60 Second Cut.mp4</span>' 협업을 거절하시겠습니까?</p>
+    <div>
+      <a href="#" class="btn_rect_white mw-100 tac" alt="취소">취소</a>
+      <a href="#" class="btn_rect_black mw-100 tac" alt="수락">수락</a>
+    </div>
+  </div>
+
+  <!--가입요청이 없음-->
+  <div class="menu-box active" id="join-ask-no-box">
+    <div class="mb-menu-box-title">
+      <p>가입요청</p>
+      <a href="#"><img src="img/ic-refresh.svg"></a>
+    </div>
+    <div class="mb-box-no">
+      <span class="mb-join-ask-no-img"></span>
+      <p>가입요청이 없습니다.</p>
+    </div>
+  </div>
+
+  <!--알림-->
+  <div class="menu-box active" id="alert-msg-box">
+    <div class="mb-menu-box-title">
+      <p>알림</p>
+      <!-- <div class="title-list-btn">전체</div> -->
+      <div class="mb-title-select">
+        <select>
+          <option value="">전체</option>
+          <option value="">읽지 않은 알림</option>
+        </select>
+      </div>
+    </div>
+    <div class="mb-alert-box-content">
+      <ul>
+        <li>
+          <p class="mb-al-type">$알림구분$</p>
+          <span>8시간 전</span>
+        </li> 
+        <li>
+          <p class="b-name">60 Second Cut.mp4</p>에
+        </li>       
+        <li>
+          <div class="ic-img-user"><p class="bg_violet">길동</p></div>
+          <p><span>홍길동</span>님이 코멘트를 작성하였습니다.</p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p class="mb-al-type">$알림구분$</p>
+          <span>2021-09-11</span>
+        </li> 
+        <li>
+          <p class="b-name">60 Second Cut.mp4</p>에
+        </li>       
+        <li>
+          <div class="ic-img-user"><p class="bg_none">유저</p></div>
+          <p><span>홍길동</span>님이 코멘트를 작성하였습니다.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!--알림없음-->
+  <div class="menu-box active" id="alert-msg-no-box">
+    <div class="mb-menu-box-title">
+      <p>알림</p>
+      <!-- <div class="title-list-btn">전체</div> -->
+      <div class="mb-title-select">
+        <select name="" id="">
+          <option value="">전체</option>
+          <option value="">읽지 않은 알림</option>
+        </select>
+      </div>
+    </div>
+    <div class="mb-alert-msg-content">
+      <span class="alrim-img"></span>
+      <p>알림이 없습니다.</p>
+      <button href="#" class="btn_rect_white" alt="팀원 초대">팀원 초대</button>
+    </div>
+  </div>
+
+  <!--알림읽음-->
+  <div class="menu-box active" id="alert-msg-clear-box">
+    <div class="mb-menu-box-title">
+      <p>알림</p>
+      <!-- <div class="title-list-btn">읽지 않은 알림</div> -->
+      <div class="mb-title-select">
+        <select name="" id="">
+          <option value="">전체</option>
+          <option value="">읽지 않은 알림</option>
+        </select>
+      </div>
+    </div>
+    <div class="mb-alert-msg-content">
+      <span class="alrim-img"></span>
+      <p>모든 알림을 읽었습니다.</p>
+    </div>
+  </div>
+
+  <!--초대-->
+  <div class="menu-box active" id="invite-team-box">
+    <div class="mb-menu-box-title">
+      <p>초대<span>팀원을 초대하세요</span></p>
+      <button type="button" class="close-btn"></button>
+    </div>
+    <div class="mb-invite-content">
+      <ul>
+        <li>
+          <span>1</span>
+          <input type="text" class="search-input02" placeholder="이메일 주소를 입력하세요">
+        </li>
+        <p>이메일 주소를 입력하세요</p>
+        <li>
+          <span>2</span>
+          <input type="text" class="search-input02" placeholder="이메일 주소를 입력하세요">
+        </li>
+        <li>
+          <span>3</span>
+          <input type="text" class="search-input02" placeholder="이메일 주소를 입력하세요">
+        </li>
+        <a href="#" class="btn_rect_black" alt="초대">초대</a>
+      </ul>
+    </div>
+  </div>
+  
+</body>
+</html>

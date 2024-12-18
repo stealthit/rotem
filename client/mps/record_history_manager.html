@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/jquery-ui.theme.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history active">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+<div class="top">
+	<div class="user-info-box">
+        <div class="profile">
+            <button type="button" class="profile-dropdown"></button>
+        </div>
+        <div class="dropdown">
+            <div class="user-info">
+                <div class="user-top">
+                    <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                    <span class="division">I</span>
+                    <span class="position">슈퍼관리자</span>
+                </div>
+                <div class="user-bottom">
+                    <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                </div>
+            </div>
+            <button type="button" class="logout-btn">로그아웃</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 이력조회 > 관리자 작업내역
+            </div>
+            <div class="page-title">
+                관리자 작업내역
+            </div>
+            <div class="tab-content tmg26 active">
+                <div class="search-form">
+                    <form action="" method="post">
+                        <div class="input-content">
+                            <div class="input-row">
+                                <span class="title long">조회기간</span>
+                                <div class="form-input-group">
+                                    <input type="text" class="date" id="datepicker1" readonly>
+                                </div>
+                                <span class="date-division">~</span>
+                                <div class="form-input-group">
+                                    <input type="text" class="date" id="datepicker2" readonly>
+                                </div>
+                                <div class="form-input-group radio-group">
+                                    <div class="square-radio-group">
+                                        <input type="radio" id="today" value="" name="radio-group-date" checked>
+                                        <label class="first" for="today"><span>오늘</span></label>
+                                        <input type="radio" id="7" value="" name="radio-group-date">
+                                        <label for="7"><span>7일</span></label>
+                                        <input type="radio" id="30" value="" name="radio-group-date">
+                                        <label for="30"><span>30일</span></label>
+                                        <input type="radio" id="90" value="" name="radio-group-date">
+                                        <label for="90"><span>90일</span></label>
+                                        <input type="radio" id="180" value="" name="radio-group-date">
+                                        <label class="last" for="180"><span>180일</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <span class="title long">조회</span>
+                                <div class="form-input-group">
+                                    <select>
+                                        <option value="">운영자 ID</option>
+                                        <option value="">운영자 IP</option>
+                                        <option value="">ID</option>
+                                    </select>
+                                </div>
+                                <div class="form-input-text-group in_ml10">
+                                    <input type="text" />
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <span class="title long">작업형태</span>
+                                <div class="form-input-group checkbox-group">
+                                    <input type="checkbox" id="login">
+                                    <label for="login">
+                                        <span class="ico"></span>
+                                        <div class="check-title">로그인</div>
+                                    </label>
+                                </div>
+                                <div class="form-input-group checkbox-group">
+                                    <input type="checkbox" id="lookup">
+                                    <label for="lookup">
+                                        <span class="ico"></span>
+                                        <div class="check-title">조회</div>
+                                    </label>
+                                </div>
+                                <div class="form-input-group checkbox-group">
+                                    <input type="checkbox" id="new">
+                                    <label for="new">
+                                        <span class="ico"></span>
+                                        <div class="check-title">신규등록</div>
+                                    </label>
+                                </div>
+                                <div class="form-input-group checkbox-group">
+                                    <input type="checkbox" id="update">
+                                    <label for="update">
+                                        <span class="ico"></span>
+                                        <div class="check-title">선택수정</div>
+                                    </label>
+                                </div>
+                                <div class="form-input-group checkbox-group">
+                                    <input type="checkbox" id="delete">
+                                    <label for="delete">
+                                        <span class="ico"></span>
+                                        <div class="check-title">삭제</div>
+                                    </label>
+                                </div>
+                                <div class="form-input-group checkbox-group">
+                                    <input type="checkbox" id="download">
+                                    <label for="download">
+                                        <span class="ico"></span>
+                                        <div class="check-title">다운로드</div>
+                                    </label>
+                                </div>
+                                <div class="form-input-group checkbox-group">
+                                    <input type="checkbox" id="bring">
+                                    <label for="bring">
+                                        <span class="ico"></span>
+                                        <div class="check-title">가져오기</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="submit-btn bgcolor" type="submit">조회</button>
+                    </form>
+                </div>
+                <div class="content-wrapper">
+                    <div class="button-row">
+                        <div class="left">
+                            <button class="down" type="button">다운로드</button>
+                        </div>
+                        <div class="right">
+
+                            <div class="list-info">
+                                관리자 작업내역 (총 <span class="ftcolor">100</span>건)
+                            </div>
+                            <select>
+                                <option value="">15개씩</option>
+                                <option value="">30개씩</option>
+                                <option value="">50개씩</option>
+                                <option value="">100개씩</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-wscroll">
+                                            <table class="jb-table no-arrow">
+                        <tr class="jb-table-header-group">
+                            <th class="jb-table-cell jb-middle">
+                                <p class="in_posi-8"><button type="button" class="arrow"></button>기간</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>종류</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>운영자 ID</p>
+                            </th>
+                            <th class=" jb-table-cell jb-middle">
+                                <p>운영자 IP</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>페이지</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>ID</p>
+                            </th>
+                            <th class=" jb-table-cell jb-middle">
+                                <p>키</p>
+                            </th>
+                            <th class=" jb-table-cell jb-middle">
+                                <p>값1</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>값2</p>
+                            </th>
+                        </tr>
+                        <tr >
+                            <td colspan="9" class="null-box">
+                                <div>
+                                    <img src="./imges/ico_list_none.svg" alt="icoNull" />
+                                    <p>관리자 작업내역이 없습니다.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    </div>
+                    <div class="pagenation bgp">
+                        <button type="button" class="back-end disabled"></button>
+                        <button type="button" class="back disabled"></button>
+                        <button type="button" class="number">1</button>
+                        <button type="button" class="number active">2</button>
+                        <button type="button" class="number">3</button>
+                        <button type="button" class="number">4</button>
+                        <button type="button" class="number">5</button>
+                        <button type="button" class="number">6</button>
+                        <button type="button" class="number">7</button>
+                        <button type="button" class="number">8</button>
+                        <button type="button" class="number">9</button>
+                        <button type="button" class="number">10</button>
+                        <button type="button" class="next"></button>
+                        <button type="button" class="next-end"></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+
+    <!-- <div class="dpt-modal-background modal">
+        <div class="dpt-modal-content">
+            <div class="title">
+                <span>부서조회</span>
+                <button type="button" class="modal-close-btn"></button>
+            </div>
+            <form class="search-form" action="" method="post">
+                <span class="title">조회</span>
+                <select>
+                    <option value="">ID</option>
+                    <option value="">부서명</option>
+                </select>
+                <div class="input-group text">
+                    <input type="text" />
+                </div>
+                <button class="submit-btn bgcolor">조회</button>
+            </form>
+            <div class="check-box-content-wrapper">
+                <div class="check-box-content">
+                    <div class="checkbox-group active">
+                        <div class="checkbox-row">
+                            <button type="button" class="arrow-btn active"></button>
+                            <input type="checkbox" id="ckbs1">
+                            <label for="ckbs1">
+                                <span class="ico"></span>
+                                <div class="title">경영전략부문</div>
+                            </label>
+                        </div>
+                        <div class="checkbox-group active">
+                            <div class="checkbox-row">
+                                <button type="button" class="arrow-btn active"></button>
+                                <input type="checkbox" id="ckbs2">
+                                <label for="ckbs2">
+                                    <span class="ico"></span>
+                                    <div class="title">전략기획팀</div>
+                                </label>
+                            </div>
+                            <div class="checkbox-group active">
+                                <div class="checkbox-row">
+                                    <button type="button" class="arrow-btn active"></button>
+                                    <input type="checkbox" id="ckbs3">
+                                    <label for="ckbs3">
+                                        <span class="ico"></span>
+                                        <div class="title">경영기획담당</div>
+                                    </label>
+                                </div>
+                                <div class="checkbox-group active">
+                                    <div class="checkbox-row not-child">
+                                        <input type="checkbox" id="ckbs4">
+                                        <label for="ckbs4">
+                                            <span class="ico"></span>
+                                            <div class="title">경영전략담당</div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-row not-child">
+                                    <input type="checkbox" id="ckbs5">
+                                    <label for="ckbs5">
+                                        <span class="ico"></span>
+                                        <div class="title">경영전략담당</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox-group active">
+                        <div class="checkbox-row">
+                            <button type="button" class="arrow-btn active"></button>
+                            <input type="checkbox" id="ckbs6">
+                            <label for="ckbs6">
+                                <span class="ico"></span>
+                                <div class="title">인사총무 1팀</div>
+                            </label>
+                        </div>
+                        <div class="checkbox-group active">
+                            <div class="checkbox-row ">
+                                <button type="button" class="arrow-btn"></button>
+                                <input type="checkbox" id="ckbs7">
+                                <label for="ckbs7">
+                                    <span class="ico"></span>
+                                    <div class="title">인사팀</div>
+                                </label>
+                            </div>
+                            <div class="checkbox-group">
+                                <div class="checkbox-row not-child">
+                                    <button type="button" class="arrow-btn"></button>
+                                    <input type="checkbox" id="ckbs8">
+                                    <label for="ckbs8">
+                                        <span class="ico"></span>
+                                        <div class="title">경영기획담당</div>
+                                    </label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-row not-child">
+                                        <input type="checkbox" id="ckbs9">
+                                        <label for="ckbs9">
+                                            <span class="ico"></span>
+                                            <div class="title">경영전략담당</div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="checkbox-row not-child">
+                                    <input type="checkbox" id="ckbs10">
+                                    <label for="ckbs10">
+                                        <span class="ico"></span>
+                                        <div class="title">경영전략담당</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="confirm-btn-group">
+                <button type="button" class="modal-cancel-btn">취소</button>
+                <button type="button" class="confirm-btn" onclick="openAlert()">선택완료 </button>
+            </div>
+        </div>
+    </div> -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <script>
+        $(function () {
+            $('.choice-dpt-btn').on('click', function () {
+                $('.dpt-modal-background').addClass('active');
+            })
+
+            $('.submit-btn-group').find('.detail-btn').on('click', function () {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                } else {
+                    $(this).addClass('active');
+                }
+                $(this).parents('form').find('.toggle-box').toggle();
+            })
+        });
+    </script>
+</body>
+
+</html>

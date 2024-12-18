@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CULTURIT</title>  
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+<div class="wrapper" id="">
+  <!-- 팝업 -->
+
+  <div class="wrap">
+    <!-- 왼쪽 영역 -->
+    <header id="user-wrap">
+      <a href="main.html" class="logo"></a>
+      <div class="account">
+        <div class="account-top">
+          <div class="account-title"><span>홍길동</span>'s Account</div>
+          <button type="button" class="btn-setting"></button>
+        </div>
+        <button type="button" class="btn-rect-gray">로그아웃</button>
+      </div>
+      <div class="have-content">
+        <div class="have-conten01">
+          <ul>
+            <li>
+              <span class="ico-note"></span>
+            </li>
+            <li>총 보유곡</li>
+            <li>10</li>
+          </ul>
+        </div>
+        <div class="have-conten02">
+          <ul>
+            <li>
+              <span class="ico-down"></span>
+            </li>
+            <li>총 다운로드</li>
+            <li>100</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  
+    <!-- 탭 영역 -->
+    <section id="content-wrap">
+      <div class="tab_basic">
+        <div class="tab_list_wrap">
+          <div class="tab_list tab_active" data-tabnum="0">
+            <a href="#">노트에디팅</a>
+          </div>
+          <div class="tab_list" data-tabnum="1">
+            <a href="#">통계</a>
+          </div> 
+        </div>
+        <div class="tab_container">      
+          <!-- 노트에디팅 -->
+          <div class="tab_content note-game-pd" id="note-editing">
+            <div class="note-sub-top">
+              <a href="main.html" class="back-main">
+                게임제작
+              </a>
+            </div>
+            <div class="note-sub-content">
+              <ul>
+                <li>게임선택</li>
+                <li>
+                  <div class="file-box">
+                    <div class="file-box-top">
+                      <div class="game-type">
+                        <span class="type-s">S</span>
+                        기타-게임A
+                      </div>
+                    </div>
+                  </div>
+                </li>                      
+              </ul>
+              <ul>
+                  <li>파일명(음악제목)</li>
+                  <li>
+                    <input type="text" class="input-box" placeholder="음악제목">
+                  </li>
+              </ul>
+              <ul>
+                  <li>가격선택</li>
+                  <li>
+                    <select class="select-rec" id="price-sel">
+                      <option value="aaa1">무료</option>
+                      <option value="aaa2">유료</option>
+                    </select>
+                  </li>
+              </ul>
+              <ul class="price-input">
+                <li>가격</li>
+                <li>
+                  <input type="text" class="input-box" >
+                </li>
+            </ul>
+              <ul>
+                  <li>게임레벨</li>
+                  <li class="game-level-box">
+                    <button type="button" class="btn-low btn-level active">초급</button>
+                    <button type="button" class="btn-medium btn-level">중급</button>
+                    <button type="button" class="btn-high btn-level">고급</button>
+                    <!-- 설정된 내용이 있는 경우만 생성 -->
+                    <!-- <div>
+                      <button type="button" class="btn-setting tool-btn" id="sm-set"></button>
+                      <ul class="sm-sel-box02" id="sm-set-box">
+                        <li class="tool-btn" id="pd-copy"><span class="ico-copy"></span>복사하기</li>
+                        <li><span class="ico-reset"></span>리셋하기</li>
+                      </ul>
+                      <ul class="sm-sel-box03" id="pd-copy-box">
+                        <li class="sm-sel-box-title">복사하기</li>
+                        <li>
+                          <input type="checkbox" name="" id="cb1"> 
+                          <label for="cb1" class="s-checkbox"></label> 
+                          <span>초급</span>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="" id="cb2"> 
+                          <label for="cb2" class="s-checkbox"></label> 
+                          <span>중급</span>
+                        </li>
+                        <li>
+                          <input type="checkbox" name="" id="cb3"> 
+                          <label for="cb3" class="s-checkbox"></label> 
+                          <span>고급</span>
+                        </li>
+                      </ul> 
+                    </div>                     -->
+                  </li>                  
+              </ul> 
+              
+              <ul>
+                <li>음악썸네일</li>
+                <li>
+                  <input type="text" class="input-box" disabled>
+                  <label for="input-img-file1" class="file-cho">파일선택</label>
+                  <input type="file" id="input-img-file1" accept="image/gif,image/jpeg,image/jpg,image/png">
+                  <p>(권장 이미지 : 000px * 000px / 1M 이하 / gif, png, jpg(jpeg))</p>
+                </li>
+              </ul>
+            </div>
+            <div class="note-sub-bottom">
+              <button type="button" class="btn-el-gray">목록</button>
+              <a href="note-game-pd02.html" class="btn-el-blue">다음</a>
+            </div>
+          </div>
+
+          <!-- 통계 -->
+          <div class="tab_content" id="statistics">
+            
+          </div>
+         </div>
+      </div>
+    </section> 
+  </div> 
+</div>
+<script>
+  //탭 메뉴
+  var tabList = document.querySelectorAll('.tab_list_wrap .tab_list')
+
+  Array.prototype.forEach.call(tabList, function(list) {
+
+    list.children[0].addEventListener('click', function(e) {
+      e.preventDefault()
+
+      var tabContent = document.querySelectorAll('.tab_container .tab_content')
+
+      var tabNum = this.parentElement.getAttribute('data-tabnum')
+
+      Array.prototype.forEach.call(tabContent, function(cont, i) {
+        cont.style.display = 'none'
+        tabList[i].className = 'tab_list'
+      })
+
+      tabContent[tabNum].style.display = 'block'
+
+      if(list.className.indexOf('tab_active') == -1) {
+        list.className = 'tab_list tab_active'
+      }
+    })
+  })
+</script>
+</body>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/common.js"></script>
+</html>

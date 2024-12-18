@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="958" height="50" viewBox="0 0 958 50">
+    <path d="m0 0 18.744 25L0 50h183.256L202 25 183.256 0z" style="opacity:.15;fill:#5f56c6"/>
+    <path data-name="패스 2465" d="m0 0 18.744 25L0 50h183.256L202 25 183.256 0z" transform="translate(189)" style="opacity:.15;fill:#5f56c6"/>
+    <path data-name="패스 2465" d="m0 0 18.744 25L0 50h183.256L202 25 183.256 0z" transform="translate(378)" style="opacity:.15;fill:#5f56c6"/>
+    <path data-name="패스 2465" d="m0 0 18.744 25L0 50h183.256L202 25 183.256 0z" transform="translate(567)" style="opacity:.15;fill:#5f56c6"/>
+    <path data-name="패스 2465" d="m0 0 18.744 25L0 50h183.256L202 25 183.256 0z" transform="translate(756)" style="opacity:.15;fill:#5f56c6"/>
+    <g data-name="그룹 20013">
+        <text transform="translate(108 32)" style="font-size:21px;font-family:NotoSansCJKkr-Bold,Noto Sans CJK KR;font-weight:700;fill:#5f56c6"><tspan x="-19.32" y="0">접속</tspan></text>
+        <g data-name="그룹 20012" transform="translate(55 8)">
+            <rect data-name="사각형 137616" width="24" height="24" rx="12" transform="translate(0 4)" style="opacity:.3;fill:#5f56c6"/>
+            <text data-name="1" transform="translate(12 20)" style="fill:#fff;font-size:11px;font-family:NotoSansCJKkr-Black,Noto Sans CJK KR;font-weight:800"><tspan x="-3.349" y="0">1</tspan></text>
+        </g>
+    </g>
+    <g data-name="그룹 20013">
+        <text transform="translate(297 32)" style="font-size:21px;font-family:NotoSansCJKkr-Bold,Noto Sans CJK KR;font-weight:700;fill:#5f56c6"><tspan x="-19.32" y="0">상품</tspan></text>
+        <g data-name="그룹 20012" transform="translate(244 8)">
+            <rect data-name="사각형 137616" width="24" height="24" rx="12" transform="translate(0 4)" style="opacity:.3;fill:#5f56c6"/>
+            <text data-name="2" transform="translate(12 20)" style="fill:#fff;font-size:11px;font-family:NotoSansCJKkr-Black,Noto Sans CJK KR;font-weight:800"><tspan x="-3.349" y="0">2</tspan></text>
+        </g>
+    </g>
+    <g data-name="그룹 20013">
+        <text transform="translate(486 32)" style="font-size:21px;font-family:NotoSansCJKkr-Bold,Noto Sans CJK KR;font-weight:700;fill:#5f56c6"><tspan x="-38.64" y="0">상품주문</tspan></text>
+        <g data-name="그룹 20012" transform="translate(413 8)">
+            <rect data-name="사각형 137616" width="24" height="24" rx="12" transform="translate(0 4)" style="opacity:.3;fill:#5f56c6"/>
+            <text data-name="3" transform="translate(12 20)" style="fill:#fff;font-size:11px;font-family:NotoSansCJKkr-Black,Noto Sans CJK KR;font-weight:800"><tspan x="-3.349" y="0">3</tspan></text>
+        </g>
+    </g>
+    <g data-name="그룹 20013">
+        <text transform="translate(675 32)" style="font-size:21px;font-family:NotoSansCJKkr-Bold,Noto Sans CJK KR;font-weight:700;fill:#5f56c6"><tspan x="-19.32" y="0">결제</tspan></text>
+        <g data-name="그룹 20012" transform="translate(622 8)">
+            <rect data-name="사각형 137616" width="24" height="24" rx="12" transform="translate(0 4)" style="opacity:.3;fill:#5f56c6"/>
+            <text data-name="4" transform="translate(12 20)" style="fill:#fff;font-size:11px;font-family:NotoSansCJKkr-Black,Noto Sans CJK KR;font-weight:800"><tspan x="-3.349" y="0">4</tspan></text>
+        </g>
+    </g>
+    <g data-name="그룹 20013">
+        <text transform="translate(864 32)" style="font-size:21px;font-family:NotoSansCJKkr-Bold,Noto Sans CJK KR;font-weight:700;fill:#5f56c6"><tspan x="-19.32" y="0">완료</tspan></text>
+        <g data-name="그룹 20012" transform="translate(811 8)">
+            <rect data-name="사각형 137616" width="24" height="24" rx="12" transform="translate(0 4)" style="opacity:.3;fill:#5f56c6"/>
+            <text data-name="5" transform="translate(12 20)" style="fill:#fff;font-size:11px;font-family:NotoSansCJKkr-Black,Noto Sans CJK KR;font-weight:800"><tspan x="-3.349" y="0">5</tspan></text>
+        </g>
+    </g>
+</svg>

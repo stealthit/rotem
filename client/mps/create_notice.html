@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting active">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+<div class="top">
+	<div class="user-info-box">
+        <div class="profile">
+            <button type="button" class="profile-dropdown"></button>
+        </div>
+        <div class="dropdown">
+            <div class="user-info">
+                <div class="user-top">
+                    <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                    <span class="division">I</span>
+                    <span class="position">슈퍼관리자</span>
+                </div>
+                <div class="user-bottom">
+                    <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                </div>
+            </div>
+            <button type="button" class="logout-btn">로그아웃</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 환경설정 > 공지사항
+            </div>
+            <div class="page-title">
+                공지사항
+            </div>
+            <div class="tab-content tmg26 active" id="tab1">
+                <form action="" method="post">
+                    <div class="content-wrapper setting-wrapper">
+                        <div class="setting-table">
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title">카테고리</div>
+                                    <div class="setting-table-content">
+                                        <div class="radio-group">
+                                            <input type="radio" id="notice" name="radio-group-notice" checked>
+                                            <label for="notice">공지사항</label>
+                                        </div>
+                                        <div class="radio-group">
+                                            <input type="radio" id="driver" name="radio-group-notice">
+                                            <label for="driver">드라이버</label>
+                                        </div>
+                                        <div class="radio-group">
+                                            <input type="radio" id="etc" name="radio-group-notice">
+                                            <label for="etc">기타</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="setting-table-title">게시일자</div>
+                                    <div class="setting-table-content">
+                                        <p>2021-03-25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="setting-table-title">제목</div>
+                                    <div class="setting-table-content">
+                                        <input type="text" class="width-100" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row height-auto">
+                                <div>
+                                    <div class="setting-table-title">내용</div>
+                                    <div class="setting-table-content pd10">
+                                      <div class="text-notice-editor">
+                                        <!-- <div class="text-wrapper"></div> -->
+                                        <textarea name="" id="" rows="15" placeholder="내용을 입력해주세요."></textarea>
+                                      </div>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row height-auto">
+                                <div>
+                                    <div class="setting-table-title">첨부파일</div>
+                                    <div class="setting-table-content attach-wrap" style="display:none" >
+                                        <div class="file-group">
+                                            <div class="filebox">
+                                                <input type="file" class="upload-name white" value="" disabled="disabled">
+                                                <label for="input-file">파일선택</label>
+                                                <input type="file" id="input-file" class="upload-hidden">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ul class="attach-list">
+                                                <li>
+                                                    <span>ekfjef@navsdfsdfsdfsdfsdfsdfser.com1</span>
+                                                    <button class="del-btn"></button>
+                                                </li>
+                                                <li>
+                                                    <span>ekfjef@naver.com2</span>
+                                                    <button class="del-btn"></button>
+                                                </li>
+                                                <li>
+                                                    <span>ekfjef@naver.com3</span>
+                                                    <button class="del-btn"></button>
+                                                </li>
+                                                <li>
+                                                    <span>ekfjef@naver.com4</span>
+                                                    <button class="del-btn"></button>
+                                                </li>
+                                                <li>
+                                                    <span>ekfjef@naver.com5</span>
+                                                    <button class="del-btn"></button>
+                                                </li>
+                                                <li>
+                                                    <span>ekfjef@naver.com6</span>
+                                                    <button class="del-btn"></button>
+                                                </li>
+                                                <li>
+                                                    <span>ekfjef@naver.com</span>
+                                                    <button class="del-btn"></button>
+                                                </li>
+                                                <li>
+                                                    <span>ekfjef@naver.com</span>
+                                                    <button class="del-btn"></button>
+                                                </li>
+                                                <li>
+                                                    <span>ekfjef@naver.com</span>
+                                                    <button class="del-btn"></button>
+                                                </li>
+                                                <li>
+                                                    <span>ekfjef@naver.com</span>
+                                                    <button class="del-btn"></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-btn-group">
+                        <button type="button" class="confirm-btn bgcolor" onclick="openAlert();">
+                            저장
+                        </button>
+                        <button type="button" class="confirm-btn bgcolor">
+                            목록
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <script>
+        $(function () {
+            var fileTarget = $('.filebox .upload-hidden');
+
+            fileTarget.on('change', function () {
+                if (window.FileReader) {
+                    // 파일명 추출
+                    var filename = $(this)[0].files[0].name;
+                } else {
+                    // Old IE 파일명 추출
+                    var filename = $(this).val().split('/').pop().split('\\').pop();
+                };
+                // $(this).parents('.file-group').children('.filebox').remove();
+                var template = `<li><span>${filename}</span><button class="del-btn"></button></li>` 
+                var $ul = $(this).parents('.setting-table-content').find('.attach-list');
+                $ul.append(template);
+            });
+
+            $('button.del-btn').on('click', function () {
+                $(this).parents('li').remove();
+                $(this).closest('.filebox').find('#input-file').val('');
+
+            })
+
+
+        });
+    </script>
+</body>
+
+</html>

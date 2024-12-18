@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="114" viewBox="0 0 180 114">
+    <defs>
+        <linearGradient id="b" x1=".248" y1=".819" x2=".927" y2=".22" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#97aaaa"/>
+            <stop offset="1" stop-color="#e8efee"/>
+        </linearGradient>
+        <linearGradient id="a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#5b6a6a"/>
+            <stop offset="1" stop-color="#303033"/>
+        </linearGradient>
+        <linearGradient id="d" x1=".864" y1=".546" x2=".567" y2=".863" xlink:href="#a"/>
+        <linearGradient id="e" x1=".69" y1=".685" x2=".335" y2=".33" xlink:href="#b"/>
+        <linearGradient id="f" x1=".29" y1=".284" x2=".943" y2=".937" xlink:href="#b"/>
+        <linearGradient id="g" x1=".944" y1=".746" x2=".317" y2=".056" xlink:href="#b"/>
+        <radialGradient id="c" cx=".47" cy=".537" r=".489" gradientTransform="rotate(180 .824 .889)" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+            <stop offset=".482" stop-color="#fdfdfd" stop-opacity=".482"/>
+            <stop offset=".656" stop-color="#f6f7f7" stop-opacity=".655"/>
+            <stop offset=".779" stop-color="#ebedec" stop-opacity=".78"/>
+            <stop offset=".879" stop-color="#dadddd" stop-opacity=".878"/>
+            <stop offset=".964" stop-color="#c4cac9" stop-opacity=".965"/>
+            <stop offset="1" stop-color="#b8bfbe"/>
+        </radialGradient>
+    </defs>
+    <path d="M0 0h180v114H0z" style="fill:transparent;fill-rule:evenodd"/>
+    <g data-name="Vector Smart Object" transform="translate(89.264 -133.735)">
+        <path data-name="패스 28299" d="m257.992 454.559 6.566-6.566-5.692-5.692-6.566 6.566z" transform="translate(-242.766 -242.766)" style="fill:url(#b)"/>
+        <circle data-name="타원 37" cx="34.872" cy="34.872" r="34.872" transform="translate(-46.708 143.292)" style="opacity:.4;fill:url(#c)"/>
+        <path data-name="패스 28300" d="M-49 178.164a37.165 37.165 0 0 0 37.164 37.164 37.152 37.152 0 0 0 37.164-37.164A37.165 37.165 0 0 0-11.836 141 37.165 37.165 0 0 0-49 178.164zm6.158 0a30.984 30.984 0 0 1 30.986-30.986 30.984 30.984 0 0 1 30.986 30.986 30.984 30.984 0 0 1-30.985 30.986 31 31 0 0 1-30.987-30.986z" style="fill:url(#a)"/>
+        <path data-name="패스 28301" d="m312.173 506.136 3.983-3.983a3.764 3.764 0 0 0 0-5.3l-24.77-24.75-9.286 9.286 24.77 24.77a3.746 3.746 0 0 0 5.303-.023z" transform="translate(-266.777 -266.777)" style="fill:url(#d)"/>
+        <path data-name="패스 28302" d="m272.5 453.97-8.53 8.53a3.447 3.447 0 0 0 0 4.9l.427.427a3.447 3.447 0 0 0 4.9 0l8.529-8.528a3.447 3.447 0 0 0 0-4.9l-.427-.427a3.447 3.447 0 0 0-4.899-.002z" transform="translate(-251.347 -251.347)" style="fill:url(#e)"/>
+        <path data-name="패스 28303" d="m278.016 462.735-5.381 5.381a2.9 2.9 0 0 0 0 4.119l1.2 1.2a2.9 2.9 0 0 0 4.119 0l5.381-5.381a2.9 2.9 0 0 0 0-4.119l-1.2-1.2a2.9 2.9 0 0 0-4.119 0z" transform="translate(-258.458 -258.538)" style="fill:url(#f)"/>
+        <path data-name="패스 28304" d="m285.561 474.143-1.418 1.418a1.911 1.911 0 0 0 0 2.72l2.6 2.6a1.911 1.911 0 0 0 2.72 0l1.418-1.418a1.911 1.911 0 0 0 0-2.72l-2.6-2.6a1.911 1.911 0 0 0-2.72 0z" transform="translate(-267.965 -267.965)" style="fill:url(#g)"/>
+    </g>
+</svg>

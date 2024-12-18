@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISS 시스템</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/unit.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+
+</head>
+<body>
+<div class="wrapper">
+
+
+<!--환경설정 모달-->
+<div class="modal_all_wrap" id="modalIdSetting">
+  <div class="modal_con_wrap modal_setting_wrap">
+    <div class="modal_title">
+      <h1>환경설정</h1>
+      <a href="#" class="modal_close_btn" id="setting_btn">닫기</a>
+    </div>
+    <div class="modal_con">
+      <!--tab -->
+      <div class="tap_type05_wrap">
+        <input id="tab511" type="radio" name="tab_item5" checked>
+        <label class="tab_item br_first" for="tab511">NMS장비관리</label>
+        <input id="tab521" type="radio" name="tab_item5">
+        <label class="tab_item br_mid" for="tab521">지도설정</label>
+        <input id="tab531" type="radio" name="tab_item5">
+        <label class="tab_item br_mid" for="tab531">로그관리</label>
+        <input id="tab541" type="radio" name="tab_item5">
+        <label class="tab_item br_last" for="tab541">사용자관리</label>
+        <div class="tab_content" id="tab511_content">
+          <div class="row tab_row1">
+            <div class="row_title">검색</div>
+            <div class="row_content"><input type="text" class="input_type01" value /></div>
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="btn_type01">조회하기</button>
+          </div>
+          <div class="file_btn">
+            <button type="button" class="exel_btn">장비 추가</button>
+            <button type="button" class="exel_btn">샘플 파일</button>
+          </div>
+          <table>
+            <colgroup>
+              <col width="14%">
+              <col width="*">
+              <col width="7%">
+              <col width="14%">
+              <col width="14%">
+              <col width="7%">
+              <col width="7%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>제조사</th>
+                <th>NMS장비명</th>
+                <th>포트</th>
+                <th>읽기커뮤니티</th>
+                <th>쓰기커뮤니티</th>
+                <th>확인</th>
+                <th>삭제</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+              <tr>
+                <td>Unicomne</td>
+                <td>Unicomnet GigaBit Ethernet Switch</td>
+                <td>161</td>
+                <td>OPPOD01</td>
+                <td>OPPOD01</td>
+                <td><button type="button" class="down_btn">다운로드</button></td>
+                <td><button type="button" class="delete_btn">삭제</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagenation_wrap">
+            <a href="#" class="page_arrow page_first">처음</a>
+            <a href="#" class="page_arrow page_prev">이전</a>
+            <ul class="page_ul">
+              <li><a href="#" class="active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+              <li><a href="#">10</a></li>
+            </ul>
+            <a href="#" class="page_arrow page_next">다음</a>
+            <a href="#" class="page_arrow page_last">마지막</a>
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="cancel_btn" id="setting_btn01">닫기</button>
+          </div>   
+        </div>
+        <div class="tab_content" id="tab521_content">
+          <div class="top_button_tab2">
+            <button class="btn_type03">초기화</button>
+            <button class="btn_type01">저장</button>
+          </div>
+          <div class="modal_con_tab2">
+            <ul class="row_list">
+              <li>
+                <div class="row_title">초기 위치 설정</div>
+                <div class="row_content">
+                  <div class="row_con_t"><span>위도</span><input type="text" class="input_type01" value="123.123.123"></div>                  
+                  <div class="row_con_t"><span>경도</span><input type="text" class="input_type01" value="123.123.123"></div>
+                </div>
+              </li>
+              <li>
+                <div class="row_title">지도 레벨 설정</div>
+              <div class="row_content">
+                <div class="row_con_t"><span>최대</span><input type="text" class="input_type01" value="00"></div>                  
+                <div class="row_con_t"><span>최소</span><input type="text" class="input_type01" value="00"></div>
+              </div>
+              </li>
+              <li class="row_h">
+                <div class="row_title">객체 조정</div>
+                <div class="row_content">
+                  <p>레벨별 객체 표시 설정</p>
+                  <div class="level_box_con">
+                    <div class="level_box">
+                      <button class="level_top">확대</button>
+                      <div class="level_scroll">
+                        <input type="range" list="tickmarks" class="level_scroll_input">
+                        <datalist id="tickmarks">
+                          <option value="0"></option>
+                          <option value="10"></option>
+                          <option value="20"></option>
+                          <option value="30"></option>
+                          <option value="40"></option>
+                          <option value="50"></option>
+                          <option value="60"></option>
+                          <option value="70"></option>
+                          <option value="80"></option>
+                          <option value="90"></option>
+                          <option value="100"></option>
+                        </datalist>
+                      </div>
+                      <button class="level_btm">축소</button>
+                    </div>
+                    <div class="level_sbox">
+                      <ul class="filter_ul">
+                        <li>
+                          <input type="checkbox" id="cb7" name="">
+                            <label for="cb7">
+                                <span class="ico"></span>
+                                <span class="text"><div class="line_con line-4core"></div>통신선로</span>
+                            </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="cb71" name="">
+                            <label for="cb71">
+                                <span class="ico"></span>
+                                <span class="text"><div class="line_con line-elcore"></div>전기선로</span>
+                            </label>
+                        </li>
+                        <li><input type="checkbox" id="cb72" name="">
+                          <label for="cb72">
+                              <span class="ico"></span>
+                              <span class="text"><div class="line_con line-holecore"></div>관로</span>
+                          </label>
+                        </li>
+                        <li class="labelList">
+                          <input type="checkbox" id="cb2-1" name="">
+                            <label for="cb2-1">
+                              <span class="ico"></span>
+                              <span class="text">전주</span>
+                          </label>
+                        </li>
+                        <li class="smallList">
+                          <input type="checkbox" id="cb2-1-2" name="">
+                            <label for="cb2-1-2">
+                                <span class="ico"></span>
+                                <span class="text"><div class="icon-pole-01">Icon-전주-한전주</div>한전주</span>
+                            </label>
+                        </li>
+                        <li class="smallList">
+                          <input type="checkbox" id="cb2-1-3" name="">
+                          <label for="cb2-1-3">
+                              <span class="ico"></span>
+                              <span class="text"><div class="icon-pole-02">Icon-전주-IP주</div>IP주</span>
+                          </label>
+                        </li>
+                        <li class="labelList">
+                          <input type="checkbox" id="cb2-1-4" name="">
+                          <label for="cb2-1-4">
+                              <span class="ico"></span>
+                              <span class="text"><div class="icon-traffic">Icon-교통신호제어기</div>TR</span>
+                          </label>
+                        </li>
+                        <li  class="labelList">
+                          <input type="checkbox" id="cb2-1-5" name="">
+                            <label for="cb2-1-5">
+                                <span class="ico"></span>
+                                <span class="text"><div class="icon-standard">Icon-함체</div>함체</span>
+                            </label>
+                        </li>
+                        <li  class="labelList">
+                          <input type="checkbox" id="cb2-1-6" name="">
+                          <label for="cb2-1-6">
+                              <span class="ico"></span>
+                              <span class="text">인수공</span>
+                          </label>
+                        </li>
+                        <li class="smallList">
+                          <input type="checkbox" id="cb2-1-8" name="">
+                            <label for="cb2-1-8">
+                                <span class="ico"></span>
+                                <span class="text"><div class="icon-ing"></div>인공</span>
+                            </label>
+                        </li>
+                        <li class="smallList">
+                          <input type="checkbox" id="cb2-1-9" name="">
+                          <label for="cb2-1-9">
+                              <span class="ico"></span>
+                              <span class="text"><div class="icon-sug"></div>수공</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            </ul>
+            
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="cancel_btn" id="setting_btn02">닫기</button>
+          </div>   
+        </div>
+        <div class="tab_content" id="tab531_content">
+            <div class="modal_con_tab3">
+              <div class="row">
+                <div class="row_title">조회기간</div>
+                <div class="row_content"><input type="text" class="input_type_cal01" id="datepicker" readonly>
+                  <span class="span_padding">~</span>
+                  <input type="text" class="input_type_cal01" id="datepicker" readonly>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row_title">로그종류</div>
+                <div class="row_content">
+                  <div class="select_type01">
+                    <span class="selected"></span>
+                    <span class="selectArrow">화살표</span>
+                    <div class="selectOptions">
+                      <span class="selectOption" value="Option 1">NMS 로그</span>
+                      <span class="selectOption" value="Option 2">Option 1</span>
+                      <span class="selectOption" value="Option 3">Option 2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal_btn log_file">
+              <button type="button" class="btn_type01">로그 파일 다운로드</button>
+            </div>
+        </div>
+        <div class="tab_content" id="tab541_content">
+          <div class="row tab_row1">
+            <div class="row_title">검색</div>
+            <div class="row_content"><input type="text" class="input_type01" value /></div>
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="btn_type01">조회하기</button>
+          </div>
+          <div class="up_right_btn">
+            <button type="button" class="btn_type01">회원추가</button>
+          </div>
+          <table>
+            <colgroup>
+              <col width="26%">
+              <col width="24%">
+              <col width="18%">
+              <col width="9%">
+              <col width="23%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>
+                  <div class="flex_center">
+                    <button type="button" class="up_arrow"></button>
+                    <p>아이디</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="flex_center">
+                    <button type="button" class="down_arrow"></button>
+                    <p>이름</p>
+                  </div>                    
+                </th>
+                <th>수정</th>
+                <th>삭제</th>
+                <th>비밀번호 변경</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td></tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+              <tr>
+                <td>ididididid</td>
+                <td>홍길동</td>
+                <td><button type="button" class="edit_btn"></button></td>
+                <td><button type="button" class="delete_btn"></button></td>
+                <td><button type="button" class="key_btn"></button></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagenation_wrap">
+            <a href="#" class="page_arrow page_first">처음</a>
+            <a href="#" class="page_arrow page_prev">이전</a>
+            <ul class="page_ul">
+              <li><a href="#" class="active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+              <li><a href="#">10</a></li>
+            </ul>
+            <a href="#" class="page_arrow page_next">다음</a>
+            <a href="#" class="page_arrow page_last">마지막</a>
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="cancel_btn" id="setting_btn03">닫기</button>
+          </div> 
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="wrap">
+    <!--상단네비-->
+    <div class="left_top_nav">
+      <!--상단 GNB-->
+      <div class="gnb_nav">
+        <a href="#" class="btn_gnb_list">리스트</a>
+        <div class="gnb_search">
+          <form name="" action="" method="post">
+            <div class="gnb_search_select">
+              <span class="selected"></span>
+              <span class="selectArrow">화살표</span>
+              <div class="selectOptions" >
+                <span class="selectOption" value="Option 1">전체1</span>
+                <span class="selectOption" value="Option 2">전체2</span>
+              </div>
+            </div>
+            <input type='text' value='' name='' autocomplete='on' class="input_type01 gnb_search_input" placeholder="FISS 검색" />
+            <button type="button" class="gnb_search_btn">검색하기</button>
+          </form>
+        </div>
+      </div>
+      <!--리스트 탭-->
+      <div class="gnb_top_list_detail">
+        <!--tab -->
+        <div class="tap_type01_wrap">
+          <input id="tab1" type="radio" name="tab_item" checked>
+          <label class="tab_item br_first" for="tab1">필터</label>
+          <input id="tab2" type="radio" name="tab_item">
+          <label class="tab_item br_last" for="tab2">즐겨찾기</label>
+          <div class="list_detail_top_btn_area" >
+            <button class="btn_type02 go_modal_business">사업관리</button>
+            <button type="button" href="" class="go_modal_setting btn_setting">Setting</button>
+          </div>
+          <div class="tab_content" id="tab1_content">
+            <div class="select_btn_con">
+              <a href="#" class="btn_select_all rmg10">전체선택</a>
+              <a href="#" class="btn_select_all_none">선택해제</a>
+            </div>
+            <div class="filter_con">
+              <!--선로-->
+              <div class="filter_row ">
+                <div class="filter_title">
+                  <div class="filter_title_lt">
+                    <button type="button" class="toggle_btn">토글</button>
+                    <div class="title">
+                      <input type="checkbox" id="cb1" name="" checked>
+                      <label for="cb1">
+                          <span class="ico"></span>
+                          <span class="text">선로</span>
+                      </label>
+                      <a href="#" class="area_btn">
+                        <span>범례</span>
+                      </a>
+                    </div>
+                  </div>
+                  <!--div class="filter_title_rt">라벨</div>-->
+                </div>
+                <ul class="filter_ul">
+                  <li>
+                    <input type="checkbox" id="cb7" name="">
+                      <label for="cb7">
+                          <span class="ico"></span>
+                          <span class="text"><div class="line_con line-4core"></div>통신선로</span>
+                      </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="cb7" name="">
+                      <label for="cb7">
+                          <span class="ico"></span>
+                          <span class="text"><div class="line_con line-elcore"></div>전기선로</span>
+                      </label>
+                  </li>
+                  <li><input type="checkbox" id="cb7" name="">
+                    <label for="cb7">
+                        <span class="ico"></span>
+                        <span class="text"><div class="line_con line-holecore"></div>관로</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <!--시설물-->
+              <div class="filter_row">
+                <div class="filter_title">
+                  <div class="filter_title_lt">
+                    <button type="button" class="toggle_btn">토글</button>
+                    <div class="title">
+                      <input type="checkbox" id="cb2" name="">
+                      <label for="cb2">
+                          <span class="ico"></span>
+                          <span class="text">시설물</span>
+                      </label>
+                      <a href="#" class="area_btn">
+                        <span>범례</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="filter_title_rt">라벨</div>
+                </div>
+                <ul class="filter_ul">
+                  <li class="labelList">
+                    <input type="checkbox" id="cb2-1" name="">
+                      <label for="cb2-1">
+                        <span class="ico"></span>
+                        <span class="text">전주</span>
+                    </label>
+                    <div class="label_chk">
+                      <input type="checkbox" id="cb2-2-1" name="">
+                      <label for="cb2-2-1">
+                          <span class="ico"></span>
+                      </label> 
+                    </div>   
+                  </li>
+                  <li class="smallList">
+                    <input type="checkbox" id="cb2-1-2" name="">
+                      <label for="cb7">
+                          <span class="ico"></span>
+                          <span class="text"><div class="icon-pole-01">Icon-전주-한전주</div>한전주</span>
+                      </label>
+                  </li>
+                  <li class="smallList">
+                    <input type="checkbox" id="cb2-1-3" name="">
+                    <label for="cb2-1-3">
+                        <span class="ico"></span>
+                        <span class="text"><div class="icon-pole-02">Icon-전주-IP주</div>IP주</span>
+                    </label>
+                  </li>
+                  <li class="labelList">
+                    <input type="checkbox" id="cb2-1-4" name="">
+                    <label for="cb2-1-4">
+                        <span class="ico"></span>
+                        <span class="text"><div class="icon-traffic">Icon-교통신호제어기</div>TR</span>
+                    </label>
+                    <div class="label_chk">
+                      <input type="checkbox" id="cb2-2-2" name="">
+                      <label for="cb2-2-2">
+                          <span class="ico"></span>
+                      </label> 
+                    </div> 
+                  </li>
+                  <li  class="labelList">
+                    <input type="checkbox" id="cb2-1-5" name="">
+                      <label for="cb2-1-5">
+                          <span class="ico"></span>
+                          <span class="text"><div class="icon-standard">Icon-함체</div>함체</span>
+                      </label>
+                      <div class="label_chk">
+                        <input type="checkbox" id="cb2-2-3" name="">
+                        <label for="cb2-2-3">
+                            <span class="ico"></span>
+                        </label> 
+                      </div>   
+                  </li>
+                  <li  class="labelList">
+                    <input type="checkbox" id="cb2-1-6" name="">
+                    <label for="cb2-1-6">
+                        <span class="ico"></span>
+                        <span class="text">인수공</span>
+                    </label>
+                    <div class="label_chk">
+                      <input type="checkbox" id="cb2-2-4" name="">
+                      <label for="cb2-2-4">
+                          <span class="ico"></span>
+                      </label> 
+                    </div> 
+                  </li>
+                  <li class="smallList">
+                    <input type="checkbox" id="cb2-1-4" name="">
+                      <label for="cb2-1-4">
+                          <span class="ico"></span>
+                          <span class="text"><div class="icon-ing"></div>인공</span>
+                      </label>
+                  </li>
+                  <li class="smallList">
+                    <input type="checkbox" id="cb2-1-5" name="">
+                    <label for="cb2-1-5">
+                        <span class="ico"></span>
+                        <span class="text"><div class="icon-sug"></div>수공</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <!--기타-->
+              <div class="filter_row">
+                <div class="filter_title">
+                  <div class="filter_title_lt">
+                    <button type="button" class="toggle_btn">토글</button>
+                    <div class="title">
+                      <input type="checkbox" id="cb3" name="">
+                      <label for="cb3">
+                          <span class="ico"></span>
+                          <span class="text">기타</span>
+                      </label>
+                      <a href="#" class="area_btn">
+                        <span>범례</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="filter_title_rt">라벨</div>
+                </div>
+                <ul class="filter_ul">
+                  <li  class="labelList">
+                    <input type="checkbox" id="cb3_1" name="">
+                    <label for="cb3_1">
+                        <span class="ico"></span>
+                        <span class="text"><div class="icon-memo">메모</div>메모</span>
+                    </label>
+                    <div class="label_chk">
+                      <input type="checkbox" id="cb3_2" name="">
+                      <label for="cb3_2">
+                          <span class="ico"></span>
+                      </label> 
+                    </div> 
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab_content" id="tab2_content">
+            <ul class="search_list_ul">
+              <li>
+                <div class="result_title_area"><span class="icon-bus">Icon-버스도착정보안내기</span><p>신중동역2번출구</p><div class="icon_bookmark">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+              <li>
+                <div class="result_title_area"><span class="icon-traffic">Icon-교통신호제어기</span><p>신중동역2번출구</p><div class="icon_bookmark">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+              <li>
+                <div class="result_title_area"><span class="icon-cctv">Icon-폐쇄회로텔레비전</span><p>신중동역2번출구</p><div class="icon_bookmark on">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+              <!--선로-->
+              <li>
+                <div class="result_title_area"><div class="line_con line-72core"></div><p>131_통신선로</p><div class="icon_bookmark on">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>접속점 : 0000</li>
+                  <li>규격 : 신중동역</li>
+                  <li>길이 : 경기도 부천시 계남로 329</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--//리스트 탭-->
+      <!--검색결과-->
+      <div class="gnb_detail">
+        <h3>검색결과</h3>
+        <!--리스트-->
+        <div class="tap_type04_wrap">
+          <input id="tab41" type="radio" name="tab_item4" checked>
+          <label class="tab_item br_first" for="tab41">전체 123</label>
+          <input id="tab42" type="radio" name="tab_item4">
+          <label class="tab_item br_last" for="tab42">BIT 43</label>
+          <input id="tab43" type="radio" name="tab_item4">
+          <label class="tab_item br_last" for="tab43">함체 32</label>
+          <input id="tab44" type="radio" name="tab_item4">
+          <label class="tab_item br_last" for="tab44">TR 48</label>
+          <div class="tab_content" id="tab41_content">
+            <ul class="search_list_ul">
+              <li>
+                <div class="result_title_area"><span class="icon-bus">Icon-버스도착정보안내기</span><p>신중동역2번출구</p><div class="icon_bookmark">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+              <li>
+                <div class="result_title_area"><span class="icon-traffic">Icon-교통신호제어기</span><p>신중동역2번출구</p><div class="icon_bookmark">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+              <li>
+                <div class="result_title_area"><span class="icon-cctv">Icon-폐쇄회로텔레비전</span><p>신중동역2번출구</p><div class="icon_bookmark on">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+              <li>
+                <div class="result_title_area"><span class="icon-ing">Icon-인수공-인공</span><p>신중동역2번출구</p><div class="icon_bookmark on">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="tab_content" id="tab42_content">
+            <ul class="search_list_ul">
+              <li>
+                <div class="result_title_area"><span class="icon-ing">Icon-인수공-인공</span><p>신중동역2번출구2</p><div class="icon_bookmark">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+              <li>
+                <div class="result_title_area"><span class="icon-sug">Icon-인수공-인홀</span><p>신중동역2번출구2</p><div class="icon_bookmark">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+              <li>
+                <div class="result_title_area"><span class="icon-tr">Icon-지상설치형변압</span><p>신중동역2번출구2</p><div class="icon_bookmark">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="tab_content" id="tab43_content">
+            <ul class="search_list_ul">
+              <li>
+                <div class="result_title_area"><span class="icon-pole-01">Icon-전주-한전주</span><p>신중동역2번출구3</p><div class="icon_bookmark">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+              <li>
+                <div class="result_title_area"><span class="icon-pole-02">Icon-전주-IP주</span><p>신중동역2번출구3</p><div class="icon_bookmark">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+              <li>
+                <div class="result_title_area"><span class="icon-standard">Icon-함체</span><p>신중동역2번출구3</p><div class="icon_bookmark">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="tab_content" id="tab44_content">
+            <ul class="search_list_ul">
+              <li>
+                <div class="result_title_area"><span class="icon-telephone">Icon-국사</span><p>신중동역2번출구4</p><div class="icon_bookmark">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+              <li>
+                <div class="result_title_area"><span class="icon-standard">Icon-함체</span><p>신중동역2번출구3</p><div class="icon_bookmark">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+              <li>
+                <div class="result_title_area"><span class="icon-pole-01">Icon-전주-한전주</span><p>신중동역2번출구3</p><div class="icon_bookmark">북마크</div><div class="icon_location">위치</div></div>
+                <ul class="result_title_area_ul">
+                  <li>정류장번호 : 0000</li>
+                  <li>정류장명 : 신중동역</li>
+                  <li>주소 : 경기도 부천시 계남로 329</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--//검색결과-->
+    </div>
+    <!--토글-->
+    <div class="left_top_toggle">
+      <div class="switch_toggle_type01 active">
+        <input type="hidden" value="Y" />
+        <span class="text"></span>
+        <span class="circle"></span>
+      </div>
+    </div>
+    <div class="logo"><a href="#">로고</a></div>
+    <ul class="right_top_nav">
+      <li><button class="rect_btn"><span class="ic_help">도움말</span>도움말</button></li>
+      <li><button class="rect_btn ac_logout"><span class="ic_logout">로그아웃</span>로그아웃</button></li>
+    </ul>
+    <div class="bottom_mid_notice">
+      <div class="notice_content">
+        <ul class="notice_line">
+          <li><a href="#" class="go_modal_alert"><span>화살표</span>[중증장애] 2021-07-21 00:00:00 110 CCTV111</a></li>
+          <li><a href="#" class="go_modal_alert">[중증장애] 2021-07-21 00:00:00 110 CCTV122</a></li>
+          <li><a href="#" class="go_modal_alert">[중증장애] 2021-07-21 00:00:00 110 133</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--오른쪽 퀵-->
+    <div class="aside">
+      <div class="aside_btn_wrap">
+        <a href="#"><div class="aside_btn">토글버튼</div></a>
+        <div class="aside_btn_toggle" style="display:none">
+          <ul class="aside_toggle">
+            <li><a href="#"><span class="to_save">저장</span>저장</a></li>
+            <li><a href="#"><span class="to_print">인쇄</span>인쇄</a></li>
+            <!--li><a href="#"><span class="to_radius">반경</span>반경</a></li>
+            <li><a href="#"><span class="to_distance">거리</span>거리</a></li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="map_stage_bg">
+       <!--함체상세정보-->
+       <div class="click_standard icon_standard_area" style="position:absolute;top:300px;left:600px;z-index:20;box-sizing:content-box !important;">
+        <span class="icon-standard">Icon-함체</span>
+        <ul class="map_detail_rect_stdard">
+          <li><a href="#" class="go_modal_standard">입력</a></li>
+          <li>취소</li>
+        </ul>
+        <input type="hidden" id="c_e_2" value="0">
+      </div>
+      <!--//버스-->
+      <!--버스-->
+      <div class="click_icbus icon_area" style="position:absolute;top:200px;left:800px;z-index:20;box-sizing:content-box !important;">
+        <span class="icon-bus line-4core">버스</span>
+        <div class="map_detail_rect line-4core">
+          <div class="map_detail_arrow">화살</div>
+          <div class="map_detail_con">콘텐츠</div>
+        </div>
+        <input type="hidden" id="c_e_1" value="0">
+      </div>
+      <!--//버스-->
+      <!--traffic-->
+      <div class="click_ictraffic icon_area" style="position:absolute;top:200px;left:1200px;z-index:20;box-sizing:content-box !important;">
+        <span class="icon-traffic line-36core">버스</span>
+        <div class="map_detail_rect line-36core">
+          <div class="map_detail_arrow">화살</div>
+          <div class="map_detail_con">콘텐츠</div>
+        </div>
+        <input type="hidden" id="c_e_2" value="0">
+      </div>
+      <!--//traffic-->
+      <div class="map_bg">
+        <img src="images/map/bies.png" style="width:100%;height:100%">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+<html

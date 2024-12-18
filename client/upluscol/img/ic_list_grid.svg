@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-2{fill:#555}
+        </style>
+    </defs>
+    <g id="ic_list_grid" transform="translate(-1530 -192)">
+        <path id="guide" transform="translate(1530 192)" style="fill:none" d="M0 0h16v16H0z"/>
+        <path id="사각형_2165" data-name="사각형 2165" class="cls-2" transform="translate(1530 201)" d="M0 0h3v2H0z"/>
+        <path id="사각형_2162" data-name="사각형 2162" class="cls-2" transform="translate(1530 197)" d="M0 0h3v2H0z"/>
+        <path id="사각형_2164" data-name="사각형 2164" class="cls-2" transform="translate(1530 205)" d="M0 0h3v2H0z"/>
+        <path id="사각형_2160" data-name="사각형 2160" class="cls-2" transform="translate(1535 193)" d="M0 0h11v2H0z"/>
+        <path id="사각형_2166" data-name="사각형 2166" class="cls-2" transform="translate(1535 201)" d="M0 0h11v2H0z"/>
+        <path id="사각형_2161" data-name="사각형 2161" class="cls-2" transform="translate(1535 197)" d="M0 0h11v2H0z"/>
+        <path id="사각형_2163" data-name="사각형 2163" class="cls-2" transform="translate(1535 205)" d="M0 0h11v2H0z"/>
+        <path id="사각형_2159" data-name="사각형 2159" class="cls-2" transform="translate(1530 193)" d="M0 0h3v2H0z"/>
+    </g>
+</svg>

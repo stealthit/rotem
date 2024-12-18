@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>요구사항 관리</title>
+</head>
+
+<body>
+    <div class="header_wrapper">
+        <div class="header_logo">
+            <img>
+        </div>
+        <ul class="main_menu">
+            <li class="active">공통</li>
+            <li>기준정보</li>
+            <li>환경설정</li>
+            <li>소재</li>
+            <li>영업</li>
+            <li>카테고리</li>
+            <li>인벤토리</li>
+            <li>계약</li>
+            <li>편성</li>
+            <li>청구정산</li>
+            <li>리포트</li>
+            <li>분석</li>
+        </ul>
+        <div class="header_buttons">
+            <button class="menu_button">로그아웃</button>
+            <button class="menu_button">정보수정</button>
+        </div>
+    </div>
+    <div class="location">
+        <img class="img_home" src="" alt="">
+        <span>홈</span>
+        <img class="ico_arrow_r" src="" alt="">
+        <span>공통</span>
+        <!-- <img class="img_round_nav" src="" alt=""> -->
+        <img class="ico_arrow_r" src="" alt="">
+        <span>요구사항관리</span>
+        <!-- <img class="img_round_nav" src="" alt=""> -->
+    </div>
+    <div class="main requirement__main">
+        <div class="common_box common_body">
+            <div class="sub_menu_wrapper">
+							<div class="sub_menu_title">
+									<img src="../../assets/common.png" alt="">공통
+							</div>
+							<ul class="sub_menu">
+								<li>사용자 관리</li>
+								<li>사용자그룹 관리</li>
+									<li>코드 관리</li>
+									<li >메뉴 관리</li>
+									<li >공지사항</li>
+									<li >게시판</li>
+									<li >분석사용자 관리</li>
+									<li class="active">요구사항 관리</li>
+									<li >Watch-Dog</li>
+							</ul>
+        		</div>
+						<div class="contents_wrapper">
+							<div class="content_title">요구사항 관리</div>
+              <div class="search_wrapper">
+                <div class="search_edit_box">
+                  <div class="search_edit_detail">
+                    <div class="input_wrapper">
+                      <div class="input_title">접수일</div>
+                      <div class="input_date_group">
+                        <input type="date" value="2021-02-10">
+                        <span>~</span>
+                        <input type="date" value="2021-02-10">
+                      </div>
+                    </div>
+                    <div class="input_wrapper">
+                      <div class="input_title">요청구분</div>
+                      <div class="input_group">
+                        <select>
+                          <option value="">전체</option>
+                          <option value="">문의</option>
+                          <option value="">개발요청</option>
+                          <option value="">자료요청</option>
+                          <option value="">데이터보정</option>
+                          <option value="">서비스요청</option>
+                          <option value="">운행대행</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input_wrapper">
+                      <div class="input_title">제목</div>
+                      <div class="input_group">
+                        <input type="text" class="input_text">  
+                      </div>
+                    </div>
+                    <div class="input_wrapper">
+                      <div class="input_title">요청자/담당자</div>
+                      <div class="input_group">
+                        <input type="text" class="input_text">  
+                      </div>                        
+                    </div>                    
+                  </div>
+                  <div class="search_edit_detail">
+                    <div class="input_wrapper">
+                      <div class="input_title">요구사항ID</div>
+                      <div class="input_group">
+                        <input type="text" class="input_text">  
+                      </div>
+                    </div>
+                    <div class="input_wrapper">
+                      <div class="input_title">진행단계</div>
+                      <div class="input_group">
+                        <select>
+                          <option value="">전체</option>
+                          <option value="">임시저장</option>
+                          <option value="">문의접수</option>
+                          <option value="">보완요청</option>
+                          <option value="">BM승인</option>
+                          <option value="">개발총괄승인</option>
+                          <option value="">요구사항관리자승인</option>
+                          <option value="">담당자처리중</option>
+                          <option value="">담당자반려</option>
+                          <option value="">완료</option>
+                          <option value="">BM반려</option>
+                          <option value="">개발총괄반려</option>
+                          <option value="">요구사항관리자반려</option>
+                          <option value="">운영대행승인</option>
+                          <option value="">운영대행반려</option>                          
+                        </select>
+                      </div>                      
+                    </div>
+                    <div class="input_wrapper">
+                      <div class="input_title">업무</div>
+                      <div class="input_group">
+                        <select>
+                          <option value="">전체</option>
+                          <option value="">운영</option>
+                          <option value="">분석</option>
+                          <option value="">전체</option>
+                        </select> 
+                      </div>
+                    </div>
+                    <div class="input_wrapper">
+                      <div class="input_title">서비스</div>
+                      <div class="input_group">
+                        <select>
+                          <option value="">전체</option>
+                          <option value="">공통</option>
+                          <option value="">OTV(Olleh TV)</option>
+                          <option value="">OTN(Olleh TV Now)</option>
+                          <option value="">OAD(Olleh AD)</option>
+                          <option value="">DS(DigitalSignage)</option>
+                          <option value="">DC(Digital Cinema)</option>
+                          <option value="">기가지니</option>
+                        </select> 
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="search_btns">
+                  <button class="btn_init">초기화</button>
+                  <button class="btn_search">조회</button>
+                </div>		
+              </div>
+							<div class="table_wrapper">
+								<div class="table_top">
+                  <div class="table_top_count">
+                    <div class="table_total_count">
+                      전체<span>1,256</span>
+                    </div>                    
+                    <div class="table_view_count">
+                      <select>
+                        <option value="">10개</option>
+                        <option value="">20개</option>
+                        <option value="">50개</option>
+                        <option value="">100개</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="table_top_buttons">
+                    <button class="btn_excel"><img alt=""> 엑셀다운로드</button>
+                    <button class="btn_register"><img src="" >등록</button>
+                  </div>
+                </div>
+								<table class="jb-table">		
+                  <colgroup> 
+                    <col style="width:50px">                     
+                    <col style="width:90px"> 
+                    <col style="width:90px"> 
+                    <col style="width:90px"> 
+                    <col style="width:90px"> 
+                    <col>  
+                    <col style="width:110px">
+                    <col style="width:110px"> 
+                    <col style="width:90px"> 
+                    <col style="width:90px"> 
+                    <col style="width:90px"> 
+                    <col style="width:90px">                     
+                  </colgroup>
+									<thead>
+										<tr>
+											<th><input type="checkbox" class="table_head_check"></th>
+											<th>요구사항ID</th>
+											<th>요청구분</th>
+											<th>서비스구분</th>
+											<th>진행단계</th>
+											<th>제목</th>
+											<th>접수일</th>
+											<th>처리요청일</th>
+											<th>업무구분</th>
+											<th>요청자</th>
+											<th>영업사</th>
+											<th>담당자</th>
+										</tr>
+								  </thead>
+									<tbody class="table_body">										
+									</tbody>
+							  </table>
+                <ul class="pagination">
+                  <li><a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt=""></a></li>
+                  <li><a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt=""></a></li>
+                  <li><a href="#" class="num">1</a></li>
+                  <li><a href="#" class="num active">2</a></li>
+                  <li><a href="#" class="num">3</a></li>
+                  <li><a href="#" class="num">4</a></li>
+                  <li><a href="#" class="num">5</a></li>
+                  <li><a href="#" class="num">6</a></li>
+                  <li><a href="#" class="num">7</a></li>
+                  <li><a href="#" class="num">8</a></li>
+                  <li><a href="#" class="num">9</a></li>
+                  <li><a href="#" class="num">10</a></li>
+                  <li><a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt=""></a></li>
+                  <li><a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt=""></a></li>
+                </ul>
+							</div>
+						</div>
+        </div>
+    </div>
+
+    <div data-include-path="../footer.html"></div>  
+
+    <script src="../../scripts/script.js"></script>
+    <script>
+      const arrTable = Array(10).fill(["BA1111","요청","서비스","진행중","요구사항 제목이 들어갑니다.","2022-02-11","2022-02-10","요청중","홍길동","(주)KT","홍길동"]);    
+      const table = document.querySelector('.table_body');
+      arrTable.map(data => addRow(table, data, true));      
+    </script>
+</body>
+
+</html>

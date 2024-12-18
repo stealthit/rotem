@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>U2 Collaboration</title>
+    <!--script  src="http://code.jquery.com/jquery-latest.min.js"></script-->
+    
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)">
+</head>
+<body>
+  <div class="wrapper" id="LC_Page_30001" >
+    <section class="fullSize_wrap">
+      <div class="fullSize_header">
+        <h1>60 Second Cut.mp4</h1>
+        <button type="button" class="ctl-rect ctl-fullSize" title="전체화면">전체화면</button>
+      </div>
+      <!--더보기 modal-->
+      <ul class="menu-box active" id="ctl-speed" ><!--위치 보여주기 위한 active 추가-->
+        <li class="ctl-speed-title">재생속도</li>
+        <li>
+          <select id="value-select" class="filter-select">
+            <option>0.25</option>
+            <option>0.5</option>
+            <option>0.75</option>
+            <option>일반</option>
+            <option>1.25</option>
+            <option>1.5</option>
+            <option>1.75</option>
+            <option>2</option>
+          </select>
+        </li>
+      </ul>
+      <div class="fullSize_mv"></div>
+      <div class="fullSize_ctl">
+        <div class="progress-wrap">
+          <progress class="play-progress" value="20" max="100">progress</progress>
+        </div>
+        <div class="control-wrap">
+          <div class="ctl-left">
+            <button class="ctl-rect ctl-play" title="재생하기">재생</button>
+            <!--button class="ctl-rect ctl-play pause" title="정지하기">정지하기</button-->
+            <button class="ctl-rect ctl-repeat" title="반복재생">repeat</button>
+            <!--button class="ctl-rect ctl-repeat repeat" title="반복해제">repeat 정지</button-->
+            <button class="ctl-rect ctl-volumn" title="음소거">볼륨
+              <progress class="volumn-progress mobile" value="20" max="100">progress</progress>
+            </button>
+            <!--button class="ctl-rect ctl-volumn mute" title="음소거 해제">볼륨</button-->
+            <progress class="volumn-progress pc" value="20" max="100">progress</progress>
+          </div>
+          <div class="ctl-right">
+            <button type="button" class="ctl-type-btn">Standard</button>
+            <div class="ctl-timeline"><span>00:55</span> / 00:53</div>
+            <button type="button" class="ctl-rect ctl-more" title="더보기">more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

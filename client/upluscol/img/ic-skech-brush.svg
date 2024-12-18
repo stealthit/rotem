@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.123" height="14" viewBox="0 0 14.123 14">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#181818;stroke-width:1.6px}
+        </style>
+    </defs>
+    <g id="ic-skech-brush" transform="translate(1.398 1.274)">
+        <g id="그룹_106" data-name="그룹 106" transform="translate(-.284 -.283)">
+            <path id="패스_28295" data-name="패스 28295" class="cls-2" d="M6.917 28.77c-1.414 1.423-3.817 1.895-5.2.471 1.848-1.913 0-2.837 1.386-4.224a2.68 2.68 0 1 1 3.78 3.789z" transform="translate(-1.714 -18.085)"/>
+            <path id="패스_28296" data-name="패스 28296" class="cls-2" d="M23.511 2.247a1.866 1.866 0 0 0-2.7.083L15.84 7.875a2.634 2.634 0 0 1 1.4.767 2.773 2.773 0 0 1 .712 1.211l5.48-4.907a1.865 1.865 0 0 0 .083-2.7z" transform="translate(-12.032 -1.71)"/>
+        </g>
+    </g>
+</svg>

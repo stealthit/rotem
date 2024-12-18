@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home active">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+    <div class="top">
+      <div class="user-info-box">
+            <div class="profile">
+                <button type="button" class="profile-dropdown"></button>
+            </div>
+            <div class="dropdown">
+                <div class="user-info">
+                    <div class="user-top">
+                        <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                        <span class="division">I</span>
+                        <span class="position">슈퍼관리자</span>
+                    </div>
+                    <div class="user-bottom">
+                        <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                    </div>
+                </div>
+                <button type="button" class="logout-btn">로그아웃</button>
+            </div>
+        </div>
+    </div>
+
+        <div class="content">
+            <div class="grid">
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                복합기 정보
+                            </div>
+                        </div>
+                        <div class="allinone-content">
+                            <div class="main-info">
+                                <img src="./imges/ico_complexer_info.png" alt="icoCpx" />
+                                <div class="info">
+                                    <span class="title">전체 복합기</span>
+                                    <span class="quantity ftcolor">665</span>
+                                </div>
+                            </div>
+                            <div class="bottom-info">
+                                <div class="content">
+                                    <div class="title">
+                                        <span>온라인</span>
+                                        <button type="button" class="info-btn"></button>
+                                    </div>
+                                    <span class="info">7</span>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>장애</span>
+                                        <button type="button" class="info-btn"></button>
+                                    </div>
+                                    <span class="info">-</span>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>소모품</span>
+                                        <button type="button" class="info-btn"></button>
+                                    </div>
+                                    <span class="info">7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item col-2">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                공지사항
+                            </div>
+                            <button class="expand"></button>
+                        </div>
+                        <div class="notice-content">
+                            <ul>
+                                <li>
+                                    <span class="title"><a href="#">[일반공지] 개편안내입니다. 테스트 텍스트입니다.
+                                            테스트테스트테스트테스트테체ㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔㅔ스트테스트테스트테스트</a></span>
+                                    <span class="date">2021-03-01</span>
+                                </li>
+                                <li>
+                                    <span class="title"><a href="#">[일반공지] 개편안내입니다. 테스트 텍스트입니다.
+                                            테스트테스트테스트테스트테스트테스트테스트테스트</a></span>
+                                    <span class="date">2021-03-01</span>
+                                </li>
+                                <li>
+                                    <span class="title"><a href="#">[일반공지] 개편안내입니다. 테스트 텍스트입니다.
+                                            테스트테스트테스트테스트테스트테스트테스트테스트</a></span>
+                                    <span class="date">2021-03-01</span>
+                                </li>
+                                <li>
+                                    <span class="title"><a href="#">[일반공지] 개편안내입니다. 테스트 텍스트입니다.
+                                            테스트테스트테스트테스트테스트테스트테스트테스트</a></span>
+                                    <span class="date">2021-03-01</span>
+                                </li>
+                                <!--게시글이 없을 때 예외처리-->
+                                <!--
+                                <li class="no-list">
+                                  <p>게시글이 없습니다.</p>
+                                </li>
+                                -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                서비스 현황
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="main-info">
+                                <img src="./imges/ico_complexer_info.png" alt="icoCpx" />
+                                <div class="info">
+                                    <span class="title">서비스</span>
+                                    <span class="quantity"><span>100%</span> 가동중</span>
+                                </div>
+                            </div>
+                            <div class="service-info-row">
+                                <img src="./imges/ico_service_check.png" alt="icoService" />
+                                <span><span class="quantity">00개</span>의 서비스가 정상 시작되었습니다.</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                서비스 현황
+                            </div>
+                        </div>
+                        <div class="service-content occur">
+                            <div class="service-info-row">
+                                <img src="./imges/ico_service_notice.png" alt="icoService" />
+                                <span><span class="quantity">00개</span>의 서비스가 정상 시작되었습니다.</span>
+                            </div>
+                            <div class="service-table-content table-content">
+                              <div class="service-table table">
+                                  <div class="thead">
+                                      <span>서비스</span>
+                                      <span>상태</span>
+                                  </div>
+                                  <div class="tr">
+                                      <span>인증서버</span>
+                                      <span>중지됨</span>
+                                  </div>
+                                  <div class="tr">
+                                      <span>스풀 관리 서버</span>
+                                      <span>중지됨</span>
+                                  </div>
+                                  <div class="tr">
+                                      <span>출력 서버</span>
+                                      <span>중지됨</span>
+                                  </div>
+                                  <div class="tr">
+                                      <span>이미지 로그 서버</span>
+                                      <span>중지됨</span>
+                                  </div>
+                                  <!-- <div class="tr_end">
+                                    <div class="td">
+                                      해당파일 없음
+                                    </div> 
+                                  </div> -->
+                              </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                사용자별 사용량
+                            </div>
+                            <button class="expand"></button>
+                        </div>
+                        <div class="user-usage-content">
+                            <canvas id="myChart1"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                복합기별 사용량
+                            </div>
+                            <button class="expand"></button>
+                        </div>
+                        <div class="allinone-usage-content">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                부서별 사용량
+                            </div>
+                            <button class="expand"></button>
+                        </div>
+                        <div class="department-usage-content">
+                            <canvas id="myChart3"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                컬러별 사용량
+                            </div>
+                            <button class="expand"></button>
+                        </div>
+                        <div class="department-usage-content">
+                            <canvas id="myChart4"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-content">
+                        <div class="top">
+                            <div class="handle"></div>
+                            <div class="title">
+                                보안단어 TOP5
+                            </div>
+                            <button class="expand"></button>
+                        </div>
+                        <div class="security-usage-content">
+                            <div class="table table-mng">
+                                <div class="thead">
+                                    <span>모델</span>
+                                    <span>1월</span>
+                                    <span>2월</span>
+                                </div>
+                                <div class="tr">
+                                    <span>모델명</span>
+                                    <span>00</span>
+                                    <span>00</span>
+                                </div>
+                                <div class="tr">
+                                    <span>모델명</span>
+                                    <span>00</span>
+                                    <span>00</span>
+                                </div>
+                                <div class="tr">
+                                    <span>모델명</span>
+                                    <span>00</span>
+                                    <span>00</span>
+                                </div>
+                                <div class="tr">
+                                    <span>모델명</span>
+                                    <span>00</span>
+                                    <span>00</span>
+                                </div>
+                                <div class="tr">
+                                    <span>모델명</span>
+                                    <span>00</span>
+                                    <span>00</span>
+                                </div>
+                                 <!-- <div class="tr_end">
+                                    <div class="td">
+                                      해당파일 없음
+                                    </div> 
+                                </div> -->
+                            </div>
+                            <div class="graph in_wd200 in_hg200">
+                                <canvas id="myChart5"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+    <button type="button" class="setting-btn"></button>
+
+    <div class="dashboard-background" id="dashboard">
+        <div class="dashboard-wrapper">
+            <div class="dashboard">
+                <div class="title">
+                    대시보드 설정
+                </div>
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb" name="">
+                        <label for="cb">
+                            <span class="ico"></span>
+                            <span class="text">복합기 정보</span>
+                        </label>
+                        <!-- <button type="button" class="toggle-btn"></button> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb2" name="">
+                        <label for="cb2">
+                            <span class="ico"></span>
+                            <span class="text">공지사항</span>
+                        </label>
+                        <!-- <button type="button" class="toggle-btn"></button> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb3" name="">
+                        <label for="cb3">
+                            <span class="ico"></span>
+                            <span class="text">서비스 현황</span>
+                        </label>
+                        <!-- <button type="button" class="toggle-btn"></button> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb4" name="">
+                        <label for="cb4">
+                            <span class="ico"></span>
+                            <span class="text">사용자별 사용량</span>
+                        </label>
+                        <button type="button" class="toggle-btn"></button>
+                    </div>
+                    <div class="toggle-box">
+                        <div class="toggle-row">
+                            <span>사용량 기준일</span>
+                            <select>
+                                <option value="1d">1일</option>
+                                <option value="2d">2일</option>
+                                <option value="3d">3일</option>
+                                <option value="4d">4일</option>
+                                <option value="5d">5일</option>
+                                <option value="6d">6일</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span>기간</span>
+                            <select>
+                                <option value="1m">1개월</option>
+                                <option value="2m">2개월</option>
+                                <option value="2m">3개월</option>
+                                <option value="2m">4개월</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span></span>
+                            <p class="date">20210601 : 20210401-20210701</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb5" name="">
+                        <label for="cb5">
+                            <span class="ico"></span>
+                            <span class="text">복합기별 사용량</span>
+                        </label>
+                        <button type="button" class="toggle-btn"></button>
+                    </div>
+                    <div class="toggle-box">
+                        <div class="toggle-row">
+                            <span>사용량 기준일</span>
+                            <select>
+                                <option value="1d">1일</option>
+                                <option value="2d">2일</option>
+                                <option value="3d">3일</option>
+                                <option value="4d">4일</option>
+                                <option value="5d">5일</option>
+                                <option value="6d">6일</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span>기간</span>
+                            <select>
+                                <option value="1m">1개월</option>
+                                <option value="2m">2개월</option>
+                                <option value="2m">3개월</option>
+                                <option value="2m">4개월</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span></span>
+                            <p class="date">20210601 : 20210401-20210701</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb6" name="">
+                        <label for="cb6">
+                            <span class="ico"></span>
+                            <span class="text">부서별 사용량</span>
+                        </label>
+                        <button type="button" class="toggle-btn"></button>
+                    </div>
+                    <div class="toggle-box">
+                        <div class="toggle-row">
+                            <span>사용량 기준일</span>
+                            <select>
+                                <option value="1d">1일</option>
+                                <option value="2d">2일</option>
+                                <option value="3d">3일</option>
+                                <option value="4d">4일</option>
+                                <option value="5d">5일</option>
+                                <option value="6d">6일</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span>기간</span>
+                            <select>
+                                <option value="1m">1개월</option>
+                                <option value="2m">2개월</option>
+                                <option value="2m">3개월</option>
+                                <option value="2m">4개월</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span></span>
+                            <p class="date">20210601 : 20210401-20210701</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="title">
+                        <input type="checkbox" id="cb7" name="">
+                        <label for="cb7">
+                            <span class="ico"></span>
+                            <span class="text">컬러별 사용량</span>
+                        </label>
+                        <button type="button" class="toggle-btn"></button>
+                    </div>
+                    <div class="toggle-box">
+                        <div class="toggle-row">
+                            <span>사용량 기준일</span>
+                            <select>
+                                <option value="1d">1일</option>
+                                <option value="2d">2일</option>
+                                <option value="3d">3일</option>
+                                <option value="4d">4일</option>
+                                <option value="5d">5일</option>
+                                <option value="6d">6일</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span>기간</span>
+                            <select>
+                                <option value="1m">1개월</option>
+                                <option value="2m">2개월</option>
+                                <option value="2m">3개월</option>
+                                <option value="2m">4개월</option>
+                            </select>
+                        </div>
+                        <div class="toggle-row">
+                            <span></span>
+                            <p class="date">20210601 : 20210401-20210701</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="secret-row">
+                    <span>보안단어 TOP5</span>
+                    <span>미설치</span>
+                </div>
+
+
+                <button type="button" class="setting-close-btn"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/muuri.js"></script>
+    <script src="./js/web-animations.js"></script>
+    <script src="./js/chart.js"></script>
+    <script>
+        $(function () {
+            var grid = new Muuri('.grid', {
+                dragEnabled: true,
+                layoutOnInit: true,
+                itemDraggingClass: 'muuri-item-dragging',
+                dragHandle: '.handle',
+            });
+
+            // 차트
+            var options = {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    },
+                },
+                plugins: {
+                    legend: false
+                },
+                maintainAspectRatio: false
+            };
+            var ctx1 = document.getElementById('myChart1').getContext('2d');
+            var myChart1 = new Chart(ctx1, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132)',
+                            'rgba(54, 162, 235)',
+                            'rgba(255, 206, 86)',
+                            'rgba(75, 192, 192)',
+                            'rgba(153, 102, 255)',
+                            'rgba(255, 159, 64)'
+                        ],
+                        barThickness: 20,
+                    }]
+                },
+                options: options
+            });
+            var ctx2 = document.getElementById('myChart2').getContext('2d');
+            var myChart2 = new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132)',
+                            'rgba(54, 162, 235)',
+                            'rgba(255, 206, 86)',
+                            'rgba(75, 192, 192)',
+                            'rgba(153, 102, 255)',
+                            'rgba(255, 159, 64)'
+                        ],
+                        barThickness: 20,
+                    }]
+                },
+                options: options
+            });
+            var ctx3 = document.getElementById('myChart3').getContext('2d');
+            var myChart3 = new Chart(ctx3, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132)',
+                            'rgba(54, 162, 235)',
+                            'rgba(255, 206, 86)',
+                            'rgba(75, 192, 192)',
+                            'rgba(153, 102, 255)',
+                            'rgba(255, 159, 64)'
+                        ],
+                        barThickness: 20,
+                    }]
+                },
+                options: options
+            });
+            var ctx4 = document.getElementById('myChart4').getContext('2d');
+            var myChart4 = new Chart(ctx4, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132)',
+                            'rgba(54, 162, 235)',
+                            'rgba(255, 206, 86)',
+                            'rgba(75, 192, 192)',
+                            'rgba(153, 102, 255)',
+                            'rgba(255, 159, 64)'
+                        ],
+                        barThickness: 20,
+                    }]
+                },
+                options: options
+            });
+            var ctx5 = document.getElementById('myChart5').getContext('2d');
+            var myChart5 = new Chart(ctx5, {
+                type: 'pie',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132)',
+                            'rgba(54, 162, 235)',
+                            'rgba(255, 206, 86)',
+                            'rgba(75, 192, 192)',
+                            'rgba(153, 102, 255)',
+                            'rgba(255, 159, 64)'
+                        ],
+                        barThickness: 20,
+                        borderWidth: 0
+                    }]
+                },
+                options: options
+            });
+        });
+    </script>
+</body>
+
+</html>

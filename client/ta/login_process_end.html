@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>로그인</title>
+    <!--script  src="http://code.jquery.com/jquery-latest.min.js"></script-->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 768px)">
+</head>
+<body id="tai-login">
+<div class="wrapper bgcolor">
+  <!--평가진단중 modal-->
+  <div class="modal_all_wrap" id="modalLogin">
+    <div class="modal_con">
+      <div class="modal-icon ic-process mg10">완료</div>
+      <div class="modal-btit">평가 완료</div>
+      <div class="modal-tit">
+      팀 진단 평가를 이미 완료했습니다.
+      </div>
+      <button id="modalLogin-close" class="btn_basic_01 tac btn-chk modal_close_btn" alt="확인">확인</button>
+    </div>
+  </div> 
+  <secion class="wrap_con">
+    <div id="login-rect">
+      <ul class="login-ul">
+        <li>
+          <h1>로그인</h1>
+          <h2><strong>팀 진단 결과 데이터 분석</strong>을 위해<br>아래 <strong>정보를 입력</strong>해주세요</h2>
+          <h3>* 필수입력</h2>
+        </li>
+        <li><div class="input-required">*</div><input type="text" class="wd-335" placeholder="이름을 입력하세요" required></li>
+        <li><div class="input-required">*</div><input type="text" class="wd-335" placeholder="이메일을 입력하세요" required></li>
+        <li>
+          <div id="select-wrap" class="wd-335">
+            <div class="select">
+              <div class="input-required">*</div>
+              <div class="text">성별</div>
+              <ul class="option-list">
+                <li class="option">남</li>
+                <li class="option">여</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><input type="text" class="wd-335" placeholder="생년을 입력하세요"></li>
+        <li><button class="btn_basic_01 tac wd-335 btn-chk" alt="로그인">로그인</button></li>
+      </ul>
+      <footer>Copyright ⓒ 타피루즈그룹. All Rights Reserved.</footer>
+    </div>
+    
+  </secion>
+  
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+  /* select */
+
+$(function(){
+  function onClickSelect(e) {
+    const isActive = e.currentTarget.className.indexOf("active") !== -1;
+    if (isActive) {
+      e.currentTarget.className = "select";
+    } else {
+      e.currentTarget.className = "select active";
+    }
+  }
+  
+  document.querySelector("#select-wrap .select").addEventListener("click", onClickSelect);
+  
+  function onClickOption(e) {
+    const selectedValue = e.currentTarget.innerHTML;
+    document.querySelector("#select-wrap .text").innerHTML = selectedValue;
+  }
+  
+  var optionList = document.querySelectorAll("#select-wrap .option");
+  for (var i = 0; i < optionList.length; i++) {
+    var option = optionList[i];
+    option.addEventListener("click", onClickOption);
+  }
+});
+
+</script>
+</body>
+</html>

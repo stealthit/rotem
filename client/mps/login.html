@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 758px)">
+</head>
+
+<body class="responsive">
+    <div class="login-wrapper">
+        <div class="login-content">
+            <div class="left">
+                <p class="title">One Solution, Simple Office</p>
+                <p class="sub-title">Canon Korea Business Solutions</p>
+                <p class="copyright">Copyright © 캐논코리아. All rights reserved.</p>
+                <img src="./imges/img_login2.png" alt="imgLogin" />
+            </div>
+            <div class="right">
+                <form action="" method="post">
+                    <div class="logo"><img src="./imges/img_logo_login.png" alt="imgLogo" /></div>
+                    <div class="input-group">
+                        <div class="input-row login-input-row" id="read-color">
+                            <input type="text" name="id" placeholder="아이디를 입력하세요.">
+                        </div>
+                        <div class="input-row login-input-row" id="read-color">
+                            <input type="password" name="password" placeholder="비밀번호를 입력하세요.">
+                        </div>
+                        <p class="error">ID 또는 비밀번호가 틀렸습니다.</p>
+                    </div>
+                    <button type="submit" class="submit-btn  bgcolor">
+                        <span>로그인</span>
+                    </button>
+                    <div class="select-row">
+                        <input type="checkbox" id="cb" name="saveId">
+                        <label for="cb">
+                            <span class="ico"></span>
+                            <span class="text">아이디 저장</span>
+                        </label>
+                        <select>
+                            <option value="ko">Korean</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
+                    <ul class="info">
+                      <li>자리를 비우는 경우 반드시 로그아웃 하시기 바랍니다.</li>
+                      <li>개인정보 보호를 위해 XX분 동안 화면이동이 없을 경우 자동 로그아웃 됩니다.</li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="./js/jquery.min.js"></script>
+<script>
+    $(function () {
+
+    })
+</script>
+
+</html>

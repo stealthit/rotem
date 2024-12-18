@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U2 Collaboration</title>
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)" />
+  </head>
+  <style>
+    #search-filter-box {
+      z-index: 70;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #filter-type-box {
+      z-index: 70;
+      position: absolute;
+      top: 100px;
+      left: 0;
+    }
+    #filter-type-box01 {
+      z-index: 70;
+      position: absolute;
+      top: 450px;
+      left: 0;
+    }
+    #filter-type-box02 {
+      z-index: 70;
+      position: absolute;
+      top: 800px;
+      left: 0;
+    }
+    #filter-type-box03 {
+      z-index: 70;
+      position: absolute;
+      top: 600px;
+      left: 0;
+    }
+    #filter-type-box04 {
+      z-index: 70;
+      position: absolute;
+      top: 1000px;
+      left: 0;
+    }
+    #filter-type-box05 {
+      z-index: 70;
+      position: absolute;
+      top: 1200px;
+      left: 0;
+    }
+    #search-type-box {
+      z-index: 70;
+      position: absolute;
+      top: 0px;
+      left: 550px;
+    }
+    #search-type-box01 {
+      z-index: 70;
+      position: absolute;
+      top: 320px;
+      left: 550px;
+    }
+    #file-type-box {
+      z-index: 70;
+      position: absolute;
+      top: 0px;
+      left: 800px;
+    }
+    #file-array-box {
+      z-index: 70;
+      position: absolute;
+      top: 0px;
+      left: 1100px;
+    }
+
+    @media screen and (max-width: 768px) {
+      #search-filter-box {
+        z-index: 70;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      #filter-type-box {
+        z-index: 70;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+      }
+      #filter-type-box01 {
+        z-index: 70;
+        position: absolute;
+        top: 200px;
+        left: 0px;
+      }
+      #filter-type-box02 {
+        z-index: 70;
+        position: absolute;
+        top: 350px;
+        left: 0px;
+      }
+      #filter-type-box03 {
+        z-index: 70;
+        position: absolute;
+        top: 500px;
+        left: 0px;
+      }
+      #filter-type-box04 {
+        z-index: 70;
+        position: absolute;
+        top: 650px;
+        left: 0px;
+      }
+      #filter-type-box05 {
+        z-index: 70;
+        position: absolute;
+        top: 800px;
+        left: 0px;
+      }
+      #search-type-box {
+        z-index: 70;
+        position: absolute;
+        top: 1050px;
+        left: 0px;
+      }
+      #search-type-box01 {
+        z-index: 70;
+        position: absolute;
+        top: 1400px;
+        left: 0px;
+      }
+      #file-type-box {
+        z-index: 70;
+        position: absolute;
+        top: 1800px;
+        left: 0px;
+      }
+      #file-array-box {
+        z-index: 70;
+        position: absolute;
+        top: 2200px;
+        left: 0px;
+      }
+    }
+  </style>
+
+  <body>
+    <!-- 필터추가 -->
+    <div class="menu-box active" id="search-filter-box">
+      <button type="button"><span class="plus">+</span>필터추가</button>
+    </div>
+
+    <!--필터2depth-->
+    <div class="menu-box active" id="filter-type-box">
+      <div>
+        <span class="minus">-</span>
+        <select id="value-select01" class="filter-select">
+          <option value="" hidden>상태</option>
+        </select>
+        <div id="filter-select" class="filter-select">
+          값선택
+          <div class="menu-box active mini-box" id="progress-box">
+            <li>
+              <span><i class="white"></i></span
+              ><button type="button" id="">No Status</button>
+            </li>
+            <li>
+              <span><i class="cyan"></i></span
+              ><button type="button" id="">In Progress</button>
+            </li>
+            <li>
+              <span><i class="orange"></i></span
+              ><button type="button" id="">Needs Review</button>
+            </li>
+            <li>
+              <span><i class="green"></i></span
+              ><button type="button" id="">Approved</button>
+            </li>
+          </div>
+        </div>
+      </div>
+      <button type="button"><span class="plus">+</span>필터추가</button>
+    </div>
+
+    <!--필터2depth-->
+    <div class="menu-box wd500 active" id="filter-type-box01">
+      <div>
+        <span class="minus">-</span>
+        <!--select id="value-select" class="filter-select">
+        <option value="" hidden>값 선택</option>
+        <option value="">네</option>
+        <option value="">아니오</option>
+      </select-->
+        <div id="filter-select" class="filter-select">업로드 날짜</div>
+        <input type="date" class="start-date" value="시작일" />
+        <!--select id="value-select" class="filter-select">
+        <option value="" hidden>값 선택</option>
+        <option value="">네</option>
+        <option value="">아니오</option>
+      </select-->
+        <input type="date" class="end-date" value="종료일" />
+      </div>
+      <button type="button"><span class="plus">+</span>필터추가</button>
+    </div>
+
+    <div class="menu-box wd500 active" id="filter-type-box02">
+      <div>
+        <span class="minus">-</span>
+        <div id="filter-select" class="filter-select">
+          파일크기
+          <!--div class="menu-box active mini-box" id="search-type-box-mini">
+          <div class="search-input-wrap">
+            <input type="text" placeholder="검색" id="search-input" />
+            <button type="submit" id="search-btn">검색 버튼</button>
+          </div>
+          <ul class="scroll">
+            <li><button type="button" id="">파일타입</button></li>
+            <li><button type="button" id="">보관함</button></li>
+            <li><button type="button" id="">업로드 날짜</button></li>
+            <li><button type="button" id="">삭제</button></li>
+            <li><button type="button" id="">보안(비공개)</button></li>
+            <li><button type="button" id="">프로젝트</button></li>
+          </ul>
+        </div-->
+        </div>
+        <input type="text" value="321" />
+        <div id="filter-select" class="filter-select">
+          Bytes
+          <div
+            class="menu-box active mini-box hgt200"
+            id="search-type-box-mini"
+          >
+            <ul class="scroll">
+              <li><button type="button" id="">Bytes</button></li>
+              <li><button type="button" id="">kb</button></li>
+              <li><button type="button" id="">MB</button></li>
+              <li><button type="button" id="">GB</button></li>
+              <li><button type="button" id="">TB</button></li>
+              <li><button type="button" id="">PB</button></li>
+            </ul>
+          </div>
+        </div>
+        <!--select id="value-select01" class="filter-select">
+        <option value="" hidden>값 선택</option>
+        <option value="">네</option>
+        <option value="">아니오</option>
+      </select-->
+      </div>
+      <button type="button"><span class="plus">+</span>필터추가</button>
+    </div>
+
+    <!--파일타입 값선택-->
+    <div class="menu-box active" id="filter-type-box03">
+      <div>
+        <span class="minus">-</span>
+        <div id="filter-select" class="filter-select">
+          파일형식
+          <div class="menu-box active mini-box" id="search-type-box-mini">
+            <div class="search-input-wrap">
+              <input type="text" placeholder="검색" id="search-input" />
+              <button type="submit" id="search-btn">검색 버튼</button>
+            </div>
+            <ul class="scroll">
+              <li><button type="button" id="">파일타입</button></li>
+              <li><button type="button" id="">보관함</button></li>
+              <li><button type="button" id="">업로드 날짜</button></li>
+              <li><button type="button" id="">삭제</button></li>
+              <li><button type="button" id="">보안(비공개)</button></li>
+              <li><button type="button" id="">프로젝트</button></li>
+            </ul>
+          </div>
+        </div>
+        <div id="filter-select" class="filter-select">값선택</div>
+        <!--select id="value-select01" class="filter-select">
+        <option value="" hidden>값 선택</option>
+        <option value="">네</option>
+        <option value="">아니오</option>
+      </select-->
+      </div>
+      <button type="button"><span class="plus">+</span>필터추가</button>
+    </div>
+
+    <!--파일타입 업로더-->
+    <div class="menu-box active" id="filter-type-box04">
+      <div>
+        <span class="minus">-</span>
+        <div id="filter-select" class="filter-select">업로더</div>
+        <div id="filter-select" class="filter-select">
+          값선택
+          <div class="menu-box active mini-box" id="search-type-box-mini">
+            <div class="search-input-wrap">
+              <input type="text" placeholder="검색" id="search-input" />
+              <button type="submit" id="search-btn">검색 버튼</button>
+            </div>
+            <ul class="scroll">
+              <li><button type="button" id="">홍길동</button></li>
+              <li><button type="button" id="">홍니동</button></li>
+            </ul>
+          </div>
+        </div>
+        <!--select id="value-select01" class="filter-select">
+        <option value="" hidden>값 선택</option>
+        <option value="">네</option>
+        <option value="">아니오</option>
+      </select-->
+      </div>
+      <button type="button"><span class="plus">+</span>필터추가</button>
+    </div>
+
+    <!--형식-->
+    <div class="menu-box active" id="filter-type-box05">
+      <div>
+        <span class="minus">-</span>
+        <div id="filter-select" class="filter-select">형식</div>
+        <div id="filter-select" class="filter-select">
+          값선택
+          <div class="menu-box active mini-box" id="search-type-box-mini">
+            <div class="search-input-wrap">
+              <input type="text" placeholder="검색" id="search-input" />
+              <button type="submit" id="search-btn">검색 버튼</button>
+            </div>
+            <ul class="scroll">
+              <li><button type="button" id="">Audio</button></li>
+              <li><button type="button" id="">Document</button></li>
+              <li><button type="button" id="">Folder</button></li>
+              <li><button type="button" id="">Image</button></li>
+              <li><button type="button" id="">Stream</button></li>
+              <li><button type="button" id="">video</button></li>
+              <li><button type="button" id="">Other</button></li>
+            </ul>
+          </div>
+        </div>
+        <!--select id="value-select01" class="filter-select">
+        <option value="" hidden>값 선택</option>
+        <option value="">네</option>
+        <option value="">아니오</option>
+      </select-->
+      </div>
+      <button type="button"><span class="plus">+</span>필터추가</button>
+    </div>
+
+    <!--검색-->
+    <div class="menu-box active" id="search-type-box">
+      <div class="search-input-wrap">
+        <input type="text" placeholder="검색" id="search-input" />
+        <button type="submit" id="search-btn">검색 버튼</button>
+      </div>
+      <ul>
+        <li><button type="button" id="">파일타입</button></li>
+        <li><button type="button" id="">보관함</button></li>
+        <li><button type="button" id="">업로드 날짜</button></li>
+        <li><button type="button" id="">삭제</button></li>
+        <li><button type="button" id="">보안(비공개)</button></li>
+        <li><button type="button" id="">프로젝트</button></li>
+      </ul>
+    </div>
+
+    <!--검색1-->
+    <div class="menu-box active" id="search-type-box01">
+      <div class="search-input-wrap">
+        <input type="text" placeholder="검색" id="search-input" />
+        <button type="submit" id="search-btn">검색 버튼</button>
+      </div>
+      <ul class="scroll">
+        <li><button type="button" id="">application/pdf</button></li>
+        <li><button type="button" id="">audio/mpeg</button></li>
+        <li><button type="button" id="">images/jpeg</button></li>
+        <li><button type="button" id="">images/svg</button></li>
+        <li><button type="button" id="">images/tiff</button></li>
+        <li><button type="button" id="">video/mp4</button></li>
+      </ul>
+    </div>
+
+    <!--정렬기준-->
+    <ul class="menu-box active" id="file-type-box">
+      <li class="file-type-title">정렬 기준</li>
+      <li><button type="button" id="file-name-btn">이름순</button></li>
+      <li><button type="button" id="file-date-btn">시간순</button></li>
+      <li><button type="button" id="file-size-btn">파일 타입</button></li>
+    </ul>
+
+    <!--정렬-->
+    <ul class="menu-box active" id="file-array-box">
+      <li><button type="button" id="file-name-btn">최근순</button></li>
+      <li><button type="button" id="file-date-btn">오래된 순</button></li>
+      <li><button type="button" id="file-size-btn">Timecode 순</button></li>
+    </ul>
+  </body>
+</html>

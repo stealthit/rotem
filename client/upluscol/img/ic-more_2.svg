@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="272" viewBox="0 0 260 272">
+    <defs>
+        <filter id="bg" x="0" y="5" width="260" height="267" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="10" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-1{fill:#fff;opacity:0}.cls-2{fill:#555;fill-rule:evenodd}.cls-4{fill:#181818;font-size:14px;font-family:NotoSansCJKkr-Bold,Noto Sans CJK KR;font-weight:700}.cls-7{fill:none;stroke:#555;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="ic-more" transform="translate(30)">
+        <path id="ic-more-2" data-name="ic-more" class="cls-2" d="M18 4a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm-8 0a2 2 0 1 1 2-2 2 2 0 0 1-2 2zM2 4a2 2 0 1 1 2-2 2 2 0 0 1-2 2z" transform="translate(180 8.001)"/>
+        <g id="그룹_149" data-name="그룹 149" transform="translate(-1202 -301)">
+            <g transform="translate(1172 301)" style="filter:url(#bg)">
+                <rect id="bg-2" data-name="bg" width="200" height="207" rx="14" transform="translate(30 30)" style="fill:#fff"/>
+            </g>
+            <text id="전체_다운로드_최근파일_삭제" data-name="전체 다운로드 최근파일 삭제" class="cls-4" transform="translate(1253 361)"><tspan x="0" y="0">전체 다운로드</tspan><tspan x="0" y="36">최근파일 삭제</tspan></text>
+            <text id="프로젝트_세팅_프로젝트_나가기_프로젝트_삭제" data-name="프로젝트 세팅 프로젝트 나가기 프로젝트 삭제" class="cls-4" transform="translate(1253 448)"><tspan x="0" y="0">프로젝트 세팅</tspan><tspan x="0" y="36">프로젝트 나가기</tspan><tspan x="0" y="72">프로젝트 삭제</tspan></text>
+            <path id="line" transform="translate(1227 415)" style="fill:#eee" d="M0 0h150v1H0z"/>
+            <g id="ic-down" transform="translate(0 -196)">
+                <path id="ic-uplaod_2" class="cls-2" d="M0 15V7.994h2v5h12v-5l2 .067V15H0zm4-9h3V0h2v6h3l-4 4z" transform="translate(1227 544)"/>
+            </g>
+            <path id="ic-trash_" data-name="ic-trash" class="cls-2" d="M15 5v11H1V5H0V3h4V0h8v3h4v2zm-5-3H6v1h4zm3 3H3v9h10zm-6 7H5V7h2zm4 0H9V7h2z" transform="translate(1227 383)"/>
+            <path id="ic-trash_2" data-name="ic-trash" class="cls-2" d="M15 5v11H1V5H0V3h4V0h8v3h4v2zm-5-3H6v1h4zm3 3H3v9h10zm-6 7H5V7h2zm4 0H9V7h2z" transform="translate(1227 506)"/>
+            <g id="ic-quit" transform="translate(1227 438.381)">
+                <g id="그룹_139" data-name="그룹 139" transform="translate(1.38 33.031)">
+                    <path id="패스_28307" data-name="패스 28307" class="cls-7" d="M10.88 12.876v2.055H9.862l-8.148.061V1.611h9.166v2.136" transform="translate(-1.714 -1.714)"/>
+                    <path id="선_32" data-name="선 32" transform="translate(6.111 6.597)" style="stroke-linejoin:round;stroke:#555;stroke-width:2px;fill:none" d="M0 0h7.129"/>
+                    <path id="패스_28308" data-name="패스 28308" class="cls-7" d="m38.429 16.143 3.037 3.037-3.037 3.037" transform="translate(-28.226 -12.583)"/>
+                </g>
+            </g>
+            <g id="ic-setting" transform="translate(1312.821 461.428)">
+                <path id="패스_28323" data-name="패스 28323" class="cls-7" d="M5.977 2.571 6.469 1.3A1.143 1.143 0 0 1 7.531.571h.937a1.143 1.143 0 0 1 1.063.729l.491 1.269 1.669.96 1.349-.206a1.143 1.143 0 0 1 1.143.56l.457.8a1.143 1.143 0 0 1-.091 1.291l-.835 1.066v1.92l.857 1.063a1.143 1.143 0 0 1 .091 1.291l-.457.8a1.143 1.143 0 0 1-1.143.56l-1.349-.206-1.669.96-.49 1.272a1.143 1.143 0 0 1-1.063.731h-.96a1.143 1.143 0 0 1-1.062-.731l-.491-1.269-1.669-.96-1.349.206a1.143 1.143 0 0 1-1.143-.56l-.457-.8a1.143 1.143 0 0 1 .091-1.291l.835-1.066V7.04l-.857-1.063a1.143 1.143 0 0 1-.091-1.291l.457-.8a1.143 1.143 0 0 1 1.143-.56l1.349.206zM5.714 8A2.286 2.286 0 1 0 8 5.714 2.286 2.286 0 0 0 5.714 8z" transform="translate(-85.821 -27.428)"/>
+            </g>
+        </g>
+    </g>
+</svg>

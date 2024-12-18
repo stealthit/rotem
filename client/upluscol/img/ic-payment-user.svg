@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.151" height="38">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#d7dde2;stroke-linecap:round;stroke-linejoin:round;stroke-width:3.429px}
+        </style>
+    </defs>
+    <g id="ic-payment-user" transform="translate(-1017.849 -381.506)">
+        <g id="streamline-icon-interface-user-multiple_48x48" data-name="streamline-icon-interface-user-multiple@48x48" transform="translate(1019.563 385.103)">
+            <g id="그룹_45" data-name="그룹 45">
+                <circle id="타원_14" data-name="타원 14" class="cls-2" cx="5.883" cy="5.883" transform="translate(5.883)" r="5.883"/>
+                <path id="패스_53" data-name="패스 53" class="cls-2" d="M25.245 41.809H1.714v-2.615a11.766 11.766 0 0 1 23.531 0z" transform="translate(-1.714 -10.434)"/>
+                <path id="패스_54" data-name="패스 54" class="cls-2" d="M30.857 5.143a5.883 5.883 0 1 1 0 11.766" transform="translate(-8.633 -5.143)"/>
+                <path id="패스_55" data-name="패스 55" class="cls-2" d="M36.343 28.08a11.766 11.766 0 0 1 7.582 10.981v2.9H40" transform="translate(-9.936 -10.588)"/>
+            </g>
+        </g>
+    </g>
+</svg>

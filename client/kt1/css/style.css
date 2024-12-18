@@ -1,0 +1,429 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font-family);
+  font-weight: var(--body-font-weight);
+  line-height: var(--body-line-height);
+  color: var(--body-color);
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+  letter-spacing: -1px;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: var(--body-font-size);
+  font-family: var(--body-font-family);
+  vertical-align: baseline;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+a {
+  color: var(--body-color);
+  text-decoration: none;
+  outline: none;
+  object-fit: contain;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--body-color);
+  background-color: transparent;
+}
+/* input file 초기화 */
+input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: var(--font-sans-serif);
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+select {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  -webkit-appearance: none; /* for chrome */
+
+  -moz-appearance: none; /*for firefox*/
+
+  appearance: none;
+}
+select:focus,
+option:focus,
+input:focus {
+  outline: none;
+}
+/* date 기본값 없애기 */
+input[type="date"]::-webkit-datetime-edit-text {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type="date"]::-webkit-datetime-edit-month-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type="date"]::-webkit-datetime-edit-day-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type="date"]::-webkit-datetime-edit-year-field {
+  -webkit-appearance: none;
+  display: none;
+}
+/* 기본적으로 보이는 달력 아이콘 제거 */
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+  appearance: none;
+} */
+select::-ms-expand {
+  display: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url(../img/input_date.png);
+  cursor: pointer;
+}
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+.login {
+  width: 1920px;
+  height: 969px;
+  background: url(../img/KT_LOGIN.png) no-repeat center center/cover;
+}
+.input-box {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  gap: 14px;
+  width: 367px;
+
+  position: absolute;
+  left: 501px;
+  top: 388px;
+}
+.input-box div {
+  width: 100%;
+  position: relative;
+}
+.input-box div img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 14px;
+  top: 12px;
+}
+.input-box div:last-child img {
+  top: 71px;
+}
+.input-box input {
+  width: 100%;
+  height: 46px;
+  border: 0;
+  padding: 0 14px;
+}
+.input-box .input-box--id::after {
+  content: "";
+  display: block;
+  clear: both;
+  background: url(../img/input_01.png) no-repeat center center;
+  width: 20px;
+  height: 20px;
+}
+.input-box .input-box--v {
+  width: 151px;
+  height: 44px;
+}
+.input-box a {
+  width: 370px;
+  height: 52px;
+  margin-top: 15px;
+  font-size: 0;
+}
+
+.main {
+  width: 1920px;
+  /* background: url(../img/UI_MAIN_000.png) no-repeat center center/cover; */
+  /* height: 1080px; */
+  height: 969px;
+  background: url(../img/UI_MAIN_0001.png) no-repeat center center;
+}
+.main a {
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  left: 506px;
+  top: 18px;
+  font-size: 0;
+}
+
+/* common */
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 70px;
+  background: url(../img/head.png) no-repeat center center/cover;
+  z-index: 1;
+}
+.common {
+  width: 1920px;
+  height: 1284px;
+  background: url(../img/KT_COMMON_02.png) no-repeat center center/cover;
+  margin-top: 70px;
+}
+.common .cotainer {
+  padding: 25px 114px;
+  width: 100%;
+}
+.common .cotainer .contents {
+  width: 100%;
+  height: 1000px;
+  /* background-color: rgba(255, 192, 203, 0.336); */
+}
+.contents__nav ul {
+  display: flex;
+  gap: 33px;
+  margin-left: 66px;
+  margin-top: 4px;
+}
+.contents__nav ul li:first-child select {
+  width: 55px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #141f40;
+}
+.contents__nav ul li:last-child select {
+  width: 105px;
+}
+.search-box {
+  width: 1375px;
+
+  margin-left: 285px;
+  margin-top: 106px;
+  padding: 22px 160px;
+
+  display: flex;
+  gap: 352px;
+}
+.search-box .search-group {
+  width: 315px;
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+}
+.search-box .search-group:first-child input:last-child {
+  margin-top: 2px;
+}
+.search-box .search-group:last-child {
+  gap: 15px;
+  margin-top: 1px;
+}
+.search-box :is(input, select) {
+  height: 40px;
+  width: 100%;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #141f40;
+  border: 0;
+}
+.search-box select {
+  /* background: url(../img/dropdown.png) no-repeat 95% 50%; */
+  padding: 0 30px 0 16px;
+}
+.search-box input {
+  height: 35px;
+}
+.search-box input[type="date"] {
+  padding: 0 3px;
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  width: 136px;
+  height: 40px;
+}
+
+.input__date {
+  display: flex;
+  gap: 33px;
+}
+
+.table-box {
+  margin-left: 285px;
+  margin-top: 97px;
+}
+.table-box select {
+  height: 40px;
+  width: 105px;
+  margin-left: 93px;
+  font-size: 14px;
+  padding: 0 30px 0 16px;
+}
+.table {
+  margin: 23px 8px;
+}
+.table label input {
+  width: 20px;
+  height: 20px;
+}
+.table__check {
+  margin-top: 16px;
+  display: flex;
+  flex-flow: column;
+  gap: 26.8px;
+}
+
+/* input check */
+/* .checkbox {
+  position: relative;
+}
+input[type="checkbox"] {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  border-radius: 4px;
+  background: url(../img/btn_checkbox_n.png) no-repeat center;
+}
+
+input[type="checkbox"]:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  width: 22px;
+  height: 22px;
+  background: url(../img/btn_checkbox_s.png) no-repeat center;
+} */
+select {
+  visibility: hidden;
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="89" height="74" viewBox="0 0 89 74">
+    <g data-name="그룹 20017" transform="translate(-573 -7701)">
+        <circle data-name="타원 59" cx="27" cy="27" r="27" transform="translate(573 7721)" style="opacity:.2;fill:#5f56c6"/>
+        <circle data-name="타원 60" cx="15" cy="15" r="15" transform="translate(632 7701)" style="opacity:.1;fill:#5f56c6"/>
+    </g>
+    <g data-name="그룹 19997" transform="translate(19.998 7.184)">
+        <rect data-name="사각형 137645" width="50.689" height="35.144" rx=".5" transform="translate(.001)" style="fill:none;stroke:#5f56c6;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px"/>
+        <path data-name="선 2290" transform="translate(17.402 35.398)" style="fill:none;stroke:#5f56c6;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px" d="M3.933 0 0 9.833"/>
+        <path data-name="선 2291" transform="translate(29.201 35.398)" style="fill:none;stroke:#5f56c6;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px" d="m0 0 3.933 9.833"/>
+        <path data-name="선 2292" transform="translate(13.469 45.23)" style="fill:none;stroke:#5f56c6;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px" d="M0 0h23.599"/>
+    </g>
+</svg>

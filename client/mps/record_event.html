@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/jquery-ui.theme.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history active">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+<div class="top">
+	<div class="user-info-box">
+        <div class="profile">
+            <button type="button" class="profile-dropdown"></button>
+        </div>
+        <div class="dropdown">
+            <div class="user-info">
+                <div class="user-top">
+                    <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                    <span class="division">I</span>
+                    <span class="position">슈퍼관리자</span>
+                </div>
+                <div class="user-bottom">
+                    <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                </div>
+            </div>
+            <button type="button" class="logout-btn">로그아웃</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 이력조회 > 로그 이벤트 현황
+            </div>
+            <div class="page-title">
+                로그 이벤트 현황
+            </div>
+            <div class="tab-content tmg26 active">
+                <div class="search-form">
+                    <form action="" method="post">
+                        <div class="input-content">
+                            <div class="input-row">
+                                <span class="title long">조회기간</span>
+                                <div class="form-input-group">
+                                    <input type="text" class="date" id="datepicker1" readonly>
+                                </div>
+                                <span class="date-division">~</span>
+                                <div class="form-input-group">
+                                    <input type="text" class="date" id="datepicker2" readonly>
+                                </div>
+                                <div class="form-input-group radio-group">
+                                    <div class="square-radio-group">
+                                        <input type="radio" id="today" value="" name="radio-group-date" checked>
+                                        <label class="first" for="today"><span>오늘</span></label>
+                                        <input type="radio" id="7" value="" name="radio-group-date">
+                                        <label for="7"><span>7일</span></label>
+                                        <input type="radio" id="30" value="" name="radio-group-date">
+                                        <label for="30"><span>30일</span></label>
+                                        <input type="radio" id="90" value="" name="radio-group-date">
+                                        <label for="90"><span>90일</span></label>
+                                        <input type="radio" id="180" value="" name="radio-group-date">
+                                        <label class="last" for="180"><span>180일</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <span class="title long">서버</span>
+                                <div class="form-input-group radio-group">
+                                    <div class="circle-radio-group">
+                                        <div class="radio-group">
+                                            <input type="radio" id="server1" name="radio-group-security" checked="">
+                                            <label for="server1">서버1</label>
+                                        </div>
+                                        <div class="radio-group">
+                                            <input type="radio" id="server2" name="radio-group-security">
+                                            <label for="server2">서버2</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <span class="title long">구분</span>
+                                <div class="form-input-group checkbox-group">
+                                    <input type="checkbox" id="all">
+                                    <label for="all">
+                                        <span class="ico"></span>
+                                        <div class="check-title">ALL</div>
+                                    </label>
+                                </div>
+                                <div class="form-input-group checkbox-group">
+                                    <input type="checkbox" id="debug">
+                                    <label for="debug">
+                                        <span class="ico"></span>
+                                        <div class="check-title">DEBUG</div>
+                                    </label>
+                                </div>
+                                <div class="form-input-group checkbox-group">
+                                    <input type="checkbox" id="info">
+                                    <label for="info">
+                                        <span class="ico"></span>
+                                        <div class="check-title">INFO</div>
+                                    </label>
+                                </div>
+                                <div class="form-input-group checkbox-group">
+                                    <input type="checkbox" id="warn">
+                                    <label for="warn">
+                                        <span class="ico"></span>
+                                        <div class="check-title">WARN</div>
+                                    </label>
+                                </div>
+                                <div class="form-input-group checkbox-group">
+                                    <input type="checkbox" id="error">
+                                    <label for="error">
+                                        <span class="ico"></span>
+                                        <div class="check-title">ERROR</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <span class="title long">메세지</span>
+                                <div class="form-input-text-group in_ml0">
+                                    <input type="text" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="submit-btn bgcolor" type="submit">조회</button>
+                    </form>
+                </div>
+                <div class="content-wrapper">
+                    <div class="button-row">
+                        <div class="left">
+                            <button class="down" type="button">다운로드</button>
+                        </div>
+                        <div class="right">
+                            <div class="list-info">
+                                로그 이벤트 (총 <span class="ftcolor">100</span>건)
+                            </div>
+
+                            <select>
+                                <option value="">15개씩</option>
+                                <option value="">30개씩</option>
+                                <option value="">50개씩</option>
+                                <option value="">100개씩</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-scroll01" >
+                        <table class="jb-table no-arrow">
+                            <tr class="jb-table-header-group">
+                                <th class="jb-table-cell jb-middle">
+                                    <p class="in_posi-8"><button type="button" class="arrow"></button>시간</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>모듈</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>구분</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>메세지</p>
+                                </th>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p><a href="#" target="_blank">2021-04-20 00:00:00</a></p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>AUTH</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>INFO</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p class="tof">[INFO] [ExDeviceProvRunner] testtesttesttesttest testtest testtest</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p><a href="#" target="_blank">2021-04-20 00:00:00</a></p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>AUTH</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>INFO</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p class="tof">[INFO] [ExDeviceProvRunner] testtesttesttesttest testtest testtest</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p><a href="#" target="_blank">2021-04-20 00:00:00</a></p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>AUTH</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>INFO</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p class="tof">[INFO] [ExDeviceProvRunner] testtesttesttesttest testtest testtest</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p><a href="#" target="_blank">2021-04-20 00:00:00</a></p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>AUTH</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>INFO</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p class="tof">[INFO] [ExDeviceProvRunner] testtesttesttesttest testtest testtest</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p><a href="#" target="_blank">2021-04-20 00:00:00</a></p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>AUTH</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>INFO</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p class="tof">[INFO] [ExDeviceProvRunner] testtesttesttesttest testtest testtest</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p><a href="#" target="_blank">2021-04-20 00:00:00</a></p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>AUTH</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>INFO</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p class="tof">[INFO] [ExDeviceProvRunner] testtesttesttesttest testtest testtest</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p><a href="#" target="_blank">2021-04-20 00:00:00</a></p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>AUTH</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>INFO</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p class="tof">[INFO] [ExDeviceProvRunner] testtesttesttesttest testtest testtest</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p><a href="#" target="_blank">2021-04-20 00:00:00</a></p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>AUTH</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>INFO</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p class="tof">[INFO] [ExDeviceProvRunner] testtesttesttesttest testtest testtest</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p><a href="#" target="_blank">2021-04-20 00:00:00</a></p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>AUTH</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>INFO</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p class="tof">[INFO] [ExDeviceProvRunner] testtesttesttesttest testtest testtest</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p><a href="#" target="_blank">2021-04-20 00:00:00</a></p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>AUTH</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>INFO</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p class="tof">[INFO] [ExDeviceProvRunner] testtesttesttesttest testtest testtest</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="pagenation">
+                        <button type="button" class="back-end disabled"></button>
+                        <button type="button" class="back disabled"></button>
+                        <button type="button" class="number">1</button>
+                        <button type="button" class="number active">2</button>
+                        <button type="button" class="number">3</button>
+                        <button type="button" class="number">4</button>
+                        <button type="button" class="number">5</button>
+                        <button type="button" class="number">6</button>
+                        <button type="button" class="number">7</button>
+                        <button type="button" class="number">8</button>
+                        <button type="button" class="number">9</button>
+                        <button type="button" class="number">10</button>
+                        <button type="button" class="next"></button>
+                        <button type="button" class="next-end"></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <script>
+        $(function () {});
+    </script>
+</body>
+
+</html>

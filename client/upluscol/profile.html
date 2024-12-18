@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>U2 Collaboration</title>
+    <!--script  src="http://code.jquery.com/jquery-latest.min.js"></script-->
+
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style_account.css" rel="stylesheet" />
+    <!--link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)"-->
+  </head>
+  <body>
+    <div class="wrapper" id="LC_Page_20000">
+      <!-- 팝업 -->
+      <div class="menu-box profile-add-picture" id="-box">
+        <div class="modal-title">
+          <h2>프로필 사진 추가</h2>
+          <button class="btn-modal-close">
+            <img src="img/ic-x-bt.svg" alt="" />
+          </button>
+        </div>
+        <div id="preview-picture"><img id="pre-img" /></div>
+        <div class="modal-bottom">
+          <input
+            type="file"
+            id="img-Input"
+            class="image_inputType_file"
+            accept="image/gif,image/jpeg,image/svg"
+          />
+          <a
+            href="#"
+            class="btn_rect_white mw-100 tac btn-add-pic"
+            alt="새로운 사진 추가"
+            >새로운 사진 추가</a
+          >
+          <a href="#" class="btn_rect_black mw-100 tac btn-confirm" alt="확인"
+            >확인</a
+          >
+        </div>
+      </div>
+      <!-- 내용 영역 -->
+      <section id="content-wrap">
+        <div class="layout-account-wrap">
+          <div id="lnb-wrap">
+            <div class="user-con">
+              <a href="#" class="tool-btn" id="user-type">홍길동 님</a>
+              <a href="#" class="btn_rect_gray tac" alt="소유한 계정"
+                >소유한 계정</a
+              >
+            </div>
+            <!--prev-->
+            <div class="account-btn-prev">
+              <a href="#"><span>아이콘</span>이전으로</a>
+            </div>
+            <!--nav-->
+            <nav>
+              <div class="nav-tit">계정정보</div>
+              <ul class="nav-ul">
+                <li>
+                  <a href="account_setting.html" class="active"
+                    ><span><img src="img/ic-setting.svg" /></span>계정설정</a
+                  >
+                </li>
+                <li>
+                  <a href="add_user.html"
+                    ><span><img src="img/ic-left-user-add-n.svg" /></span
+                    >사용자추가</a
+                  >
+                </li>
+                <li>
+                  <a href="team.html"
+                    ><span><img src="img/ic-left-team-n.svg" /></span>팀</a
+                  >
+                </li>
+                <li>
+                  <a href="account_info.html"
+                    ><span><img src="img/ic-left-payment-n.svg" /></span
+                    >결제정보</a
+                  >
+                </li>
+              </ul>
+              <div class="nav-tit">설정</div>
+              <ul class="nav-ul">
+                <li>
+                  <a href="profile.html"
+                    ><span><img src="img/ic-left-profile-n.svg" /></span
+                    >프로필</a
+                  >
+                </li>
+                <li>
+                  <a href="notice.html"
+                    ><span><img src="img/ic-left-alert-n.svg" /></span>알림</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="content-wrap-inner">
+          <section id="header-wrap">
+            <header>
+              <div class="func-wrap">
+                <div class="func-mobile-list">
+                  <button type="button" id="tree-trigger-btn">리스트</button>
+                </div>
+                프로필
+              </div>
+            </header>
+          </section>
+          <section id="content">
+            <div class="profile-wrap">
+              <div class="profile-setting">
+                <ul class="profile-picture">
+                  <li>사진</li>
+                  <li>
+                    <div class="pic-img">
+                      <img src="img/img-user-100.svg" alt="" />
+                      <button class="btn-add-picture">
+                        <img src="img/ic-pen.svg" alt="" />
+                      </button>
+                    </div>
+                    <div class="email">
+                      <span>이메일주소</span>
+                      <input type="text" value="hong@gmail.com" />
+                    </div>
+                  </li>
+                </ul>
+                <ul class="profile-name">
+                  <li>이름</li>
+                  <li><input type="text" /></li>
+                </ul>
+                <ul class="profile-position">
+                  <li>위치</li>
+                  <li><input type="text" /></li>
+                </ul>
+                <!-- <ul class="profile-was">
+                      <li>WAS</li>
+                      <li><input type="text"></li>
+                  </ul>             -->
+              </div>
+              <a href="#" class="btn_rect_black mw-100 tac" alt="저장">저장</a>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <!-- <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        /************ preview picture ***********/
+        //input과 button 연결
+        const browseBtn = document.querySelector(".btn-add-pic");
+        const realInput = document.querySelector("#img-Input");
+
+        browseBtn.addEventListener("click", () => {
+          realInput.click();
+        });
+
+        // function readURL(input) {
+        //     if (input.files && input.files[0]) {
+        //     var reader = new FileReader();
+
+        //     reader.onload = function (e) {
+        //         var target = document.getElementById('pre-img');
+
+        //         target.setAttribute('src',e.target.result);
+        //     }
+
+        //     reader.readAsDataURL(input.files[0]);
+        //     }
+        // }
+
+        // // 이벤트를 바인딩해서 input에 파일이 올라올때 위의 함수를 this context로 실행합니다.
+        // realInput.addEventListener('change',function(){
+        //     readURL(this);
+        // });
+        /****************************************/
+
+        var btnAdd = document.querySelector(".btn-add-picture");
+        var btnClose = document.querySelector(".btn-modal-close");
+        var btnConfirm = document.querySelector(".btn-confirm");
+        var addPicture = document.querySelector(".profile-add-picture");
+        btnAdd.addEventListener("click", function () {
+          addPicture.style.display = "block";
+        });
+        btnClose.addEventListener("click", function () {
+          addPicture.style.display = "none";
+        });
+        btnConfirm.addEventListener("click", function () {
+          addPicture.style.display = "none";
+        });
+      });
+    </script>
+  </body>
+</html>

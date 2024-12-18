@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="243" height="202.497" viewBox="0 0 243 202.497">
+    <defs>
+        <linearGradient id="a" y1="1" x2="0" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#cad1d8" stop-opacity=".502"/>
+            <stop offset="1" stop-color="#cad1d8" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="b" x="0" y="14.497" width="243" height="188" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation=".5" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path data-name="패스 1" d="M78.651 1H8.561A7.5 7.5 0 0 0 1 8.4V38h147V23.386a7.461 7.461 0 0 0-7.566-7.306l-31.659-.01a16.735 16.735 0 0 1-10.085-3.6L88.1 4.333A14.716 14.716 0 0 0 78.651 1z" transform="translate(.5 -1.003)" style="fill-rule:evenodd;fill:#ecedef"/>
+    <path data-name="패스 2" d="M78.651 1H8.561A7.5 7.5 0 0 0 1 8.4V38h147V23.386a7.461 7.461 0 0 0-7.566-7.306l-31.659-.01a16.735 16.735 0 0 1-10.085-3.6L88.1 4.333A14.716 14.716 0 0 0 78.651 1z" transform="translate(.5 -1.003)" style="fill:url(#a)"/>
+    <g style="filter:url(#b)">
+        <path data-name="패스 3" d="M11 16h220a10 10 0 0 1 10 10v165a10 10 0 0 1-10 10H11a10 10 0 0 1-10-10V26a10 10 0 0 1 10-10z" transform="translate(.5 -1)" style="fill:#eff2f4;fill-rule:evenodd"/>
+    </g>
+</svg>

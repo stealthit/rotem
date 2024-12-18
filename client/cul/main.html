@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CULTURIT</title>  
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+<div class="wrapper" id="">
+  <!-- 팝업 -->
+
+  <div class="wrap main-wrap">
+    <!-- 왼쪽 영역 -->
+    <header id="user-wrap">
+      <a href="main.html" class="logo"></a>
+      <div class="account">
+        <div class="account-top">
+          <div class="account-title"><span>홍길동</span>'s Account</div>
+          <a href="profile.html" type="button" class="btn-setting"></a>
+        </div>
+        <button type="button" class="btn-rect-gray">로그아웃</button>
+      </div>
+      <div class="have-content">
+        <div class="have-conten01">
+          <ul>
+            <li>
+              <span class="ico-note"></span>
+            </li>
+            <li>총 보유곡</li>
+            <li>10</li>
+          </ul>
+        </div>
+        <div class="have-conten02">
+          <ul>
+            <li>
+              <span class="ico-down"></span>
+            </li>
+            <li>총 다운로드</li>
+            <li>100</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  
+    <!-- 탭 영역 -->
+    <section id="content-wrap">
+      <div class="tab_basic">
+        <div class="tab_list_wrap">
+          <div class="tab_list tab_active" data-tabnum="0">
+            <a href="#">노트에디팅</a>
+          </div>
+          <div class="tab_list" data-tabnum="1">
+            <a href="#">통계</a>
+          </div> 
+        </div>
+        <div class="tab_container">    
+          <!-- 노트에디팅 -->      
+          <div class="tab_content" id="note-editing">
+            <div class="note-top">
+              <div class="search-box">
+                <div class="select-op">
+                  전체
+                  <ul class="select-op-box">
+                    <li>전체</li>
+                    <li>게임종류</li>
+                    <li>상태</li>
+                  </ul>
+                </div> 
+                <div class="select-op">
+                  전체
+                  <!-- 게임종류 박스 -->
+                  <ul class="select-op-box">
+                    <li>전체</li>
+                    <li>게임1</li>
+                    <li>게임2</li>
+                  </ul>
+                  <!-- 상태 박스 -->
+                  <!-- <ul class="select-op-box">
+                    <li>전체</li>
+                    <li>전체</li>
+                    <li>앱출시요청</li>
+                    <li>앱출시완료</li>
+                    <li>앱출시반려</li>
+                  </ul> -->
+                </div> 
+                <div class="search-input-wrap">
+                  <input type="text" placeholder="검색어를 입력하세요" id="search-input" />
+                  <button type="button" id="search-btn">검색 버튼</button>
+                </div>
+              </div>
+              <div class="align-box">
+                <ul>
+                  <li>
+                    <span>6</span> items,&nbsp;<span>8.33</span> MB
+                  </li>
+                  <li class="tool-btn" id="sm-level">
+                    전체
+                    <ul class="sm-sel-box" id="sm-level-box">
+                      <li>전체</li>
+                      <li><span class="star"></span>초급</li>
+                      <li><span class="star02"></span>중급</li>
+                      <li><span class="star03"></span>고급</li>
+                    </ul>
+                  </li>                  
+                  <li>
+                    <button type="button" class="btn-gallery"></button>
+                  </li>
+                  <li>
+                    <button type="button" class="btn-filter tool-btn" id="sm-sel"></button>
+                    <ul class="sm-sel-box" id="sm-sel-box">
+                      <li>제목별</li>
+                      <li>날짜별</li>
+                      <li>게임종류별</li>
+                    </ul>
+                  </li>                                 
+                </ul>
+              </div>
+            </div>
+            <div class="note-content">
+              <div class="file-box">
+                <div class="file-box-top">
+                  <div class="star-box">
+                    <span class="star"></span>
+                  </div>
+                  <div class="app-launch">
+                    <span class="circle-y"></span>앱출시요청
+                  </div>
+                  <div class="game-type">
+                    <span class="type-s">S</span>
+                    기타-게임A
+                  </div>
+                </div>
+                <div class="file-box-bt">
+                  <div>
+                    <p>File_name</p>
+                    <button type="button" class="btn-ddot">&hellip;</button>
+                    <button type="button" class="btn-del">삭제하기</button>
+                  </div>
+                  <div>
+                    <p>2021-09-01</p>
+                    <div>
+                      <button type="button" class="btn-down"></button>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="file-box" >
+                <div class="file-box-top">
+                  <div class="star-box">
+                    <span class="star"></span>
+                  </div>
+                  <div class="app-launch">
+                    <span class="circle-y"></span>앱출시요청
+                  </div>
+                  <div class="game-type">
+                    <span class="type-m">M</span>
+                    기타-게임A
+                  </div>
+                </div>
+                <div class="file-box-bt">
+                  <div>
+                    <p>File_name</p>
+                    <button type="button" class="btn-ddot">&hellip;</button>
+                    <button type="button" class="btn-del">삭제하기</button>
+                  </div>
+                  <div>
+                    <p>2021-09-01</p>
+                    <div>
+                      <button type="button" class="btn-down"></button>
+                      <span>4</span>
+                    </div>
+                  </div>                  
+                </div>                
+              </div>
+              <div class="file-box">
+                <div class="file-box-top">
+                  <div class="star-box">
+                    <span class="star03"></span>
+                  </div>
+                  <div class="app-launch">
+                    <span class="circle-b"></span>앱출시완료
+                  </div>
+                  <div class="game-type">
+                    <span class="type-s">S</span>
+                    기타-게임A
+                  </div>
+                </div>
+                <div class="file-box-bt">
+                  <div>
+                    <p>File_name</p>
+                    <button type="button" class="btn-ddot">&hellip;</button>
+                    <button type="button" class="btn-del">삭제하기</button>
+                  </div>
+                  <div>
+                    <p>2021-09-01</p>
+                    <div>
+                      <button type="button" class="btn-down"></button>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="file-box">
+                <div class="file-box-top">
+                  <div class="star-box">
+                    <span class="star"></span>
+                  </div>
+                  <div class="app-launch">
+                    <span class="circle-b"></span>앱출시요청
+                  </div>
+                  <div class="game-type">
+                    <span class="type-s">S</span>
+                    기타-게임A
+                  </div>
+                </div>
+                <div class="file-box-bt">
+                  <div>
+                    <p>File_name</p>
+                    <button type="button" class="btn-ddot">&hellip;</button>
+                    <button type="button" class="btn-del">삭제하기</button>
+                  </div>
+                  <div>
+                    <p>2021-09-01</p>
+                    <div>
+                      <button type="button" class="btn-down"></button>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="file-box">
+                <div class="file-box-top">
+                  <div class="star-box">
+                    <span class="star"></span>
+                  </div>
+                  <div class="app-launch">
+                    <span class="circle-y"></span>앱출시요청
+                  </div>
+                  <div class="game-type">
+                    <span class="type-s">S</span>
+                    기타-게임A
+                  </div>
+                </div>
+                <div class="file-box-bt">
+                  <div>
+                    <p>File_name</p>
+                    <button type="button" class="btn-ddot">&hellip;</button>
+                    <button type="button" class="btn-del">삭제하기</button>
+                  </div>
+                  <div>
+                    <p>2021-09-01</p>
+                    <div>
+                      <button type="button" class="btn-down"></button>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="file-box">
+                <div class="file-box-top">
+                  <div class="star-box">
+                    <span class="star"></span>
+                  </div>
+                  <div class="app-launch">
+                    <span class="circle-y"></span>앱출시요청
+                  </div>
+                  <div class="game-type">
+                    <span class="type-s">S</span>
+                    기타-게임A
+                  </div>
+                </div>
+                <div class="file-box-bt">
+                  <div>
+                    <p>File_name</p>
+                    <button type="button" class="btn-ddot">&hellip;</button>
+                    <button type="button" class="btn-del">삭제하기</button>
+                  </div>
+                  <div>
+                    <p>2021-09-01</p>
+                    <div>
+                      <button type="button" class="btn-down"></button>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="file-box">
+                <div class="file-box-top">
+                  <div class="star-box">
+                    <span class="star"></span>
+                  </div>
+                  <div class="app-launch">
+                    <span class="circle-y"></span>앱출시요청
+                  </div>
+                  <div class="game-type">
+                    <span class="type-m">M</span>
+                    기타-게임A
+                  </div>
+                </div>
+                <div class="file-box-bt">
+                  <div>
+                    <p>File_name</p>
+                    <button type="button" class="btn-ddot">&hellip;</button>
+                    <button type="button" class="btn-del">삭제하기</button>
+                  </div>
+                  <div>
+                    <p>2021-09-01</p>
+                    <div>
+                      <button type="button" class="btn-down"></button>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="file-box">
+                <div class="file-box-top">
+                  <div class="star-box">
+                    <span class="star"></span>
+                  </div>
+                  <div class="app-launch">
+                    <span class="circle-r"></span>앱출시반려
+                  </div>
+                  <div class="game-type">
+                    <span class="type-s">S</span>
+                    기타-게임A
+                  </div>
+                </div>
+                <div class="file-box-bt">
+                  <div>
+                    <p>File_name</p>
+                    <button type="button" class="btn-ddot">&hellip;</button>
+                    <button type="button" class="btn-del">삭제하기</button>
+                  </div>
+                  <div>
+                    <p>2021-09-01</p>
+                    <div>
+                      <button type="button" class="btn-down"></button>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="file-plus">
+                <a href="note-game-pd.html" class="file-box-plus"></a>
+              </div>
+            </div>
+          </div>
+          <!-- 통계 -->
+          <div class="tab_content" id="statistics">
+            <div class="st-top">
+              <h3>현황요약</h3>
+              <ul class="st-top-box">
+                <li>
+                  <ul>
+                    <li>
+                      <span class="ico-possess"></span>
+                    </li>
+                    <li>
+                      <span>총 보유곡</span>
+                      <p>10</p>
+                    </li>
+                    <li>
+                      <a href="possess.html" class="back-main"></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>
+                      <span class="ico-down-l"></span>
+                    </li>
+                    <li>
+                      <span>총 다운로드 횟수</span>
+                      <p>100</p>
+                    </li>
+                    <li>
+                      <a href="down.html" class="back-main"></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li>
+                      <span class="ico-mileage"></span>
+                    </li>
+                    <li>
+                      <span>총 마일리지</span>
+                      <p>213,000</p>
+                    </li>
+                    <li>
+                      <a href="return.html" class="back-main"></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="st-content">
+              <div class="st-content-ct">
+                <div class="st-content-ct-top">
+                  <div>
+                    <h3>일별 사용자 현황</h3>
+                  </div>
+                  <div>
+                    <div class="date-search">
+                      <ul class="term">
+                          <li>최근 1일</li>
+                          <li class="current">7일</li>
+                          <li>30일</li>
+                          <li>직접입력</li>
+                      </ul>
+                      <div class="input-date">
+                        <input type="date" class="start-date" id="datePicker">
+                        <span>-</span>
+                        <input type="date" class="end-date" id="datePicker1">														
+                      </div>
+                      <button type="button" class="btn-rect-blue">조회</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="st-content-ct-con">
+                  <canvas id="myChart" width="1587" height="260"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="st-content-table">
+              <h3>인기 다운로드 현황</h3>
+              <div class="table-wrap">
+                <table class="tb-layout" summary="인기 다운로드현황">
+                  <colgroup>
+                    <col width="16.667">
+                    <col width="16.667">
+                    <col width="16.667">
+                    <col width="16.667">
+                    <col width="16.667">
+                    <col width="16.667">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>순위</th>
+                      <th>곡명</th>
+                      <th>생성일</th>
+                      <th>마일리지 금액</th>
+                      <th>게임명</th>
+                      <th>다운로드</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>13,000</td>
+                      <td>$게임명$</td>
+                      <td>13</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>13,000</td>
+                      <td>$게임명$</td>
+                      <td>13</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>13,000</td>
+                      <td>$게임명$</td>
+                      <td>13</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>13,000</td>
+                      <td>$게임명$</td>
+                      <td>13</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>곡명1.mp3</td>
+                      <td>2021-09-09</td>
+                      <td>13,000</td>
+                      <td>$게임명$</td>
+                      <td>13</td>
+                    </tr>
+                  </tbody>        
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+  </div>
+</div> 
+<script>
+  //탭 메뉴
+  var tabList = document.querySelectorAll('.tab_list_wrap .tab_list')
+
+  Array.prototype.forEach.call(tabList, function(list) {
+
+    list.children[0].addEventListener('click', function(e) {
+      e.preventDefault()
+
+      var tabContent = document.querySelectorAll('.tab_container .tab_content')
+
+      var tabNum = this.parentElement.getAttribute('data-tabnum')
+
+      Array.prototype.forEach.call(tabContent, function(cont, i) {
+        cont.style.display = 'none'
+        tabList[i].className = 'tab_list'
+      })
+
+      tabContent[tabNum].style.display = 'block'
+
+      if(list.className.indexOf('tab_active') == -1) {
+        list.className = 'tab_list tab_active'
+      }
+    });
+  });
+ //차트
+ var ctx = document.getElementById("myChart").getContext("2d");
+ const myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+          labels: ['2021.09.10', '2021.09.11', '2021.09.12', '2021.09.13', '2021.09.14', '2021.09.15', '2021.09.16'],
+          datasets:  [{
+            lineTension :0,
+              data: [40, 10, 25, 5, 20, 25, 25],
+              borderColor: '#419bf9',
+              borderWidth: 3,
+              pointRadius: 0,
+          },{
+            lineTension :0,
+            data: [30, 35, 27, 45, 15, 25, 35],
+              borderColor: '#ff4a76',
+              borderWidth: 3,
+              pointRadius: 0,
+          }]
+          
+      },
+      
+      options: {
+        responsive: false,
+
+        legend:{
+          display: false,
+        },
+        scales: {
+          xAxes:[{
+          
+            gridLines: {
+              display: false,
+            }
+        }],
+
+        yAxes:[{
+          display: true,
+            ticks: {
+                suggestedMin: 0,
+                stepSize: 10,
+            },
+            gridLines: {
+              color: "rgba(255,255,255,0.15)",
+            }
+        }]
+			},
+          plugins: {
+            legend: {
+              display:false,
+              position: 'top',
+            },
+          }
+    },
+  });
+</script>
+</body>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/chart.js"></script>
+</html>

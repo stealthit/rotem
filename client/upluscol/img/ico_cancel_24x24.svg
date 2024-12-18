@@ -1,0 +1,12 @@
+<svg id="ico_cancel_24x24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="그룹_19883" data-name="그룹 19883" transform="translate(2 2)">
+        <rect id="사각형_137099" data-name="사각형 137099" width="20" height="20" rx="10" style="opacity:.3"/>
+        <path id="선_483" data-name="선 483" class="cls-3" transform="translate(6 6)" d="m0 0 8 8"/>
+        <path id="선_484" data-name="선 484" class="cls-3" transform="translate(6 6)" d="M8 0 0 8"/>
+    </g>
+</svg>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 1050px)">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="wrapper" class="m-search">
+        <!-- 헤더 -->
+        <div class="header-wrap m-header-wrap">
+            <header>
+                <div>
+                    <a href="" id="back-btn"></a>
+                </div>
+                <div class="func-wrap">
+                    <div class="func-search-wrap">
+                        <form id="search">
+                            <input type="text" placeholder="내 드라이브 검색" id="search-input" />
+                            <button type="submit" id="search-btn">검색 버튼</button>
+                        </form>
+                        <div id="result-box">
+                            <ul>
+                                <li>
+                                    <span class="i-ppt"></span>
+                                    <span class="file-name">파일명</span>
+                                </li>
+                                <li>
+                                    <span class="i-exl"></span>
+                                    <span class="file-name">파일명</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- 내용 영역 -->
+        <div class="content-wrap">
+            <!-- 컨텐츠 -->
+            <div class="content-wrap-inner">
+                <div id="content">
+                    <div class="content-inner">
+                        <div class="circle-box">
+                            <div class="circle-inner-box">
+                                <img src="./img/img-search.png" alt="">
+                                <p>파일을 검색해 보세요</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/common.js"></script>
+</html>

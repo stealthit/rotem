@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>사용자 관리</title>
+</head>
+
+<body>
+    <div class="header_wrapper">
+        <div class="header_logo">
+            <img>
+        </div>
+        <ul class="main_menu">
+            <li class="active">공통</li>
+            <li>기준정보</li>
+            <li>환경설정</li>
+            <li>소재</li>
+            <li>영업</li>
+            <li>카테고리</li>
+            <li>인벤토리</li>
+            <li>계약</li>
+            <li>편성</li>
+            <li>청구정산</li>
+            <li>리포트</li>
+            <li>분석</li>
+        </ul>
+        <div class="header_button">
+            <button class="menu_button">로그아웃</button>
+            <button class="menu_button">정보수정</button>
+        </div>
+    </div>
+    <div class="location">
+			<img class="img_home" src="" alt="">
+			<span>홈</span>
+			<img class="ico_arrow_r" src="" alt="">
+			<span>공통</span>
+			<!-- <img class="img_round_nav" src="" alt=""> -->
+			<img class="ico_arrow_r" src="" alt="">
+			<span>사용자 관리</span>
+			<!-- <img class="img_round_nav" src="" alt=""> -->
+    </div>
+    <div class="main user_main">
+        <div class="common_box common_body">
+            <div class="sub_menu_wrapper">
+							<div class="sub_menu_title">
+									<img src="../../assets/common.png" alt="">공통
+							</div>
+							<ul class="sub_menu">
+								<li class="active">사용자 관리</li>
+								<li>사용자그룹 관리</li>
+								<li>코드 관리</li>
+								<li >메뉴 관리</li>
+								<li >공지사항</li>
+								<li >게시판</li>
+								<li >분석사용자 관리</li>
+								<li >요구사항 관리</li>
+								<li >Watch-Dog</li>
+							</ul>
+        		</div>
+						<div class="contents_wrapper">
+							<div class="content_title">사용자 관리</div>
+              <div class="search_wrapper">
+                <div class="search_edit_box">
+                  <div class="search_edit_detail">                    
+                    <div class="input_wrapper">
+                      <div class="input_title">업체</div>
+                      <div class="input_group">
+                        <select>
+                          <option value="">전체</option>
+                          <option value="">업체1</option>
+                          <option value="">업체2</option>
+                          <option value="">업체3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input_wrapper">
+                      <div class="input_title">사용자 ID</div>
+                      <div class="input_group">
+                        <input type="text" class="input_text">  
+                      </div>
+                    </div>                             
+                  </div>
+                  <div class="search_edit_detail">
+                    <div class="input_wrapper">
+                      <div class="input_title">사용상태</div>
+                      <div class="input_group">
+                        <select>
+                          <option value="">전체</option>
+                          <option value="">요청</option>
+                          <option value="">사용중</option>
+                          <option value="">계정해지</option>
+                        </select>
+                      </div>                      
+                    </div>
+										<div class="input_wrapper">
+                      <div class="input_title">사용자명</div>
+                      <div class="input_group">
+                        <input type="text" class="input_text">  
+                      </div>
+                    </div>           
+                  </div>
+                </div>
+                <div class="search_btns">
+                  <button class="btn_init">초기화</button>
+                  <button class="btn_search">조회</button>
+                </div>		
+              </div>
+							<div class="table_wrapper">
+								<div class="table_top">
+                  <div class="table_top_count">
+                    <div class="table_total_count">
+                      전체<span>1,256</span>
+                    </div>                    
+                    <div class="table_view_count">
+                      <select>
+                        <option value="">10개</option>
+                        <option value="">20개</option>
+                        <option value="">50개</option>
+                        <option value="">100개</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="table_top_buttons">                    
+                    <button class="btn_delete btn_common">삭제</button>
+                  </div>
+                </div>
+								<table class="jb-table">		
+                  <colgroup> 
+                    <col style="width:50px">                     
+                    <col style="width:10%"> 
+                    <col style="width:10%"> 
+                    <col> 
+                    <col style="width:10%">                     
+                    <col style="width:10%">
+                    <col style="width:10%"> 
+                    <col style="width:10%">                                         
+                  </colgroup>
+									<thead>
+										<tr>
+											<th><input type="checkbox" class="table_head_check"></th>
+											<th>사용자 ID</th>
+											<th>이름</th>
+											<th>업체</th>
+											<th>부서</th>
+											<th>연락처</th>
+											<th>사용상태</th>
+											<th>일자</th>											
+										</tr>
+								  </thead>
+									<tbody class="table_body">										
+									</tbody>
+							  </table>
+                <ul class="pagination">
+                  <li><a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt=""></a></li>
+                  <li><a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt=""></a></li>
+                  <li><a href="#" class="num">1</a></li>
+                  <li><a href="#" class="num active">2</a></li>
+                  <li><a href="#" class="num">3</a></li>
+                  <li><a href="#" class="num">4</a></li>
+                  <li><a href="#" class="num">5</a></li>
+                  <li><a href="#" class="num">6</a></li>
+                  <li><a href="#" class="num">7</a></li>
+                  <li><a href="#" class="num">8</a></li>
+                  <li><a href="#" class="num">9</a></li>
+                  <li><a href="#" class="num">10</a></li>
+                  <li><a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt=""></a></li>
+                  <li><a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt=""></a></li>
+                </ul>
+							</div>
+						</div>
+        </div>
+    </div>
+
+    <div data-include-path="../footer.html"></div>    
+    <script src="../../scripts/script.js"></script>
+    <script>
+			const arrTable = Array(10).fill(["USER0001","홍길동","(주)KTDS","미디어플랫폼팀","010-1111-0000","사용중","2022-02-10"]);    
+      const table = document.querySelector('.table_body');
+      arrTable.map(data => addRow(table, data, true));    
+    </script>
+</body>
+
+</html>

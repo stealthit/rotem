@@ -1,0 +1,360 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+@font-face { 
+  font-family:'Noto Sans KR';
+  font-style:normal;
+  font-weight: 300; 
+  src:
+  url(../font/NotoSansKR-Light.woff2) format('woff2'), 
+  url(../font/NotoSansKR-Light.woff) format('woff'), 
+  url(../font/NotoSansKR-Light..oft) format('opentype')
+}
+
+@font-face { 
+  font-family:'Noto Sans KR';
+  font-style:normal;
+  font-weight: 400; 
+  src:
+  url(../font/NotoSansKR-Regular.woff2) format('woff2'), 
+  url(../font/NotoSansKR-Regular.woff) format('woff'), 
+  url(../font/NotoSansKR-Regular.oft) format('opentype')
+}
+
+@font-face { 
+  font-family:'Noto Sans KR';
+  font-style:normal;
+  font-weight: 500; 
+  src:
+  url(../font/NotoSansKR-Medium.woff2) format('woff2'), 
+  url(../font/NotoSansKR-Medium.woff) format('woff'), 
+  url(../font/NotoSansKR-Medium.oft) format('opentype')
+}
+
+@font-face { 
+  font-family:'Noto Sans KR';
+  font-style:normal;
+  font-weight: 700; 
+  src:
+  url(../font/NotoSansKR-Bold.woff2) format('woff2'), 
+  url(../font/NotoSansKR-Bold.woff) format('woff'), 
+  url(../font/NotoSansKR-Bold.oft) format('opentype')
+}
+/*단위환산*/
+
+/* 12px ----- 0.75rem */
+/* 14px ----- 0.875rem */
+/* 15px ----- 0.9375rem */
+/* 16px ----- 1rem */
+
+
+:root {
+  --tai-gray-100:#eee;
+  --tai-gray-200:#ededed;
+  --tai-gray-300:#A0A0A0;
+
+
+
+  --tai-black-100:#2e2e2e;
+  --tai-black-200:#474747;
+  --tai-black-300:#EFEFEF;
+  --tai-black-400:#000;
+  --tai-black-500:#404040;
+  
+
+
+  --tai-white:#fff;
+  --tai-gray:#333333;
+  --tai-gray-600:#777;
+  --tai-red:#a4262c;
+  --tai-orange:#FF6060;
+  --tai-pink:#FF6969;
+  --tai-green:#289D42;
+  --tai-green-200:#24CC49;
+  --tai-green-300:#326c65;
+  --tai-green-400:#11280d;
+  --tai-green-500:#00FF38;
+  --tai-green-600:#83FF9E;
+  --tai-green-700:#66C77B;
+  --tai-blue:#007BB8;
+
+  --tai-bg-gray:#F4F4F4;
+  --tai-border-gray:#D4D4D4;
+  --tai-border-gray-100:#e5e5e5;
+  
+  --tai-btn-border-green:#4ab862;
+
+  --tai-font-sans-serif: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --tai-font-tit-sans-serif: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --tai-font-num-sans-serif: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --tai-body-font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --tai-body-tit-font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+  --tai-body-font-size: 1.125rem; /*18px*/
+  --tai-body-font-m-size: 0.875rem; /*14px*/
+
+  --tai-body-font-weight: 400;
+  --tai-body-line-height: 1.47;
+  --tai-body-color: #111;
+  --tai-body-bg: #fff;
+  --tai-letter-spacing:-0.05em;
+
+  --tai-hover-100:#353535;
+  --tai-ts-ease:all 0.2s ease;
+
+  --tai-body-text-align-left:left;
+
+
+  --tai-font-size-10: 0.625rem; /*10px*/
+  --tai-font-size-12: 0.75rem; /*12px*/
+  --tai-font-size-14: 0.875rem; /*14px*/
+  --tai-font-size-15: 0.9375rem; /*15px*/
+  --tai-font-size-16: 1rem; /*16px*/
+  --tai-font-size-22: 1.375rem; /*22px*/
+  --tai-font-size-24: 1.5rem; /*24px*/
+  --tai-font-size-26: 1.625rem; /*26px*/
+  --tai-font-size-32: 2rem; /*32px*/
+  --tai-font-size-36: 2.25rem; /*32px*/
+  --tai-font-size-40: 2.5rem; /*40px*/
+  --tai-font-size-42: 2.625rem; /*42px*/
+
+
+  --tai-input-shadow: 2px 2px 2px 0 rgba(239, 239, 239, 0.25);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html{-webkit-text-size-adjust: none;}
+html,body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: var(--tai-body-font-family);
+  font-size: var(--tai-body-font-size);
+  font-weight: var(--tai-body-font-weight);
+  line-height: var(--tai-body-line-height);
+  color: var(--tai-body-color);
+  text-align: var(--tai-body-text-align);
+  background-color: var(--tai-body-bg);
+  -webkit-text-size-adjust: 100%;
+  letter-spacing:-0.003em;
+  position:relative;
+  scroll-behavior: smooth;
+  height:100%;
+  
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  margin: 0;
+  padding: 0;
+  font-family: var(--tai-body-font-family);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+
+div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+{ margin: 0; padding: 0; border: 0; font-size: var(--tai-body-font-size); font-family: var(--tai-body-font-family); vertical-align: baseline; }
+
+ol, ul { list-style: none; margin:0; padding:0; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+a { color: var(--tai-body-color); text-decoration: none; outline: none;  object-fit: contain; font-size:inherit}
+a:hover, a:active { text-decoration: none; color: var(--tai-body-color); background-color: transparent; }
+
+.bold{font-weight: 700;}
+.blind,iframe{overflow:hidden}
+.blind{position:absolute;clip:rect(0 0 0 0);margin:-1px;width:1px;height:1px}
+
+
+/* IE 에서 Select box 화살표 제거 */
+select::-ms-expand { display: none; }
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active { }
+
+input[type="text"], input[type="password"] { border: none; outline: none; font-family: var(--tai-font-sans-serif); font-size:var(--tai-font-size-16); height:45px;padding:0 10px 0 20PX;
+box-shadow: var(--tai-input-shadow);}
+
+
+
+input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder { font-size: var(--tai-font-size-16); text-align: left; color:var(--tai-gray-600) }
+input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder { font-size: var(--tai-font-size-16); text-align: left; color: var(--tai-gray-600); }
+input[type="text"]::-ms-input-placeholder, input[type="password"]::-ms-input-placeholder { font-size: var(--tai-font-size-16);  text-align: left; color: var(--tai-gray-600); }
+input[type="text"]::placeholder, input[type="password"]::placeholder { font-size: var(--tai-font-size-16); text-align: left; color: var(--tai-gray-600); }
+input[type="radio"]{ position: absolute;width: 1px;height: 1px;padding: 0; margin: -1px;overflow: hidden; clip:rect(0,0,0,0);border: 0;}
+
+
+
+
+/* input radio */
+.radio-group{width:36px;height:36px;background:var(--tai-black-500);color:var(--tai-white)}
+/*var(--tai-green)*/
+input[type="radio"]:checked, input[type="radio"]:not(:checked) { position: absolute; left: -9999px;}
+input[type="radio"]:checked + label.chk_label,
+input[type="radio"]:not(:checked) + label.chk_label {  position: relative;  width:36px; height:44px; cursor: pointer; font-size:var(--tai-font-size-22); font-weight:700; display: inline-block;  color:var(--tai-white)}
+input[type="radio"]:checked + label.chk_label:before,
+input[type="radio"]:not(:checked) + label.chk_label:before { content: '';  position: absolute;  left: 0;  top: 0;
+  width: 36px;  height: 44px;
+  background:url("../img/icon_radio_off.png");  }
+input[type="radio"]:checked + label:before { }
+input[type="radio"]:checked + label.chk_label:after,
+input[type="radio"]:not(:checked) + label.chk_label:after {  content: '';
+width:36px;  height:44px; 
+background: url("../img/icon_radio_on.png");  position: absolute;  top:0px;  left:0px;   -webkit-transition: all 0.2s ease;  transition: all 0.2s ease;
+}
+input[type="radio"]:not(:checked) + label.chk_label:after { opacity: 0;  -webkit-transform: scale(0);  transform: scale(0);}
+input[type="radio"]:checked + label.chk_label:after { opacity: 1;  -webkit-transform: scale(1);  transform: scale(1);}
+
+.gn01 > input[type="radio"]:checked + label.chk_label:before,
+.gn01 > input[type="radio"]:not(:checked) + label.chk_label:before,
+.gn01 > input[type="radio"]:checked + label.chk_label:after,
+.gn01 > input[type="radio"]:not(:checked) + label.chk_label:after{content:'1';line-height:36px;}
+
+.gn02 > input[type="radio"]:checked + label.chk_label:before,
+.gn02 > input[type="radio"]:not(:checked) + label.chk_label:before,
+.gn02 > input[type="radio"]:checked + label.chk_label:after,
+.gn02 > input[type="radio"]:not(:checked) + label.chk_label:after{content:'2';line-height:36px;}
+
+.gn03 > input[type="radio"]:checked + label.chk_label:before,
+.gn03 > input[type="radio"]:not(:checked) + label.chk_label:before,
+.gn03 > input[type="radio"]:checked + label.chk_label:after,
+.gn03 > input[type="radio"]:not(:checked) + label.chk_label:after{content:'3';line-height:36px;}
+
+.gn04 > input[type="radio"]:checked + label.chk_label:before,
+.gn04 > input[type="radio"]:not(:checked) + label.chk_label:before,
+.gn04 > input[type="radio"]:checked + label.chk_label:after,
+.gn04 > input[type="radio"]:not(:checked) + label.chk_label:after{content:'4';line-height:36px;}
+
+.gn05 > input[type="radio"]:checked + label.chk_label:before,
+.gn05 > input[type="radio"]:not(:checked) + label.chk_label:before,
+.gn05 > input[type="radio"]:checked + label.chk_label:after,
+.gn05 > input[type="radio"]:not(:checked) + label.chk_label:after{content:'5';line-height:36px;}
+
+.gn06 > input[type="radio"]:checked + label.chk_label:before,
+.gn06 > input[type="radio"]:not(:checked) + label.chk_label:before,
+.gn06 > input[type="radio"]:checked + label.chk_label:after,
+.gn06 > input[type="radio"]:not(:checked) + label.chk_label:after{content:'6';line-height:36px;}
+
+.gn07 > input[type="radio"]:checked + label.chk_label:before,
+.gn07 > input[type="radio"]:not(:checked) + label.chk_label:before,
+.gn07 > input[type="radio"]:checked + label.chk_label:after,
+.gn07 > input[type="radio"]:not(:checked) + label.chk_label:after{content:'7';line-height:36px;}
+
+.gn08 > input[type="radio"]:checked + label.chk_label:before,
+.gn08 > input[type="radio"]:not(:checked) + label.chk_label:before,
+.gn08 > input[type="radio"]:checked + label.chk_label:after,
+.gn08 > input[type="radio"]:not(:checked) + label.chk_label:after{content:'8';line-height:36px;}
+
+.gn09 > input[type="radio"]:checked + label.chk_label:before,
+.gn09 > input[type="radio"]:not(:checked) + label.chk_label:before,
+.gn09 > input[type="radio"]:checked + label.chk_label:after,
+.gn09 > input[type="radio"]:not(:checked) + label.chk_label:after{content:'9';line-height:36px;}
+
+.gn10 > input[type="radio"]:checked + label.chk_label:before,
+.gn10 > input[type="radio"]:not(:checked) + label.chk_label:before,
+.gn10 > input[type="radio"]:checked + label.chk_label:after,
+.gn10 > input[type="radio"]:not(:checked) + label.chk_label:after{content:'10';line-height:36px;}
+
+
+
+/* Select box 스타일 초기화 */
+/*select { cursor: pointer; -webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; }
+select:focus { outline: none; }
+select { cursor: pointer; cursor: pointer;padding: 0 16px; padding-right: 35px;font-size: 14px; letter-spacing: -0.35px;text-align: left; color: rgba(40, 42, 63, 0.83);border-radius: 4px;background-color: #ffffff;background-size: 14px;font-family: 'Noto Sans KR', sans-serif;}
+input{font-family:var(--tai-body-font-family)}*/
+
+.select { position: relative; z-index:30 }
+.select .input-required{width:10px;color:red;position:absolute;top:0;left:0;}
+.select .option-list {  position: absolute;  top: 100%;  left: 0;  width: 100%;  overflow: hidden;  max-height: 0;}
+.select.active .option-list {  max-height: none;}
+
+#select-wrap {}
+#select-wrap .select {
+  box-shadow: var(--tai-input-shadow);
+  padding: 0 30px 0 20px ;
+  height:45px;
+  display:flex;
+  align-items: center;
+  background:var(--tai-white) url("../img/icon-select-arrow.svg") no-repeat calc(100% - 20px) center;
+  transition: var(--tai-ts-ease);
+  cursor: pointer;
+  
+}
+#select-wrap .select:hover {
+  color: var(--tai-body-color);
+  transition: var(--tai-ts-ease);
+}
+#select-wrap .select .text {font-size:var(--tai-font-size-16)}
+#select-wrap .select .option-list {
+  list-style: none;
+  padding: 0;
+  background:var(--tai-white)
+  
+}
+#select-wrap .select .option-list .option {
+  padding: 0 0 0 10px;
+  height:45px;
+  font-size:var(--tai-font-size-16);
+  display:flex;
+  align-items: center;
+}
+#select-wrap .select .option-list .option:hover {
+  background-color: var(--tai-border-gray-100);
+}
+
+
+
+
+footer{width:100%;height:60px;font-size:var(--tai-font-size-14);color:var(--tai-gray);justify-content: center; align-items: center; position:absolute;bottom:0;left:0;text-align:center}
+img{image-rendering: -webkit-optimize-contrast; transform: translateZ(0);}
+
+/*reset div*/
+.common_section{width:100%;margin:30px 0;padding:0 0 0 20px}
+.common_section h1{width:100%;margin:0 0 20px 0;color:var( --tai-body-color)}
+.common_li{width:100%;margin:0 0 20px 0; display: flex; align-items: center; justify-content: flex-start; flex-direction: row; flex-wrap: wrap}
+.common_li a,
+.common_li button,
+.common_li input,
+.common_li .search-input-wrap{margin:0 10px 10px 0}
+
+/*size*/
+.wd-335{width:335px !important}
+.tac{text-align:center}
+
+/*button*/
+.btn_basic_01{width:auto;height:52px;color:var(--tai-white);font-size:var(--tai-body-font-size);
+  background:var(--tai-green);border:1px solid var(--tai-btn-border-green); box-shadow: 0 3px 4px 0 rgba(134, 134, 134, 0.25);
+  border-radius:10px 0 10px 0; font-weight:500;align-items: center; display:flex; justify-content: center;}
+
+.btn_basic_01:hover{background:var(--tai-green-200);color:var(--tai-white)}
+
+.btn_basic_02{width:auto;height:52px;color:var(--tai-white);font-size:var(--tai-font-size-18);background:var(--tai-gray);border-radius: 10px;font-weight:500;align-items: center; display:flex; justify-content: flex-start;padding:0 40px;position:relative;}
+.btn_basic_02:after{content:"→";position:absolute;right:40px}
+.btn_basic_02:hover{background:var(--tai-black-200);color:var(--tai-white)}
+
+/*modal*/
+
+.modal_not_scroll{position:fixed;overflow:hidden;width:100%;height:100%;}
+
+.modal_all_wrap{width:100%; height:100%;position:fixed;background:rgba(0,0,0,0.9);z-index:60;display:none;}
+
+.modal_all_wrap .modal_con{width:450px;height:310px;
+    background:var(--tai-white);
+    border-radius: 30px;
+    position:absolute;
+}
+
+
+
+
+
+

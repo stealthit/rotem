@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-2{fill:none}.cls-3,.cls-4{stroke:none}.cls-4{fill:#555}
+        </style>
+    </defs>
+    <g id="ic-file" transform="translate(0 -31.619)">
+        <g id="패스_42" data-name="패스 42" class="cls-2">
+            <path class="cls-3" d="M1 0h7.873L14 5.156V15a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1z" transform="translate(1 31.619)"/>
+            <path class="cls-4" d="M2 2v12h10V5.98L8.041 2H2M1 0h7.873L14 5.156V15a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1z" transform="translate(1 31.619)"/>
+        </g>
+        <g id="패스_41" data-name="패스 41" class="cls-2">
+            <path class="cls-3" d="m0 0 6 6H0z" transform="translate(9 31.619)"/>
+            <path class="cls-4" d="m0 0 6 6H0V0z" transform="translate(9 31.619)"/>
+        </g>
+    </g>
+</svg>

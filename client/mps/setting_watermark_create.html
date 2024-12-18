@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting active">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+<div class="top">
+	<div class="user-info-box">
+        <div class="profile">
+            <button type="button" class="profile-dropdown"></button>
+        </div>
+        <div class="dropdown">
+            <div class="user-info">
+                <div class="user-top">
+                    <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                    <span class="division">I</span>
+                    <span class="position">슈퍼관리자</span>
+                </div>
+                <div class="user-bottom">
+                    <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                </div>
+            </div>
+            <button type="button" class="logout-btn">로그아웃</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 환경설정 > 워터마크 관리
+            </div>
+            <div class="page-title">
+                워터마크 관리
+            </div>
+            <form method="post">
+                <div class="watermark-detail-wrapper">
+                    <p class="explain">워터마크 종류를 선택해 주십시오</p>
+                    <ul class="watermark-list-group">
+                        <li>
+                            <input type="checkbox" name="" id="wm-print">
+                            <label for="wm-print">
+                                <span>프린트</span>
+                                <img src="./imges/ico-watermark-print-n.png" alt="">
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="wm-copy">
+                            <label for="wm-copy">
+                                <span>복사</span>
+                                <img src="./imges/ico-watermark-copy-n.png" alt="">
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="wm-qr">
+                            <label for="wm-qr">
+                                <span>QR코드</span>
+                                <img src="./imges/ico-watermark-qr-n.png" alt="">
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="wm-fax">
+                            <label for="wm-fax">
+                                <span>팩스</span>
+                                <img src="./imges/ico-watermark-fax-n.png" alt="">
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="wm-scan">
+                            <label for="wm-scan">
+                                <span>스캔</span>
+                                <img src="./imges/ico-watermark-scan-n.png" alt="">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="submit-btn-group">
+                    <button type="button" class="cancel-btn bdcolor ftcolor">
+                        취소
+                    </button>
+                    <button type="button" class="confirm-btn bgcolor">
+                        다음
+                    </button>
+                </div>
+            </form>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 1600px;
+            margin: 0 160px;
+        }
+    </style>
+</head>
+<body>    
+    <div class="location">
+        <span><a href="#">Component</a></span>
+    </div>
+    <div class="main common_box" style="padding: 20px 30px;">
+        <div>CheckBox</div>
+        <input type="checkbox" checked>
+
+        <div>SelectBox</div>
+        <select name="" id="" style="width: 150px;">
+            <option value="">전체</option>
+            <option value="">select1</option>
+            <option value="">select2</option>
+            <option value="">select3</option>
+            <option value="">select4</option>
+        </select>
+        
+        <div>Menu</div>
+        
+
+        <div>Table</div>
+        <table class="jb-table">
+            <caption>A summary of the UK's most famous punk bands</caption>
+            
+              <tr>
+                <th scope="col">Band</th>
+                <th scope="col">Year formed</th>
+                <th scope="col">No. of Albums</th>
+                <th scope="col">Most famous song</th>
+              </tr>
+            
+            <tr>
+                <th scope="row">The Stranglers</th>
+                <td>1974</td>
+                <td>17</td>
+                <td>No More Heroes</td>
+              </tr>            
+            
+                <tr>
+                  <th scope="row" colspan="2">Total albums</th>
+                  <td colspan="2">77</td>
+                </tr>            
+        </table>
+    </div>
+
+    <div data-include-path="footer.html"></div>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

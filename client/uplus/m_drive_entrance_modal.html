@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 1050px)">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 팝업 -->
+        <div class="mob-alert  active">
+            <div class="enter-ask-content enter-content active">
+                <div class="space">
+                    <div class="top">
+                    <p>협업 드라이브에 입장 허용 요청이 <span class="mobile2 ht0"><br /></span>도착하였습니다.</p>
+                    <button type="button" class="alert-close-btn"></button>
+                    </div>
+                    <div class="ask-box">
+                        <div class="user-ask-group">
+                            <p class="title">요청자</p>
+                            <div class="user-ask">
+                                <div><img src="img/img-user.png" alt="user"></div>
+                                <div>
+                                    <span class="account">계정명</span>
+                                    <span>id@U2drive.com</span>
+                                </div>
+                            </div>
+                            <p class="title">협업 드라이브</p>
+                            <div><p>협업 드라이브명1</p></div>
+                            <p class="title admit">입장 허용</p>
+                            <div>
+                                <button type="button" class="yes-btn">수락</button>
+                                <button type="button" class="no-btn">거절</button>
+                            </div>
+                        </div>
+                        <div class="user-ask-group">
+                            <p class="title">요청자</p>
+                            <div class="user-ask">
+                                <div><img src="img/img-user.png" alt="user"></div>
+                                <div>
+                                    <span class="account">계정명</span>
+                                    <span>id@U2drive.com</span>
+                                </div>
+                            </div>
+                            <p class="title">협업 드라이브</p>
+                            <div><p>협업 드라이브명1</p></div>
+                            <p class="title admit">입장 허용</p>
+                            <div>
+                                <button type="button" class="yes-btn">수락</button>
+                                <button type="button" class="no-btn">거절</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot">
+                    <button type="button" class="close-btn confirm-btn okay" style="margin:0 auto">닫기</button>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 헤더 -->
+        <div class="header-wrap"></div>
+        <!-- 내용 영역 -->
+        <div class="content-wrap">
+            <!-- 드라이브 리스트 -->
+            <div class="drive-list-wrap">
+                <ul id="drive-list">
+                    <li class="depth-1" id="my-drive">
+                        <i class="arrow"></i>
+                        <i class="my-drive-icon"></i>
+                        <button type="button">내 드라이브</button>
+                        <ul class="depth-2">
+                            <li>
+                                <i class="arrow"></i>
+                                <i class="folder-icon"></i>
+                                <button type="button">폴더명 1</button>
+                            </li>
+                            <li>
+                                <i class="arrow"></i>
+                                <i class="folder-icon"></i>
+                                <button type="button">폴더명 2</button>
+                            </li>
+                            <li>
+                                <i class="arrow"></i>
+                                <i class="folder-icon"></i>
+                                <button type="button">폴더명 3</button>
+                                <ul class="depth-3">
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명 1</button>
+                                    </li>
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명 2</button>
+                                    </li>
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명 3</button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth-1" class="share-drive-box">
+                        <i class="arrow"></i>
+                        <i class="share-drive-icon"></i>
+                        <button type="button">협업 드라이브</button>
+                    </li>
+                    <li class="btn-box">
+                        <button type="button" id="share-drive-btn">
+                            <i></i><span>협업 드라이브 만들기</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="trash-box">
+                    <button type="button" id="trash-btn">
+                        <i></i><span>휴지통</span>
+                    </button>
+                </div>
+                <!-- 용량 -->
+                <div class="storage-box">
+                    <div class="gauge-wrap">
+                        <p>
+                            <span class="remain-cap">12.1</span>/
+                            <span class="total-cap">30</span>
+                        </p>
+                        <div class="gauge-bar"></div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button type="button" id="add-strg-btn">
+                        <span>용량 추가</span>
+                    </button>
+                </div>
+            </div>
+            <!-- 컨텐츠 -->
+            <div class="content-wrap-inner">
+                <div class="topper">
+                    <div class="top-left">
+                        <button type="button" id="new-folder-btn">새폴더</button>
+                        <button type="button" id="upload" class="tool-btn">업로드</button>
+                        <ul class="menu-box" id="upload-box">
+                            <li><button type="button" id="upload-file-btn">파일 업로드</button></li>
+                            <li><button type="button" id="upload-folder-btn">폴더 업로드</button></li>
+                        </ul>
+                    </div>
+                    <div class="top-right">
+                        <button type="button" id="sort" class="tool-btn">정렬</button>
+                        <button type="button" id="view-type" class="tool-btn"><span></span></button>
+                        <ul class="menu-box" id="sort-box">
+                            <li><button type="button" id="sort-name-btn">이름</button></li>
+                            <li><button type="button" id="sort-date-btn">수정한 날짜</button></li>
+                            <li><button type="button" id="sort-size-btn">크기</button></li>
+                        </ul>
+                        <ul class="menu-box" id="view-type-box">
+                            <li>
+                                <i></i><button type="button" id="view-gallery-btn">갤러리로 보기</button>
+                            </li>
+                            <li>
+                                <i></i><button type="button" id="view-grid-btn">그리드로 보기</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="content">
+                    <div class="content-inner">
+                        
+                     </div>
+                </div>
+
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/common.js"></script>
+<script>
+    $(function () {
+        // 입장 수락/거절
+        $(".yes-btn").click(function(){
+            $(this).parent().text("수락 되었습니다.");
+            
+        });
+        $(".no-btn").click(function(){
+            $(this).parent().text("거절 되었습니다.");
+        });
+        //알림창닫기
+        // $('.close-btn').on('click', function () {
+        //     $('.mob-alert').removeClass('active');
+        // })
+        // $('.alert-close-btn').on('click', function () {
+        //     $('.mob-alert').removeClass('active');
+        // })
+    });
+</script>
+</html>

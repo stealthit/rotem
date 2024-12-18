@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42.397" height="42.321">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#d7dde2;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="ic-watch-day-n" transform="translate(.397 .429)">
+        <g id="그룹_141" data-name="그룹 141" transform="translate(1.103 1.071)">
+            <path id="패스_28314" data-name="패스 28314" class="cls-1" d="M4.352 6.786A3 3 0 0 0 1.357 9.78v26.952a3 3 0 0 0 2.995 2.995h32.941a3 3 0 0 0 2.995-2.995V9.78a3 3 0 0 0-2.995-2.995H31.3" transform="translate(-1.357 -.796)"/>
+            <path id="선_35" data-name="선 35" class="cls-1" transform="translate(0 17.968)" d="M0 0h38.93"/>
+            <path id="선_36" data-name="선 36" class="cls-1" transform="translate(8.984)" d="M0 0v11.979"/>
+            <path id="선_37" data-name="선 37" class="cls-1" transform="translate(29.946)" d="M0 0v11.979"/>
+            <path id="선_38" data-name="선 38" class="cls-1" transform="translate(8.984 5.989)" d="M0 0h14.973"/>
+        </g>
+    </g>
+</svg>

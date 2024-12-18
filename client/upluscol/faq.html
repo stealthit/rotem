@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U2 Collaboration</title>
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- <link href="css/style_account.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)" />
+  </head>
+  <body>
+    <div id="wrapper" class="faq_wrap" id="LC_Page_40000">
+      <header class="faq-header">
+        <a href="#"
+          ><div class="faq-logo"><img src="img/img-logo.svg" alt="" /></div
+        ></a>
+      </header>
+      <section class="faq-wrap">
+        <h1 class="faq-title tac">FAQ</h1>
+        <div class="search-input-wrap">
+          <input
+            type="text"
+            placeholder="검색어를 입력하세요"
+            id="search-input"
+          />
+          <button type="submit" id="search-btn">
+            <img src="img/ic-search.svg" alt="" />
+          </button>
+        </div>
+        <ul class="faq-tab-menu">
+          <li class="current">전체</li>
+          <li>회원가입</li>
+          <li>로그인</li>
+          <li>결제</li>
+        </ul>
+        <table class="tb-layout" id="tb-faq" summary="FAQ내용">
+          <colgroup>
+            <col width="15%" />
+            <col width="80%" />
+            <col width="5%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="tac" scope="col">분류</th>
+              <th colspan="2">내용</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+      <footer class="faq-footer">
+        <div class="faq-bottom-logo">
+          <img src="img/img-logo-bottom.svg" alt="" />
+        </div>
+        <p class="copyright">ⓒ Copyright@U2 co., Ltd. All rights reserved</p>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var faqTableData = [
+            [
+              "회원가입",
+              "회원가입FAQ 1번 질문이 나옵니다.",
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+            ],
+            [
+              "로그인",
+              "로그인FAQ 1번 질문이 나옵니다.",
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+            ],
+            [
+              "결제",
+              "결제FAQ 질문이 나옵니다.",
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+            ],
+            [
+              "로그인",
+              "로그인FAQ 2번 질문이 나옵니다.",
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+            ],
+            [
+              "로그인",
+              "로그인FAQ 1번 질문이 나옵니다.",
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+            ],
+            [
+              "결제",
+              "결제FAQ 질문이 나옵니다.",
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+            ],
+            [
+              "로그인",
+              "로그인FAQ 2번 질문이 나옵니다.",
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+            ],
+            [
+              "회원가입",
+              "로그인FAQ 2번 질문이 나옵니다.",
+              "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
+            ],
+          ],
+          tbFAQ = document.getElementById("#tb-faq");
+
+        setTableBody(faqTableData, tbFAQ);
+
+        var elements = document.querySelectorAll("tbody tr"); // 모든 영역 접기
+        elements.forEach(function (el) {
+          if (el.className == "view") {
+            el.style.display = "none";
+          } else if (el.className == "display-view") {
+            el.onclick = switchDisplay;
+          }
+        });
+
+        // 상태에 따라 접거나 펼치기
+        function switchDisplay() {
+          var target = this.nextSibling; //view
+          var detailImg = this.querySelector("td img");
+
+          if (target.style.display == "table-row") {
+            target.style.display = "none";
+            if (detailImg.className == "close-detail") {
+              detailImg.classList.remove("close-detail");
+            }
+            detailImg.classList.add("open-detail");
+          } else {
+            target.style.display = "table-row";
+            if (detailImg.className == "open-detail") {
+              detailImg.classList.remove("open-detail");
+            }
+            detailImg.classList.add("close-detail");
+          }
+        }
+
+        var tabMenu = document.querySelectorAll(".faq-tab-menu li");
+        tabMenu.forEach(function (data) {
+          data.addEventListener("click", function () {
+            event.preventDefault();
+            let current = document.querySelector(".faq-tab-menu li.current");
+            current.classList.remove("current");
+            data.classList.add("current");
+
+            //분류별 탭메뉴 클릭시 분류별로 sorting 기능 적용
+            var k = data.innerHTML;
+            var selData = document.querySelectorAll("#tb-faq > tbody > tr");
+
+            if (k == "전체") {
+              selData.forEach(function (el) {
+                if (el.className == "view") {
+                  el.style.display = "none";
+                } else {
+                  el.style.display = "";
+                }
+              });
+            } else {
+              selData.forEach(function (el) {
+                if (el.firstChild.textContent == k) {
+                  el.style.display = "";
+                } else {
+                  el.style.display = "none";
+                }
+              });
+            }
+          });
+        });
+
+        // 배열데이타 table tag로
+        function setTableBody(tableData, tableID) {
+          tableData.forEach(function (data) {
+            var addTag = "";
+
+            data.forEach(function (el, i) {
+              if (i == 0) {
+                addTag =
+                  '<tr class="display-view"><td class="tac">' + el + "</td>";
+              } else if (i == 1) {
+                addTag += '<td class="width-span" scope="col">' + el + "</td>";
+                addTag += '<td scope="col"><img class="open-detail"></td></tr>';
+              } else if (i == 2) {
+                addTag +=
+                  '<tr class="view"><td colspan="3">' + el + "</td></tr>";
+              }
+            });
+            var tbody = document.querySelector("tbody");
+            tbody.innerHTML += addTag;
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

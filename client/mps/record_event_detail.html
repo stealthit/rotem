@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history active">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+<div class="top">
+	<div class="user-info-box">
+        <div class="profile">
+            <button type="button" class="profile-dropdown"></button>
+        </div>
+        <div class="dropdown">
+            <div class="user-info">
+                <div class="user-top">
+                    <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                    <span class="division">I</span>
+                    <span class="position">슈퍼관리자</span>
+                </div>
+                <div class="user-bottom">
+                    <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                </div>
+            </div>
+            <button type="button" class="logout-btn">로그아웃</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 이력조회 > 로그 이벤트 현황
+            </div>
+            <div class="page-title">
+                로그 이벤트 현황
+            </div>
+            <div class="tab-content tmg26 active">
+                <div class="content-wrapper">
+                    <div class="detail-box">
+                        <div class="row ">
+                            <div class="detail-title log_border_top">서버</div>
+                            <div class="detail-content border-top">서버1 (10.1.112.225)
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="detail-title">시간</div>
+                            <div class="detail-content">2021-05-11 10:24:24,875
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="detail-title">모듈</div>
+                            <div class="detail-content">AUTH
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="detail-title">구분</div>
+                            <div class="detail-content">ERROR</div>
+                        </div>
+                        <div class="row">
+                            <div class="detail-title">메시지</div>
+                            <div class="detail-content">
+                                <pre>2021-05-11 10:24:24,875 [ERROR] System.Net.Sockets.SocketException (0x80004005): 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다 127.0.0.1:62300
+                                위치: System.Net.Sockets.TcpClient..ctor(String hostname, Int32 port)
+                                위치: CKBSAUTH.Protocol.SocketProcess.SendPrintServer(String printMode, String deviceIp, String userId, String apIp, Int32 apPort) 파일 D:\yjpark\project\
+                                ckbsauth\workspace\CKBSManagerV3.2.1.132_메모리로변경중\CKBSAUTH\Protocol\SocketProcess.cs:줄 1237
+                             </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="goto-list-btn-row">
+                <button onclick="window.history.back();" class="bgcolor">목록</button>
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <script>
+        $(function () {
+        });
+    </script>
+</body>
+
+</html>

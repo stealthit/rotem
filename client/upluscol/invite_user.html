@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>U2 Collaboration</title>
+    <!--script  src="http://code.jquery.com/jquery-latest.min.js"></script-->
+    
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link href="css/common.css" rel="stylesheet" />
+    <!--link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)"-->
+</head>
+<body>
+  <div class="wrapper" id="LC_Page_20000">
+    <!-- 팝업 -->
+
+    <!-- 내용 영역 -->
+    <section id="content-wrap">
+      <!--lnb-load-->
+      <div class="layout-account-wrap">
+        <div id="lnb-wrap">
+          <div class="user-con"><a href="#" class="tool-btn" id="user-type">홍길동 님</a> <a href="#" class="btn_rect_gray tac" alt="소유한 계정">소유한 계정</a></div>
+          <!--prev-->
+          <div class="account-btn-prev">
+            <a href="#"><span>아이콘</span>이전으로</a>
+          </div>
+          <!--nav-->
+          <nav>
+            <div class="nav-tit">계정정보</div>
+            <ul class="nav-ul">
+              <li><a href="account_setting.html" class="active"><span><img src="img/ic-setting.svg"></span>계정설정</a></li>
+              <li><a href="add_user.html"><span><img src="img/ic-left-user-add-n.svg"></span>사용자추가</a></li>
+              <li><a href="team.html" ><span><img src="img/ic-left-team-n.svg"></span>팀</a></li>
+              <li><a href="account_info.html"><span><img src="img/ic-left-payment-n.svg"></span>결제정보</a></li>
+            </ul>
+            <div class="nav-tit">설정</div>
+            <ul class="nav-ul">
+              <li><a href="profile.html"><span><img src="img/ic-left-profile-n.svg"></span>프로필</a></li>
+              <li><a href="notice.html"><span><img src="img/ic-left-alert-n.svg"></span>알림</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- 컨텐츠 -->
+      <div class="content-wrap-inner">
+        <section id="header-wrap">
+          <header>
+            <div class="func-wrap">
+              <div class="func-mobile-list"><button type="button" id="tree-trigger-btn">리스트</button></div>
+              사용자 초대
+            </div>
+          </header>
+        </section>
+        <section id="content">
+          <div class="invite-user-wrap">
+            <div class="invite-user-top">
+              <div class="user-image"></div>
+              <p>초대 할 사용자 이메일을 입력하세요.</p>
+            </div>
+            <ul class="input-email">
+              <li>이메일</li>
+              <li>
+                <input type="text" class="search-input02" placeholder="example@naver.com">
+              </li>
+              <li>
+                <input type="text" class="search-input02" placeholder="example@naver.com">
+              </li>
+              <li>
+                <input type="text" class="search-input02" placeholder="example@naver.com">
+              </li>              
+            </ul>
+            <div>
+              <button class="btn_rect_white btn-add-email" alt="이메일 추가"><span>+</span>이메일 추가</button>
+            </div>
+          </div>
+          <div class="invite-user-footer">
+            <div class="invite-footer01">
+              <p>권한</p>
+              <select class="select">
+                <option selected>관리자</option>
+                <option>사용자</option>
+              </select>   
+            </div>
+            <div class="invite-footer02">
+              <a href="#" class="btn_rect_black" alt="확인">확인</a>
+            </div>
+          </div> 
+        </section>
+      </div>
+    </section>    
+  </div>
+  <script>
+
+      //탭 메뉴
+    var tabList = document.querySelectorAll('.tab_list_wrap .tab_list');
+
+      Array.prototype.forEach.call(tabList, function(list) {
+
+        list.children[0].addEventListener('click', function(e) {
+          e.preventDefault();
+
+          var tabContent = document.querySelectorAll('.tab_container .tab_content');
+
+          var tabNum = this.parentElement.getAttribute('data-tabnum');
+
+          Array.prototype.forEach.call(tabContent, function(cont, i) {
+            cont.style.display = 'none';
+            tabList[i].className = 'tab_list';
+          });
+
+          tabContent[tabNum].style.display = 'block';
+
+          if(list.className.indexOf('tab_active') == -1) {
+            list.className = 'tab_list tab_active';
+          }
+        });
+      });
+
+      var btAddEmail = document.querySelector('.btn-add-email');
+      btAddEmail.addEventListener('click',function(){        
+        var ulInputEmail = document.querySelector('.input-email');
+        var inputCount = ulInputEmail.querySelectorAll('li').length;
+        if (inputCount < 11){
+          ulInputEmail.innerHTML += '<li><input type="text" class="search-input02" placeholder="example@naver.com"></li>';
+        } else {
+          // this.disabled = true;
+        }
+      });
+  </script>
+</body>
+
+</html>

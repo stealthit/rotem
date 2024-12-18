@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 1050px)">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 헤더 -->
+        <div class="header-wrap"></div>
+        <!-- 내용 영역 -->
+        <div class="content-wrap">
+            <!-- 드라이브 리스트 -->
+            <div class="drive-list-wrap">
+                <ul id="drive-list">
+                    <!-- 내 드라이브 -->
+                    <li id="my-drive" data-child="1">
+                        <i class="arrow"></i>
+                        <i class="my-drive-icon"></i>
+                        <button type="button">내 드라이브</button>
+                        <ul class="child-node child1">
+                            <li class="parent-node" id="parent1-1" data-child="2">
+                                <i class="arrow"></i>
+                                <i class="folder-icon"></i>
+                                <button type="button">폴더명 1</button>
+                                <ul class="child-node child2">
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명 2-1</button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="arrow"></i>
+                                <i class="folder-icon"></i>
+                                <button type="button">폴더명 2222222222222222</button>
+                            </li>
+                            <li class="parent-node" id="parent1-2" data-child="2">
+                                <i class="arrow"></i>
+                                <i class="folder-icon"></i>
+                                <button type="button">폴더명 3</button>
+                                <ul class="child-node child2">
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명 2-111111111111111</button>
+                                    </li>
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명 2-2</button>
+                                    </li>
+                                    <li class="parent-node" id="parent2-1" data-child="3">
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명 2-3</button>
+                                        <ul class="child-node child3">
+                                            <li>
+                                                <i class="arrow"></i>
+                                                <i class="folder-icon"></i>
+                                                <button type="button">폴더명 3-1</button>
+                                            </li>
+                                            <li>
+                                                <i class="arrow"></i>
+                                                <i class="folder-icon"></i>
+                                                <button type="button">폴더명 3-2</button>
+                                            </li>
+                                            <li class="parent-node" id="parent3-1" data-child="4">
+                                                <i class="arrow"></i>
+                                                <i class="folder-icon"></i>
+                                                <button type="button">폴더명 3-3</button>
+                                                <ul class="child-node child4">
+                                                    <li>
+                                                        <i class="arrow"></i>
+                                                        <i class="folder-icon"></i>
+                                                        <button type="button">폴더명 4-1</button>
+                                                    </li>
+                                                    <li class="parent-node" id="parent4-1" data-child="5">
+                                                        <i class="arrow"></i>
+                                                        <i class="folder-icon"></i>
+                                                        <button type="button">폴더명 4-2</button>
+                                                        <ul class="child-node child5">
+                                                            <li>
+                                                                <i class="arrow"></i>
+                                                                <i class="folder-icon"></i>
+                                                                <button type="button">폴더명5-1</button>
+                                                            </li>
+                                                            <li class="parent-node" id="parent5-1" data-child="6">
+                                                                <i class="arrow"></i>
+                                                                <i class="folder-icon"></i>
+                                                                <button type="button">폴더명 5-2</button>
+                                                                <ul class="child-node child6">
+                                                                    <li>
+                                                                        <i class="arrow"></i>
+                                                                        <i class="folder-icon"></i>
+                                                                        <button type="button">폴더명6-1</button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="arrow"></i>
+                                                                        <i class="folder-icon"></i>
+                                                                        <button type="button" title="폴더명 6-2">폴더명
+                                                                            6-2</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 협업 드라이브 -->
+                    <li class="share-drive-box" id="share-drive" data-child="1">
+                        <i class="arrow"></i>
+                        <i class="share-drive-icon"></i>
+                        <button type="button">협업 드라이브</button>
+                        <ul class="child-node child1">
+                            <!-- 협업 마스터 드라이브 -->
+                            <li class="parent-node" id="parent1-1" data-child="2">
+                                <i class="arrow"></i>
+                                <i class="share-drive-master-icon"></i>
+                                <button type="button" class="new">폴더명1</button>
+                                <ul class="child-node child2">
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명2-1</button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 협업 멤버 드라이브 -->
+                            <li>
+                                <i class="arrow"></i>
+                                <i class="share-drive-member-icon"></i>
+                                <button type="button" class="new">폴더명2222222222222222</button>
+                            </li>
+                            <li class="parent-node " id="parent1-2" data-child="2">
+                                <i class="arrow"></i>
+                                <i class="share-drive-member-icon"></i>
+                                <button type="button">폴더명3</button>
+                                <ul class="child-node child2">
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명2-111111111111111</button>
+                                    </li>
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명2-2</button>
+                                    </li>
+                                    <li class="parent-node" id="parent2-1" data-child="3">
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명2-3</button>
+                                        <ul class="child-node child3">
+                                            <li>
+                                                <i class="arrow"></i>
+                                                <i class="folder-icon"></i>
+                                                <button type="button">폴더명3-1</button>
+                                            </li>
+                                            <li>
+                                                <i class="arrow"></i>
+                                                <i class="folder-icon"></i>
+                                                <button type="button">폴더명 3-2</button>
+                                            </li>
+                                            <li class="parent-node" id="parent3-1" data-child="4">
+                                                <i class="arrow"></i>
+                                                <i class="folder-icon"></i>
+                                                <button type="button">폴더명 3-3</button>
+                                                <ul class="child-node child4">
+                                                    <li>
+                                                        <i class="arrow"></i>
+                                                        <i class="folder-icon"></i>
+                                                        <button type="button">폴더명 4-1</button>
+                                                    </li>
+                                                    <li class="parent-node" id="parent4-1" data-child="5">
+                                                        <i class="arrow"></i>
+                                                        <i class="folder-icon"></i>
+                                                        <button type="button">폴더명 4-2</button>
+                                                        <ul class="child-node child5">
+                                                            <li>
+                                                                <i class="arrow"></i>
+                                                                <i class="folder-icon"></i>
+                                                                <button type="button">폴더명5-1</button>
+                                                            </li>
+                                                            <li class="parent-node" id="parent5-1" data-child="6">
+                                                                <i class="arrow"></i>
+                                                                <i class="folder-icon"></i>
+                                                                <button type="button">폴더명 5-2</button>
+                                                                <ul class="child-node child6">
+                                                                    <li>
+                                                                        <i class="arrow"></i>
+                                                                        <i class="folder-icon"></i>
+                                                                        <button type="button">폴더명6-1</button>
+                                                                    </li>
+                                                                    <li class="parent-node" id="parent6-1"
+                                                                        data-child="7">
+                                                                        <i class="arrow"></i>
+                                                                        <i class="folder-icon"></i>
+                                                                        <button type="button" title="폴더명 6-2">폴더명
+                                                                            6-2</button>
+                                                                        <ul class="child-node child7">
+                                                                            <li>
+                                                                                <i class="arrow"></i>
+                                                                                <i class="folder-icon"></i>
+                                                                                <button type="button">폴더명7-1</button>
+                                                                            </li>
+                                                                            <li class="parent-node" id="parent7-1"
+                                                                                data-child="8">
+                                                                                <i class="arrow"></i>
+                                                                                <i class="folder-icon"></i>
+                                                                                <button type="button"
+                                                                                    title="폴더명 7-2">폴더명 7-2</button>
+                                                                                <ul class="child-node child8">
+                                                                                    <li>
+                                                                                        <i class="arrow"></i>
+                                                                                        <i class="folder-icon"></i>
+                                                                                        <button
+                                                                                            type="button">폴더명8-1</button>
+                                                                                    </li>
+                                                                                    <li class="parent-node"
+                                                                                        id="parent8-1" data-child="9">
+                                                                                        <i class="arrow"></i>
+                                                                                        <i class="folder-icon"></i>
+                                                                                        <button type="button"
+                                                                                            title="폴더명 9-2">폴더명
+                                                                                            9-2</button>
+                                                                                        <ul class="child-node child9">
+                                                                                            <li>
+                                                                                                <i class="arrow"></i>
+                                                                                                <i
+                                                                                                    class="folder-icon"></i>
+                                                                                                <button
+                                                                                                    type="button">폴더명8-1</button>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <i class="arrow"></i>
+                                                                                                <i
+                                                                                                    class="folder-icon"></i>
+                                                                                                <button type="button"
+                                                                                                    title="폴더명 9-2">폴더명
+                                                                                                    9-2</button>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="btn-box">
+                    <button type="button" id="share-drive-btn">
+                        <i></i><span>협업 드라이브 만들기</span>
+                    </button>
+                    <button type="button" id="make-share-drive-btn">
+                        <i></i><span>신규 협업 추가</span>
+                    </button>
+                </div>
+                <div class="trash-box">
+                    <button type="button" id="trash-btn">
+                        <i></i><span>휴지통</span>
+                    </button>
+                </div>
+                <!-- 용량 -->
+                <div class="storage-box">
+                    <div class="gauge-wrap">
+                        <p>
+                            <span class="remain-cap">12.1</span>/
+                            <span class="total-cap">30</span>
+                        </p>
+                        <div class="gauge-bar"></div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button type="button" id="add-strg-btn">
+                        <span>용량 추가</span>
+                    </button>
+                </div>
+            </div>
+            <ul id="folder-menu"></ul>
+            <!-- 컨텐츠 -->
+            <div class="content-wrap-inner">
+                <div class="topper">
+                    <div class="top-left">
+                        <div class="mobile">
+                            <button type="button" id="tree-trigger-btn"></button>
+                        </div>
+                        <button type="button" id="new-folder-btn1">새폴더</button>
+                        <button type="button" id="upload" class="tool-btn">업로드</button>
+                        <ul class="menu-box" id="upload-box">
+                            <li>
+                                <button type="button" id="upload-file-btn">파일 업로드</button>
+                                <input type="file" id="file" name="file" style="display: none;" />
+                            </li>
+                            <li>
+                                <button type="button" id="upload-folder-btn">폴더 업로드</button>
+                                <input type="file" id="folder" name="folder" webkitdirectory directory
+                                    style="display: none;">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-right">
+                        <button type="button" id="sort" class="tool-btn">정렬</button>
+                        <button type="button" id="view-type" class="tool-btn"><span></span></button>
+                        <ul class="menu-box" id="sort-box">
+                            <li><button type="button" id="sort-name-btn">이름</button></li>
+                            <li><button type="button" id="sort-date-btn">수정한 날짜</button></li>
+                            <li><button type="button" id="sort-size-btn">크기</button></li>
+                        </ul>
+                        <ul class="menu-box" id="view-type-box">
+                            <li>
+                                <i></i><a href="" id="view-gallery-btn">갤러리로 보기</a>
+                            </li>
+                            <li>
+                                <i></i><a href="" id="view-grid-btn">그리드로 보기</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="content">
+                    <div class="content-inner">
+                        <div class="content-area">
+                            <div class="Ellipse">
+                                <img src="img/img-none.svg" alt="file upload">
+                                <p>작업 파일을 업로드해 보세요</p>
+                            </div>
+
+                        </div>
+                        <div class="drag-upload-box">
+                            <form action="">
+                                <p>파일을 업로드하려면 여기로 끌어오세요.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 모달 -->
+        <div class="alert-background"></div>
+        <div class="upload-popup-box"></div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/common.js"></script>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>U2 Collaboration</title>
+    <!--script  src="http://code.jquery.com/jquery-latest.min.js"></script-->
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)" />
+  </head>
+  <body>
+    <div class="wrapper" id="LC_Page_30000">
+      <!-- 팝업 -->
+
+      <!-- 내용 영역 -->
+      <section id="content-wrap">
+        <!-- 컨텐츠 -->
+        <div class="content-wrap-inner">
+          <section id="header-wrap">
+            <header>
+              <div class="func-tit-wrap">
+                <div class="func-tit">
+                  <a href="#" class="prev_btn"
+                    ><img src="img/ic-page-next-n.svg" alt="이전"
+                  /></a>
+                  <h1>60 Second Cut.mp3</h1>
+                </div>
+                <div class="edit-btn"></div>
+                <div class="fun-tit-top-right">
+                  <a href="#" class="btn_rect_white mw-100 tac reviewLink"
+                    ><i class="cyan"></i> in progress <span></span
+                  ></a>
+                </div>
+              </div>
+              <div class="func-profile-wrap pc">
+                <ul class="func-top-right">
+                  <li>
+                    <a href="#" class="ic-top-wrap ic-top-user">사용자</a>
+                  </li>
+                </ul>
+              </div>
+            </header>
+          </section>
+
+          <section id="content">
+            <!--movie-->
+            <div class="mv-wrap">
+              <section class="mv-con mv-con-solo">
+                <div class="mv"></div>
+                <div class="progress-wrap">
+                  <span class="ic-progress progress0"
+                    >cmt-zone
+
+                    <div class="cmt-rect">
+                      <div class="comment-header">
+                        <div class="ic-img-user"><p></p></div>
+                        <div class="user-tit">홍길동 <span>8시간 전</span></div>
+                      </div>
+                      <div class="comment-timeline">
+                        <label>00:43</label>
+                        <p>이 부분 너무 좋은데요!! 부분 너무 좋...</p>
+                      </div>
+                    </div>
+                  </span>
+                  <!-- <span
+                    class="ic-progress progress1"
+                    style="left: calc(60% + 6px)"
+                    >cmt-zone
+
+                    <div class="cmt-rect">
+                      <div class="comment-header">
+                        <div class="ic-img-user"><p></p></div>
+                        <div class="user-tit">홍길동 <span>8시간 전</span></div>
+                      </div>
+                      <div class="comment-timeline">
+                        <label>00:43</label>
+                        <p>이 부분 너무 좋은데요!!</p>
+                      </div>
+                    </div>
+                  </span>
+                  <span
+                    class="ic-progress progress2"
+                    style="left: calc(75% + 6px)"
+                    >cmt-zone
+                    
+                    <div class="cmt-rect">
+                      <div class="comment-header">
+                        <div class="ic-img-user"><p></p></div>
+                        <div class="user-tit">홍길동 <span>8시간 전</span></div>
+                      </div>
+                      <div class="comment-timeline">
+                        <label>00:43</label>
+                        <p>이 부분 너무 좋은데요!!</p>
+                      </div>
+                    </div>
+                  </span> -->
+                  <progress class="play-progress" value="20" max="100">
+                    progress
+                  </progress>
+                  <!-- ey 220103 삭제<div class="ic-img-user progress0"><p></p></div>
+                  <div
+                    class="ic-img-user progress1"
+                    style="left: calc(60% - 3px)"
+                  >
+                    <p></p>
+                  </div>
+                  <div
+                    class="ic-img-user progress2"
+                    style="left: calc(75% - 3px)"
+                  >
+                    <p></p>
+                  </div> -->
+                </div>
+                <div class="control-wrap">
+                  <div class="ctl-left">
+                    <button class="ctl-rect ctl-play" title="재생하기">
+                      재생
+                    </button>
+                    <!--button class="ctl-rect ctl-play pause" title="정지하기">정지하기</button-->
+                    <button class="ctl-rect ctl-repeat" title="반복재생">
+                      repeat
+                    </button>
+                    <!--button class="ctl-rect ctl-repeat repeat" title="반복해제">repeat 정지</button-->
+                    <button class="ctl-rect ctl-volumn" title="음소거">
+                      볼륨
+                      <progress
+                        class="volumn-progress mobile"
+                        value="20"
+                        max="100"
+                      >
+                        progress
+                      </progress>
+                    </button>
+                    <!--button class="ctl-rect ctl-volumn mute" title="음소거 해제">볼륨</button-->
+                    <progress class="volumn-progress pc" value="20" max="100">
+                      progress
+                    </progress>
+                    <div class="ctl-timeline mobile">
+                      <span>00:55</span> / 00:53
+                    </div>
+                  </div>
+                  <div class="ctl-right">
+                    <button type="button" class="ctl-type-btn">Standard</button>
+                    <!--standard 클릭시 나오는 부분-->
+                    <ul class="menu-box" id="standard-box">
+                      <li><button type="button" id="">Standard</button></li>
+                      <li><button type="button" id="">Timecode</button></li>
+                      <li><button type="button" id="">Frames</button></li>
+                    </ul>
+                    <!--//standard 클릭시 나오는 부분-->
+                    <div class="ctl-timeline pc">
+                      <span>00:55</span> / 00:53
+                    </div>
+                    <!-- ey220103 삭제<button
+                      type="button"
+                      class="ctl-rect ctl-fullSize"
+                      title="전체화면"
+                    >
+                      전체화면
+                    </button> -->
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!--comment-->
+          </section>
+        </div>
+        <div class="layout-rnb-wrap">
+          <div id="snb-wrap">
+            <!--user-->
+            <div class="user-con">
+              <h1>홍길동님<span>2021-09-01 업로드</span></h1>
+            </div>
+            <!--detail-->
+            <div class="detail-inner">
+              <ul class="fileInfo-title">
+                <li class="" data-tab="tab-fileInfo" data-stab="tab-fileInfo">
+                  파일정보
+                </li>
+              </ul>
+              <!--파일정보-->
+              <div id="tab-fileInfo" class="tabs-inner content-inner current">
+                <ul class="fileInfo_list">
+                  <li>
+                    <label>파일명</label>
+                    <p>text.jpg</p>
+                  </li>
+                  <li>
+                    <label>등록자</label>
+                    <p>홍길동</p>
+                  </li>
+                  <li>
+                    <label>등록일</label>
+                    <p>2021-09-30 19:00</p>
+                  </li>
+                  <li>
+                    <label>xxh64</label>
+                    <p>5afeniow03mr223f0</p>
+                  </li>
+                  <li>
+                    <label>코덱</label>
+                    <p>JPEG</p>
+                  </li>
+                  <li>
+                    <label>사이즈</label>
+                    <p>5618x3739</p>
+                  </li>
+                  <li>
+                    <label>용량</label>
+                    <p>4.8MB</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

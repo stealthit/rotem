@@ -1,0 +1,21 @@
+<svg id="ic-file-video" xmlns="http://www.w3.org/2000/svg" width="180" height="114" viewBox="0 0 180 114">
+    <defs>
+        <linearGradient id="linear-gradient" y1="1" x2="0" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#cad1d8" stop-opacity=".502"/>
+            <stop offset="1" stop-color="#cad1d8" stop-opacity="0"/>
+        </linearGradient>
+        <style>
+            .cls-2{fill-rule:evenodd;fill:#576d7e}
+        </style>
+    </defs>
+    <path id="패스_17" data-name="패스 17" d="M0 0h180v114H0z" style="fill-rule:evenodd;fill:transparent"/>
+    <path id="패스_18" data-name="패스 18" class="cls-2" d="M128.6 25.988H51.4a2.394 2.394 0 0 0-2.4 2.385v57.253a2.394 2.394 0 0 0 2.4 2.385h77.2a2.392 2.392 0 0 0 2.4-2.385V28.373a2.393 2.393 0 0 0-2.4-2.385z"/>
+    <path id="패스_19" data-name="패스 19" d="M67 88.011h46V25.988H67z" style="fill:#f7f9fa;fill-rule:evenodd"/>
+    <path id="패스_20" data-name="패스 20" d="M67 88.011h46V25.988H67z" style="fill:url(#linear-gradient)"/>
+    <g id="그룹_18" data-name="그룹 18">
+        <path id="패스_21" data-name="패스 21" class="cls-2" d="M81.012 49.491a2.491 2.491 0 0 1 1.3-2.178 2.63 2.63 0 0 1 2.586.031l12.836 7.509a2.471 2.471 0 0 1 0 4.293L84.9 66.654a2.625 2.625 0 0 1-2.586.032 2.491 2.491 0 0 1-1.3-2.178z"/>
+    </g>
+    <g id="그룹_19" data-name="그룹 19">
+        <path id="패스_22" data-name="패스 22" d="M117.992 81.988V74.01h8.015v7.978zm0-21.979h8.015v7.979h-8.015zm0-14h8.015v7.979h-8.015zm0-14h8.015v7.978h-8.015zm-64 42h8.017v7.978h-8.018V74.01zm0-14h8.017v7.979h-8.018v-7.979zm0-14h8.017v7.979h-8.018zm0-14h8.017v7.978h-8.018V32.01z" style="fill:#fff;fill-rule:evenodd"/>
+    </g>
+</svg>

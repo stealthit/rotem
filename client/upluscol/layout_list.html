@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>U2 Collaboration</title>
+    <!--script  src="http://code.jquery.com/jquery-latest.min.js"></script-->
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)" />
+    <script>
+      function openLayer() {
+        document.getElementById("project-box-dimd").style = "display:flex";
+      }
+      function closeLayer() {
+        document.getElementById("project-box-dimd").style = "display:";
+      }
+      /*메세지 입력*/
+      function openMsg() {
+        document.getElementById("add-textarea").style = "display:flex";
+        document.getElementById("add-msg").style = "display:none";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper" id="LC_Page_10000">
+      <!-- 팝업 // 프로젝트 멤버 -->
+      <div class="dimd-bg" id="project-box-dimd">
+        <div class="menu-box active dimd" id="project-m-box">
+          <div class="mb-menu-box-title">
+            <p>프로젝트 멤버</p>
+            <div class="create-zone">
+              <div class="create-link">초대링크 생성</div>
+              <button
+                type="button"
+                class="close-btn"
+                onClick="closeLayer();"
+              ></button>
+            </div>
+          </div>
+          <input
+            type="text"
+            placeholder="이메일 주소나 이름을 입력하세요"
+            class="search-input02"
+          />
+          <div class="btn-inner">
+            <div class="add-folder">
+              <textarea id="add-textarea"></textarea>
+              <div id="add-msg">
+                <span></span
+                ><button type="button" id="open-textarea" onClick="openMsg();">
+                  메세지 입력
+                </button>
+              </div>
+            </div>
+            <div class="btn-area">
+              <a href="#" class="btn_rect_black mw-100 tac" alt="초대">초대</a>
+            </div>
+          </div>
+
+          <div class="pjt-list">프로젝트 팀원 목록</div>
+        </div>
+      </div>
+      <!-- 내용 영역 -->
+      <section id="content-wrap">
+        <div class="layout-wrap">
+          <!--lnb-->
+          <div id="lnb-wrap">
+            <div class="user-con">
+              <a href="#" class="tool-btn" id="user-type"
+                >홍길동 님 <i class="ic-arrow"></i
+              ></a>
+              <ul class="menu-box" id="user-type-box">
+                <li class="type-box-top">
+                  <div class="type-box01">
+                    <div class="ic-img-user"><p class="bg_violet">길동</p></div>
+                  </div>
+                  <div class="type-box02">
+                    <p>홍길동님</p>
+                    <p>hong@gmail.com</p>
+                  </div>
+                  <button type="button" class="close-btn"></button>
+                </li>
+                <li>
+                  <button type="button" id="file-name-btn">계정정보</button>
+                </li>
+                <li class="account-mobile">
+                  <button type="button" id="file-date-btn">멤버추가</button>
+                </li>
+                <li class="account-mobile">
+                  <button type="button" id="file-size-btn">설정</button>
+                </li>
+                <li><button type="button" id="file-size-btn">FAQ</button></li>
+                <button type="button" class="btn_rect_white tac">
+                  Log out
+                </button>
+              </ul>
+            </div>
+            <!--search-->
+            <form id="search">
+              <div class="search-input-wrap">
+                <input
+                  type="text"
+                  placeholder="검색어를 입력하세요."
+                  class="search-input"
+                />
+                <button type="submit" class="search-btn">검색 버튼</button>
+              </div>
+            </form>
+            <!-- 드라이브 리스트 -->
+
+            <div class="drive-list-wrap">
+              <ul id="drive-list">
+                <!-- 내 드라이브 -->
+                <ul id="lnb-folder">
+                  <li>
+                    <button type="button" class="lnb-root_folder">
+                      홍길동's Team
+                    </button>
+                    <button type="button" class="circle_btn" alt="추가하기">
+                      추가
+                    </button>
+                    <ul class="lnb-folder-s">
+                      <li>
+                        <button type="button">
+                          Project1
+                          <div class="ic-more">more</div>
+                          <!-- more 버튼 추가 수정 2021 12 17 -->
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button">
+                          Project2
+                          <div class="ic-more">more</div>
+                          <!-- more 버튼 추가 수정 2021 12 17 -->
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--li><button type="button" class="lnb-root_folder">홍길동's Team</button>
+                    <ul class="lnb-folder-s">
+                      <li>
+                          <button type="button">Project1</button>
+                      </li>
+                      <li>
+                          <button type="button">Project2</button>
+                      </li>
+                    </ul>
+                  </li-->
+                </ul>
+                <!-- ul추가 ey 211222 -->
+                <ul id="lnb-folder">
+                  <li>
+                    <button type="button" class="lnb-root_folder">
+                      홍길동's Team
+                    </button>
+                    <button type="button" class="circle_btn" alt="추가하기">
+                      추가
+                    </button>
+                    <ul class="lnb-folder-s">
+                      <li>
+                        <button type="button">
+                          Project1
+                          <div class="ic-more">more</div>
+                          <!-- more 버튼 추가 수정 2021 12 17 -->
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button">
+                          Project2
+                          <div class="ic-more">more</div>
+                          <!-- more 버튼 추가 수정 2021 12 17 -->
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--li><button type="button" class="lnb-root_folder">홍길동's Team</button>
+                    <ul class="lnb-folder-s">
+                      <li>
+                          <button type="button">Project1</button>
+                      </li>
+                      <li>
+                          <button type="button">Project2</button>
+                      </li>
+                    </ul>
+                  </li-->
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <!--//lnb-->
+        </div>
+
+        <!-- 컨텐츠 -->
+        <div class="content-wrap-inner">
+          <section id="header-wrap">
+            <header>
+              <div class="func-wrap">
+                <div class="func-mobile-list">
+                  <button type="button" id="tree-trigger-btn">리스트</button>
+                </div>
+                <div class="func-search-wrap">
+                  <input
+                    type="text"
+                    placeholder="jump to project of file"
+                    class="search-input"
+                  />
+                  <!--검색결과-->
+                  <div class="menu-box" id="search-result-box">
+                    <h1><strong>'abc'</strong> 검색 결과</h1>
+                    <ul class="mb-sch-list">
+                      <li class="label">프로젝트명</li>
+                      <li><a href="#">abc project</a></li>
+                      <li><a href="#">abc project</a></li>
+                      <li class="label">전체 파일 타입<span>화살</span></li>
+                      <li class="img-con">
+                        <a href="#">
+                          <div class="img"><img src="img/tmp_img.jpg" /></div>
+                          <div class="file-script">
+                            abcabcabcabcabc.mp4<span
+                              >abc 프로젝트 / 2021-09-01</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+                      <li class="img-con">
+                        <a href="#">
+                          <div class="img"><img src="img/tmp_img.jpg" /></div>
+                          <div class="file-script">
+                            abcabcabcabcabc.mp4<span
+                              >abc 프로젝트 / 2021-09-01</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <ul class="func-profile-wrap">
+                  <li>
+                    <a href="#" class="ic-top-wrap ic-top-user">사용자</a>
+                  </li>
+                  <li><a href="#" class="ic-top-wrap ic-top-bell">알림</a></li>
+                </ul>
+              </div>
+            </header>
+          </section>
+          <div class="topper">
+            <ul class="top-state">
+              <li>홍</li>
+              <li><a href="#">Project1</a></li>
+              <li>Locations</li>
+            </ul>
+            <div class="top-right">
+              <a href="#" class="circle_add_btn" alt="사용자 추가"
+                >사용자 추가</a
+              >
+              <div class="user-wrap">
+                <div class="ic-img-user">
+                  <a href="#" onClick="openLayer();"
+                    ><p class="bg_none">유저</p></a
+                  >
+                </div>
+                <div class="ic-img-user"><p class="bg_none">사람</p></div>
+                <div class="ic-img-user"><p class="bg_violet">길동</p></div>
+              </div>
+              <a href="#" class="btn_rect_black" alt="Share">Share</a>
+              <a href="#" class="btn_rect_white02 tac" alt="New"
+                >New<span>+</span></a
+              >
+            </div>
+          </div>
+
+          <section id="content">
+            <div class="tabs_inner">
+              <ul class="tabs">
+                <li
+                  class="current"
+                  data-tab="tab-media"
+                  data-stab="tab-right-media"
+                >
+                  미디어
+                </li>
+                <li class="" data-tab="tab-review" data-stab="tab-right-review">
+                  리뷰링크
+                </li>
+                <li class="" data-tab="tab-link" data-stab="tab-right-link">
+                  링크
+                </li>
+              </ul>
+              <ul class="tabs-info">
+                <ul id="tab-right-media" class="tabs-right-inner">
+                  <li class="data-info"><strong>6</strong> items</li>
+                  <li class="tool-btn-pc">
+                    <button type="button" id="file-type" class="tool-btn">
+                      파일타입
+                    </button>
+                    <ul class="menu-box" id="file-type-box">
+                      <li class="file-type-title">정렬 기준</li>
+                      <li>
+                        <button type="button" id="file-name-btn">이름순</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-date-btn">시간순</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-size-btn">
+                          파일 타입
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="tool-btn-m">
+                    <button type="button" id="file-type" class="tool-btn">
+                      타입
+                    </button>
+                    <ul class="menu-box" id="file-type-box">
+                      <li>
+                        <button type="button" id="file-name-btn">이름</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-date-btn">
+                          수정한 날짜
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-size-btn">크기</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button type="button" id="sort" class="tool-btn">
+                      <span class="gallery">정렬</span>
+                    </button>
+                    <ul class="menu-box" id="sort-box">
+                      <li>
+                        <span class="gallery"></span
+                        ><button type="button" id="sort-gallery-btn">
+                          갤러리로 보기
+                        </button>
+                      </li>
+                      <li>
+                        <span class="grid"></span
+                        ><button type="button" id="sort-grid-btn">
+                          그리드로 보기
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- <li><button type="button" id="view-more" class="more-btn">더보기</button></li> -->
+                </ul>
+              </ul>
+            </div>
+            <!--검색 결과-->
+
+            <div class="content-inner pd15">
+              <div class="tb-layout tb-review" summary="리뷰링크">
+                <ul>
+                  <li>이름</li>
+                  <li>상태</li>
+                  <li>코멘트 수</li>
+                  <li>파일크기</li>
+                  <li>업로드 날짜</li>
+                  <li>업로더</li>
+                  <li></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><span class="mv"><img src="img/img_no_image.svg" /></span
+                    ></a>
+                    <span>60 Secont Cut.mp4</span>
+                  </li>
+                  <li><i class="orange">주황</i> Needs Review</li>
+                  <li><span class="file-msg">코멘트</span>10</li>
+                  <li>10.11MB</li>
+                  <li>2021-09-11</li>
+                  <li>홍길동</li>
+                  <li><button class="more"></button></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><span class="mv"><img src="img/img_no_image.svg" /></span
+                    ></a>
+                    <span>60 Secont Cut.mp4</span>
+                  </li>
+                  <li><i class="orange">주황</i> Needs Review</li>
+                  <li><span class="file-msg">코멘트</span>10</li>
+                  <li>10.11MB</li>
+                  <li>2021-09-11</li>
+                  <li>홍길동</li>
+                  <li>
+                    <button class="more tool-btn" id="project-tool"></button>
+                    <!--edit-->
+                    <ul class="menu-box active" id="project-tool-box">
+                      <li>
+                        <span class="share"></span
+                        ><button type="button" id="">공유하기</button
+                        ><i class="ic-arrow">메뉴더보기</i>
+                      </li>
+                      <li>
+                        <span class="pen"></span
+                        ><button type="button" id="">이름수정</button>
+                      </li>
+                      <li class="divBar">구분선</li>
+                      <!--↓ 사용안되는 부분도 있습니다. 기능이 없을 땐, 이 셀을 none 바람-->
+                      <li>
+                        <span><i class="cyan"></i></span
+                        ><button type="button" id="">Needs Review</button
+                        ><i class="ic-arrow">메뉴더보기</i>
+                      </li>
+                      <!--↑ 사용안되는 부분도 있습니다. 기능이 없을 땐, 이 셀을 none 바람-->
+                      <li>
+                        <span class="move"></span
+                        ><button type="button" id="">위치이동</button>
+                      </li>
+                      <li>
+                        <span class="copy"></span
+                        ><button type="button" id="">복사</button>
+                      </li>
+                      <li>
+                        <span class="down"></span
+                        ><button type="button" id="">다운로드</button>
+                      </li>
+                      <li class="divBar">구분선</li>
+                      <li>
+                        <span class="trash"></span
+                        ><button type="button" id="">삭제</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><span class="mv"><img src="img/img_no_image.svg" /></span
+                    ></a>
+                    <span>60 Secont Cut.mp4</span>
+                  </li>
+                  <li><i class="orange">주황</i> Needs Review</li>
+                  <li><span class="file-msg">코멘트</span>10</li>
+                  <li>10.11MB</li>
+                  <li>2021-09-11</li>
+                  <li>홍길동</li>
+                  <li><button class="more"></button></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><span class="mv"><img src="img/img_no_image.svg" /></span
+                    ></a>
+                    <span>60 Secont Cut.mp4</span>
+                  </li>
+                  <li><i class="orange">주황</i> Needs Review</li>
+                  <li><span class="file-msg">코멘트</span>10</li>
+                  <li>10.11MB</li>
+                  <li>2021-09-11</li>
+                  <li>홍길동</li>
+                  <li><button class="more"></button></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><span class="mv"><img src="img/img_no_image.svg" /></span
+                    ></a>
+                    <span>60 Secont Cut.mp4</span>
+                  </li>
+                  <li><i class="orange">주황</i> Needs Review</li>
+                  <li><span class="file-msg">코멘트</span>10</li>
+                  <li>10.11MB</li>
+                  <li>2021-09-11</li>
+                  <li>홍길동</li>
+                  <li><button class="more"></button></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><span class="mv"><img src="img/img_no_image.svg" /></span
+                    ></a>
+                    <span>60 Secont Cut.mp4</span>
+                  </li>
+                  <li><i class="orange">주황</i> Needs Review</li>
+                  <li><span class="file-msg">코멘트</span>10</li>
+                  <li>10.11MB</li>
+                  <li>2021-09-11</li>
+                  <li>홍길동</li>
+                  <li><button class="more"></button></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><span class="mv"><img src="img/img_no_image.svg" /></span
+                    ></a>
+                    <span>60 Secont Cut.mp4</span>
+                  </li>
+                  <li><i class="orange">주황</i> Needs Review</li>
+                  <li><span class="file-msg">코멘트</span>10</li>
+                  <li>10.11MB</li>
+                  <li>2021-09-11</li>
+                  <li>홍길동</li>
+                  <li><button class="more"></button></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><span class="mv"><img src="img/img_no_image.svg" /></span
+                    ></a>
+                    <span>60 Secont Cut.mp4</span>
+                  </li>
+                  <li><i class="orange">주황</i> Needs Review</li>
+                  <li><span class="file-msg">코멘트</span>10</li>
+                  <li>10.11MB</li>
+                  <li>2021-09-11</li>
+                  <li>홍길동</li>
+                  <li><button class="more"></button></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><span class="mv"><img src="img/img_no_image.svg" /></span
+                    ></a>
+                    <span>60 Secont Cut.mp4</span>
+                  </li>
+                  <li><i class="green">초록</i> Approived</li>
+                  <li><span class="file-msg">코멘트</span>10</li>
+                  <li>10.11MB</li>
+                  <li>2021-09-11</li>
+                  <li>홍길동</li>
+                  <li><button class="more"></button></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><span class="mv"><img src="img/img_no_image.svg" /></span
+                    ></a>
+                    <span>60 Secont Cut.mp4</span>
+                  </li>
+                  <li><i class="cyan">파랑</i> in Progress</li>
+                  <li><span class="file-msg">코멘트</span>10</li>
+                  <li>10.11MB</li>
+                  <li>2021-09-11</li>
+                  <li>홍길동</li>
+                  <li><button class="more"></button></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <script>
+      //lnb folder
+      var toggler = document.getElementsByClassName("lnb-root_folder");
+      var i;
+
+      for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function () {
+          this.parentElement
+            .querySelector(".lnb-folder-s")
+            .classList.toggle("active");
+          this.classList.toggle("lnb-folder-down");
+        });
+      }
+    </script>
+    <!--
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>-->
+    <script src="js/script.js"></script>
+  </body>
+</html>

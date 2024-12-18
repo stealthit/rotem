@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="./css/tree.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting active">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+<div class="top">
+	<div class="user-info-box">
+        <div class="profile">
+            <button type="button" class="profile-dropdown"></button>
+        </div>
+        <div class="dropdown">
+            <div class="user-info">
+                <div class="user-top">
+                    <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                    <span class="division">I</span>
+                    <span class="position">슈퍼관리자</span>
+                </div>
+                <div class="user-bottom">
+                    <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                </div>
+            </div>
+            <button type="button" class="logout-btn">로그아웃</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 환경설정 > 프로젝트 관리
+            </div>
+            <div class="page-title">
+                프로젝트 관리
+            </div>
+            <div class="tab-content tmg26 active" id="tab1">
+                <div class="search-form">
+                    <form action="" method="post">
+                        <div class="input-content">
+                            <div class="input-row">
+                                <span class="title middle">프로젝트 명</span>
+                                <div class="form-input-text-group in_ml0mr20">
+                                    <input type="text" name="" value="" class="in_wd301" />
+                                </div>
+                                <span class="title margin-left code01 in_ml40">프로젝트 코드</span>
+                                <div class="form-input-text-group in_mg0">
+                                    <input type="text" class="tiny" name="" value=""/>
+                                </div>
+                                <button class="default-btn" type="button">중복체크</button>
+                                <!-- error -->
+                                <span class="overlap-info">
+                                    <img class="ico-service" src="./imges/ico_service_on.png" alt="imgService">
+                                    <span>사용 가능한 프로젝트 코드 입니다.</span>
+                                </span>
+                                <span class="overlap-info error">
+                                    <span>중복된 프로젝트 코드 입니다.</span>
+                                </span>
+                            </div>
+                            <div class="input-row">
+                                <span class="title middle">프로젝트 기간</span>
+                                <div class="form-input-group">
+                                    <input type="text" class="date" id="datepicker1" readonly>
+                                </div>
+                                <span class="date-division">~</span>
+                                <div class="form-input-group">
+                                    <input type="text" class="date" id="datepicker2" readonly>
+                                </div>
+                                <span class="title margin-left code">PM</span>
+                                <div class="form-input-text-group in_mg0">
+                                    <input type="text" class="tiny" name="" value="" />
+                                </div>
+                                <div class="form-input-text-group in_mr0">
+                                    <input type="text" class="tiny" name="" value="" />
+                                </div>
+                                <button class="default-btn" type="button">조회</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="content-wrapper">
+                    <span class="title">프로젝트 투입 인원</span>
+                    <div class="button-row">
+                        <div class="left">
+                            <button class="down" type="button" id="addSubjectBtn">추가</button>
+                            <button class="delete" type="button">삭제</button>
+                        </div>
+                        <div class="right">
+                            <div class="list-info">
+                                프로젝트 투입 목록 (총 <span class="ftcolor">100</span>건)
+                            </div>
+                            <select>
+                                <option value="">15개씩</option>
+                                <option value="">30개씩</option>
+                                <option value="">50개씩</option>
+                                <option value="">100개씩</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-wscroll">
+                        <table class="jb-table no-arrow">
+                        <colgroup>
+                            <col width="5%">
+                        </colgroup>
+                        <tr class="jb-table-header-group">
+                            <th class=" jb-table-cell jb-middle" scope="col">
+                                <input type="checkbox" id="cba" />
+                                <label for="cba">
+                                    <span class="ico"></span>
+                                </label>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p class="in_posi-8"><button type="button" class="arrow"></button>ID</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>이름</p>
+                            </th>
+                            <th class=" jb-table-cell jb-middle">
+                                <p>부서 ID</p>
+                            </th>
+                            <th class="jb-table-cell jb-middle">
+                                <p>부서명</p>
+                            </th>
+                        </tr>
+                        <tr class="jb-table-row">
+                            <td class=" jb-table-cell jb-middle">
+                                <input type="checkbox" id="1" name="check" />
+                                <label for="1">
+                                    <span class="ico"></span>
+                                </label>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p><a href="#">idididid</a></p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>홍길동</p>
+                            </td>
+                            <td class=" jb-table-cell jb-middle">
+                                <p>1000</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>경영지원</p>
+                            </td>
+                        </tr>
+                        <tr class="jb-table-row">
+                            <td class=" jb-table-cell jb-middle">
+                                <input type="checkbox" id="2" name="check" />
+                                <label for="2">
+                                    <span class="ico"></span>
+                                </label>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p><a href="#">idididid</a></p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>홍길동</p>
+                            </td>
+                            <td class=" jb-table-cell jb-middle">
+                                <p>1000</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>경영지원</p>
+                            </td>
+                        </tr>
+                        <tr class="jb-table-row">
+                            <td class=" jb-table-cell jb-middle">
+                                <input type="checkbox" id="3" name="check" />
+                                <label for="3">
+                                    <span class="ico"></span>
+                                </label>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p><a href="#">idididid</a></p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>홍길동</p>
+                            </td>
+                            <td class=" jb-table-cell jb-middle">
+                                <p>1000</p>
+                            </td>
+                            <td class="jb-table-cell jb-middle">
+                                <p>경영지원</p>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                    
+                    <div class="pagenation">
+                        <button type="button" class="back-end disabled"></button>
+                        <button type="button" class="back disabled"></button>
+                        <button type="button" class="number">1</button>
+                        <button type="button" class="number active">2</button>
+                        <button type="button" class="number">3</button>
+                        <button type="button" class="number">4</button>
+                        <button type="button" class="number">5</button>
+                        <button type="button" class="number">6</button>
+                        <button type="button" class="number">7</button>
+                        <button type="button" class="number">8</button>
+                        <button type="button" class="number">9</button>
+                        <button type="button" class="number">10</button>
+                        <button type="button" class="next"></button>
+                        <button type="button" class="next-end"></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+    <!-- 부서이름 변경 팝업 -->
+    <!--div class="user-update-modal-background dpt-update-modal sub-modal">
+        <div class="user-update-modal-content">
+            <div class="title">
+                <span>부서이름 변경</span>
+                <button type="button" class="sub-modal-close-btn"></button>
+            </div>
+            <form action="" method="post" class="approval-write-box">
+                <div class="approval-input-box margin approval-tab-content active">
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title">기존 부서이름</div>
+                            <div class="approval-input-group">
+                                <input type="text" readonly id="ex-dpt-name" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-row">
+                            <div class="title ">새 부서이름</div>
+                            <div class="approval-input-group">
+                                <input type="text" id="new-dpt-name" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="confirm-btn-group">
+                    <button type="button" class="sub-modal-cancel-btn">취소</button>
+                    <button type="button" class="confirm-btn" onclick="closeDptUpdate(this)">확인</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    -->
+    <div class="setting-subject-modal-background modal">
+        <div class="setting-subject-modal-content">
+            <div class="title">
+                <span>사용자 조회</span>
+                <button type="button" class="modal-close-btn"></button>
+            </div>
+            <form action="" method="post">
+                <div class="search-form">
+                    <span class="title">조회</span>
+                    <div class="form-input-group">
+                        <select>
+                            <option value="">ID</option>
+                            <option value="">이름</option>
+                            <option value="">부서명</option>
+                        </select>
+                    </div>
+                    <div class="form-input-text-group">
+                        <input type="text" name="" value="">
+                    </div>
+                    <button class="submit-btn" type="submit">조회</button>
+                </div>
+            </form>
+            <form action="" method="post">
+                <div class="setting-subject-modal-content-bottom height365">
+                    <div class="left">
+                        <div class="title">
+                            CKBS
+                        </div>
+                        <div class="check-box-content tree-wrapper longer">
+                            <div id="jstree-div"></div>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="top-box">
+                            <button class="down no-arrow" type="button">선택</button>
+                            <select>
+                                <option value="">15개씩</option>
+                                <option value="">30개씩</option>
+                                <option value="">50개씩</option>
+                                <option value="">100개씩</option>
+                            </select>
+                        </div>
+                        <div class="table-scroll in_maxhg200 in_mt15 spi_max">
+                            <table class="jb-table">
+                                <tr class="jb-table-header-group">
+                                    <th class="jb-table-cell jb-middle">
+                                        <input type="checkbox" id="cba2">
+                                        <label for="cba2">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p><button type="button" class="arrow"></button>ID</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p><button type="button" class="arrow down"></button>이름</p>
+                                    </th>
+                                    <th class=" jb-table-cell jb-middle">
+                                        <p><button type="button" class="arrow"></button>정책</p>
+                                    </th>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" id="check1" name="check">
+                                        <label for="check1">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                  <td class=" jb-table-cell jb-middle">
+                                      <input type="checkbox" id="check1" name="check">
+                                      <label for="check1">
+                                          <span class="ico"></span>
+                                      </label>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                      <p>idididid</p>
+                                  </td>
+                                  <td class="jb-table-cell jb-middle">
+                                      <p>홍길동</p>
+                                  </td>
+                                  <td class=" jb-table-cell jb-middle">
+                                      <p>인사총무 1팀</p>
+                                  </td>
+                              </tr>
+                              <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <input type="checkbox" id="check1" name="check">
+                                    <label for="check1">
+                                        <span class="ico"></span>
+                                    </label>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>idididid</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>홍길동</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>인사총무 1팀</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                              <td class=" jb-table-cell jb-middle">
+                                  <input type="checkbox" id="check1" name="check">
+                                  <label for="check1">
+                                      <span class="ico"></span>
+                                  </label>
+                              </td>
+                              <td class="jb-table-cell jb-middle">
+                                  <p>idididid</p>
+                              </td>
+                              <td class="jb-table-cell jb-middle">
+                                  <p>홍길동</p>
+                              </td>
+                              <td class=" jb-table-cell jb-middle">
+                                  <p>인사총무 1팀</p>
+                              </td>
+                          </tr>
+                          <tr class="jb-table-row">
+                              <td class=" jb-table-cell jb-middle">
+                                  <input type="checkbox" id="check1" name="check">
+                                  <label for="check1">
+                                      <span class="ico"></span>
+                                  </label>
+                              </td>
+                              <td class="jb-table-cell jb-middle">
+                                  <p>idididid</p>
+                              </td>
+                              <td class="jb-table-cell jb-middle">
+                                  <p>홍길동</p>
+                              </td>
+                              <td class=" jb-table-cell jb-middle">
+                                  <p>인사총무 1팀</p>
+                              </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                              <td class=" jb-table-cell jb-middle">
+                                  <input type="checkbox" id="check1" name="check">
+                                  <label for="check1">
+                                      <span class="ico"></span>
+                                  </label>
+                              </td>
+                              <td class="jb-table-cell jb-middle">
+                                  <p>idididid</p>
+                              </td>
+                              <td class="jb-table-cell jb-middle">
+                                  <p>홍길동</p>
+                              </td>
+                              <td class=" jb-table-cell jb-middle">
+                                  <p>인사총무 1팀</p>
+                              </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                              <td class=" jb-table-cell jb-middle">
+                                  <input type="checkbox" id="check1" name="check">
+                                  <label for="check1">
+                                      <span class="ico"></span>
+                                  </label>
+                              </td>
+                              <td class="jb-table-cell jb-middle">
+                                  <p>idididid</p>
+                              </td>
+                              <td class="jb-table-cell jb-middle">
+                                  <p>홍길동</p>
+                              </td>
+                              <td class=" jb-table-cell jb-middle">
+                                  <p>인사총무 1팀</p>
+                              </td>
+                            </tr>
+
+                          </table>
+                        </div>
+                        <div class="pagenation">
+                            <button type="button" class="back-end disabled"></button>
+                            <button type="button" class="back disabled"></button>
+                            <button type="button" class="number">1</button>
+                            <button type="button" class="number active">2</button>
+                            <button type="button" class="number">3</button>
+                            <button type="button" class="number">4</button>
+                            <button type="button" class="number">5</button>
+                            <button type="button" class="number">6</button>
+                            <button type="button" class="number">7</button>
+                            <button type="button" class="number">8</button>
+                            <button type="button" class="number">9</button>
+                            <button type="button" class="next"></button>
+                            <button type="button" class="next-end"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/jstree.js"></script>
+
+    <script>
+        $(function () {
+            $('#addSubjectBtn').on('click', function () {
+                $('.setting-subject-modal-background').addClass('active');
+            })
+            $('#jstree-div').jstree({
+                "core": {
+                    'data': [{
+                            "id": "ajson1",
+                            "parent": "#",
+                            "text": "Simple root node"
+                        },
+                        {
+                            "id": "ajson2",
+                            "parent": "#",
+                            "text": "Root node 2"
+                        },
+                        {
+                            "id": "ajson3",
+                            "parent": "ajson2",
+                            "text": "Child 1"
+                        },
+                        {
+                            "id": "ajson4",
+                            "parent": "ajson2",
+                            "text": "Child 2"
+                        },
+                        {
+                            "id": "ajson5",
+                            "parent": "ajson4",
+                            "text": "Child 24"
+                        },
+                        {
+                            "id": "ajson6",
+                            "parent": "ajson5",
+                            "text": "Child 25"
+                        },
+                        {
+                            "id": "ajson7",
+                            "parent": "ajson6",
+                            "text": "Child 26"
+                        },
+                        {
+                            "id": "ajson8",
+                            "parent": "ajson7",
+                            "text": "Child 27"
+                        },
+                        {
+                            "id": "ajson8",
+                            "parent": "ajson7",
+                            "text": "Child 27"
+                        },
+                        {
+                            "id": "ajson9",
+                            "parent": "ajson8",
+                            "text": "Child 28"
+                        },
+                        {
+                            "id": "ajson10",
+                            "parent": "ajson9",
+                            "text": "Child 29"
+                        },
+                        {
+                            "id": "ajson11",
+                            "parent": "ajson10",
+                            "text": "Child 30"
+                        },
+                        {
+                            "id": "ajson12",
+                            "parent": "ajson11",
+                            "text": "Child 31"
+                        },
+                    ]
+                },
+                "plugins": ["wholerow", "checkbox"]
+            });
+        });
+    </script>
+</body>
+
+</html>

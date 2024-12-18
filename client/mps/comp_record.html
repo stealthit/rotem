@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/jquery-ui.theme.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer active">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 정보</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+<div class="top">
+	<div class="user-info-box">
+        <div class="profile">
+            <button type="button" class="profile-dropdown"></button>
+        </div>
+        <div class="dropdown">
+            <div class="user-info">
+                <div class="user-top">
+                    <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                    <span class="division">I</span>
+                    <span class="position">슈퍼관리자</span>
+                </div>
+                <div class="user-bottom">
+                    <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                </div>
+            </div>
+            <button type="button" class="logout-btn">로그아웃</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 복합기 > 이력정보
+            </div>
+            <div class="page-title">
+                이력정보
+            </div>
+            <div class="tab-content tmg26 active">
+                <div class="search-form">
+                    <form action="" method="post">
+                        <div class="input-content">
+                            <div class="input-row">
+                                <span class="title">조회기간</span>
+                                <div class="form-input-group">
+                                    <input type="text" class="date" id="datepicker1" readonly>
+                                </div>
+                                <span class="date-division">~</span>
+                                <div class="form-input-group">
+                                    <input type="text" class="date" id="datepicker2" readonly>
+                                </div>
+                                <div class="form-input-group radio-group">
+                                    <div class="square-radio-group">
+                                        <input type="radio" id="todayz" value="" name="radio-group" checked>
+                                        <label class="first" for="todayz"><span>오늘</span></label>
+                                        <input type="radio" id="7" value="" name="radio-group">
+                                        <label for="7"><span>7일</span></label>
+                                        <input type="radio" id="30" value="" name="radio-group">
+                                        <label for="30"><span>30일</span></label>
+                                        <input type="radio" id="90" value="" name="radio-group">
+                                        <label for="90"><span>90일</span></label>
+                                        <input type="radio" id="180" value="" name="radio-group">
+                                        <label class="last" for="180"><span>180일</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <span class="title">조회</span>
+                                <div class="form-input-group">
+                                    <select>
+                                        <option value="">장치사용</option>
+                                        <option value="">사용</option>
+                                        <option value="">미사용</option>
+                                    </select>
+                                </div>
+                                <div class="form-input-text-group">
+                                    <input type="text" name="" value="" />
+                                </div>
+                            </div>
+                        </div>
+                        <button class="submit-btn bgcolor" type="submit">조회</button>
+                    </form>
+                </div>
+
+                <div class="content-wrapper">
+                    <div class="button-row">
+                        <div class="left">
+                            <button class="exel" type="button"><img src="imges/ico_down_excel.png" />다운로드</button>
+                        </div>
+                        <div class="right">
+
+                            <div class="list-info">
+                                장애복구 이력 목록 (총 <span class="ftcolor">100</span>건)
+                            </div>
+                            <select>
+                                <option value="">15개씩</option>
+                                <option value="">30개씩</option>
+                                <option value="">50개씩</option>
+                                <option value="">100개씩</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-scroll01 table-wscroll">
+                        <table class="jb-table no-arrow ">
+                            <tr class="jb-table-header-group">
+                                <th class="jb-table-cell jb-middle">
+                                    <p><button type="button" class="arrow"></button>사용여부</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>부서</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>복합기IP</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>시리얼번호</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>복합기위치</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>발생일시</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle no-arrow">
+                                    <p>장애내용</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle no-arrow">
+                                    <p>복구소요시간</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>상태</p>
+                                </th>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>카세트2 트레이에 A3 용지 없음</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>교체전 잔량(%)</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p><img class="ico-service" src="./imges/ico_service_off.png" alt="imgService"></p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>카세트2 트레이에 A3 용지 없음</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>교체전 잔량(%)</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p><img class="ico-service" src="./imges/ico_service_on.png" alt="imgService"></p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>카세트2 트레이에 A3 용지 없음</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>교체전 잔량(%)</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p><img class="ico-service" src="./imges/ico_service_off.png" alt="imgService"></p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>카세트2 트레이에 A3 용지 없음</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>교체전 잔량(%)</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p><img class="ico-service" src="./imges/ico_service_on.png" alt="imgService"></p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>카세트2 트레이에 A3 용지 없음</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>교체전 잔량(%)</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p><img class="ico-service" src="./imges/ico_service_off.png" alt="imgService"></p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>카세트2 트레이에 A3 용지 없음</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>교체전 잔량(%)</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p><img class="ico-service" src="./imges/ico_service_on.png" alt="imgService"></p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>카세트2 트레이에 A3 용지 없음</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>교체전 잔량(%)</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p><img class="ico-service" src="./imges/ico_service_off.png" alt="imgService"></p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>카세트2 트레이에 A3 용지 없음</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>교체전 잔량(%)</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p><img class="ico-service" src="./imges/ico_service_on.png" alt="imgService"></p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>카세트2 트레이에 A3 용지 없음</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>교체전 잔량(%)</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p><img class="ico-service" src="./imges/ico_service_off.png" alt="imgService"></p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class="jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>2021-04-20 00:00:00</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>카세트2 트레이에 A3 용지 없음</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>교체전 잔량(%)</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p><img class="ico-service" src="./imges/ico_service_on.png" alt="imgService"></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="pagenation">
+                        <button type="button" class="back-end disabled"></button>
+                        <button type="button" class="back disabled"></button>
+                        <button type="button" class="number">1</button>
+                        <button type="button" class="number active">2</button>
+                        <button type="button" class="number">3</button>
+                        <button type="button" class="number">4</button>
+                        <button type="button" class="number">5</button>
+                        <button type="button" class="number">6</button>
+                        <button type="button" class="number">7</button>
+                        <button type="button" class="number">8</button>
+                        <button type="button" class="number">9</button>
+                        <button type="button" class="number">10</button>
+                        <button type="button" class="next"></button>
+                        <button type="button" class="next-end"></button>
+
+                    </div>
+                </div>
+
+                <div class="content-wrapper">
+                    
+                    <div class="button-row">
+                        <div class="left">
+                            <button class="exel" type="button"><img src="imges/ico_down_excel.png" />다운로드</button>
+                        </div>
+                        <div class="right">
+                            
+                            <div class="list-info">
+                                토너교체 이력 목록 (총 <span class="ftcolor">100</span>건)
+                            </div>
+                            <select>
+                                <option value="">15개씩</option>
+                                <option value="">30개씩</option>
+                                <option value="">50개씩</option>
+                                <option value="">100개씩</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-scroll table-wscroll">
+                        <table class="jb-table no-arrow">
+                            <tr class="jb-table-header-group">
+                                <th class="jb-table-cell jb-middle">
+                                    <p><button type="button" class="arrow"></button>사용여부</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>부서</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>복합기 IP</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>시리얼번호</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>모델명</p>
+                                </th>
+                                <th class=" jb-table-cell jb-middle">
+                                    <p>복합기위치</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>토너명</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>교체전 잔량(%)</p>
+                                </th>
+                                <th class="jb-table-cell jb-middle">
+                                    <p>발생일시</p>
+                                </th>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>IR-ADV527</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>XXX</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>30</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>IR-ADV527</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>XXX</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>30</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>IR-ADV527</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>XXX</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>30</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>IR-ADV527</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>XXX</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>30</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>IR-ADV527</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>XXX</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>30</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>IR-ADV527</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>XXX</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>30</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>IR-ADV527</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>XXX</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>30</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>IR-ADV527</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>XXX</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>30</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>IR-ADV527</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>XXX</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>30</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                            <tr class="jb-table-row">
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>미사용</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>-</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>192.168.1.1</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>22X00003</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>IR-ADV527</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>10.1.112.163(22X00003)</p>
+                                </td>
+                                <td class=" jb-table-cell jb-middle">
+                                    <p>XXX</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>30</p>
+                                </td>
+                                <td class="jb-table-cell jb-middle">
+                                    <p>21-04-20 00:00:00</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="pagenation">
+                        <button type="button" class="back-end disabled"></button>
+                        <button type="button" class="back disabled"></button>
+                        <button type="button" class="number">1</button>
+                        <button type="button" class="number active">2</button>
+                        <button type="button" class="number">3</button>
+                        <button type="button" class="number">4</button>
+                        <button type="button" class="number">5</button>
+                        <button type="button" class="number">6</button>
+                        <button type="button" class="number">7</button>
+                        <button type="button" class="number">8</button>
+                        <button type="button" class="number">9</button>
+                        <button type="button" class="number">10</button>
+                        <button type="button" class="next"></button>
+                        <button type="button" class="next-end"></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <script>
+        $(function () {});
+    </script>
+</body>
+
+</html>

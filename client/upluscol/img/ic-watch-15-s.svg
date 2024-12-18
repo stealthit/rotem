@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42.321">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#181818;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="ic-watch-15-s" transform="translate(.167 .429)">
+        <g id="그룹_144" data-name="그룹 144" transform="translate(3.26 1.071)">
+            <path id="패스_28317" data-name="패스 28317" class="cls-2" d="M18.321 23.256V6.786a16.47 16.47 0 0 1 16.47 16.47z" transform="translate(-1.851 -.796)"/>
+            <path id="선_49" data-name="선 49" class="cls-2" transform="translate(11.979)" d="M0 0h8.984"/>
+            <path id="선_50" data-name="선 50" class="cls-2" transform="translate(16.47)" d="M0 0v5.989"/>
+            <path id="선_51" data-name="선 51" class="cls-2" transform="translate(31.444 4.492)" d="m0 0 2.995 2.995"/>
+            <path id="선_52" data-name="선 52" class="cls-2" transform="translate(4.821 10.811)" d="m0 0 3.174 3.174"/>
+            <path id="선_53" data-name="선 53" class="cls-2" transform="translate(0 22.46)" d="M0 0h4.492"/>
+            <path id="선_54" data-name="선 54" class="cls-2" transform="translate(4.821 30.934)" d="M0 3.174 3.174 0"/>
+            <path id="선_55" data-name="선 55" class="cls-2" transform="translate(17.219 34.438)" d="M0 0v4.492"/>
+            <path id="선_56" data-name="선 56" class="cls-2" transform="translate(27.82 30.066)" d="m0 0 3.174 3.174"/>
+        </g>
+    </g>
+</svg>

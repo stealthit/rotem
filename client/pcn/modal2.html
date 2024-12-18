@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FISS 시스템 - 콤포넌트</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/unit.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./css/jquery-ui.theme.css" />
+  </head>
+  <body>
+    <!--연결하기 모달-->
+    <div class="modal_all_wrap" id="modalIdConnect" >
+      <div class="modal_con_wrap modal_connect_wrap modal_connect2">
+        <div class="modal_title">
+          <h1>연결하기</h1>
+          <a href="#" class="modal_close_btn" id="connect_btn">닫기</a>
+        </div>
+        <div class="modal_con">
+          <div class="modal_stitle no_btm_line">
+            <h2>연결박스</h2>
+          </div>
+          <!--연결박스-->
+          <div class="line_conect_con">
+            <table class="table_type_connect_top">
+              <colgroup>
+                <col style="width: 8.5%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 4%" />
+                <col style="width: 8%" />
+                <col style="width: 3%" />
+                <col style="width: 12.5%" />
+                <col style="width: 12.5%" />
+                <col style="width: 3%" />
+                <col style="width: 8%" />
+                <col style="width: 8.5%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 4%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <!--색상코드는 라인별로-->
+                  <!--
+              .core4_bgc / .core12_bgc {background-color:#ff6c00}
+              .core24_bgc / .core36_bgc / .core48_bgc{background-color:#a619ff}
+              .core72_bgc / .core96_bgc{background-color:#14a419}
+              .core144_bgc / .core288_bgc{background-color:#ff0000}
+              .coreel_bgc{background-color:#000000}
+              .corehole_bgc{background-color:#007aba}
+              -->
+                  <th colspan="4" class="btom_line btm_line"><span class="cores_bgc"></span>579_통신선로</th>
+                  <th rowspan="2" class="btom_line btm_line">RT인입</th>
+                  <th rowspan="2" class="th_no_cell">&nbsp;</th>
+                  <th rowspan="2" colspan="2" class="btom_line btm_line">RING 정보</th>
+                  <th rowspan="2"  class="th_no_cell">&nbsp;</th>
+                  <th rowspan="2" class="btom_line btm_line">RT인입</th>
+                  <th colspan="4" class="btom_line btm_line"><span class="cores01_bgc"></span>580_통신선로</th>
+                </tr>
+                <tr>
+                  <th class="btm_line">선로ID</th>
+                  <th class="btm_line">규격</th>
+                  <th class="btm_line">인입선번</th>
+                  <th class="btm_line">&nbsp;</th>
+
+                  <th class="btm_line">선로ID</th>
+                  <th class="btm_line">규격</th>
+                  <th class="btm_line">인입선번</th>
+                  <th class="btm_line">&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="4">
+                    <ul class="connect_cell">
+                      <li class="cell_id">0</li>
+                      <li class="cell_size">24c</li>
+                      <li class="cell_line">1</li>
+                      <li class="cell_close"><a href="#" class="btn-input-delete">삭제</a></li>
+                    </ul>
+                  </td>
+                  <td>
+                    <div class="select_type_linecon">
+                      <span class="selected"></span>
+                      <span class="selectArrow">화살표</span>
+                      <div class="selectOptions">
+                        <span class="selectOption" value="Option 1"></span>
+                        <span class="selectOption" value="Option 2">E</span>
+                        <span class="selectOption" value="Option 3">W</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td><div class="connect_line_dash">라인</div></td>
+                  <td>
+                    <div class="select_type_linecon">
+                      <span class="selected"></span>
+                      <span class="selectArrow">화살표</span>
+                      <div class="selectOptions">
+                        <span class="selectOption" value="Option 1">노드1</span>
+                      </div>
+                    </div>
+                  </td>
+                    <td>
+                    <div class="select_type_linecon">
+                      <span class="selected"></span>
+                      <span class="selectArrow">화살표</span>
+                      <div class="selectOptions">
+                        <span class="selectOption" value="Option 1">#1</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td><div class="connect_line_dash">라인</div></td>
+                       <td>
+                    <div class="select_type_linecon">
+                      <span class="selected"></span>
+                      <span class="selectArrow">화살표</span>
+                      <div class="selectOptions">
+                        <span class="selectOption" value="Option 1"></span>
+                        <span class="selectOption" value="Option 2">E</span>
+                        <span class="selectOption" value="Option 3">W</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td colspan="4">
+                    <ul class="connect_cell">
+                      <li class="cell_id">0</li>
+                      <li class="cell_size">24c</li>
+                      <li class="cell_line">1</li>
+                      <li class="cell_close"><a href="#" class="btn-input-delete">삭제</a></li>
+                    </ul>
+                  </td>
+                </tr>
+              
+              </tbody>
+            </table>
+          </div>
+          <div class="modal_btn">
+            <button type="button" class="cancel_btn" id="connect_btn01">취소</button>
+            <button type="button" class="cancel_btn">초기화</button>
+            <button type="button" class="save_btn">저장</button>
+          </div>
+        </div>
+        <!--연결테이블-->
+        <div class="modal_scon_connect">
+          <div class="modal_con_cont_small">
+            <table class="table_type_connect">
+              <colgroup>
+                <col width="20%" />
+                <col width="20%" />
+                <col width="20%" />
+                <col width="*" />
+                <col width="20%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <!--색상코드는 라인별로-->
+                  <!--
+              .core4_bgc / .core12_bgc {background-color:#ff6c00}
+              .core24_bgc / .core36_bgc / .core48_bgc{background-color:#a619ff}
+              .core72_bgc / .core96_bgc{background-color:#14a419}
+              .core144_bgc / .core288_bgc{background-color:#ff0000}
+              .coreel_bgc{background-color:#000000}
+              .corehole_bgc{background-color:#007aba}
+              -->
+                  <th colspan="5" class="btm_line"><span class="cores_bgc"></span>선택선로 ID:97_통신선로</th>
+                </tr>
+                <tr>
+                  <th>선로ID</th>
+                  <th>규격</th>
+                  <th>인입선번</th>
+                  <th>RING 정보</th>
+                  <th>연결박스</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>24C</td>
+                  <td>1</td>
+                  <td>-</td>
+                  <td><a class="btn_insert">삽입</a></td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>24C</td>
+                  <td>1</td>
+                  <td>-</td>
+                  <td><a class="btn_insert">삽입</a></td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>24C</td>
+                  <td>1</td>
+                  <td>-</td>
+                  <td><a class="btn_insert">삽입</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal_con_cont_small">
+            <table class="table_type_connect">
+              <colgroup>
+                <col width="20%" />
+                <col width="20%" />
+                <col width="20%" />
+                <col width="*" />
+                <col width="20%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <!--색상코드는 라인별로-->
+                  <!--
+              .core4_bgc / .core12_bgc {background-color:#ff6c00}
+              .core24_bgc / .core36_bgc / .core48_bgc{background-color:#a619ff}
+              .core72_bgc / .core96_bgc{background-color:#14a419}
+              .core144_bgc / .core288_bgc{background-color:#ff0000}
+              .coreel_bgc{background-color:#000000}
+              .corehole_bgc{background-color:#007aba}
+              -->
+                  <th colspan="5" class="btm_line"><span class="cores01_bgc"></span>선택선로 ID:97_통신선로</th>
+                </tr>
+                <tr>
+                  <th>선로ID</th>
+                  <th>규격</th>
+                  <th>인입선번</th>
+                  <th>RING 정보</th>
+                  <th>연결박스</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>24C</td>
+                  <td>1</td>
+                  <td>-</td>
+                  <td><a class="btn_insert">삽입</a></td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>24C</td>
+                  <td>1</td>
+                  <td>-</td>
+                  <td><a class="btn_insert">삽입</a></td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>24C</td>
+                  <td>1</td>
+                  <td>-</td>
+                  <td><a class="btn_insert">삽입</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="width: 100%; position: relative"><a href="#" class="btn_type01 go_modal_connect" style="width: 500px">연결하기 UI_01_0009</a>&nbsp;</div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

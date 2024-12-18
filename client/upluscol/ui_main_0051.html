@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U2 Collaboration</title>
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)" />
+    <script href="js/script.js"></script>
+  </head>
+  <style>
+    #new-project-box {
+      z-index: 70;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #edit-project-box {
+      z-index: 70;
+      position: absolute;
+      top: 600px;
+      left: 0;
+    }
+    #project-del-box {
+      z-index: 70;
+      position: absolute;
+      top: 0;
+      left: 550px;
+    }
+    #select-pay-box {
+      z-index: 70;
+      position: absolute;
+      top: 300px;
+      left: 550px;
+    }
+    #project-edit01-box {
+      z-index: 70;
+      position: absolute;
+      top: 0px;
+      left: 1050px;
+    }
+    /* ey 211229 추가 */
+    #allim-codec-box {
+      z-index: 70;
+      position: absolute;
+      top: 300px;
+      left: 1100px;
+    }
+    #project-logout-box {
+      z-index: 70;
+      position: absolute;
+      top: 300px;
+      left: 1500px;
+    }
+    @media screen and (max-width: 768px) {
+      #new-project-box {
+        z-index: 70;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      #edit-project-box {
+        z-index: 70;
+        position: absolute;
+        top: 1600px;
+        left: 0;
+      }
+      #project-del-box {
+        z-index: 70;
+        position: absolute;
+        top: 450px;
+        left: 0px;
+      }
+      #select-pay-box {
+        z-index: 70;
+        position: absolute;
+        top: 700px;
+        left: 0px;
+      }
+      #project-edit01-box {
+        z-index: 70;
+        position: absolute;
+        top: 950px;
+        left: 0px;
+      }
+      /* ey 211229 추가 */
+      #allim-codec-box {
+        z-index: 70;
+        position: absolute;
+        top: 1300px;
+        left: 0;
+      }
+      #project-logout-box {
+        z-index: 70;
+        position: absolute;
+        top: 1500px;
+        left: 0;
+      }
+    }
+  </style>
+
+  <body>
+    <!--신규프로젝트-->
+    <div class="menu-box active" id="new-project-box">
+      <div class="mb-menu-box-title">
+        <p>신규 프로젝트</p>
+        <button type="button" class="close-btn"></button>
+      </div>
+      <input
+        type="text"
+        value=""
+        class="search-input02"
+        placeholder="프로젝트 이름을 입력하세요"
+      />
+      <ul>
+        <!-- <li class="label">협업 허용 범위</li>
+        <li class="pd-btm">
+          파일 다운로드 가능
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="divBar">구분선</li> ey 211222 삭제 -->
+        <li class="label">내 이메일로 알림</li>
+        <li>
+          새로운 코멘트
+          <!--div class="switch_toggle active">
+          <input type="hidden" value="Y" />
+          <span class="text"></span>
+          <span class="circle"></span>
+        </div-->
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round disable"></span>
+            <!-- disable 추가 ey211222 -->
+          </label>
+        </li>
+        <li>
+          새로운 미디어 업로드
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <!--li>새로운 협업자 등록
+        <label class="switch_toggle">
+          <input type="checkbox" onclick="toggle(this)">
+          <span class="slider round"></span>
+        </label>
+      </li-->
+        <li class="pd-btm">
+          미디어 상태 업데이트
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="divBar">구분선</li>
+        <li class="label">모든 사람에게 이메일로 알림</li>
+        <li>
+          새로운 코멘트
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li>
+          새로운 미디어 업로드
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <!--li>새로운 협업자 등록
+        <label class="switch_toggle">
+          <input type="checkbox" onclick="toggle(this)">
+          <span class="slider round"></span>
+        </label>
+      </li-->
+        <li>
+          미디어 상태 업데이트
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+      </ul>
+      <div>
+        <a href="#" class="btn_rect_black wd100 tac" alt="프로젝트 생성"
+          >프로젝트 생성</a
+        >
+        <!--프로젝트 삭제/추가-->
+        <!--a href="#" class="btn_rect_white tac" alt="프로젝트 삭제">프로젝트 삭제</a>
+      <a href="#" class="btn_rect_black tac" alt="셋팅 저장">셋팅 저장</a-->
+      </div>
+    </div>
+
+    <!--프로젝트 편집-->
+    <div class="menu-box active" id="edit-project-box">
+      <div class="mb-menu-box-title">
+        <p>프로젝트 편집</p>
+        <button type="button" class="close-btn"></button>
+      </div>
+      <input
+        type="text"
+        value=""
+        class="search-input02"
+        placeholder="프로젝트 이름을 입력하세요"
+      />
+      <ul>
+        <li class="label">내 이메일로 알림</li>
+        <li>
+          새로운 코멘트
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round disable"></span>
+          </label>
+        </li>
+        <li>
+          새로운 미디어 업로드
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="pd-btm">
+          미디어 상태 업데이트
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="divBar">구분선</li>
+        <li class="label">모든 사람에게 이메일로 알림</li>
+        <li>
+          새로운 코멘트
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li>
+          새로운 미디어 업로드
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li>
+          미디어 상태 업데이트
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+      </ul>
+      <div>
+        <a href="#" class="btn_rect_white tac" alt="프로젝트 삭제"
+          >프로젝트 삭제</a
+        >
+        <a href="#" class="btn_rect_black tac" alt="셋팅 저장">셋팅 저장</a>
+      </div>
+    </div>
+
+    <!--프로젝트 삭제-->
+    <div class="menu-box active" id="project-del-box">
+      <div class="mb-menu-box-title">
+        <p>프로젝트 삭제</p>
+        <button type="button" class="close-btn"></button>
+      </div>
+      <p>
+        '<strong>Project 1</strong>' 프로젝트를 정말 삭제 하시겠습니까?<br />
+        포함된 미디어 및 파일들이 전부 삭제되며, 삭제 후 복구할 수 없습니다.
+      </p>
+      <div>
+        <a href="#" class="btn_rect_white mw-100 tac" alt="취소">취소</a>
+        <a href="#" class="btn_rect_black mw-100 tac" alt="수락">수락</a>
+      </div>
+    </div>
+
+    <!--요금제선택-->
+    <div class="menu-box active" id="select-pay-box">
+      <div class="mb-menu-box-title">
+        <p>요금제를 선택하세요</p>
+        <button type="button" class="close-btn"></button>
+      </div>
+      <p>요금제를 가입해야 이용 할 수 있습니다.</p>
+      <div>
+        <a href="#" class="btn_rect_black tac" alt="U2 LIFE 이동"
+          >U2 LIFE 이동</a
+        >
+      </div>
+    </div>
+
+    <!--프로젝트 편집-->
+    <ul class="menu-box active" id="project-edit01-box">
+      <li>
+        <span class="edit"></span
+        ><button type="button" id="">프로젝트 편집</button>
+      </li>
+      <li>
+        <span class="storage"></span
+        ><button type="button" id="">프로젝트 보관</button>
+      </li>
+      <!-- <li><span class="quit"></span><button type="button" id="">프로젝트 탈퇴</button></li> ey 211222 삭제 -->
+      <li>
+        <span class="trash"></span
+        ><button type="button" id="">프로젝트 삭제</button>
+      </li>
+    </ul>
+
+    <!-- ey 220103 추가 로그아웃-->
+    <ul class="menu-box active" id="project-logout-box">
+      <li>
+        <span class="edit"></span><button type="button" id="">로그아웃</button>
+      </li>
+      <li>
+        <span class="storage"></span
+        ><button type="button" id="">프로젝트로 이동</button>
+      </li>
+    </ul>
+
+    <!--코덱 알림 ey 211229 추가 -->
+    <div class="menu-box active" id="allim-codec-box">
+      <div class="mb-menu-box-title">
+        <p>알림</p>
+        <button type="button" class="close-btn"></button>
+      </div>
+      <p>
+        지원 하지 않는 코덱입니다.<br />코덱 확인 후 재생을 다시 시도하세요.
+      </p>
+      <div>
+        <a href="#" class="btn_rect_black tac" alt="확인">확인</a>
+      </div>
+    </div>
+  </body>
+</html>

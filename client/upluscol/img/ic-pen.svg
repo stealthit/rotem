@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.44" height="16.445" viewBox="0 0 16.44 16.445">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke:#555;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="ic-pen" transform="translate(1.22 3.107)">
+        <g id="그룹_74" data-name="그룹 74" transform="translate(-.724 -.725)">
+            <path id="패스_81" data-name="패스 81" d="m6.714 14.757-5 1.4 1.4-5 9.156-9.111a1.111 1.111 0 0 1 1.589 0l1.967 1.978a1.111 1.111 0 0 1 0 1.578z" transform="translate(-1.21 -3.094)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#555;stroke-width:2px"/>
+            <path id="선_21" data-name="선 21" class="cls-3" transform="translate(2.723 7.396)" d="m0 0 3.335 3.335"/>
+            <path id="선_22" data-name="선 22" class="cls-3" transform="translate(9.392 .727)" d="m0 0 3.335 3.335"/>
+        </g>
+    </g>
+</svg>

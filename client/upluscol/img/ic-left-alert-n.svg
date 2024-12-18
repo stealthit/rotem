@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-3,.cls-6{fill:none}.cls-3{stroke:#555;stroke-width:1.4px}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="ic-left-alert-n" transform="translate(-417 -653)">
+        <path id="ic-top-bell" d="M8.323 16c-1.471 0-2.667-.9-2.667-2.007h5.334C10.99 15.1 9.794 16 8.323 16z" transform="translate(416.667 653)" style="fill:#555;fill-rule:evenodd"/>
+        <g id="사각형_2179" data-name="사각형 2179" class="cls-3">
+            <path class="cls-5" d="M6 0a6 6 0 0 1 6 6v5.5H0V6a6 6 0 0 1 6-6z" transform="translate(419 654)"/>
+            <path class="cls-6" d="M6 .7A5.3 5.3 0 0 1 11.3 6v4.1a.7.7 0 0 1-.7.7H1.4a.7.7 0 0 1-.7-.7V6A5.3 5.3 0 0 1 6 .7z" transform="translate(419 654)"/>
+        </g>
+        <path id="선_61" data-name="선 61" class="cls-3" transform="translate(417.5 664.8)" d="M0 0h15"/>
+        <g id="타원_55" data-name="타원 55" transform="translate(424 653)" style="stroke:#555;stroke-width:1.4px;fill:#fff">
+            <circle class="cls-5" cx="1" cy="1" r="1"/>
+            <circle class="cls-6" cx="1" cy="1" r=".3"/>
+        </g>
+    </g>
+</svg>

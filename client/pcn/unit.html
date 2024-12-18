@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISS 시스템 - 콤포넌트</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/unit.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./css/jquery-ui.theme.css">
+    
+    
+</head>
+<body>
+  <div class="unit_wrap">
+    <div class="section_symbol">
+      <h1 class="title">심볼</h1>
+      <div class="section_unit_content">
+        <h2 class="title">input_Type</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15"><div class="icon_bookmark">북마크</div></div>
+          <div class="rmg15 bmg15"><div class="icon_bookmark on">북마크on</div></div>
+          <div class="rmg15 bmg15"><div class="icon_location">위치</div></div>
+          <div class="rmg15 bmg15"><a href="#" class="btn-input-delete">삭제</a></div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">지도심볼</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15"><div class="icon-bus">Icon-버스도착정보안내기</div>&nbsp;<div class="icon-bus active">Icon-버스도착정보안내기</div></div>
+          <div class="rmg15 bmg15"><div class="icon-traffic">Icon-교통신호제어기</div>&nbsp;<div class="icon-traffic active">Icon-교통신호제어기</div></div>
+          <div class="rmg15 bmg15"><div class="icon-cctv">Icon-폐쇄회로텔레비전</div>&nbsp;<div class="icon-cctv active">Icon-폐쇄회로텔레비전</div></div>
+          <div class="rmg15 bmg15"><div class="icon-ing">Icon-인수공-인공</div>&nbsp;<div class="icon-ing active">Icon-인수공-인공</div></div>
+          <div class="rmg15 bmg15"><div class="icon-sug">Icon-인수공-인홀</div>&nbsp;<div class="icon-sug active">Icon-인수공-인홀</div></div>
+          <div class="rmg15 bmg15"><div class="icon-tr">Icon-지상설치형변압기</div>&nbsp;<div class="icon-tr active">Icon-지상설치형변압기</div></div>
+          <div class="rmg15 bmg15"><div class="icon-pole-01">Icon-전주-한전주</div>&nbsp;<div class="icon-pole-01 active">Icon-전주-한전주</div></div>
+          <div class="rmg15 bmg15"><div class="icon-pole-02">Icon-전주-IP주</div>&nbsp;<div class="icon-pole-02 active">Icon-전주-IP주</div></div>
+          <div class="rmg15 bmg15"><div class="icon-standard">Icon-함체</div>&nbsp;<div class="icon-standard active">Icon-함체</div></div>
+          <div class="rmg15 bmg15"><div class="icon-telephone">Icon-국사</div>&nbsp;<div class="icon-telephone active">Icon-국사</div></div>
+          <div class="rmg15 bmg15"><div class="icon-memo">메모</div>&nbsp;<div class="icon-menu active">메모</div></div>
+        </div>
+        <div class="section_core">
+          <h2 class="title">선로</h2>
+          <div class="unit_content">
+            <div class="rmg15 bmg15">
+              <div class="line_core_con">
+                <div class="line_con line-4core"></div>
+                <div class="line_con line-4core_n"></div> 
+              </div>
+              line-4/8/12 통신선로(가공/지중)
+            </div>
+            <div class="rmg15 bmg15">
+              <div class="line_core_con">
+                <div class="line_con line-24core"></div>
+                <div class="line_con line-24core_n"></div> 
+              </div>
+              line-24/36/48 통신선로(가공/지중)
+            </div>
+            <div class="rmg15 bmg15">
+              <div class="line_core_con">
+                <div class="line_con line-72core"></div>
+                <div class="line_con line-72core_n"></div> 
+              </div>
+              line-72/96 통신선로(가공/지중)
+            </div>
+            <div class="rmg15 bmg15">
+              <div class="line_core_con">
+                <div class="line_con line-144core"></div>
+                <div class="line_con line-144core_n"></div> 
+              </div>
+              line-144/288 통신선로(가공/지중)
+            </div>
+            <div class="rmg15 bmg15">
+              <div class="line_core_con">
+                <div class="line_con line-elcore"></div>
+                <div class="line_con line-elcore_n"></div> 
+              </div>
+              line-전기선로(가공/지중)
+            </div>
+            <div class="rmg15 bmg15">
+              <div class="line_core_con">
+                <div class="line_con line-holecore"></div>
+              </div>
+              line-관로(지중)
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class="section_input">
+      <h1 class="title">인풋</h1>
+      <!--input-->
+      <div class="section_unit_content">
+        <h2 class="title">input_Default</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15"><input type="text" class="input_type01" placeholder="힌트 텍스트"></div>
+          <div class="rmg15 bmg15">
+            <div class="filebox01 preview-image">
+              <input class="input_type_file" value="" disabled="disabled"
+                  placeholder="C:\ProgramData\image">
+              <label for="input-img-file1" >파일선택</label>
+              <input type="file" id="input-img-file1" class="upload-hidden" accept="">
+            </div>
+
+          </div>
+          <div class="rmg15 bmg15">
+
+            <div class="select_type01">
+              <span class="selected"></span>
+              <span class="selectArrow">화살표</span>
+              <div class="selectOptions" >
+                <span class="selectOption" value="Option 1">힌트 텍스트</span>
+                <span class="selectOption" value="Option 2">Option 1</span>
+                <span class="selectOption" value="Option 3">Option 2</span>
+              </div>
+            </div>
+          </div>
+          <div class="rmg15 bmg15">
+            <select class="select_type02">
+              <option>선택</option>
+              <option>1번항목</option>
+              <option>2번항목</option>
+            </select>
+          </div>
+          <div class="rmg15 bmg15"> <input type="text" class="" id="datepicker" readonly></div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">input_Type</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <div class="input_type01_inbtn_c">
+              <input type="text" class="input_type01_inbtn"><a href="#" class="btn-input-delete">삭제</a>
+            </div>
+          </div>
+          <div class="rmg15 bmg15"><input type="text" class="input_type01"></div>
+          <div class="rmg15 bmg15"><input type="text" class="input_type_cal"></div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">textarea</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <div class="ta_type01_area"><textarea class="ta_type01">텍스트area</textarea></div>
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">input_Disable</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15"><input type="text" class="input_type01" value="입력된정보" disabled></div>
+          <div class="rmg15 bmg15"><input type="text" class="input_type01"></div>
+          <div class="rmg15 bmg15"><input type="text" class="input_type_cal"></div>
+        </div>
+      </div>
+      <!--radio/checkbox-->
+      <div class="section_unit_content">
+        <h2 class="title">r/c_Default</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15"><input type="text" class="input_type01" value="입력된정보" disabled></div>
+          <div class="rmg15 bmg15"><input type="text" class="input_type01"></div>
+          <div class="rmg15 bmg15"><input type="text" class="input_type_cal"></div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">r/c_Hover</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15"><input type="text" class="input_type01" value="입력된정보" disabled></div>
+          <div class="rmg15 bmg15"><input type="text" class="input_type01"></div>
+          <div class="rmg15 bmg15"><input type="text" class="input_type_cal"></div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">radio 작업중</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <div class="radio-group">
+              <input type="radio" id="personal" name="1">
+              <label for="personal" class="chk_label">개인정보</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" id="personal2" name="1">
+              <label for="personal2" class="chk_label">개인정보</label>
+            </div>
+          </div>
+          <div class="rmg15 bmg15">
+            <input type="checkbox" id="cid1" /><label for="cid1"><span class="ico"></span><span class="text">텍스트</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">r/c_Active</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15"><input type="radio"></div>
+          <div class="rmg15 bmg15"><input type="radio"></div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="section_tab">
+      <h1 class="title">탭</h1>
+      <!--탭-->
+      <div class="section_unit_content">
+        <h2 class="title">TYPE1</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <!--tab -->
+            <div class="tap_type01_wrap">
+              <input id="tab1" type="radio" name="tab_item" checked>
+              <label class="tab_item br_first" for="tab1">Tab 1</label>
+              <input id="tab2" type="radio" name="tab_item">
+              <label class="tab_item br_last" for="tab2">Tab 2</label>
+              <div class="tab_content" id="tab1_content">
+                  1탭
+              </div>
+              <div class="tab_content" id="tab2_content">
+                  2탭
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">TYPE5</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <!--tab -->
+            <div class="tap_type05_wrap">
+              <input id="tab51" type="radio" name="tab_item5" checked>
+              <label class="tab_item br_first" for="tab51">Tab 1</label>
+              <input id="tab52" type="radio" name="tab_item5">
+              <label class="tab_item br_mid" for="tab52">Tab 2</label>
+              <input id="tab53" type="radio" name="tab_item5">
+              <label class="tab_item br_mid" for="tab53">Tab 3</label>
+              <input id="tab54" type="radio" name="tab_item5">
+              <label class="tab_item br_last" for="tab54">Tab 4</label>
+              <div class="tab_content" id="tab51_content">
+                  1탭
+              </div>
+              <div class="tab_content" id="tab52_content">
+                  2탭
+              </div>
+              <div class="tab_content" id="tab53_content">
+                3탭
+              </div>
+              <div class="tab_content" id="tab54_content">
+                4탭
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">TYPE6</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <!--tab -->
+            <div class="tap_type06_wrap">
+              <input id="tab61" type="radio" name="tab_item6" checked>
+              <label class="tab_item br_first" for="tab61">Tab 1</label>
+              <input id="tab62" type="radio" name="tab_item6">
+              <label class="tab_item br_mid" for="tab62">Tab 2</label>
+              <input id="tab63" type="radio" name="tab_item6">
+              <label class="tab_item br_last" for="tab63">Tab 4</label>
+              <div class="tab_content" id="tab61_content">
+                  1탭
+              </div>
+              <div class="tab_content" id="tab62_content">
+                  2탭
+              </div>
+              <div class="tab_content" id="tab63_content">
+                3탭
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">TYPE2</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <!--tab -->
+            <div class="tap_type02_wrap">
+              <input id="tab21" type="radio" name="tab_item2" checked>
+              <label class="tab_item br_first" for="tab21">Tab 1</label>
+              <input id="tab22" type="radio" name="tab_item2">
+              <label class="tab_item br_last" for="tab22">Tab 2</label>
+              <div class="tab_content" id="tab21_content">
+                  1탭
+              </div>
+              <div class="tab_content" id="tab22_content">
+                  2탭
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">TYPE3</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <!--tab -->
+            <div class="tap_type03_wrap">
+              <input id="tab31" type="radio" name="tab_item3" checked>
+              <label class="tab_item br_first" for="tab31">Tab 1</label>
+              <input id="tab32" type="radio" name="tab_item3">
+              <label class="tab_item br_last" for="tab32">Tab 2</label>
+              <div class="tab_content" id="tab31_content">
+                  1탭
+              </div>
+              <div class="tab_content" id="tab32_content">
+                  2탭
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section_unit_content">
+          <h2 class="title">TYPE3</h2>
+          <div class="unit_content">
+            <div class="rmg15 bmg15">
+              <!--tab -->
+              <div class="tap_type04_wrap">
+                <input id="tab41" type="radio" name="tab_item4" checked>
+                <label class="tab_item br_first" for="tab41">Tab 1</label>
+                <input id="tab42" type="radio" name="tab_item4">
+                <label class="tab_item br_last" for="tab42">Tab 2</label>
+                <input id="tab43" type="radio" name="tab_item4">
+                <label class="tab_item br_last" for="tab43">Tab 3</label>
+                <input id="tab44" type="radio" name="tab_item4">
+                <label class="tab_item br_last" for="tab44">Tab 4</label>
+                <div class="tab_content" id="tab41_content">
+                    1탭
+                </div>
+                <div class="tab_content" id="tab42_content">
+                    2탭
+                </div>
+                <div class="tab_content" id="tab43_content">
+                  2탭
+                </div>
+                <div class="tab_content" id="tab44_content">
+                    2탭
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">TYPE7</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <!--tab -->
+            <div class="tap_type07_wrap">
+              <input id="tab71" type="radio" name="tab_item7" checked>
+              <label class="tab_item br_first" for="tab71">Tab 1</label>
+              <input id="tab72" type="radio" name="tab_item7">
+              <label class="tab_item br_mid" for="tab72">Tab 2</label>
+              <input id="tab73" type="radio" name="tab_item7">
+              <label class="tab_item br_mid" for="tab73">Tab 3</label>
+              <input id="tab74" type="radio" name="tab_item7">
+              <label class="tab_item br_mid" for="tab74">Tab 4</label>
+              <input id="tab75" type="radio" name="tab_item7">
+              <label class="tab_item br_last" for="tab75">Tab 4</label>
+              <div class="tab_content" id="tab71_content">
+                  1탭
+              </div>
+              <div class="tab_content" id="tab72_content">
+                  2탭
+              </div>
+              <div class="tab_content" id="tab73_content">
+                3탭
+              </div>
+              <div class="tab_content" id="tab74_content">
+                4탭
+              </div>
+              <div class="tab_content" id="tab75_content">
+                5탭
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--버튼-->
+    <div class="section_button">
+      <h1 class="title">버튼</h1>
+      <div class="section_unit_content">
+        <h2 class="title">Default / Active / Disabled</h2>
+        <div class="unit_content">
+          <!--button-->
+          button
+          <div class="rmg15 bmg15"><button class="btn_type01">연결하기</button></div>
+          <div class="rmg15 bmg15"><button class="btn_type01 active">연결하기</button></div>
+          <div class="rmg15 bmg15"><button class="btn_type01" disabled="disabled">연결하기</button></div>  
+          a tab
+          <div class="rmg15 bmg15"><a class="btn_type01">연결하기</a></div>
+          <div class="rmg15 bmg15"><a class="btn_type01 active">연결하기</a></div>
+          <div class="rmg15 bmg15"><a class="btn_type01 disabled">연결하기</a></div>  
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">Default / Active / Disabled</h2>
+        <div class="unit_content">
+          <!--button-->
+          <div class="unit_content">
+            <!--button-->
+            button
+            <div class="rmg15 bmg15"><button class="btn_type02">일괄 직결</button></div>
+            <div class="rmg15 bmg15"><button class="btn_type02 active">일괄 직결</button></div>
+            <div class="rmg15 bmg15"><button class="btn_type02" disabled="disabled">일괄 직결</button></div>  
+            a tab
+            <div class="rmg15 bmg15"><a class="btn_type02">일괄 직결</a></div>
+            <div class="rmg15 bmg15"><a class="btn_type02 active">일괄 직결</a></div>
+            <div class="rmg15 bmg15"><a class="btn_type02 disabled">일괄 직결</a></div>  
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">Default / Active / Disabled</h2>
+        <div class="unit_content">
+          <!--button-->
+          <div class="unit_content">
+            <!--button-->
+            button
+            <div class="rmg15 bmg15"><button class="btn_type03">취소</button></div>
+            <div class="rmg15 bmg15"><button class="btn_type03 active">취소</button></div>
+            <div class="rmg15 bmg15"><button class="btn_type03" disabled="disabled">취소</button></div>  
+            a tab
+            <div class="rmg15 bmg15"><a class="btn_type03">취소</a></div>
+            <div class="rmg15 bmg15"><a class="btn_type03 active">취소</a></div>
+            <div class="rmg15 bmg15"><a class="btn_type03 disabled">취소</a></div>  
+          </div>
+          <!--button-->
+          <div class="unit_content">
+            <!--button-->
+            button
+            <div class="rmg15 bmg15"><button class="cancel_btn">취소</button></div>
+            <div class="rmg15 bmg15"><button class="cancel_btn active">취소</button></div>
+            <div class="rmg15 bmg15"><button class="cancel_btn" disabled="disabled">취소</button></div>  
+            a tab
+            <div class="rmg15 bmg15"><a class="cancel_btn">취소</a></div>
+            <div class="rmg15 bmg15"><a class="cancel_btn active">취소</a></div>
+            <div class="rmg15 bmg15"><a class="cancel_btn disabled">취소</a></div>  
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">save_btn</h2>
+        <div class="unit_content">
+          <!--button-->
+          <div class="unit_content">
+            <!--button-->
+            button
+            <div class="rmg15 bmg15"><button class="save_btn">저장</button></div>
+            <div class="rmg15 bmg15"><button class="save_btn active">저장</button></div>
+            <div class="rmg15 bmg15"><button class="save_btn" disabled="disabled">저장</button></div>  
+            a tab
+            <div class="rmg15 bmg15"><a class="save_btn">저장</a></div>
+            <div class="rmg15 bmg15"><a class="save_btn active">저장</a></div>
+            <div class="rmg15 bmg15"><a class="save_btn disabled">저장</a></div>  
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">Default / Active / Disabled</h2>
+        <div class="unit_content">
+          <!--button-->
+          <div class="unit_content">
+            <!--button-->
+            button
+            <div class="rmg15 bmg15"><button class="btn_type04">저장</button></div>
+            <div class="rmg15 bmg15"><button class="btn_type04 active">저장</button></div>
+            <div class="rmg15 bmg15"><button class="btn_type04" disabled="disabled">저장</button></div>  
+            a tab
+            <div class="rmg15 bmg15"><a class="btn_type04">저장</a></div>
+            <div class="rmg15 bmg15"><a class="btn_type04 active">저장</a></div>
+            <div class="rmg15 bmg15"><a class="btn_type04 disabled">저장</a></div>  
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">Default / Active / Disabled</h2>
+        <div class="unit_content">
+          <!--button-->
+          <div class="unit_content">
+            <!--button-->
+            button
+            <div class="rmg15 bmg15"><button class="exel_btn">장비 추가</button></div>
+            <div class="rmg15 bmg15"><button type="button" class="down_btn">다운로드</button></div>
+            <div class="rmg15 bmg15"><button type="button" class="delete_btn">삭제</button></div>
+            <div class="rmg15 bmg15"><button type="button" class="location_btn">위치</button></div>
+          </div>
+        </div>  
+      </div>        
+      <div class="section_unit_content">
+        <h2 class="title">작은버튼 - 전체선택</h2>
+        <div class="unit_content">
+          <!--button-->
+          <div class="unit_content">
+            <!--button-->
+            button
+            <div class="rmg15 bmg15"><button class="btn_select_all">전체선택</button></div>
+            <div class="rmg15 bmg15"><button class="btn_select_all active">전체선택</button></div>
+            <div class="rmg15 bmg15"><button class="btn_select_all" disabled="disabled">전체선택</button></div>  
+            a tab
+            <div class="rmg15 bmg15"><a class="btn_select_all">전체선택</a></div>
+            <div class="rmg15 bmg15"><a class="btn_select_all active">전체선택</a></div>
+            <div class="rmg15 bmg15"><a class="btn_select_all disabled">전체선택</a></div>  
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">작은버튼 - 선택해제</h2>
+        <div class="unit_content">
+          <!--button-->
+          <div class="unit_content">
+            <!--button-->
+            button
+            <div class="rmg15 bmg15"><button class="btn_select_all_none">선택해제</button></div>
+            <div class="rmg15 bmg15"><button class="btn_select_all_none active">선택해제</button></div>
+            <div class="rmg15 bmg15"><button class="btn_select_all_none" disabled="disabled">선택해제</button></div>  
+            a tab
+            <div class="rmg15 bmg15"><a class="btn_select_all_none">선택해제</a></div>
+            <div class="rmg15 bmg15"><a class="btn_select_all_none active">선택해제</a></div>
+            <div class="rmg15 bmg15"><a class="btn_select_all_none disabled">선택해제</a></div>  
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">작은버튼 - 선택해제</h2>
+        <div class="unit_content">
+          <!--button-->
+          <div class="unit_content">
+            <!--button-->
+            button
+            <div class="rmg15 bmg15"><button class="btn_insert">삽입</button></div>
+            <div class="rmg15 bmg15"><button class="btn_insert active">삽입</button></div>
+            <div class="rmg15 bmg15"><button class="btn_insert" disabled="disabled">삽입</button></div>  
+            a tab
+            <div class="rmg15 bmg15"><a class="btn_insert">삽입</a></div>
+            <div class="rmg15 bmg15"><a class="btn_insert active">삽입</a></div>
+            <div class="rmg15 bmg15"><a class="btn_insert disabled">삽입</a></div>  
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">login</h2>
+        <div class="unit_content">
+          <!--button-->
+          <div class="unit_content">
+            <!--button-->
+            button
+            <div class="rmg15 bmg15"><button class="btn_login">로그인</button></div>
+            <div class="rmg15 bmg15"><button class="btn_login active">로그인</button></div>
+            <div class="rmg15 bmg15"><button class="btn_login" disabled="disabled">로그인</button></div>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--section_pagenation-->
+    <div class="section_pagenation">
+      <h1 class="title">페이지네이션</h1>
+      <div class="section_unit_content">
+        <h2 class="title">Default</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <div class="pagenation_wrap">
+              <a href="#" class="page_arrow page_first">처음</a>
+              <a href="#" class="page_arrow page_prev">이전</a>
+              <ul class="page_ul">
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+              </ul>
+              <a href="#" class="page_arrow page_next">다음</a>
+              <a href="#" class="page_arrow page_last">마지막</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">Arrow Disabled</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <div class="pagenation_wrap">
+              <a href="#" class="page_arrow page_first disabled">처음</a>
+              <a href="#" class="page_arrow page_prev disabled">이전</a>
+              <ul class="page_ul">
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+              </ul>
+              <a href="#" class="page_arrow page_next disabled">다음</a>
+              <a href="#" class="page_arrow page_last disabled">마지막</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--section_toggle-->
+    <div class="section_toggle">
+      <h1 class="title">토글</h1>
+      <div class="section_unit_content">
+        <h2 class="title">Rect</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15"><button class="rect_btn"><span class="ic_help">도움말</span>도움말</button></div>
+          <div class="rmg15 bmg15"><button class="rect_btn"><span class="ic_logout">로그아웃</span>로그아웃</button></div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">Notice</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <div class="notice_content">
+              <ul class="notice_line">
+                <li><a href="#"><span>화살표</span>[중증장애] 2021-07-21 00:00:00 110 CCTV111</a></li>
+                <li><a href="#">[중증장애] 2021-07-21 00:00:00 110 CCTV122</a></li>
+                <li><a href="#">[중증장애] 2021-07-21 00:00:00 110 133</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">right Quick</h2>
+        <div class="unit_content">
+          <!--오른쪽 퀵-->
+          <div class="rmg15 bmg15">
+            <div class="aside_btn_wrap">
+              <a href="#"><div class="aside_btn">토글버튼</div></a>
+              <div class="aside_btn_toggle" style="display:none">
+                <ul class="aside_toggle">
+                  <li><a href="#"><span class="to_save">저장</span>저장</a></li>
+                  <li><a href="#"><span class="to_print">인쇄</span>인쇄</a></li>
+                  <!--li><a href="#"><span class="to_radius">반경</span>반경</a></li>
+                  <li><a href="#"><span class="to_distance">거리</span>거리</a></li-->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_unit_content">
+        <h2 class="title">Top</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <!--상단 GNB-->
+            <div class="gnb_nav">
+              <a href="#" class="btn_gnb_list">리스트</a>
+              <div class="gnb_search">
+                <form name="" action="" method="post">
+                  <div class="gnb_search_select">
+                    <span class="selected"></span>
+                    <span class="selectArrow">화살표</span>
+                    <div class="selectOptions" >
+                      <span class="selectOption" value="Option 1">전체1</span>
+                      <span class="selectOption" value="Option 2">전체2</span>
+                    </div>
+                  </div>
+                  <input type='text' value='' name='' autocomplete='on' class="input_type01 gnb_search_input" placeholder="FISS 검색" />
+                  <button class="gnb_search_btn">검색하기</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--button-->
+      <div class="section_unit_content">
+        <h2 class="title">Toggle</h2>
+        <div class="unit_content">
+          <div class="rmg15 bmg15">
+            <!--toggle-->
+            <div class="switch_toggle_type01 active">
+              <input type="hidden" value="Y" />
+              <span class="text"></span>
+              <span class="circle"></span>
+            </div>
+          </div>
+          <div class="rmg15 bmg15">
+            <!--toggle2-->
+            <div class="switch_toggle_type02 active">
+              <input type="hidden" value="Y" />
+              <span class="text"></span>
+              <span class="circle"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <script src="./js/script.js"></script>
+</body>
+<html

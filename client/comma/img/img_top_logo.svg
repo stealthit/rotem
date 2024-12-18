@@ -1,0 +1,22 @@
+<svg id="img_top_logo" xmlns="http://www.w3.org/2000/svg" width="146" height="78" viewBox="0 0 146 78">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+        font-family: S-CoreDream-8Heavy, 'S-Core Dream \38 ';
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+
+      .cls-1 {
+        font-size: 38px;
+      }
+
+      .cls-2 {
+        font-size: 17px;
+      }
+    </style>
+  </defs>
+  <text id="촌장" class="cls-1" transform="translate(0 67)"><tspan x="0" y="0">촌장</tspan></text>
+  <text id="동네와_동네를_잇-다" data-name="동네와 동네를 잇-다" class="cls-2" transform="translate(0 19)"><tspan x="0" y="0">동네와 동네를 잇-다</tspan></text>
+</svg>

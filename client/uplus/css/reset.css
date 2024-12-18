@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/NotoSansKR-Thin.otf) format("opentype");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/NotoSansKR-Light.otf) format("opentype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/NotoSansKR-Regular.otf) format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/NotoSansKR-Medium.otf) format("opentype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/NotoSansKR-Bold.otf) format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: 0.28px !important;
+  position: relative;
+  margin: 0 auto;
+  line-height: 1.5 !important;
+}
+
+body {
+  line-height: 1;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: initial;
+  background-color: transparent;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: none;
+  outline: none;
+  font-family: "Noto Sans KR", sans-serif;
+}
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder {
+  font-size: 14px;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: rgba(188, 191, 199, 0.83);
+}
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder {
+  font-size: 14px;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: rgba(188, 191, 199, 0.83);
+}
+input[type="text"]::-ms-input-placeholder,
+input[type="password"]::-ms-input-placeholder {
+  font-size: 14px;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: rgba(188, 191, 199, 0.83);
+}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  font-size: 14px;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: rgba(188, 191, 199, 0.83);
+}
+input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* input file 초기화 */
+input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px; /*ey 211125*/
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* input date 초기화 */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url(../img/ic-input-date.png);
+}
+/* input radio */
+input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  border: 1px solid #dddddd;
+  border-radius: 100%;
+}
+input[type="radio"]:checked + label:before {
+  border-color: #181818;
+}
+input[type="radio"]:checked + label:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 8px;
+  top: 8px;
+  background-color: #181818;
+  border-radius: 100%;
+}
+/* input check */
+input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  border-radius: 4px;
+}
+input[type="checkbox"]:checked:disabled + label:before {
+  background: url(../img/bt-check-s-d.svg) center no-repeat;
+  border: none;
+  width: 22px;
+  height: 22px;
+}
+input[type="checkbox"]:checked + label:after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+}
+
+/* Select box 스타일 초기화 */
+select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+select:focus {
+  outline: none;
+}
+select {
+  cursor: pointer;
+  cursor: pointer;
+  padding: 0 16px;
+  padding-right: 35px;
+  font-size: 14px;
+  letter-spacing: -0.35px;
+  text-align: left;
+  color: rgba(40, 42, 63, 0.83);
+  border-radius: 4px;
+  background-color: #ffffff;
+  background-size: 14px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+input {
+  font-family: "Noto Sans KR", sans-serif !important;
+}
+
+/* IE 에서 Select box 화살표 제거 */
+select::-ms-expand {
+  display: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #f0f0f0 inset !important;
+}
+
+/* 공통요소 */
+.bold {
+  font-weight: bold;
+}

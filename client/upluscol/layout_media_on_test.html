@@ -1,0 +1,2859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>U2 Collaboration</title>
+    <!--script  src="http://code.jquery.com/jquery-latest.min.js"></script-->
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1050px)" />
+  </head>
+  <style>
+    .menu-box.active {
+      display: none;
+    }
+  </style>
+  <body>
+    <div class="wrapper" id="LC_Page_10000">
+      <!-- 팝업 -->
+
+      <!-- 내용 영역 -->
+
+      <section id="content-wrap">
+        <div class="layout-wrap">
+          <!--lnb-->
+          <div id="lnb-wrap">
+            <div class="user-con">
+              <a href="#" class="tool-btn" id="user-type"
+                >홍길동 님 <i class="ic-arrow"></i
+              ></a>
+              <ul class="menu-box" id="user-type-box">
+                <li class="type-box-top">
+                  <div class="type-box01">
+                    <div class="ic-img-user"><p class="bg_violet">길동</p></div>
+                  </div>
+                  <div class="type-box02">
+                    <p>홍길동님</p>
+                    <p>hong@gmail.com</p>
+                  </div>
+                  <button type="button" class="close-btn"></button>
+                </li>
+                <li>
+                  <button type="button" id="file-name-btn">계정정보</button>
+                </li>
+                <li class="account-mobile">
+                  <button type="button" id="file-date-btn">멤버추가</button>
+                </li>
+                <li class="account-mobile">
+                  <button type="button" id="file-size-btn">설정</button>
+                </li>
+                <li><button type="button" id="file-size-btn">FAQ</button></li>
+                <button type="button" class="btn_rect_white tac">
+                  Log out
+                </button>
+              </ul>
+            </div>
+            <!--search-->
+            <form id="search">
+              <div class="search-input-wrap">
+                <input
+                  type="text"
+                  placeholder="검색어를 입력하세요."
+                  class="search-input"
+                />
+                <button type="submit" class="search-btn">검색 버튼</button>
+              </div>
+            </form>
+            <!-- 드라이브 리스트 -->
+
+            <div class="drive-list-wrap">
+              <ul id="drive-list">
+                <!-- 내 드라이브 -->
+
+                <li id="my-drive" data-child="1">
+                  <i class="ic-arrow"></i>
+                  <button type="button" class="root_folder">
+                    홍길동's Team
+                  </button>
+                  <button type="button" class="circle_btn" alt="추가하기">
+                    추가
+                  </button>
+                  <ul class="child-node child1">
+                    <li class="parent-node" id="parent1-1" data-child="2">
+                      <button type="button">Project1</button>
+                    </li>
+                    <li>
+                      <button type="button">Project2</button>
+                    </li>
+                  </ul>
+                </li>
+                <li id="my-drive1" data-child="1">
+                  <i class="ic-arrow"></i>
+                  <button type="button" class="root_folder">
+                    리뷰공유 프로젝트
+                  </button>
+                  <ul class="child-node child1">
+                    <li class="parent-node" id="parent1-1" data-child="2">
+                      <button type="button">Project1</button>
+                    </li>
+                    <li>
+                      <button type="button">Project2</button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--//lnb-->
+        </div>
+
+        <!-- 컨텐츠 -->
+        <div class="content-wrap-inner">
+          <section id="header-wrap">
+            <header>
+              <div class="func-wrap">
+                <div class="func-mobile-list">
+                  <button type="button" id="tree-trigger-btn">리스트</button>
+                </div>
+                <div class="func-search-wrap">
+                  <input
+                    type="text"
+                    placeholder="jump to project of file"
+                    class="search-input"
+                  />
+                </div>
+                <ul class="func-profile-wrap">
+                  <li>
+                    <a href="#" class="ic-top-wrap ic-top-user">사용자</a>
+                  </li>
+                  <li><a href="#" class="ic-top-wrap ic-top-bell">알림</a></li>
+                </ul>
+              </div>
+            </header>
+          </section>
+          <div class="topper">
+            <ul class="top-state">
+              <li>홍</li>
+              <li><a href="#">Project1</a></li>
+              <li>Locations</li>
+            </ul>
+            <div class="top-right">
+              <a href="#" class="circle_add_btn" alt="사용자 추가"
+                >사용자 추가</a
+              >
+              <div class="user-wrap">
+                <div class="ic-img-user"><p class="bg_none">유저</p></div>
+                <div class="ic-img-user"><p class="bg_none">사람</p></div>
+                <div class="ic-img-user"><p class="bg_violet">길동</p></div>
+              </div>
+              <a href="#" class="btn_rect_black" alt="Share">Share</a>
+              <!-- NEW 모달 적용 -->
+              <a href="#" class="btn_rect_white02 tac" alt="New"
+                >New<span>+</span>
+
+                <ul class="menu-box active" id="folder-edit-box">
+                  <li>
+                    <span class="folder"></span
+                    ><button type="button" id="">폴더 업로드</button>
+                  </li>
+                  <li>
+                    <span class="file"></span
+                    ><button type="button" id="">파일 업로드</button>
+                  </li>
+
+                  <li>
+                    <span class="drive"></span
+                    ><button type="button" id="">드라이브 업로드</button>
+                  </li>
+                  <li class="divBar">구분선</li>
+                  <li>
+                    <span class="newFolder"></span
+                    ><button type="button" id="">새폴더</button>
+                  </li>
+                </ul>
+              </a>
+              <!-- NEW 모달 적용 -->
+            </div>
+          </div>
+
+          <section id="content">
+            <div class="tabs_inner">
+              <ul class="tabs">
+                <li
+                  class="current"
+                  data-tab="tab-media"
+                  data-stab="tab-right-media"
+                >
+                  미디어
+                </li>
+                <li class="" data-tab="tab-review" data-stab="tab-right-review">
+                  리뷰링크
+                </li>
+                <li class="" data-tab="tab-link" data-stab="tab-right-link">
+                  링크
+                </li>
+              </ul>
+              <ul class="tabs-info">
+                <ul id="tab-right-media" class="tabs-right-inner current">
+                  <!--li class="data-info"><strong>6</strong> items, <strong>8.33</strong> MB</li-->
+                  <li class="tool-btn-pc">
+                    <button type="button" id="file-type" class="tool-btn">
+                      파일타입
+                    </button>
+                    <ul class="menu-box" id="file-type-box">
+                      <li class="file-type-title">정렬 기준</li>
+                      <li>
+                        <button type="button" id="file-name-btn">이름순</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-date-btn">시간순</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-size-btn">
+                          파일 타입
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="tool-btn-m">
+                    <button type="button" id="file-type" class="tool-btn">
+                      타입
+                    </button>
+                    <ul class="menu-box" id="file-type-box">
+                      <li>
+                        <button type="button" id="file-name-btn">이름</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-date-btn">
+                          수정한 날짜
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-size-btn">크기</button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button type="button" id="sort" class="tool-btn">
+                      <span class="gallery">정렬</span>
+                    </button>
+                    <ul class="menu-box" id="sort-box">
+                      <li>
+                        <span class="gallery"></span
+                        ><button type="button" id="sort-gallery-btn">
+                          갤러리로 보기
+                        </button>
+                      </li>
+                      <li>
+                        <span class="grid"></span
+                        ><button type="button" id="sort-grid-btn">
+                          그리드로 보기
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button type="button" id="view-more" class="more-btn">
+                      더보기
+                    </button>
+                  </li>
+                </ul>
+
+                <ul id="tab-right-review" class="tabs-right-inner">
+                  <li class="tool-btn-pc">
+                    <button type="button" id="create-type" class="tool-btn">
+                      파일타입
+                    </button>
+                    <ul class="menu-box" id="create-type-box">
+                      <li class="file-type-title">정렬 기준</li>
+                      <li>
+                        <button type="button" id="file-name-btn">이름순</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-date-btn">시간순</button>
+                      </li>
+                      <li>
+                        <button type="button" id="file-size-btn">
+                          파일 타입
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- <li><button type="button" id="create-type" class="tool-btn">생성일</button>
+                  <ul class="menu-box" id="create-type-box">
+                    <li><button type="button" id="create-date-btn">생성일</button></li>
+                  </ul>
+                </li> -->
+                  <li>
+                    <button type="button" id="view-more" class="more-btn">
+                      더보기
+                    </button>
+                  </li>
+                </ul>
+
+                <ul id="tab-right-link" class="tabs-right-inner">
+                  <li>
+                    <button type="button" id="create-type01" class="tool-btn">
+                      생성일
+                    </button>
+                    <ul class="menu-box" id="create-type01-box">
+                      <li>
+                        <button type="button" id="create-date01-btn">
+                          생성일
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button type="button" id="view-more" class="more-btn">
+                      더보기
+                    </button>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <!--미디어 detail-->
+            <div id="tab-media" class="tabs-inner content-inner current">
+              <ul class="media-ul">
+                <!--타입별-->
+                <!-- 일반 : type01-->
+                <!-- 프리뷰없음 : type02-->
+                <!-- 프리뷰3개이상 : type03-->
+                <!-- 폴더만 : type04-->
+                <li>
+                  <a href="">
+                    <section class="file-pv type01">
+                      <div class="info-rect status">
+                        <i class="orange"></i>Needs Review
+                      </div>
+                      <div class="info-rect timeline">00:54</div>
+                      <img src="img/tmp_img.jpg" />
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <section class="file-pv type01">
+                      <div class="info-rect status">
+                        <i class="cyan"></i>in Progress
+                      </div>
+                      <div class="info-rect timeline">00:54</div>
+                      <img src="img/tmp_img.jpg" />
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <section class="file-pv type03">
+                      <div class="pv-img01"><img src="img/tmp_img.jpg" /></div>
+                      <div class="pv-img02"><img src="img/tmp_img.jpg" /></div>
+                      <div class="pv-img03">
+                        <div class="bg">+ 2</div>
+                        <img src="img/tmp_img.jpg" />
+                      </div>
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="">
+                    <section class="file-pv type03">
+                      <div class="pv-img01"><img src="img/tmp_img.jpg" /></div>
+                      <div class="pv-img02"><img src="img/tmp_img.jpg" /></div>
+                      <div class="pv-img03">
+                        <div class="bg">+ 2</div>
+                        <img src="img/tmp_img.jpg" />
+                      </div>
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <section class="file-pv type01">
+                      <div class="info-rect status">
+                        <i class="green"></i>Approved
+                      </div>
+                      <div class="info-rect timeline">00:54</div>
+                      <img src="img/tmp_img.jpg" />
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" id="progress">
+                    <section class="file-pv type04">폴더없음</section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">Untitled Folder</div>
+                      <div class="file-date">
+                        No Items
+                        <!--div class="file-msg">4</div-->
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <section class="file-pv type01">
+                      <div class="info-rect01">
+                        <div class="ic-people">사람들</div>
+                        <!--div class="ic-lock">잠김</div-->
+                      </div>
+                      <div class="info-rect status">
+                        <i class="orange"></i>Needs Review
+                      </div>
+                      <div class="info-rect timeline">00:54</div>
+                      <img src="img/tmp_img.jpg" />
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <section class="file-pv type01">
+                      <!--div class="info-rect status"><i class="orange"></i>Needs Review</div-->
+                      <div class="info-rect timeline">00:54</div>
+                      <img src="img/tmp_img.jpg" />
+                    </section>
+                    <div class="file-pv-txt">
+                      <div class="file-name">60 Second Cut.mp4</div>
+                      <div class="file-date">
+                        Emer.2021-09-01
+                        <div class="file-msg">4</div>
+                        <div class="file-more">more</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!--li>
+                <a href="">
+                <section class="file-pv type02">
+                  이미지없음
+                </section>
+                <div class="file-pv-txt">
+                  <div class="file-name">60 Second Cut.mp4</div>
+                  <div class="file-date">Emer.2021-09-01
+                    <div class="file-msg">4</div>
+                    <div class="file-more">more</div>
+                  </div>
+                </div>
+                </a> 
+              </li-->
+                <li>
+                  <section class="file-pv type05">
+                    <img src="img/ic-loading.png" />
+                  </section>
+                  <div class="file-pv-txt">
+                    <div class="file-name">60 Second Cut.mp4</div>
+                    <div class="file-date">
+                      Generating thumbnails
+                      <!--div class="file-msg">4</div>
+                    <div class="file-more">more</div-->
+                    </div>
+                  </div>
+                </li>
+                <!--mv 없음-->
+                <li>
+                  <section class="file-pv type05">
+                    <img src="img/ic-video-thumb.svg" />
+                  </section>
+                  <div class="file-pv-txt">
+                    <div class="file-name">60 Second Cut.mp4</div>
+                    <div class="file-date">
+                      Emer.2021-09-01
+                      <div class="file-msg">4</div>
+                      <div class="file-more">more</div>
+                    </div>
+                  </div>
+                </li>
+                <!--음악 없음-->
+                <li>
+                  <section class="file-pv type05">
+                    <img src="img/ic-music-thumb.svg" />
+                  </section>
+                  <div class="file-pv-txt">
+                    <div class="file-name">60 Second Cut.mp4</div>
+                    <div class="file-date">
+                      Emer.2021-09-01
+                      <div class="file-msg">4</div>
+                      <div class="file-more">more</div>
+                    </div>
+                  </div>
+                </li>
+                <!--이미지 없음-->
+                <li>
+                  <section class="file-pv type05">
+                    <img src="img/ic-pic-thumb.svg" />
+                  </section>
+                  <div class="file-pv-txt">
+                    <div class="file-name">60 Second Cut.mp4</div>
+                    <div class="file-date">
+                      Emer.2021-09-01
+                      <div class="file-msg">4</div>
+                      <div class="file-more">more</div>
+                    </div>
+                  </div>
+                </li>
+                <!--문서 없음-->
+                <li>
+                  <section class="file-pv type05">
+                    <img src="img/ic-file-thumb.svg" />
+                  </section>
+                  <div class="file-pv-txt">
+                    <div class="file-name">60 Second Cut.mp4</div>
+                    <div class="file-date">
+                      Emer.2021-09-01
+                      <div class="file-msg">4</div>
+                      <div class="file-more">more</div>
+                    </div>
+                  </div>
+                </li>
+                <!--로고-->
+                <li>
+                  <section class="file-pv type05">
+                    <img src="img/img-logo-thumb.svg" class="logo-bg" />
+                  </section>
+                  <div class="file-pv-txt">
+                    <div class="file-name">60 Second Cut.mp4</div>
+                    <div class="file-date">
+                      Emer.2021-09-01
+                      <div class="file-msg">4</div>
+                      <div class="file-more">more</div>
+                    </div>
+                  </div>
+                </li>
+                <!--폴더별 없음2 ey 211222-->
+                <li>
+                  <section class="file-pv type03">
+                    <div class="pv-img01 emp-file">
+                      <img src="img/ic-pic-thumb.svg" />
+                    </div>
+                    <div class="pv-img02 emp-file two-file">
+                      <img src="img/ic-file-thumb.svg" />
+                    </div>
+                  </section>
+                  <div class="file-pv-txt">
+                    <div class="file-name">60 Second Cut.mp4</div>
+                    <div class="file-date">
+                      Emer.2021-09-01
+                      <div class="file-msg">4</div>
+                      <div class="file-more">more</div>
+                    </div>
+                  </div>
+                </li>
+                <!--폴더별 없음-->
+                <li>
+                  <section class="file-pv type03">
+                    <div class="pv-img01 emp-file">
+                      <img src="img/ic-pic-thumb.svg" />
+                    </div>
+                    <div class="pv-img02 emp-file">
+                      <img src="img/ic-file-thumb.svg" />
+                    </div>
+                    <div class="pv-img03 emp-file">
+                      <div class="bg">+ 2</div>
+                      <img src="img/img-logo-thumb.svg" />
+                    </div>
+                  </section>
+                  <div class="file-pv-txt">
+                    <div class="file-name">60 Second Cut.mp4</div>
+                    <div class="file-date">
+                      Emer.2021-09-01
+                      <div class="file-msg">4</div>
+                      <div class="file-more">more</div>
+                      <!--edit-->
+                      <ul
+                        class="menu-box active"
+                        id="project-tool-box"
+                        style="top: -300px"
+                      >
+                        <!-- 임시 위치 지정입니다 -->
+                        <li>
+                          <span class="share"></span
+                          ><button type="button" id="">공유하기</button
+                          ><i class="ic-arrow">메뉴더보기</i>
+                        </li>
+                        <li>
+                          <span class="pen"></span
+                          ><button type="button" id="">이름수정</button>
+                        </li>
+                        <li class="divBar">구분선</li>
+                        <!--↓ 사용안되는 부분도 있습니다. 기능이 없을 땐, 이 셀을 none 바람-->
+                        <li>
+                          <span><i class="cyan"></i></span
+                          ><button type="button" id="">Needs Review</button
+                          ><i class="ic-arrow">메뉴더보기</i>
+                        </li>
+                        <!--↑ 사용안되는 부분도 있습니다. 기능이 없을 땐, 이 셀을 none 바람-->
+                        <li>
+                          <span class="move"></span
+                          ><button type="button" id="">위치이동</button>
+                        </li>
+                        <li>
+                          <span class="copy"></span
+                          ><button type="button" id="">복사</button>
+                        </li>
+                        <li>
+                          <span class="down"></span
+                          ><button type="button" id="">다운로드</button>
+                        </li>
+                        <li class="divBar">구분선</li>
+                        <li>
+                          <span class="trash"></span
+                          ><button type="button" id="">삭제</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <section class="file-pv type05">
+                    <div class="progress-box">
+                      <div class="progress-wrapper">
+                        <div class="progressbar"></div>
+                        <div class="progress-background"></div>
+                      </div>
+                      <a href="#" class="btn_rect_gray tac" alt="취소">취소</a>
+                    </div>
+                  </section>
+                  <div class="file-pv-txt">
+                    <div class="file-name">60 Second Cut.mp4</div>
+                    <div class="file-date">
+                      Generating thumbnails
+                      <!--div class="file-msg">4</div>
+                    <div class="file-more">more</div-->
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--리뷰링크 detail-->
+            <div id="tab-review" class="tabs-inner content-inner">
+              <table class="tb-layout tb-review" summary="리뷰링크">
+                <colgroup>
+                  <col width="56px" />
+                  <col width="*" />
+                  <col width="15%" />
+                  <col width="10%" />
+                  <col width="5%" />
+                  <col width="5%" />
+                  <col width="20%" />
+                </colgroup>
+                <tr>
+                  <th scope="col" colspan="2">이름</th>
+                  <th scope="col">생성일</th>
+                  <th scope="col" class="tac">생성자</th>
+                  <th scpee="col" class="tac">
+                    <img src="img/ic-view-on.svg" />
+                  </th>
+                  <th scope="col">활성</th>
+                  <th scope="col">링크</th>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="img-folder"
+                      ><img src="img/img-folder.svg"
+                    /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span><span>4 items</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--링크 detail-->
+            <div id="tab-link" class="tabs-inner content-inner">
+              <table class="tb-layout tb-review" summary="링크">
+                <colgroup>
+                  <col width="56px" />
+                  <col width="*" />
+                  <col width="15%" />
+                  <col width="10%" />
+                  <col width="5%" />
+                  <col width="5%" />
+                  <col width="20%" />
+                </colgroup>
+                <tr>
+                  <th scope="col" colspan="2">이름</th>
+                  <th scope="col">생성일</th>
+                  <th scope="col" class="tac">생성자</th>
+                  <th scpee="col" class="tac">
+                    <img src="img/ic-view-on.svg" />
+                  </th>
+                  <th scope="col">활성</th>
+                  <th scope="col">링크</th>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="mv"><img src="img/img_no_image.svg" /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="img-folder"
+                      ><img src="img/img-folder.svg"
+                    /></span>
+                  </td>
+                  <td><span>60 Secont Cut.mp4</span><span>4 items</span></td>
+                  <td>2021-09-11</td>
+                  <td class="tac">김길동</td>
+                  <td class="tac">11</td>
+                  <td>
+                    <div class="switch_toggle active">
+                      <input type="hidden" value="Y" />
+                      <span class="text"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="pc">url.com/jJ1GRq-Y</div>
+                    <a href="#" class="copy_link" alt="링크복사"
+                      >[ 링크복사 ]</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- 팝업 test -->
+            <style>
+              #project-tool-box {
+                z-index: 70;
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
+              #project-tool02-box {
+                z-index: 70;
+                position: absolute;
+                top: 0px;
+                left: 250px;
+              }
+              #review-mini-box {
+                z-index: 70;
+                position: absolute;
+                top: 250px;
+                left: 500px;
+              }
+              #progress-box {
+                z-index: 70;
+                position: absolute;
+                top: 250px;
+                left: 800px;
+              }
+              #file-edit-box {
+                z-index: 70;
+                position: absolute;
+                top: 0px;
+                left: 500px;
+              }
+
+              #file-del-box {
+                z-index: 70;
+                position: absolute;
+                top: 0px;
+                left: 1050px;
+              }
+              #file-move-box {
+                z-index: 70;
+                position: absolute;
+                top: 500px;
+                left: 0px;
+              }
+              #file-move-folder-box {
+                z-index: 70;
+                position: absolute;
+                top: 500px;
+                left: 600px;
+              }
+              /* ey211206 */
+              #file-get-box {
+                z-index: 70;
+                position: absolute;
+                top: 500px;
+                left: 1200px;
+              }
+              #file-drive-box {
+                z-index: 70;
+                position: absolute;
+                top: 500px;
+                left: 600px;
+              }
+              #new-project-box {
+                z-index: 70;
+                position: absolute;
+                top: 1050px;
+                left: 0;
+              }
+              #project-del-box {
+                z-index: 70;
+                position: absolute;
+                top: 1050px;
+                left: 550px;
+              }
+              #select-pay-box {
+                z-index: 70;
+                position: absolute;
+                top: 1350px;
+                left: 550px;
+              }
+              #project-edit01-box {
+                z-index: 70;
+                position: absolute;
+                top: 1050px;
+                left: 1050px;
+              }
+              /* ey 211229 추가 */
+              #allim-codec-box {
+                z-index: 70;
+                position: absolute;
+                top: 1050px;
+                left: 1250px;
+              }
+              #project-m-box {
+                z-index: 70;
+                position: absolute;
+                top: 1550px;
+                left: 0;
+              }
+              #project-link-box {
+                z-index: 70;
+                position: absolute;
+                top: 1650px;
+                left: 550px;
+                /* display: none; */
+              }
+              #project-m01-box {
+                z-index: 70;
+                position: absolute;
+                top: 2000px;
+                left: 550px;
+              }
+              #share-mini-box {
+                z-index: 70;
+                position: absolute;
+                top: 1650px;
+                left: 1100px;
+              }
+              #project-edit-box {
+                z-index: 70;
+                position: absolute;
+                top: 1650px;
+                left: 1100px;
+              }
+              #folder-edit-box {
+                z-index: 70;
+                position: absolute;
+                top: 1650px;
+                left: 1400px;
+              }
+              #share-box {
+                z-index: 70;
+                position: absolute;
+                top: 1800px;
+                left: 0px;
+              }
+              #share01-box {
+                z-index: 70;
+                position: absolute;
+                top: 1650px;
+                left: 550px;
+              }
+              #newfolder-box {
+                z-index: 70;
+                position: absolute;
+                top: 1300px;
+                left: 1200px;
+              }
+              #join-ask-box {
+                z-index: 70;
+                position: absolute;
+                top: 2100px;
+                left: 0;
+              }
+              #accept-ok-box {
+                z-index: 70;
+                position: absolute;
+                top: 2500px;
+                left: 400px;
+              }
+              #accpet-no-box {
+                z-index: 70;
+                position: absolute;
+                top: 2800px;
+                left: 400px;
+              }
+              #join-ask-no-box {
+                z-index: 70;
+                position: absolute;
+                top: 2500px;
+                left: 850px;
+              }
+              #alert-msg-box {
+                z-index: 70;
+                position: absolute;
+                top: 2800px;
+                left: 0px;
+              }
+              #alert-msg-no-box {
+                z-index: 70;
+                position: absolute;
+                top: 2500px;
+                left: 1200px;
+              }
+              #alert-msg-clear-box {
+                z-index: 70;
+                position: absolute;
+                top: 2900px;
+                left: 850px;
+              }
+              #invite-team-box {
+                z-index: 70;
+                position: absolute;
+                top: 2500px;
+                left: 0px;
+              }
+              #search-filter-box {
+                z-index: 70;
+                position: absolute;
+                top: 3350px;
+                left: 0;
+              }
+              #filter-type-box {
+                z-index: 70;
+                position: absolute;
+                top: 3100px;
+                left: 1200px;
+              }
+              #filter-type-box01 {
+                z-index: 70;
+                position: absolute;
+                top: 3200px;
+                left: 0;
+              }
+              #filter-type-box02 {
+                z-index: 70;
+                position: absolute;
+                top: 3400px;
+                left: 0;
+              }
+              #filter-type-box03 {
+                z-index: 70;
+                position: absolute;
+                top: 3600px;
+                left: 0;
+              }
+              #filter-type-box04 {
+                z-index: 70;
+                position: absolute;
+                top: 3500px;
+                left: 1200px;
+              }
+              #filter-type-box05 {
+                z-index: 70;
+                position: absolute;
+                top: 3600px;
+                left: 800px;
+              }
+              #search-type-box {
+                z-index: 70;
+                position: absolute;
+                top: 3000px;
+                left: 550px;
+              }
+              #search-type-box01 {
+                z-index: 70;
+                position: absolute;
+                top: 3400px;
+                left: 550px;
+              }
+              #file-type-box {
+                z-index: 70;
+                position: absolute;
+                top: 3300px;
+                left: 800px;
+              }
+              #file-array-box {
+                z-index: 70;
+                position: absolute;
+                top: 3300px;
+                left: 1100px;
+              }
+              #project-logout-box {
+                z-index: 70;
+                position: absolute;
+                top: 300px;
+                left: 1100px;
+              }
+              @media screen and (max-width: 768px) {
+                #project-tool-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                }
+                #review-mini-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 450px;
+                  left: 0px;
+                }
+                #progress-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 700px;
+                  left: 0px;
+                }
+                #file-edit-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 900px;
+                  left: 0px;
+                }
+
+                #file-del-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 1150px;
+                  left: 0px;
+                }
+                #file-move-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 1400px;
+                  left: 0px;
+                }
+                #file-move-folder-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 1400px;
+                  left: 0px;
+                }
+                /* ey211206 */
+                #file-get-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 1550px;
+                  left: 0px;
+                }
+                #new-project-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 2000px;
+                  left: 0;
+                }
+                #project-del-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 2500px;
+                  left: 0px;
+                }
+                #select-pay-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 2700px;
+                  left: 0px;
+                }
+                #project-edit01-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 2850px;
+                  left: 0px;
+                }
+                /* ey 211229 추가 */
+                #allim-codec-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 3000px;
+                  left: 0;
+                }
+                #project-m-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 3100px;
+                  left: 0;
+                }
+                #project-m01-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 3200px;
+                  left: 0;
+                }
+                #share-mini-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 3300px;
+                  left: 0px;
+                }
+                #project-edit-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 3400px;
+                  left: 0px;
+                }
+                #folder-edit-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 3500px;
+                  left: 0px;
+                }
+                #share-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 3600px;
+                  left: 0px;
+                }
+                #share01-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 3700px;
+                  left: 0px;
+                }
+                #newfolder-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 3800px;
+                  left: 0px;
+                }
+                #join-ask-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 3900px;
+                  left: 0;
+                }
+                #accept-ok-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 4000px;
+                  left: 0px;
+                }
+                #accpet-no-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 4100px;
+                  left: 0px;
+                }
+                #join-ask-no-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 4200px;
+                  left: 0px;
+                }
+                #alert-msg-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 4300px;
+                  left: 0px;
+                }
+                #alert-msg-no-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 4400px;
+                  left: 0px;
+                }
+                #alert-msg-clear-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 4500px;
+                  left: 0px;
+                }
+                #invite-team-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 4600px;
+                  left: 0px;
+                }
+                #search-filter-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 4700px;
+                  left: 0;
+                }
+                #filter-type-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 4800px;
+                  left: 0px;
+                }
+                #filter-type-box01 {
+                  z-index: 70;
+                  position: absolute;
+                  top: 4900px;
+                  left: 0px;
+                }
+                #filter-type-box02 {
+                  z-index: 70;
+                  position: absolute;
+                  top: 5000px;
+                  left: 0px;
+                }
+                #filter-type-box03 {
+                  z-index: 70;
+                  position: absolute;
+                  top: 5100px;
+                  left: 0px;
+                }
+                #filter-type-box04 {
+                  z-index: 70;
+                  position: absolute;
+                  top: 5200px;
+                  left: 0px;
+                }
+                #filter-type-box05 {
+                  z-index: 70;
+                  position: absolute;
+                  top: 5300px;
+                  left: 0px;
+                }
+                #search-type-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 5400px;
+                  left: 0px;
+                }
+                #search-type-box01 {
+                  z-index: 70;
+                  position: absolute;
+                  top: 5500px;
+                  left: 0px;
+                }
+                #file-type-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 5600px;
+                  left: 0px;
+                }
+                #file-array-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 5700px;
+                  left: 0px;
+                }
+                #project-logout-box {
+                  z-index: 70;
+                  position: absolute;
+                  top: 5800px;
+                  left: 0;
+                }
+              }
+            </style>
+
+            <!--edit-->
+            <div class="menu-box active" id="project-tool-box">
+              <li>
+                <span class="share"></span
+                ><button type="button" id="">공유하기</button
+                ><i class="ic-arrow">메뉴더보기</i>
+              </li>
+              <li>
+                <span class="pen"></span
+                ><button type="button" id="">이름수정</button>
+              </li>
+              <li class="divBar">구분선</li>
+              <!--↓ 사용안되는 부분도 있습니다. 기능이 없을 땐, 이 셀을 none 바람-->
+              <li>
+                <span><i class="cyan"></i></span
+                ><button type="button" id="">Needs Review</button
+                ><i class="ic-arrow">메뉴더보기</i>
+              </li>
+              <!--↑ 사용안되는 부분도 있습니다. 기능이 없을 땐, 이 셀을 none 바람-->
+              <li>
+                <span class="move"></span
+                ><button type="button" id="">위치이동</button>
+              </li>
+              <li>
+                <span class="copy"></span
+                ><button type="button" id="">복사</button>
+              </li>
+              <li>
+                <span class="down"></span
+                ><button type="button" id="">다운로드</button>
+              </li>
+              <li class="divBar">구분선</li>
+              <li>
+                <span class="trash"></span
+                ><button type="button" id="">삭제</button>
+              </li>
+            </div>
+
+            <!-- ey 211231 edit2-->
+            <div class="menu-box active" id="project-tool02-box">
+              <li>
+                <span class="share"></span
+                ><button type="button" id="">공유하기</button
+                ><i class="ic-arrow">메뉴더보기</i>
+              </li>
+              <li>
+                <span class="pen"></span
+                ><button type="button" id="">이름수정</button>
+              </li>
+              <li class="divBar">구분선</li>
+              <!--↓ 사용안되는 부분도 있습니다. 기능이 없을 땐, 이 셀을 none 바람-->
+              <!-- <li>
+            <span><i class="cyan"></i></span
+            ><button type="button" id="">Needs Review</button
+            ><i class="ic-arrow">메뉴더보기</i>
+          </li> -->
+              <!--↑ 사용안되는 부분도 있습니다. 기능이 없을 땐, 이 셀을 none 바람-->
+              <li>
+                <span class="move"></span
+                ><button type="button" id="">위치이동</button>
+              </li>
+              <li>
+                <span class="copy"></span
+                ><button type="button" id="">복사</button>
+              </li>
+              <li>
+                <span class="down"></span
+                ><button type="button" id="">다운로드</button>
+              </li>
+              <li class="divBar">구분선</li>
+              <li>
+                <span class="trash"></span
+                ><button type="button" id="">삭제</button>
+              </li>
+            </div>
+
+            <!--리뷰링크-->
+            <div class="menu-box active" id="review-mini-box">
+              <li>
+                <span class="review"></span
+                ><button type="button" id="">리뷰링크</button>
+              </li>
+              <li>
+                <span class="link"></span
+                ><button type="button" id="">링크</button>
+              </li>
+            </div>
+
+            <!--progress-->
+            <div class="menu-box active" id="progress-box">
+              <li>
+                <span><i class="white"></i></span
+                ><button type="button" id="">No Status</button>
+              </li>
+              <li>
+                <span><i class="cyan"></i></span
+                ><button type="button" id="">In Progress</button>
+              </li>
+              <li>
+                <span><i class="orange"></i></span
+                ><button type="button" id="">Needs Review</button>
+              </li>
+              <li>
+                <span><i class="green"></i></span
+                ><button type="button" id="">Approved</button>
+              </li>
+            </div>
+
+            <!--파일수정-->
+            <div class="menu-box active" id="file-edit-box">
+              <div class="mb-menu-box-title">
+                <p>이름 수정</p>
+                <button type="button" class="close-btn"></button>
+              </div>
+              <div class="img-con">
+                <div class="img"><img src="img/tmp_img.jpg" /></div>
+                <div class="input-con">
+                  <input
+                    type="text"
+                    value="60 Second Cut.mp4"
+                    class="search-input02"
+                  />
+                  <label>파일명을 입력하세요.</label>
+                </div>
+              </div>
+              <div>
+                <a href="#" class="btn_rect_white mw-100 tac" alt="취소"
+                  >취소</a
+                >
+                <a href="#" class="btn_rect_black mw-100 tac" alt="변경"
+                  >변경</a
+                >
+              </div>
+            </div>
+
+            <!--파일삭제-->
+            <div class="menu-box active" id="file-del-box">
+              <div class="mb-menu-box-title">
+                <p>파일 삭제</p>
+                <!--button type="button" class="close-btn"></button-->
+              </div>
+              <div class="img-con">
+                <div class="img"><img src="img/tmp_img.jpg" /></div>
+                <p><strong>'파일명.svg'</strong> 를 정말 삭제하시겠습니까?</p>
+              </div>
+              <div>
+                <a href="#" class="btn_rect_white mw-100 tac" alt="취소"
+                  >취소</a
+                >
+                <a href="#" class="btn_rect_black mw-100 tac" alt="수락"
+                  >삭제</a
+                >
+              </div>
+            </div>
+
+            <!--위치이동-->
+            <div class="menu-box active" id="file-move-box">
+              <div class="mb-menu-box-title">
+                <p>위치 이동</p>
+                <button type="button" class="close-btn"></button>
+              </div>
+              <div class="input-inner">
+                <select id="value-select" class="file-select">
+                  <option value="" hidden>전체</option>
+                  <option value="">옵션1</option>
+                  <option value="">옵션2</option>
+                </select>
+                <input
+                  type="text"
+                  value=""
+                  placeholder="검색어를 입력하세요"
+                  class="search-input02"
+                />
+              </div>
+              <div class="input-list-inner">
+                <ul>
+                  <li>
+                    <button type="button">홍길동's Team</button>
+                    <ul>
+                      <li><button type="button">Project1</button></li>
+                      <li>
+                        <button type="button" class="active">Project1</button>
+                      </li>
+                      <li>
+                        <button type="button">Project3</button>
+                        <ul>
+                          <li>
+                            folder
+                            <input
+                              type="text"
+                              placeholder="폴더명을 입력하세요"
+                              class="search-input02"
+                            />
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="input-list-chkbox">
+                <input type="checkbox" name="" id="ck-file" checked /><label
+                  for="ck-file"
+                ></label
+                >코멘트도 복사
+              </div>
+              <div class="btn-inner">
+                <div class="add-folder">
+                  <span></span><button type="button" id="">폴더 추가</button>
+                </div>
+                <div class="btn-area">
+                  <a href="#" class="btn_rect_white mw-100 tac" alt="취소"
+                    >취소</a
+                  >
+                  <a href="#" class="btn_rect_black mw-100 tac" alt="이동"
+                    >이동</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--위치이동 폴더-->
+            <div class="menu-box active" id="file-move-folder-box">
+              <div class="mb-menu-box-title">
+                <p>위치 이동</p>
+                <button type="button" class="close-btn"></button>
+              </div>
+              <div class="input-inner">
+                <select id="value-select" class="file-select">
+                  <option value="" hidden>전체</option>
+                  <option value="">옵션1</option>
+                  <option value="">옵션2</option>
+                </select>
+                <input
+                  type="text"
+                  value=""
+                  placeholder="검색어를 입력하세요"
+                  class="search-input02"
+                />
+              </div>
+              <div class="input-list-inner">
+                <ul>
+                  <li class="label">프로젝트</li>
+                  <li>
+                    <span class="pjt"></span
+                    ><button type="button" id="">Test프로젝트</button
+                    ><label>홍길동's team</label>
+                  </li>
+                  <li class="label">폴더</li>
+                  <li>
+                    <span class="pjt-folder"></span
+                    ><button type="button" id="">Test프로젝트</button
+                    ><label>홍길동's team</label>
+                  </li>
+                  <li>
+                    <span class="pjt-folder"></span
+                    ><button type="button" id="">Test프로젝트</button
+                    ><label>홍길동's team</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn-inner">
+                <div class="add-folder">
+                  <span></span><button type="button" id="">폴더 추가</button>
+                </div>
+                <div class="btn-area">
+                  <a href="#" class="btn_rect_white mw-100 tac" alt="취소"
+                    >취소</a
+                  >
+                  <a href="#" class="btn_rect_black mw-100 tac" alt="이동"
+                    >이동</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--드라이브에서 가져오기 ey 211206-->
+            <div class="menu-box active" id="file-get-box">
+              <div class="mb-menu-box-title">
+                <p>드라이브에서 가져오기</p>
+                <button type="button" class="close-btn"></button>
+              </div>
+              <!-- ey 211209 추가 -->
+              <div class="input-inner">
+                <select id="value-select" class="file-select">
+                  <option value="">드라이브 A</option>
+                  <option value="">드라이브 B</option>
+                  <option value="">드라이브 C</option>
+                </select>
+              </div>
+              <!-- ey 211216 input-list-inner 수정,
+          ey 211220 수정
+      -->
+              <div class="input-list-inner">
+                <ul>
+                  <li class="folder-box">
+                    <button type="button" class="">
+                      <span class="folder"></span>폴더명
+                    </button>
+                    <input
+                      type="checkbox"
+                      name=""
+                      id="ck-file1"
+                      checked
+                    /><label for="ck-file1"></label>
+                    <ul>
+                      <li>
+                        <!-- button > div 변경 ey 211220 -->
+                        <div>
+                          <span class="file"></span>
+                          <!-- ey 211221 파일명 p 안에 -->
+                          <p>파일명</p>
+                        </div>
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="ck-file2"
+                          checked
+                        /><label for="ck-file2"></label>
+                      </li>
+                      <li>
+                        <div>
+                          <span class="file"></span>
+                          <p>파일명</p>
+                        </div>
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="ck-file3"
+                          checked
+                        /><label for="ck-file3"></label>
+                      </li>
+                      <!-- <ul>
+                <li class="folder-box">
+                  <button type="button" class="active">
+                    <span class="folder"></span>폴더명
+                  </button>
+                  <input type="checkbox" name="" id="ck-file1" checked /><label
+                    for="ck-file1"
+                  ></label>
+                  <ul>
+                    <li>
+                      <div>
+                        <span class="file"></span>
+                        <p>파일명</p>
+                      </div>
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="ck-file3"
+                        checked
+                      /><label for="ck-file3"></label>
+                    </li>
+                    <li>
+                      <div>
+                        <span class="file"></span>
+                        <p>파일명</p>
+                      </div>
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="ck-file3"
+                        checked
+                      /><label for="ck-file3"></label>
+                    </li>
+                  </ul>
+                </li>
+              </ul> -->
+                    </ul>
+                  </li>
+                  <li>
+                    <div><span class="file"></span>파일명</div>
+                    <input
+                      type="checkbox"
+                      name=""
+                      id="ck-file4"
+                      checked
+                    /><label for="ck-file4"></label>
+                  </li>
+                  <li class="folder-box">
+                    <button type="button">
+                      <span class="folder"></span>폴더명
+                    </button>
+                    <input
+                      type="checkbox"
+                      name=""
+                      id="ck-file4"
+                      checked
+                    /><label for="ck-file4"></label>
+                  </li>
+                  <li class="folder-box">
+                    <button type="button">
+                      <span class="folder"></span>폴더명
+                    </button>
+                    <input
+                      type="checkbox"
+                      name=""
+                      id="ck-file5"
+                      checked
+                    /><label for="ck-file5"></label>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn-inner">
+                <div class="btn-area">
+                  <a href="#" class="btn_rect_white mw-100 tac" alt="취소"
+                    >취소</a
+                  >
+                  <a href="#" class="btn_rect_black mw-100 tac" alt="이동"
+                    >업로드</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--신규프로젝트-->
+            <div class="menu-box active" id="new-project-box">
+              <div class="mb-menu-box-title">
+                <p>신규 프로젝트</p>
+                <button type="button" class="close-btn"></button>
+              </div>
+              <input
+                type="text"
+                value=""
+                class="search-input02"
+                placeholder="프로젝트 이름을 입력하세요"
+              />
+              <ul>
+                <!-- <li class="label">협업 허용 범위</li>
+        <li class="pd-btm">
+          파일 다운로드 가능
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="divBar">구분선</li> ey 211222 삭제 -->
+                <li class="label">내 이메일로 알림</li>
+                <li>
+                  새로운 코멘트
+                  <!--div class="switch_toggle active">
+          <input type="hidden" value="Y" />
+          <span class="text"></span>
+          <span class="circle"></span>
+        </div-->
+                  <label class="switch_toggle">
+                    <input type="checkbox" onclick="toggle(this)" />
+                    <span class="slider round disable"></span>
+                    <!-- disable 추가 ey211222 -->
+                  </label>
+                </li>
+                <li>
+                  새로운 미디어 업로드
+                  <label class="switch_toggle">
+                    <input type="checkbox" onclick="toggle(this)" />
+                    <span class="slider round"></span>
+                  </label>
+                </li>
+                <!--li>새로운 협업자 등록
+        <label class="switch_toggle">
+          <input type="checkbox" onclick="toggle(this)">
+          <span class="slider round"></span>
+        </label>
+      </li-->
+                <li class="pd-btm">
+                  미디어 상태 업데이트
+                  <label class="switch_toggle">
+                    <input type="checkbox" onclick="toggle(this)" />
+                    <span class="slider round"></span>
+                  </label>
+                </li>
+                <li class="divBar">구분선</li>
+                <li class="label">모든 사람에게 이메일로 알림</li>
+                <li>
+                  새로운 코멘트
+                  <label class="switch_toggle">
+                    <input type="checkbox" onclick="toggle(this)" />
+                    <span class="slider round"></span>
+                  </label>
+                </li>
+                <li>
+                  새로운 미디어 업로드
+                  <label class="switch_toggle">
+                    <input type="checkbox" onclick="toggle(this)" />
+                    <span class="slider round"></span>
+                  </label>
+                </li>
+                <!--li>새로운 협업자 등록
+        <label class="switch_toggle">
+          <input type="checkbox" onclick="toggle(this)">
+          <span class="slider round"></span>
+        </label>
+      </li-->
+                <li>
+                  미디어 상태 업데이트
+                  <label class="switch_toggle">
+                    <input type="checkbox" onclick="toggle(this)" />
+                    <span class="slider round"></span>
+                  </label>
+                </li>
+              </ul>
+              <div>
+                <a href="#" class="btn_rect_black wd100 tac" alt="프로젝트 생성"
+                  >프로젝트 생성</a
+                >
+                <!--프로젝트 삭제/추가-->
+                <!--a href="#" class="btn_rect_white tac" alt="프로젝트 삭제">프로젝트 삭제</a>
+      <a href="#" class="btn_rect_black tac" alt="셋팅 저장">셋팅 저장</a-->
+              </div>
+            </div>
+
+            <!--프로젝트 삭제-->
+            <div class="menu-box active" id="project-del-box">
+              <div class="mb-menu-box-title">
+                <p>프로젝트 삭제</p>
+                <button type="button" class="close-btn"></button>
+              </div>
+              <p>
+                '<strong>Project 1</strong>' 프로젝트를 정말 삭제
+                하시겠습니까?<br />
+                포함된 미디어 및 파일들이 전부 삭제되며, 삭제 후 복구할 수
+                없습니다.
+              </p>
+              <div>
+                <a href="#" class="btn_rect_white mw-100 tac" alt="취소"
+                  >취소</a
+                >
+                <a href="#" class="btn_rect_black mw-100 tac" alt="수락"
+                  >수락</a
+                >
+              </div>
+            </div>
+
+            <!--요금제선택-->
+            <div class="menu-box active" id="select-pay-box">
+              <div class="mb-menu-box-title">
+                <p>요금제를 선택하세요</p>
+                <button type="button" class="close-btn"></button>
+              </div>
+              <p>요금제를 가입해야 이용 할 수 있습니다.</p>
+              <div>
+                <a href="#" class="btn_rect_black tac" alt="U2 LIFE 이동"
+                  >U2 LIFE 이동</a
+                >
+              </div>
+            </div>
+
+            <!--프로젝트 편집-->
+            <ul class="menu-box active" id="project-edit01-box">
+              <li>
+                <span class="edit"></span
+                ><button type="button" id="">프로젝트 편집</button>
+              </li>
+              <li>
+                <span class="storage"></span
+                ><button type="button" id="">프로젝트 보관</button>
+              </li>
+              <!-- <li><span class="quit"></span><button type="button" id="">프로젝트 탈퇴</button></li> ey 211222 삭제 -->
+              <li>
+                <span class="trash"></span
+                ><button type="button" id="">프로젝트 삭제</button>
+              </li>
+            </ul>
+
+            <!--코덱 알림 ey 211229 추가 -->
+            <div class="menu-box active" id="allim-codec-box">
+              <div class="mb-menu-box-title">
+                <p>알림</p>
+                <button type="button" class="close-btn"></button>
+              </div>
+              <p>
+                지원 하지 않는 코덱입니다.<br />코덱 확인 후 재생을 다시
+                시도하세요.
+              </p>
+              <div>
+                <a href="#" class="btn_rect_black tac" alt="확인">확인</a>
+              </div>
+            </div>
+
+            <!--프로젝트 멤버 ey211230 수정-->
+            <div class="menu-box active" id="project-m-box">
+              <div class="mb-menu-box-title">
+                <p>프로젝트 멤버</p>
+                <div class="create-zone">
+                  <!-- ey211231 삭제<div class="create-link">초대링크 생성</div> -->
+                  <button type="button" class="close-btn"></button>
+                </div>
+              </div>
+              <ul class="mem-list">
+                <li>
+                  <a href="#" class="mem-txt"
+                    >kang@gmail.com<i class="new">N</i></a
+                  >
+                </li>
+                <li><a href="#" class="mem-txt">kang@gmail.com</a></li>
+                <li><a href="#" class="mem-txt">kang@gmail.com</a></li>
+                <li><a href="#" class="mem-txt">kang@gmail.com</a></li>
+              </ul>
+              <div class="input-inner suggest">
+                <input
+                  type="text"
+                  placeholder=""
+                  class="search-input02"
+                  id="project-suggest"
+                />
+                <div class="menu-box active" id="project-suggest-box" style>
+                  <ul>
+                    <li>
+                      <p>gildong Kang</p>
+                      <span>kang@gmail.com</span>
+                    </li>
+                    <li>
+                      <p>gildong Kang</p>
+                      <span>kang@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="btn_rect_black mw-100 tac" alt="추가"
+                  >추가</a
+                >
+              </div>
+              <!-- ey 211231 삭제<div class="add-message">
+        <span></span
+        ><button type="button" id="open-textarea" onClick="openMsg();">
+          메세지 입력
+        </button>
+      </div> -->
+              <div class="input-inner">
+                <input
+                  type="text"
+                  placeholder=""
+                  class="search-input02 margin-r"
+                />
+                <!-- ey 211231 삭제<a
+          href="#"
+          class="btn_rect_black mw-100 tac"
+          alt="입력"
+          >입력</a
+        > -->
+              </div>
+              <div class="btn-area">
+                <a href="#" class="btn_rect_black mw-100 tac" alt="초대"
+                  >초대</a
+                >
+              </div>
+            </div>
+
+            <!--프로젝트 멤버-->
+            <div class="menu-box active" id="project-m01-box">
+              <div class="mb-menu-box-title">
+                <p>프로젝트 멤버</p>
+                <div class="create-zone">
+                  <div class="create-link active">
+                    url.com/kJ1GRq-Y<span>[복사하기]</span>
+                  </div>
+                  <button type="button" class="close-btn"></button>
+                </div>
+              </div>
+              <ul class="mem-list">
+                <li>
+                  <a href="#" class="mem-txt"
+                    >kang@gmail.com<i class="new">N</i></a
+                  >
+                </li>
+                <li><a href="#" class="mem-txt">kang@gmail.com</a></li>
+                <li><a href="#" class="mem-txt">kang@gmail.com</a></li>
+                <li><a href="#" class="mem-txt">kang@gmail.com</a></li>
+              </ul>
+
+              <div class="input-inner">
+                <input type="text" placeholder="" class="search-input02" /><a
+                  href="#"
+                  class="btn_rect_black mw-100 tac"
+                  alt="초대"
+                  >초대</a
+                >
+              </div>
+
+              <div class="pjt-list">
+                프로젝트 팀원 목록
+                <div class="search-input-wrap">
+                  <input
+                    type="text"
+                    placeholder="이메일 또는 이름 검색"
+                    id="search-input"
+                  />
+                  <button type="submit" id="search-btn">검색 버튼</button>
+                </div>
+              </div>
+              <ul class="pjt-list-inner">
+                <li>
+                  <div class="label">
+                    홍길동<span>1 주일전</span><br />
+                    <span>kang@gmail.com</span>
+                  </div>
+                  <button type="button" id="file-type" class="tool-btn">
+                    협업멤버
+                  </button>
+                  <button type="button" class="close-btn"></button>
+                </li>
+                <li>
+                  <div class="label">
+                    홍길동<span>1 주일전</span><br />
+                    <span>kang@gmail.com</span>
+                  </div>
+                  <button type="button" id="file-type" class="tool-btn">
+                    팀멤버
+                  </button>
+                  <button type="button" class="close-btn"></button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 초대링크 -->
+            <div class="menu-box active" id="project-link-box">
+              <div class="create-zone">
+                <p>초대 링크</p>
+                <div class="create-link active">
+                  url.com/kJ1GRq-Y<span>[복사하기]</span>
+                </div>
+              </div>
+            </div>
+
+            <!--공유-->
+            <div class="menu-box active" id="share-mini-box">
+              <li>
+                <span class="review"></span
+                ><button type="button" id="">리뷰 링크로 공유</button
+                ><label>댓글 등록 가능</label>
+              </li>
+              <li>
+                <span class="link"></span
+                ><button type="button" id="">링크로 공유</button
+                ><label>보기 전용 링크</label>
+              </li>
+            </div>
+
+            <!--프로젝트관리-->
+            <div class="menu-box active" id="project-edit-box">
+              <li>
+                <span class="allDown"></span
+                ><button type="button" id="">전체 다운로드</button>
+              </li>
+              <li>
+                <span class="trash"></span
+                ><button type="button" id="">최근파일 삭제</button>
+              </li>
+              <li class="divBar">구분선</li>
+              <li>
+                <span class="setting"></span
+                ><button type="button" id="">프로젝트 세팅</button>
+              </li>
+              <li>
+                <span class="quit"></span
+                ><button type="button" id="">프로젝트 나가기</button>
+              </li>
+              <li>
+                <span class="trash"></span
+                ><button type="button" id="">프로젝트 삭제</button>
+              </li>
+            </div>
+
+            <!--폴더관리-->
+            <ul class="menu-box active" id="folder-edit-box">
+              <li>
+                <span class="folder"></span
+                ><button type="button" id="">폴더 업로드</button>
+              </li>
+              <li>
+                <span class="file"></span
+                ><button type="button" id="">파일 업로드</button>
+              </li>
+              <!-- ey 211214 li추가-->
+              <li>
+                <span class="drive"></span
+                ><button type="button" id="">드라이브 업로드</button>
+              </li>
+              <li class="divBar">구분선</li>
+              <li>
+                <span class="newFolder"></span
+                ><button type="button" id="">새폴더</button>
+              </li>
+            </ul>
+
+            <!--공유-->
+            <div class="menu-box active" id="share-box">
+              <div class="mb-menu-box-title">
+                <p>
+                  2개 공유
+                  <span>생성일자 : 2021-09-11</span>
+                </p>
+                <button type="button" class="close-btn"></button>
+              </div>
+              <!--ul class="share-tab">
+      <li class="active">공유</li>
+      <li>설정</li>
+    </ul-->
+              <div class="share-inner">
+                <div class="shr-link">
+                  <a href="#">url.com/kJ1GRq-Y <span>[복사하기]</span></a>
+                </div>
+                <input
+                  type="text"
+                  value=""
+                  class="search-input02"
+                  placeholder="이메일 주소나 이름을 입력하세요"
+                />
+
+                <div class="btn-inner">
+                  <div class="add-folder">
+                    <span></span
+                    ><button type="button" id="">메세지 입력</button>
+                  </div>
+                  <div class="btn-area">
+                    <a href="#" class="btn_rect_black mw-100 tac" alt="공유"
+                      >공유</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--공유 // 사용하지 않음-->
+            <div class="menu-box active" id="share01-box" style="display: none">
+              <div class="mb-menu-box-title">
+                <p>
+                  2개 공유
+                  <span>생성일자 : 2021-09-11</span>
+                </p>
+                <button type="button" class="close-btn"></button>
+              </div>
+
+              <ul class="share-tab">
+                <li>공유</li>
+                <li class="active">설정</li>
+              </ul>
+              <div class="share-inner">
+                <ul class="setting-list">
+                  <li class="label">리뷰어 허용 범위</li>
+                  <!--li class="pd-btm">파일 다운로드 가능
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)">
+            <span class="slider round"></span>
+          </label>
+        </li-->
+                  <li class="pd-btm">
+                    코멘트 작성 허용
+                    <label class="switch_toggle">
+                      <input type="checkbox" onclick="toggle(this)" />
+                      <span class="slider round"></span>
+                    </label>
+                  </li>
+                  <!--li class="pd-btm">승인 허용
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)">
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="pd-btm">모든 버전 보기 허용
+          <label class="switch_toggle">
+            <input type="checkbox" onclick="toggle(this)">
+            <span class="slider round"></span>
+          </label>
+        </li-->
+                </ul>
+              </div>
+            </div>
+
+            <!--새 폴더 생성-->
+            <div class="menu-box active" id="newfolder-box">
+              <div class="mb-menu-box-title">
+                <p>새 폴더 생성</p>
+                <!--button type="button" class="close-btn"></button-->
+              </div>
+              <div class="input-con">
+                <input
+                  type="text"
+                  value=""
+                  class="search-input02"
+                  placeholder="폴더명을 입력하세요"
+                />
+                <label>폴더명을 입력하세요</label>
+              </div>
+              <div>
+                <a href="#" class="btn_rect_white mw-100 tac" alt="취소"
+                  >취소</a
+                >
+                <a href="#" class="btn_rect_black mw-100 tac" alt="확인"
+                  >확인</a
+                >
+              </div>
+            </div>
+
+            <!--가입요청-->
+            <div class="menu-box active" id="join-ask-box">
+              <div class="mb-menu-box-title">
+                <p>가입요청</p>
+              </div>
+              <div class="mb-alert-box-content">
+                <ul>
+                  <li>
+                    <p class="mb-al-type">협업요청</p>
+                    <span>8시간 전</span>
+                  </li>
+                  <li>
+                    <div>
+                      <div class="ic-img-user">
+                        <p class="bg_violet">길동</p>
+                      </div>
+                      <span>홍길동</span>
+                    </div>
+                    <p class="b-name">60 Second Cut.mp4</p>
+                  </li>
+                  <li>
+                    <a href="#" class="btn_rect_red" alt="거절">거절</a>
+                    <a href="#" class="btn_rect_green" alt="거절">수락</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <p class="mb-al-type">협업요청</p>
+                    <span>2021-09-11</span>
+                  </li>
+                  <li>
+                    <div>
+                      <div class="ic-img-user"><p class="bg_none">유저</p></div>
+                      <span>홍길동</span>
+                    </div>
+                    <p class="b-name">60 Second Cut.mp4</p>
+                  </li>
+                  <li>
+                    <a href="#" class="btn_rect_red" alt="거절">거절</a>
+                    <a href="#" class="btn_rect_green" alt="거절">수락</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--요청수락-->
+            <div class="menu-box active" id="accept-ok-box">
+              <div class="mb-menu-box-title">
+                <p>요청 수락</p>
+                <button type="button" class="close-btn"></button>
+              </div>
+              <p>'<span>60 Second Cut.mp4</span>' 협업을 수락하시겠습니까?</p>
+              <div>
+                <a href="#" class="btn_rect_white mw-100 tac" alt="취소"
+                  >취소</a
+                >
+                <a href="#" class="btn_rect_black mw-100 tac" alt="수락"
+                  >수락</a
+                >
+              </div>
+            </div>
+
+            <!--요청거절-->
+            <div class="menu-box active" id="accpet-no-box">
+              <div class="mb-menu-box-title">
+                <p>요청 거절</p>
+                <button type="button" class="close-btn"></button>
+              </div>
+              <p>'<span>60 Second Cut.mp4</span>' 협업을 거절하시겠습니까?</p>
+              <div>
+                <a href="#" class="btn_rect_white mw-100 tac" alt="취소"
+                  >취소</a
+                >
+                <a href="#" class="btn_rect_black mw-100 tac" alt="수락"
+                  >수락</a
+                >
+              </div>
+            </div>
+
+            <!--가입요청이 없음-->
+            <div class="menu-box active" id="join-ask-no-box">
+              <div class="mb-menu-box-title">
+                <p>가입요청</p>
+                <a href="#"><img src="img/ic-refresh.svg" /></a>
+              </div>
+              <div class="mb-box-no">
+                <span class="mb-join-ask-no-img"></span>
+                <p>가입요청이 없습니다.</p>
+              </div>
+            </div>
+
+            <!--알림-->
+            <div class="menu-box active" id="alert-msg-box">
+              <div class="mb-menu-box-title">
+                <p>알림</p>
+                <!-- <div class="title-list-btn">전체</div> -->
+                <div class="mb-title-select">
+                  <select>
+                    <option value="">전체</option>
+                    <option value="">읽지 않은 알림</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-alert-box-content">
+                <ul>
+                  <li>
+                    <p class="mb-al-type">$알림구분$</p>
+                    <span>8시간 전</span>
+                  </li>
+                  <li>
+                    <p class="b-name">60 Second Cut.mp4</p>
+                    에
+                  </li>
+                  <li>
+                    <div class="ic-img-user"><p class="bg_violet">길동</p></div>
+                    <p><span>홍길동</span>님이 코멘트를 작성하였습니다.</p>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <p class="mb-al-type">$알림구분$</p>
+                    <span>2021-09-11</span>
+                  </li>
+                  <li>
+                    <p class="b-name">60 Second Cut.mp4</p>
+                    에
+                  </li>
+                  <li>
+                    <div class="ic-img-user"><p class="bg_none">유저</p></div>
+                    <p><span>홍길동</span>님이 코멘트를 작성하였습니다.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--알림없음-->
+            <div class="menu-box active" id="alert-msg-no-box">
+              <div class="mb-menu-box-title">
+                <p>알림</p>
+                <!-- <div class="title-list-btn">전체</div> -->
+                <div class="mb-title-select">
+                  <select name="" id="">
+                    <option value="">전체</option>
+                    <option value="">읽지 않은 알림</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-alert-msg-content">
+                <span class="alrim-img"></span>
+                <p>알림이 없습니다.</p>
+                <button href="#" class="btn_rect_white" alt="팀원 초대">
+                  팀원 초대
+                </button>
+              </div>
+            </div>
+
+            <!--알림읽음-->
+            <div class="menu-box active" id="alert-msg-clear-box">
+              <div class="mb-menu-box-title">
+                <p>알림</p>
+                <!-- <div class="title-list-btn">읽지 않은 알림</div> -->
+                <div class="mb-title-select">
+                  <select name="" id="">
+                    <option value="">전체</option>
+                    <option value="">읽지 않은 알림</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-alert-msg-content">
+                <span class="alrim-img"></span>
+                <p>모든 알림을 읽었습니다.</p>
+              </div>
+            </div>
+
+            <!--초대-->
+            <div class="menu-box active" id="invite-team-box">
+              <div class="mb-menu-box-title">
+                <p>초대<span>팀원을 초대하세요</span></p>
+                <button type="button" class="close-btn"></button>
+              </div>
+              <div class="mb-invite-content">
+                <ul>
+                  <li>
+                    <span>1</span>
+                    <input
+                      type="text"
+                      class="search-input02"
+                      placeholder="이메일 주소를 입력하세요"
+                    />
+                  </li>
+                  <p>이메일 주소를 입력하세요</p>
+                  <li>
+                    <span>2</span>
+                    <input
+                      type="text"
+                      class="search-input02"
+                      placeholder="이메일 주소를 입력하세요"
+                    />
+                  </li>
+                  <li>
+                    <span>3</span>
+                    <input
+                      type="text"
+                      class="search-input02"
+                      placeholder="이메일 주소를 입력하세요"
+                    />
+                  </li>
+                  <a href="#" class="btn_rect_black" alt="초대">초대</a>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 필터추가 -->
+            <div class="menu-box active" id="search-filter-box">
+              <button type="button"><span class="plus">+</span>필터추가</button>
+            </div>
+
+            <!--필터2depth-->
+            <div class="menu-box active" id="filter-type-box">
+              <div>
+                <span class="minus">-</span>
+                <select id="value-select01" class="filter-select">
+                  <option value="" hidden>상태</option>
+                </select>
+                <div id="filter-select" class="filter-select">
+                  값선택
+                  <div class="menu-box active mini-box" id="progress-box">
+                    <li>
+                      <span><i class="white"></i></span
+                      ><button type="button" id="">No Status</button>
+                    </li>
+                    <li>
+                      <span><i class="cyan"></i></span
+                      ><button type="button" id="">In Progress</button>
+                    </li>
+                    <li>
+                      <span><i class="orange"></i></span
+                      ><button type="button" id="">Needs Review</button>
+                    </li>
+                    <li>
+                      <span><i class="green"></i></span
+                      ><button type="button" id="">Approved</button>
+                    </li>
+                  </div>
+                </div>
+              </div>
+              <button type="button"><span class="plus">+</span>필터추가</button>
+            </div>
+
+            <!--필터2depth-->
+            <div class="menu-box wd500 active" id="filter-type-box01">
+              <div>
+                <span class="minus">-</span>
+                <!--select id="value-select" class="filter-select">
+        <option value="" hidden>값 선택</option>
+        <option value="">네</option>
+        <option value="">아니오</option>
+      </select-->
+                <div id="filter-select" class="filter-select">업로드 날짜</div>
+                <input type="date" class="start-date" value="시작일" />
+                <!--select id="value-select" class="filter-select">
+        <option value="" hidden>값 선택</option>
+        <option value="">네</option>
+        <option value="">아니오</option>
+      </select-->
+                <input type="date" class="end-date" value="종료일" />
+              </div>
+              <button type="button"><span class="plus">+</span>필터추가</button>
+            </div>
+
+            <div class="menu-box wd500 active" id="filter-type-box02">
+              <div>
+                <span class="minus">-</span>
+                <div id="filter-select" class="filter-select">
+                  파일크기
+                  <!--div class="menu-box active mini-box" id="search-type-box-mini">
+          <div class="search-input-wrap">
+            <input type="text" placeholder="검색" id="search-input" />
+            <button type="submit" id="search-btn">검색 버튼</button>
+          </div>
+          <ul class="scroll">
+            <li><button type="button" id="">파일타입</button></li>
+            <li><button type="button" id="">보관함</button></li>
+            <li><button type="button" id="">업로드 날짜</button></li>
+            <li><button type="button" id="">삭제</button></li>
+            <li><button type="button" id="">보안(비공개)</button></li>
+            <li><button type="button" id="">프로젝트</button></li>
+          </ul>
+        </div-->
+                </div>
+                <input type="text" value="321" />
+                <div id="filter-select" class="filter-select">
+                  Bytes
+                  <div
+                    class="menu-box active mini-box hgt200"
+                    id="search-type-box-mini"
+                  >
+                    <ul class="scroll">
+                      <li><button type="button" id="">Bytes</button></li>
+                      <li><button type="button" id="">kb</button></li>
+                      <li><button type="button" id="">MB</button></li>
+                      <li><button type="button" id="">GB</button></li>
+                      <li><button type="button" id="">TB</button></li>
+                      <li><button type="button" id="">PB</button></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--select id="value-select01" class="filter-select">
+        <option value="" hidden>값 선택</option>
+        <option value="">네</option>
+        <option value="">아니오</option>
+      </select-->
+              </div>
+              <button type="button"><span class="plus">+</span>필터추가</button>
+            </div>
+
+            <!--파일타입 값선택-->
+            <div class="menu-box active" id="filter-type-box03">
+              <div>
+                <span class="minus">-</span>
+                <div id="filter-select" class="filter-select">
+                  파일형식
+                  <div
+                    class="menu-box active mini-box"
+                    id="search-type-box-mini"
+                  >
+                    <div class="search-input-wrap">
+                      <input type="text" placeholder="검색" id="search-input" />
+                      <button type="submit" id="search-btn">검색 버튼</button>
+                    </div>
+                    <ul class="scroll">
+                      <li><button type="button" id="">파일타입</button></li>
+                      <li><button type="button" id="">보관함</button></li>
+                      <li><button type="button" id="">업로드 날짜</button></li>
+                      <li><button type="button" id="">삭제</button></li>
+                      <li><button type="button" id="">보안(비공개)</button></li>
+                      <li><button type="button" id="">프로젝트</button></li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="filter-select" class="filter-select">값선택</div>
+                <!--select id="value-select01" class="filter-select">
+        <option value="" hidden>값 선택</option>
+        <option value="">네</option>
+        <option value="">아니오</option>
+      </select-->
+              </div>
+              <button type="button"><span class="plus">+</span>필터추가</button>
+            </div>
+
+            <!--파일타입 업로더-->
+            <div class="menu-box active" id="filter-type-box04">
+              <div>
+                <span class="minus">-</span>
+                <div id="filter-select" class="filter-select">업로더</div>
+                <div id="filter-select" class="filter-select">
+                  값선택
+                  <div
+                    class="menu-box active mini-box"
+                    id="search-type-box-mini"
+                  >
+                    <div class="search-input-wrap">
+                      <input type="text" placeholder="검색" id="search-input" />
+                      <button type="submit" id="search-btn">검색 버튼</button>
+                    </div>
+                    <ul class="scroll">
+                      <li><button type="button" id="">홍길동</button></li>
+                      <li><button type="button" id="">홍니동</button></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--select id="value-select01" class="filter-select">
+        <option value="" hidden>값 선택</option>
+        <option value="">네</option>
+        <option value="">아니오</option>
+      </select-->
+              </div>
+              <button type="button"><span class="plus">+</span>필터추가</button>
+            </div>
+
+            <!--형식-->
+            <div class="menu-box active" id="filter-type-box05">
+              <div>
+                <span class="minus">-</span>
+                <div id="filter-select" class="filter-select">형식</div>
+                <div id="filter-select" class="filter-select">
+                  값선택
+                  <div
+                    class="menu-box active mini-box"
+                    id="search-type-box-mini"
+                  >
+                    <div class="search-input-wrap">
+                      <input type="text" placeholder="검색" id="search-input" />
+                      <button type="submit" id="search-btn">검색 버튼</button>
+                    </div>
+                    <ul class="scroll">
+                      <li><button type="button" id="">Audio</button></li>
+                      <li><button type="button" id="">Document</button></li>
+                      <li><button type="button" id="">Folder</button></li>
+                      <li><button type="button" id="">Image</button></li>
+                      <li><button type="button" id="">Stream</button></li>
+                      <li><button type="button" id="">video</button></li>
+                      <li><button type="button" id="">Other</button></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--select id="value-select01" class="filter-select">
+        <option value="" hidden>값 선택</option>
+        <option value="">네</option>
+        <option value="">아니오</option>
+      </select-->
+              </div>
+              <button type="button"><span class="plus">+</span>필터추가</button>
+            </div>
+
+            <!--검색-->
+            <div class="menu-box active" id="search-type-box">
+              <div class="search-input-wrap">
+                <input type="text" placeholder="검색" id="search-input" />
+                <button type="submit" id="search-btn">검색 버튼</button>
+              </div>
+              <ul>
+                <li><button type="button" id="">파일타입</button></li>
+                <li><button type="button" id="">보관함</button></li>
+                <li><button type="button" id="">업로드 날짜</button></li>
+                <li><button type="button" id="">삭제</button></li>
+                <li><button type="button" id="">보안(비공개)</button></li>
+                <li><button type="button" id="">프로젝트</button></li>
+              </ul>
+            </div>
+
+            <!--검색1-->
+            <div class="menu-box active" id="search-type-box01">
+              <div class="search-input-wrap">
+                <input type="text" placeholder="검색" id="search-input" />
+                <button type="submit" id="search-btn">검색 버튼</button>
+              </div>
+              <ul class="scroll">
+                <li><button type="button" id="">application/pdf</button></li>
+                <li><button type="button" id="">audio/mpeg</button></li>
+                <li><button type="button" id="">images/jpeg</button></li>
+                <li><button type="button" id="">images/svg</button></li>
+                <li><button type="button" id="">images/tiff</button></li>
+                <li><button type="button" id="">video/mp4</button></li>
+              </ul>
+            </div>
+
+            <!--정렬기준-->
+            <ul class="menu-box active" id="file-type-box">
+              <li class="file-type-title">정렬 기준</li>
+              <li><button type="button" id="file-name-btn">이름순</button></li>
+              <li><button type="button" id="file-date-btn">시간순</button></li>
+              <li>
+                <button type="button" id="file-size-btn">파일 타입</button>
+              </li>
+            </ul>
+
+            <!--정렬-->
+            <ul class="menu-box active" id="file-array-box">
+              <li><button type="button" id="file-name-btn">최근순</button></li>
+              <li>
+                <button type="button" id="file-date-btn">오래된 순</button>
+              </li>
+              <li>
+                <button type="button" id="file-size-btn">Timecode 순</button>
+              </li>
+            </ul>
+
+            <!-- ey 220103 추가 로그아웃-->
+            <ul class="menu-box active" id="project-logout-box">
+              <li>
+                <span class="edit"></span
+                ><button type="button" id="">로그아웃</button>
+              </li>
+              <li>
+                <span class="storage"></span
+                ><button type="button" id="">프로젝트로 이동</button>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+    </div>
+    <!--
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/script.js"></script>
+  --></body>
+</html>

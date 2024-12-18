@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img src="./imges/img_logo_main.png" alt="imgLogo" />
+            <button class="btn-logout"></button>
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a href="#">
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a href="#">
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a href="#">
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting active">
+                <a href="#">
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+<div class="top">
+	<div class="user-info-box">
+        <div class="profile">
+            <button type="button" class="profile-dropdown"></button>
+        </div>
+        <div class="dropdown">
+            <div class="user-info">
+                <div class="user-top">
+                    <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                    <span class="division">I</span>
+                    <span class="position">슈퍼관리자</span>
+                </div>
+                <div class="user-bottom">
+                    <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                </div>
+            </div>
+            <button type="button" class="logout-btn">로그아웃</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 환경설정 > 고객사 로고설정
+            </div>
+            <div class="page-title">
+                고객사 로고 설정
+            </div>
+            <form method="post">
+                <div class="logo-detail-wrapper">
+                    <div class="setting-login-page" id="fileimgPre1">
+                        <div class="setting-title">
+                            로그인 페이지
+                        </div>
+                        <div class="setting-table">
+                            <div class="row">
+                                <div>
+
+                                    <div class="setting-table-content height-auto in_pt12">
+                                        <!-- <input type="text" class="width-100">
+                                        <button type="button" class="down">메타텍스트</button> -->
+                                        <div class="file-group">
+                                            <div class="filebox preview-image">
+                                                <input class="upload-name" value="" disabled="disabled"
+                                                    placeholder="C:\ProgramData\image">
+                                                <label for="input-img-file1" >파일선택</label>
+                                                <input type="file" id="input-img-file1" class="upload-hidden" accept="image/gif,image/jpeg,image/jpg,image/png">
+                                            </div>
+                                            <p class="file-info">로그인 페이지의 로고 권장 이미지 사이즈는 290 X 130 입니다.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row thumb-row ">
+                                <div>
+
+                                    <div class="setting-table-content height-auto">
+                                        <div class="img-preview" id="imgPreview1">
+                                            <button type="button" class="delete-img"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setting-login-page" id="fileimgPre2">
+                        <div class="setting-title">
+                            메뉴바 상단
+                        </div>
+                        <div class="setting-table">
+                            <div class="row">
+                                <div>
+
+                                    <div class="setting-table-content height-auto in_pt12">
+                                        <!-- <input type="text" class="width-100">
+                                        <button type="button" class="down">메타텍스트</button> -->
+                                        <div class="file-group">
+                                            <div class="filebox preview-image">
+                                                <input class="upload-name" value="" disabled="disabled"
+                                                    placeholder="C:\ProgramData\image">
+                                                <label for="input-img-file2">파일선택</label>
+                                                <input type="file" id="input-img-file2" class="upload-hidden" accept="image/gif,image/jpeg,image/jpg,image/png">
+                                            </div>
+                                            <p class="file-info">로그인 페이지의 로고 권장 이미지 사이즈는 270 X 80 입니다.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row thumb-row">
+                                <div>
+                                    <div class="setting-table-content height-auto">
+                                        <div class="img-preview" id="imgPreview2">
+                                            <button type="button" class="delete-img"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-btn-group">
+                    <button type="button" class="cancel-btn bdcolor ftcolor">
+                        취소
+                    </button>
+                    <button type="submit" class="confirm-btn bgcolor">
+                        저장
+                    </button>
+                </div>
+            </form>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <script>
+      $(function () {
+          var fileTarget = $('.filebox .upload-hidden');
+
+          fileTarget.on('change', function () {
+              if (window.FileReader) {
+                  // 파일명 추출
+                  var filename = $(this)[0].files[0].name;
+                 
+              } else {
+                  // Old IE 파일명 추출
+                  var filename = $(this).val().split('/').pop().split('\\').pop();
+                  
+              };
+              
+              $(this).siblings('.upload-name').val(filename);
+          });
+
+          //preview image 
+          var imgTarget = $('.preview-image .upload-hidden');
+          imgTarget.on('change', function () {
+              var parent = $(this).closest('.setting-table').find('.thumb-row').find('.img-preview');
+              console.log(parent);
+              parent.children('.upload-display').remove();
+              if (window.FileReader) {
+                  //image 파일만
+                  if (!$(this)[0].files[0].type.match(/image\//)) return;
+
+                  var reader = new FileReader();
+                  reader.onload = function (e) {
+                      var src = e.target.result;
+                      parent.prepend(
+                          '<div class="upload-display"><div class="upload-thumb-wrap"><img src="' +
+                          src + '" class="upload-thumb"></div></div>');
+                          parent.children('.delete-img').addClass('active');
+                          parent.addClass('active');
+                          //parent.css('background', 'url("")');                            
+                  }
+                  reader.readAsDataURL($(this)[0].files[0]);
+              } else {
+                  $(this)[0].select();
+                  $(this)[0].blur();
+                  var imgSrc = document.selection.createRange().text;
+                  parent.prepend(
+                      '<div class="upload-display"><div class="upload-thumb-wrap"><img class="upload-thumb"></div></div>'
+                      );
+
+                  var img = $(this).siblings('.upload-display').find('img');
+                  img[0].style.filter =
+                      "progid:DXImageTransform.Microsoft.AlphaImageLoader(enable='true',sizingMethod='scale',src=\"" +
+                      imgSrc + "\")";
+                      
+              }
+              
+          });
+
+          /*$('.delete-img').on('click', function () {
+              $(this).removeClass('active');
+              $(this).parents('.img-preview').children('.upload-display').remove();
+              $(this).closest('.setting-table').find('.upload-name').val('');
+              $(this).closest('.setting-table').find('#input-file').val('');
+          })*/
+
+          $('.delete-img').on('click', function () {
+            $(this).parent('.img-preview').removeClass('active');
+            $(this).removeClass('active');
+            $(this).parent('.img-preview').removeClass('active');
+            //$('.img-preview').css('background', 'url("../imges/img_noimage.png")center center no-repeat');
+            $(this).parents('.img-preview').children('.upload-display').remove();
+            $(this).closest('.setting-table').find('.upload-name').val('');
+            $(this).closest('.setting-table').find('#input-img-file1').val('');
+            $(this).closest('.setting-table').find('#input-img-file2').val('');
+          })
+      });
+  </script>
+</body>
+
+</html>

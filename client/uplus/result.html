@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 1050px)">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="wrapper" class="result-content">
+        <!-- 헤더 -->
+        <div class="header-wrap wide">
+            <header>
+                <div class="logo-wrap">
+                    <h1 id="logo"><a href="#"></a></h1>
+                </div>
+                <div class="func-wrap">
+                    <div class="func-search-wrap">
+                        <form id="search">
+                            <input type="text" placeholder="내 드라이브 검색" id="search-input" />
+                            <button type="submit" id="search-btn">검색 버튼</button>
+                        </form>
+                        <div id="result-box">
+                            <ul>
+                                <li>
+                                    <span class="i-ppt"></span>
+                                    <span class="file-name">파일명</span>
+                                </li>
+                                <li>
+                                    <span class="i-exl"></span>
+                                    <span class="file-name">파일명</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="./m_search.html" class="mobile" id="m-search-btn"></a>
+                    <div class="func-profile-wrap">
+                        <img class="profile-btn" src="./img/img-user.png" alt="프로필 이미지">
+                        <ul class="profile-box">
+                            <li><a href="#">마이프로필</a></li>
+                            <li><a href="#">로그인</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="m-search  mobile">
+            <div class="header-wrap m-header-wrap">
+                <header>
+                    <div>
+                        <a href="" id="back-btn"></a>
+                    </div>
+                    <div class="func-wrap">
+                        <div class="func-search-wrap">
+                            <form id="search">
+                                <input type="text" placeholder="내 드라이브 검색" id="search-input" />
+                                <button type="submit" id="search-btn">검색 버튼</button>
+                            </form>
+                            <div id="result-box">
+                                <ul>
+                                    <li>
+                                        <span class="i-ppt"></span>
+                                        <span class="file-name">파일명</span>
+                                    </li>
+                                    <li>
+                                        <span class="i-exl"></span>
+                                        <span class="file-name">파일명</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <!-- 내용 영역 -->
+        <div class="content-wrap">
+            <!-- 드라이브 리스트 -->
+            <div class="drive-list-wrap">
+                <ul id="drive-list">
+                    <!-- 내 드라이브 -->
+                    <li id="my-drive" data-child="1">
+                        <i class="arrow"></i>
+                        <i class="my-drive-icon"></i>
+                        <button type="button">내 드라이브</button>
+                        <ul class="child-node child1">
+                            <li class="parent-node" id="parent1-1" data-child="2">
+                                <i class="arrow"></i>
+                                <i class="folder-icon"></i>
+                                <button type="button">폴더명 1</button>
+                                <ul class="child-node child2">
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명 2-1</button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="arrow"></i>
+                                <i class="folder-icon"></i>
+                                <button type="button">폴더명 2222222222222222</button>
+                            </li>
+                            <li class="parent-node" id="parent1-2" data-child="2">
+                                <i class="arrow"></i>
+                                <i class="folder-icon"></i>
+                                <button type="button">폴더명 3</button>
+                                <ul class="child-node child2">
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명 2-111111111111111</button>
+                                    </li>
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명 2-2</button>
+                                    </li>
+                                    <li class="parent-node" id="parent2-1" data-child="3">
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명 2-3</button>
+                                        <ul class="child-node child3">
+                                            <li>
+                                                <i class="arrow"></i>
+                                                <i class="folder-icon"></i>
+                                                <button type="button">폴더명 3-1</button>
+                                            </li>
+                                            <li>
+                                                <i class="arrow"></i>
+                                                <i class="folder-icon"></i>
+                                                <button type="button">폴더명 3-2</button>
+                                            </li>
+                                            <li class="parent-node" id="parent3-1" data-child="4">
+                                                <i class="arrow"></i>
+                                                <i class="folder-icon"></i>
+                                                <button type="button">폴더명 3-3</button>
+                                                <ul class="child-node child4">
+                                                    <li>
+                                                        <i class="arrow"></i>
+                                                        <i class="folder-icon"></i>
+                                                        <button type="button">폴더명 4-1</button>
+                                                    </li>
+                                                    <li class="parent-node" id="parent4-1" data-child="5">
+                                                        <i class="arrow"></i>
+                                                        <i class="folder-icon"></i>
+                                                        <button type="button">폴더명 4-2</button>
+                                                        <ul class="child-node child5">
+                                                            <li>
+                                                                <i class="arrow"></i>
+                                                                <i class="folder-icon"></i>
+                                                                <button type="button">폴더명5-1</button>
+                                                            </li>
+                                                            <li class="parent-node" id="parent5-1" data-child="6">
+                                                                <i class="arrow"></i>
+                                                                <i class="folder-icon"></i>
+                                                                <button type="button">폴더명 5-2</button>
+                                                                <ul class="child-node child6">
+                                                                    <li>
+                                                                        <i class="arrow"></i>
+                                                                        <i class="folder-icon"></i>
+                                                                        <button type="button">폴더명6-1</button>
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="arrow"></i>
+                                                                        <i class="folder-icon"></i>
+                                                                        <button type="button" title="폴더명 6-2">폴더명
+                                                                            6-2</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 협업 드라이브 -->
+                    <li class="share-drive-box" id="share-drive" data-child="1">
+                        <i class="arrow"></i>
+                        <i class="share-drive-icon"></i>
+                        <button type="button">협업 드라이브</button>
+                        <ul class="child-node child1">
+                            <!-- 협업 마스터 드라이브 -->
+                            <li class="parent-node" id="parent1-1" data-child="2">
+                                <i class="arrow"></i>
+                                <i class="share-drive-master-icon"></i>
+                                <button type="button" class="new">폴더명1</button>
+                                <ul class="child-node child2">
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명2-1</button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 협업 멤버 드라이브 -->
+                            <li>
+                                <i class="arrow"></i>
+                                <i class="share-drive-member-icon"></i>
+                                <button type="button" class="new">폴더명2222222222222222</button>
+                            </li>
+                            <li class="parent-node " id="parent1-2" data-child="2">
+                                <i class="arrow"></i>
+                                <i class="share-drive-member-icon"></i>
+                                <button type="button">폴더명3</button>
+                                <ul class="child-node child2">
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명2-111111111111111</button>
+                                    </li>
+                                    <li>
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명2-2</button>
+                                    </li>
+                                    <li class="parent-node" id="parent2-1" data-child="3">
+                                        <i class="arrow"></i>
+                                        <i class="folder-icon"></i>
+                                        <button type="button">폴더명2-3</button>
+                                        <ul class="child-node child3">
+                                            <li>
+                                                <i class="arrow"></i>
+                                                <i class="folder-icon"></i>
+                                                <button type="button">폴더명3-1</button>
+                                            </li>
+                                            <li>
+                                                <i class="arrow"></i>
+                                                <i class="folder-icon"></i>
+                                                <button type="button">폴더명 3-2</button>
+                                            </li>
+                                            <li class="parent-node" id="parent3-1" data-child="4">
+                                                <i class="arrow"></i>
+                                                <i class="folder-icon"></i>
+                                                <button type="button">폴더명 3-3</button>
+                                                <ul class="child-node child4">
+                                                    <li>
+                                                        <i class="arrow"></i>
+                                                        <i class="folder-icon"></i>
+                                                        <button type="button">폴더명 4-1</button>
+                                                    </li>
+                                                    <li class="parent-node" id="parent4-1" data-child="5">
+                                                        <i class="arrow"></i>
+                                                        <i class="folder-icon"></i>
+                                                        <button type="button">폴더명 4-2</button>
+                                                        <ul class="child-node child5">
+                                                            <li>
+                                                                <i class="arrow"></i>
+                                                                <i class="folder-icon"></i>
+                                                                <button type="button">폴더명5-1</button>
+                                                            </li>
+                                                            <li class="parent-node" id="parent5-1" data-child="6">
+                                                                <i class="arrow"></i>
+                                                                <i class="folder-icon"></i>
+                                                                <button type="button">폴더명 5-2</button>
+                                                                <ul class="child-node child6">
+                                                                    <li>
+                                                                        <i class="arrow"></i>
+                                                                        <i class="folder-icon"></i>
+                                                                        <button type="button">폴더명6-1</button>
+                                                                    </li>
+                                                                    <li class="parent-node" id="parent6-1"
+                                                                        data-child="7">
+                                                                        <i class="arrow"></i>
+                                                                        <i class="folder-icon"></i>
+                                                                        <button type="button" title="폴더명 6-2">폴더명
+                                                                            6-2</button>
+                                                                        <ul class="child-node child7">
+                                                                            <li>
+                                                                                <i class="arrow"></i>
+                                                                                <i class="folder-icon"></i>
+                                                                                <button type="button">폴더명7-1</button>
+                                                                            </li>
+                                                                            <li class="parent-node" id="parent7-1"
+                                                                                data-child="8">
+                                                                                <i class="arrow"></i>
+                                                                                <i class="folder-icon"></i>
+                                                                                <button type="button"
+                                                                                    title="폴더명 7-2">폴더명 7-2</button>
+                                                                                <ul class="child-node child8">
+                                                                                    <li>
+                                                                                        <i class="arrow"></i>
+                                                                                        <i class="folder-icon"></i>
+                                                                                        <button
+                                                                                            type="button">폴더명8-1</button>
+                                                                                    </li>
+                                                                                    <li class="parent-node"
+                                                                                        id="parent8-1" data-child="9">
+                                                                                        <i class="arrow"></i>
+                                                                                        <i class="folder-icon"></i>
+                                                                                        <button type="button"
+                                                                                            title="폴더명 9-2">폴더명
+                                                                                            9-2</button>
+                                                                                        <ul class="child-node child9">
+                                                                                            <li>
+                                                                                                <i class="arrow"></i>
+                                                                                                <i
+                                                                                                    class="folder-icon"></i>
+                                                                                                <button
+                                                                                                    type="button">폴더명8-1</button>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <i class="arrow"></i>
+                                                                                                <i
+                                                                                                    class="folder-icon"></i>
+                                                                                                <button type="button"
+                                                                                                    title="폴더명 9-2">폴더명
+                                                                                                    9-2</button>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="btn-box">
+                    <button type="button" id="share-drive-btn">
+                        <i></i><span>협업 드라이브 만들기</span>
+                    </button>
+                    <button type="button" id="make-share-drive-btn">
+                        <i></i><span>신규 협업 추가</span>
+                    </button>
+                </div>
+                <div class="trash-box">
+                    <button type="button" id="trash-btn">
+                        <i></i><span>휴지통</span>
+                    </button>
+                </div>
+                <!-- 용량 -->
+                <div class="storage-box">
+                    <div class="gauge-wrap">
+                        <p>
+                            <span class="remain-cap">12.1</span>/
+                            <span class="total-cap">30</span>
+                        </p>
+                        <div class="gauge-bar"></div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button type="button" id="add-strg-btn">
+                        <span>용량 추가</span>
+                    </button>
+                </div>
+            </div>
+            <ul id="folder-menu"></ul>
+            <!-- 컨텐츠 -->
+            <div class="content-wrap-inner">
+                <div class="topper wide">
+                    <div class="top-right">
+                        <button type="button" id="sort" class="tool-btn">정렬</button>
+                        <button type="button" id="view-type" class="tool-btn"><span class="grid"></span></button>
+                        <ul class="menu-box" id="sort-box">
+                            <li><button type="button" id="sort-name-btn">이름</button></li>
+                            <li><button type="button" id="sort-date-btn">수정한 날짜</button></li>
+                            <li><button type="button" id="sort-size-btn">크기</button></li>
+                        </ul>
+                        <ul class="menu-box" id="view-type-box">
+                            <li>
+                                <i></i><a href="" id="view-gallery-btn">갤러리로 보기</a>
+                            </li>
+                            <li>
+                                <i></i><a href="" id="view-grid-btn">그리드로 보기</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="content" style="padding-bottom:115px">
+                    <div class="content-inner">
+                        <div class="srch-result">
+                            <div class="srch-result-text">
+                                <span id="srch-file-name">"파일명"</span> 검색결과
+                            </div>
+                            <div class="button-row">
+                                <div class="left">
+                                    <button type="button" id="share-this-btn2" class="only-file"><img
+                                            src="img/ic-share.svg" alt="공유아이콘"><span>공유</span></button>
+                                    <button type="button"><img src="img/ic-uplaod.svg"
+                                            alt="다운로드아이콘"><span>다운로드</span></button>
+                                    <button type="button" id="del-this-btn2"><img src="img/ic-trash.svg"
+                                            alt="삭제아이콘"><span>삭제</span></button>
+                                    <button type="button" id="move-this-btn2"><img src="img/ic-move.svg"
+                                            alt="이동아이콘"><span>이동</span></button>
+                                    <button type="button" id="copy-this-btn2"><img src="img/ic-copy.svg"
+                                            alt="복사아이콘"><span>복사</span></button>
+                                    <div class="right mobile">
+                                        <span id="total-file-num"></span>
+                                        <button type="button" id="close-this-btn"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table my-drive-table">
+                                <colgroup>
+                                    <col width="7%">
+                                    <col width="37%">
+                                    <col width="23%">
+                                    <col width="18%">
+                                    <col width="28%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="table-cell check-cell" scope="col">
+                                            <input type="checkbox" id="cba" />
+                                            <label for="cba">
+                                                <span class="ico"></span>
+                                            </label>
+                                        </th>
+                                        <th class="table-cell tb-name" scope="col">
+                                            <span>이름<button type="button" class="arrow down"></button></span>
+                                        </th>
+                                        <th class="table-cell wide" scope="col">
+                                            <span>수정한 날짜<button type="button" class="arrow"></button></span>
+                                        </th>
+                                        <th class="table-cell wide" scope="col">
+                                            <span>마지막 수정자<button type="button" class="arrow"></button></span>
+                                        </th>
+                                        <th class="table-cell wide" scope="col">
+                                            <span>크기<button type="button" class="arrow"></button></span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="highlight">
+                                    <tr data-name="폴더명_01">
+                                        <td class="table-cell check-cell">
+                                            <input type="checkbox" id="check1" name="folder" class="all" />
+                                            <label for="check1">
+                                                <span class="ico"></span>
+                                            </label>
+                                        </td>
+                                        <td class="table-cell">
+                                            <img src="img/ic-folder.svg" alt="폴더아이콘">
+                                            <div class="tb-name-box">
+                                                <p>폴더명_01</p>
+                                                <p class="mobile tb-time">24시간 전</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-cell wide">
+                                            <span>24시간 전</span>
+                                        </td>
+                                        <td class="table-cell wide">
+                                            <span>홍길동</span>
+                                        </td>
+
+                                        <td class="table-cell wide tb">
+                                            <span>000.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr data-name="폴더명_02">
+                                        <td class="table-cell check-cell">
+                                            <input type="checkbox" id="check2" name="folder" class="all" />
+                                            <label for="check2">
+                                                <span class="ico"></span>
+                                            </label>
+                                        </td>
+                                        <td class="table-cell">
+                                            <img src="img/ic-folder.svg" alt="폴더아이콘">
+                                            <div class="tb-name-box">
+                                                <p>폴더명_02</p>
+                                                <p class="mobile tb-time">24시간 전</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-cell wide">
+                                            <span>24시간 전</span>
+                                        </td>
+                                        <td class="table-cell wide">
+                                            <span>홍길동</span>
+                                        </td>
+
+                                        <td class="table-cell wide tb">
+                                            <span>000.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr data-name="폴더명_03">
+                                        <td class="table-cell check-cell">
+                                            <input type="checkbox" id="check3" name="folder" class="all" />
+                                            <label for="check3">
+                                                <span class="ico"></span>
+                                            </label>
+                                        </td>
+                                        <td class="table-cell">
+                                            <img src="img/ic-folder.svg" alt="폴더아이콘">
+                                            <div class="tb-name-box">
+                                                <p>폴더명_03</p>
+                                                <p class="mobile tb-time">24시간 전</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-cell wide">
+                                            <span>24시간 전</span>
+                                        </td>
+                                        <td class=" table-cell wide">
+                                            <span>홍길동</span>
+                                        </td>
+
+                                        <td class="table-cell wide tb">
+                                            <span>000.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr data-name="파일명_01.avi">
+                                        <td class="table-cell check-cell">
+                                            <input type="checkbox" id="check4" name="file" class="all" />
+                                            <label for="check4">
+                                                <span class="ico"></span>
+                                            </label>
+                                        </td>
+                                        <td class="table-cell">
+                                            <span class="i-exl icon"></span>
+                                            <div class="tb-name-box">
+                                                <p>파일명_01.avi</p>
+                                                <p class="mobile tb-time">24시간 전</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-cell wide">
+                                            <span>24시간 전</span>
+                                        </td>
+                                        <td class=" table-cell wide">
+                                            <span>홍길동</span>
+                                        </td>
+
+                                        <td class="table-cell wide kb">
+                                            <span>000</span>
+                                        </td>
+                                    </tr>
+                                    <tr data-name="파일명_02.xls">
+                                        <td class="table-cell check-cell">
+                                            <input type="checkbox" id="check5" name="file" class="all" />
+                                            <label for="check5">
+                                                <span class="ico"></span>
+                                            </label>
+                                        </td>
+                                        <td class="table-cell">
+                                            <span class="i-psd icon"></span>
+                                            <div class="tb-name-box">
+                                                <p>파일명_02.xls</p>
+                                                <p class="mobile tb-time">06-23 00:00:00</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-cell wide">
+                                            <span>06-23 00:00:00</span>
+                                        </td>
+                                        <td class=" table-cell wide">
+                                            <span>홍길동</span>
+                                        </td>
+
+                                        <td class="table-cell wide mb">
+                                            <span>000</span>
+                                        </td>
+                                    </tr>
+                                    <tr data-name="파일명_03.pdf">
+                                        <td class="table-cell check-cell">
+                                            <input type="checkbox" id="check6" name="file" class="all" />
+                                            <label for="check6">
+                                                <span class="ico"></span>
+                                            </label>
+                                        </td>
+                                        <td class="table-cell">
+                                            <span class="i-pdf icon"></span>
+                                            <div class="tb-name-box">
+                                                <p>파일명_03.pdf</p>
+                                                <p class="mobile tb-time">06-23 00:00:00</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-cell wide">
+                                            <span>06-23 00:00:00</span>
+                                        </td>
+                                        <td class=" table-cell wide">
+                                            <span>홍길동</span>
+                                        </td>
+
+                                        <td class="table-cell wide mb">
+                                            <span>000</span>
+                                        </td>
+                                    </tr>
+                                    <tr data-name="파일명_04.jpg">
+                                        <td class="table-cell check-cell">
+                                            <input type="checkbox" id="check7" name="file" class="all" />
+                                            <label for="check7">
+                                                <span class="ico"></span>
+                                            </label>
+                                        </td>
+                                        <td class="table-cell">
+                                            <span class="i-ppt icon"></span>
+                                            <div class="tb-name-box">
+                                                <p>파일명_04.jpg</p>
+                                                <p class="mobile tb-time">06-23 00:00:00</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-cell wide">
+                                            <span>06-23 00:00:00</span>
+                                        </td>
+                                        <td class=" table-cell wide ">
+                                            <span>홍길동</span>
+                                        </td>
+
+                                        <td class="table-cell wide gb">
+                                            <span>000.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr data-name="파일명_05.pptx">
+                                        <td class="table-cell check-cell">
+                                            <input type="checkbox" id="check8" name="file" class="all" />
+                                            <label for="check8">
+                                                <span class="ico"></span>
+                                            </label>
+                                        </td>
+                                        <td class="table-cell">
+                                            <span class="i-video icon"></span>
+                                            <div class="tb-name-box">
+                                                <p>파일명_05.pptx</p>
+                                                <p class="mobile tb-time">2019-03-01</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-cell wide">
+                                            <span>2019-03-01</span>
+                                        </td>
+                                        <td class=" table-cell wide">
+                                            <span>홍길동</span>
+                                        </td>
+
+                                        <td class="table-cell wide gb">
+                                            <span>000.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr data-name="파일명_06.psd">
+                                        <td class="table-cell check-cell">
+                                            <input type="checkbox" id="check9" name="file" class="all" />
+                                            <label for="check9">
+                                                <span class="ico"></span>
+                                            </label>
+                                        </td>
+                                        <td class="table-cell">
+                                            <span class="i-video icon"></span>
+                                            <div class="tb-name-box">
+                                                <p>파일명_06.psd</p>
+                                                <p class="mobile tb-time">06-23 00:00:00</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-cell wide">
+                                            <span>2019-03-01</span>
+                                        </td>
+                                        <td class=" table-cell wide">
+                                            <span>홍길동</span>
+                                        </td>
+
+                                        <td class="table-cell wide tb">
+                                            <span>000.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                    </div>
+                    <ul id="rmenu"></ul>
+                </div>
+               
+            </div>
+          
+        </div>
+        <!-- 모달 -->
+        <div class="alert-background"> </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/common.js"></script>
+
+</html>

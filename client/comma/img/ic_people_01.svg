@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="89" height="74" viewBox="0 0 89 74">
+    <g data-name="그룹 20015" transform="translate(-573 -7701)">
+        <circle data-name="타원 59" cx="27" cy="27" r="27" transform="translate(573 7721)" style="opacity:.2;fill:#5f56c6"/>
+        <circle data-name="타원 60" cx="15" cy="15" r="15" transform="translate(632 7701)" style="opacity:.1;fill:#5f56c6"/>
+    </g>
+    <g data-name="그룹 19998" transform="translate(24 4.383)">
+        <path data-name="패스 2448" d="m17.543 7.383 1.691-4.366A3.933 3.933 0 0 1 22.892.5h3.225a3.933 3.933 0 0 1 3.658 2.517l1.691 4.366 5.742 3.3 4.641-.708a3.933 3.933 0 0 1 3.933 1.927l1.573 2.753a3.933 3.933 0 0 1-.315 4.444l-2.87 3.662v6.608l2.95 3.658a3.933 3.933 0 0 1 .315 4.444l-1.573 2.753a3.933 3.933 0 0 1-3.933 1.927l-4.641-.708-5.742 3.3-1.691 4.366A3.933 3.933 0 0 1 26.2 51.63h-3.3a3.933 3.933 0 0 1-3.658-2.517l-1.691-4.366-5.742-3.3-4.641.708a3.933 3.933 0 0 1-3.933-1.927l-1.582-2.757a3.933 3.933 0 0 1 .315-4.444l2.871-3.658v-6.608L1.889 19.1a3.933 3.933 0 0 1-.315-4.444l1.573-2.753a3.933 3.933 0 0 1 3.934-1.924l4.641.708z" transform="translate(-1.032 -.5)" style="fill:none;stroke:#5f56c6;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px"/>
+        <circle data-name="타원 35" cx="11.799" cy="11.799" transform="translate(11.674 13.766)" style="fill:none;stroke:#5f56c6;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px" r="11.799"/>
+    </g>
+</svg>

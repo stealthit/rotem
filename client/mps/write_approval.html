@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 758px)">
+    <link rel="stylesheet" href="./css/tree.css">
+    <link rel="stylesheet" href="./css/jquery-ui.theme.css">
+</head>
+
+<body>
+    <div class="side-navi">
+        <div class="logo">
+            <img  src="./imges/img_logo_main.png" alt="imgLogo" />
+            <!--div class="page-name">결재문서 작성</div-->
+            <button class="btn-sidemenu"></button>
+            <button class="btn-logout"></button>
+            
+        </div>
+        <ul>
+            <li class="home">
+                <a href="#">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="print ">
+                <a href="#">
+                    <span>인쇄문서</span>
+                </a>
+            </li>
+            <li class="scan">
+                <a href="#">
+                    <span>스캔문서</span>
+                </a>
+            </li>
+            <li class="fax">
+                <a href="#">
+                    <span>팩스문서</span>
+                </a>
+            </li>
+            <li class="approval active">
+                <a href="#">
+                    <span>결재</span>
+                </a>
+            </li>
+            <li class="complexer">
+                <a>
+                    <span>복합기</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">복합기 정보</a></li>
+                        <li><a href="#">이력정보</a></li>
+                        <li><a href="#">복합기 카운터</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="statistics">
+                <a>
+                    <span>통계</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용량 현황</a></li>
+                        <li><a href="#">보안단어 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="history">
+                <a>
+                    <span>이력조회</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">사용내역</a></li>
+                        <li><a href="#">문서작업 이력 조회</a></li>
+                        <li><a href="#">관리자 작업내역</a></li>
+                        <li><a href="#">QR코드 내역</a></li>
+                        <li><a href="#">로그 이벤트 현황</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="setting">
+                <a>
+                    <span>환경설정</span>
+                </a>
+                <div class="sub-navi">
+                    <ul>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">통합설정</a></li>
+                        <li><a href="#">정책관리</a></li>
+                        <li><a href="#">워터마크 관리</a></li>
+                        <li><a href="#">복합기 관리</a></li>
+                        <li><a href="#">부서/사용자 관리</a></li>
+                        <li><a href="#">프로젝트 관리</a></li>
+                        <li><a href="#">고객사 로고 설정</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="profile-title">결재문서 작성</div>
+<div class="top">
+	<div class="user-info-box">
+        <div class="profile">
+            <button type="button" class="profile-dropdown"></button>
+        </div>
+        <div class="dropdown">
+            <div class="user-info">
+                <div class="user-top">
+                    <span class="name" id="updateUserBtn"><span>홍길동</span> 고객님</span>
+                    <span class="division">I</span>
+                    <span class="position">슈퍼관리자</span>
+                </div>
+                <div class="user-bottom">
+                    <span>최근접속일자 : </span><span>2021-06-01 13:00:00</span>
+                </div>
+            </div>
+            <button type="button" class="logout-btn">로그아웃</button>
+        </div>
+    </div>
+</div>
+
+        <div class="content sub">
+            <div class="page-info">
+                홈 > 결재
+            </div>
+            <div class="page-title">
+                결재문서 작성
+            </div>
+            <div class="tab-content tmg26 active">
+                <form class="approval-write-box" action="" method="post">
+                    <div class="content-wrapper ">
+                        <div class="approval-input-box">
+                            <div class="row">
+                                <div class="input-row linetwo">
+                                    <div class="title">문서ID</div>
+                                    <div class="approval-input-group">
+                                        <!-- <input type="text" value="" /> -->
+                                        <p>idididid</p>
+                                    </div>
+                                </div>
+                                <div class="input-row">
+                                    <div class="title">작성일자</div>
+                                    <div class="approval-input-group">
+                                        <p>21-04-21 00:00:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-row linetwo">
+                                    <div class="title">작성부서</div>
+                                    <div class="approval-input-group">
+                                        <p>솔루션개발담당</p>
+                                    </div>
+                                </div>
+                                <div class="input-row">
+                                    <div class="title">작성자</div>
+                                    <div class="approval-input-group">
+                                        <p><a href="#" class="ud_line" id="approvalWConfirm">홍길동</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="approval-title db-height">
+                            <span class="approval-title">결재정보</span>
+                            <button type="button" class="approval-line-btn bgcolor">결재선</button>
+                        </div>
+                        <div class="approval-line-box">
+                            <div class="approval-none">
+                                <img src="./imges/ico-list-none.png" alt="">
+                                <p>결재 정보를 입력해 주세요.</p>
+                            </div>
+                        </div>
+                        <div class="approval-title">
+                            결재내용
+                        </div>
+
+                        <div class="approval-input-box">
+                            <div class="row">
+                                <div class="input-row height-auto-mobile">
+                                    <div class="title">결재 유형</div>
+                                    <div class="approval-input-group">
+                                        <div class="approval-navi approval-tab-navi-line">
+                                            <div class="approval-tab-navi first active" data-id="approval1">기능 사용 결재</div>
+                                            <div class="approval-tab-navi" data-id="approval2">사용량 추가 결재</div>
+                                            <div class="approval-tab-navi" data-id="approval3">워터마크 해제 결재</div>
+                                            <div class="approval-tab-navi last" data-id="approval4">개인정보 포함 문서 결재</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="approval-input-box margin approval-tab-content full-row active" id="approval1">
+                            <div class="row">
+                                <div class="input-row short">
+                                    <div class="title">포인트 사용</div>
+                                    <div class="approval-input-group  chk">
+                                        <input type="checkbox" id="cb1" />
+                                        <label for="cb1">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="input-row height-auto-mobile  date-set-wrap">
+                                    <div class="title">포인트 사용 기간</div>
+                                    <div class="approval-input-group pdt8 flex-column">
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker1" readonly>
+                                        </div>
+                                        <span class="date-division">~</span>
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker2" readonly>
+                                        </div>
+                                        <div class="form-input-group radio-group">
+                                            <div class="square-radio-group">
+                                              <input type="radio" id="todaysecond4" value="" name="radio-group" checked>
+                                              <label class="first" for="todaysecond4"><span>오늘</span></label>
+                                              <input type="radio" id="7second4" value="" name="radio-group">
+                                              <label for="7second4"><span>7일</span></label>
+                                              <input type="radio" id="30second4" value="" name="radio-group">
+                                              <label for="30second4"><span>30일</span></label>
+                                              <input type="radio" id="90second4" value="" name="radio-group">
+                                              <label for="90second4"><span>90일</span></label>
+                                              <input type="radio" id="180second4" value="" name="radio-group">
+                                              <label class="last" for="180second4"><span>180일</span></label>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-row short">
+                                    <div class="title">복사 사용</div>
+                                    <div class="approval-input-group  chk">
+                                        <input type="checkbox" id="cb2" />
+                                        <label for="cb2">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="input-row  height-auto-mobile   date-set-wrap">
+                                    <div class="title">복사 사용 기간</div>
+                                    <div class="approval-input-group flex-column">
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker3" readonly>
+                                        </div>
+                                        <span class="date-division">~</span>
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker4" readonly>
+                                        </div>
+                                        <div class="form-input-group radio-group">
+                                            <div class="square-radio-group">
+                                                <input type="radio" id="todaythird" value="" name="radio-group-test2"
+                                                    checked>
+                                                <label class="first" for="todaythird"><span>오늘</span></label>
+                                                <input type="radio" id="7third" value="" name="radio-group-test2">
+                                                <label for="7third"><span>7일</span></label>
+                                                <input type="radio" id="30third" value="" name="radio-group-test2">
+                                                <label for="30third"><span>30일</span></label>
+                                                <input type="radio" id="90third" value="" name="radio-group-test2">
+                                                <label for="90third"><span>90일</span></label>
+                                                <input type="radio" id="180third" value="" name="radio-group-test2">
+                                                <label class="last" for="180third"><span>180일</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-row short">
+                                    <div class="title">스캔 사용</div>
+                                    <div class="approval-input-group  chk">
+                                        <input type="checkbox" id="cb3" />
+                                        <label for="cb3">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="input-row  height-auto-mobile  date-set-wrap">
+                                    <div class="title">스캔 사용 기간</div>
+                                    <div class="approval-input-group flex-column">
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker5" readonly>
+                                        </div>
+                                        <span class="date-division">~</span>
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker6" readonly>
+                                        </div>
+                                        <div class="form-input-group radio-group">
+                                            <div class="square-radio-group">
+                                                <input type="radio" id="todayfourth" value="" name="radio-group-test3"
+                                                    checked>
+                                                <label class="first" for="todayfourth"><span>오늘</span></label>
+                                                <input type="radio" id="7fourth" value="" name="radio-group-test3">
+                                                <label for="7fourth"><span>7일</span></label>
+                                                <input type="radio" id="30fourth" value="" name="radio-group-test3">
+                                                <label for="30fourth"><span>30일</span></label>
+                                                <input type="radio" id="90fourth" value="" name="radio-group-test3">
+                                                <label for="90fourth"><span>90일</span></label>
+                                                <input type="radio" id="180fourth" value="" name="radio-group-test3">
+                                                <label class="last" for="180fourth"><span>180일</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-row short">
+                                    <div class="title">팩스 사용</div>
+                                    <div class="approval-input-group chk">
+                                        <input type="checkbox" id="cb4" />
+                                        <label for="cb4">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="input-row  height-auto-mobile   date-set-wrap">
+                                    <div class="title">팩스 사용 기간</div>
+                                    <div class="approval-input-group flex-column">
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker7" readonly>
+                                        </div>
+                                        <span class="date-division">~</span>
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker8" readonly>
+                                        </div>
+                                        <div class="form-input-group radio-group">
+                                            <div class="square-radio-group">
+                                                <input type="radio" id="todayfifth" value="" name="radio-group-test4"
+                                                    checked>
+                                                <label class="first" for="todayfifth"><span>오늘</span></label>
+                                                <input type="radio" id="7fifth" value="" name="radio-group-test4">
+                                                <label for="7fifth"><span>7일</span></label>
+                                                <input type="radio" id="30fifth" value="" name="radio-group-test4">
+                                                <label for="30fifth"><span>30일</span></label>
+                                                <input type="radio" id="90fifth" value="" name="radio-group-test4">
+                                                <label for="90fifth"><span>90일</span></label>
+                                                <input type="radio" id="180fifth" value="" name="radio-group-test4">
+                                                <label class="last" for="180fifth"><span>180일</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="approval-input-box margin approval-tab-content" id="approval2">
+                            <div class="row">
+                                <div class="input-row">
+                                    <div class="title">컬러 프린트 제한 매수</div>
+                                    <div class="approval-input-group">
+                                      <input type="text" value="" class="numberOnly" id="approval-num1"/>
+                                    </div>
+                                </div>
+                                <div class="input-row height-auto-mobile">
+                                  <div class="title">매수 사용 기간</div>
+                                  <div class="approval-input-group flex-column">
+                                      <div class="form-input-group">
+                                          <input type="text" class="date" id="datepicker31" readonly>
+                                      </div>
+                                      <span class="date-division">~</span>
+                                      <div class="form-input-group">
+                                          <input type="text" class="date" id="datepicker32" readonly>
+                                      </div>
+                                      <div class="form-input-group radio-group">
+                                          <div class="square-radio-group">
+                                              <input type="radio" id="todaysecond-a111" value="" name="radio-group-test111"
+                                                  checked>
+                                              <label class="first" for="todaysecond-a111"><span>오늘</span></label>
+                                              <input type="radio" id="7second-a111" value="" name="radio-group-test111">
+                                              <label for="7second-a111"><span>7일</span></label>
+                                              <input type="radio" id="30second-a111" value="" name="radio-group-test111">
+                                              <label for="30second-a111"><span>30일</span></label>
+                                              <input type="radio" id="90second-a111" value="" name="radio-group-test111">
+                                              <label for="90second-a111"><span>90일</span></label>
+                                              <input type="radio" id="180second-a111" value="" name="radio-group-test111">
+                                              <label class="last" for="180second-a111"><span>180일</span></label>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-row">
+                                    <div class="title">흑백 프린트 제한 매수</div>
+                                    <div class="approval-input-group">
+                                      <input type="text" value="" class="numberOnly"  id="approval-num2"/>
+                                    </div>
+                                </div>
+                                <div class="input-row height-auto-mobile">
+                                  <div class="title">매수 사용 기간</div>
+                                  <div class="approval-input-group flex-column">
+                                      <div class="form-input-group">
+                                          <input type="text" class="date" id="datepicker11" readonly>
+                                      </div>
+                                      <span class="date-division">~</span>
+                                      <div class="form-input-group">
+                                          <input type="text" class="date" id="datepicker12" readonly>
+                                      </div>
+                                      <div class="form-input-group radio-group">
+                                          <div class="square-radio-group">
+                                              <input type="radio" id="todaysecond-a222" value="" name="radio-group-test222"
+                                                  checked>
+                                              <label class="first" for="todaysecond-a222"><span>오늘</span></label>
+                                              <input type="radio" id="7second-a222" value="" name="radio-group-test222">
+                                              <label for="7second-a222"><span>7일</span></label>
+                                              <input type="radio" id="30second-a222" value="" name="radio-group-test222">
+                                              <label for="30second-a222"><span>30일</span></label>
+                                              <input type="radio" id="90second-a222" value="" name="radio-group-test222">
+                                              <label for="90second-a222"><span>90일</span></label>
+                                              <input type="radio" id="180second-a222" value="" name="radio-group-test222">
+                                              <label class="last" for="180second-a222"><span>180일</span></label>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-row">
+                                    <div class="title">컬러 복사 제한 매수</div>
+                                    <div class="approval-input-group">
+                                      <input type="text" value="" class="numberOnly" id="approval-num3"/>
+                                    </div>
+                                </div>
+                                <div class="input-row height-auto-mobile">
+                                  <div class="title">매수 사용 기간</div>
+                                  <div class="approval-input-group flex-column">
+                                      <div class="form-input-group">
+                                          <input type="text" class="date" id="datepicker21" readonly>
+                                      </div>
+                                      <span class="date-division">~</span>
+                                      <div class="form-input-group">
+                                          <input type="text" class="date" id="datepicker22" readonly>
+                                      </div>
+                                      <div class="form-input-group radio-group">
+                                          <div class="square-radio-group">
+                                              <input type="radio" id="todaysecond-a333" value="" name="radio-group-test333"
+                                                  checked>
+                                              <label class="first" for="todaysecond-a333"><span>오늘</span></label>
+                                              <input type="radio" id="7second-a333" value="" name="radio-group-test333">
+                                              <label for="7second-a333"><span>7일</span></label>
+                                              <input type="radio" id="30second-a333" value="" name="radio-group-test333">
+                                              <label for="30second-a333"><span>30일</span></label>
+                                              <input type="radio" id="90second-a333" value="" name="radio-group-test333">
+                                              <label for="90second-a333"><span>90일</span></label>
+                                              <input type="radio" id="180second-a333" value="" name="radio-group-test333">
+                                              <label class="last" for="180second-a333"><span>180일</span></label>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-row">
+                                    <div class="title">흑백 복사 제한 매수</div>
+                                    <div class="approval-input-group">
+                                      <input type="text" value="" class="numberOnly"  id="approval-num4"/>
+                                    </div>
+                                </div>
+                                <div class="input-row height-auto-mobile">
+                                  <div class="title">매수 사용 기간</div>
+                                  <div class="approval-input-group flex-column">
+                                      <div class="form-input-group">
+                                          <input type="text" class="date" id="datepicker41" readonly>
+                                      </div>
+                                      <span class="date-division">~</span>
+                                      <div class="form-input-group">
+                                          <input type="text" class="date" id="datepicker42" readonly>
+                                      </div>
+                                      <div class="form-input-group radio-group">
+                                          <div class="square-radio-group">
+                                              <input type="radio" id="todaysecond-a" value="" name="radio-group-test1"
+                                                  checked>
+                                              <label class="first" for="todaysecond-a"><span>오늘</span></label>
+                                              <input type="radio" id="7second-a" value="" name="radio-group-test1">
+                                              <label for="7second-a"><span>7일</span></label>
+                                              <input type="radio" id="30second-a" value="" name="radio-group-test1">
+                                              <label for="30second-a"><span>30일</span></label>
+                                              <input type="radio" id="90second-a" value="" name="radio-group-test1">
+                                              <label for="90second-a"><span>90일</span></label>
+                                              <input type="radio" id="180second-a" value="" name="radio-group-test1">
+                                              <label class="last" for="180second-a"><span>180일</span></label>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="approval-input-box margin approval-tab-content full-row " id="approval3">
+                            <div class="row">
+                                <div class="input-row short">
+                                    <div class="title">프린트 워터마크 해제</div>
+                                    <div class="approval-input-group chk">
+                                        <input type="checkbox" id="cb5" />
+                                        <label for="cb5">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="input-row date-set-wrap height-auto-mobile  ">
+                                    <div class="title">매수 사용 기간</div>
+                                    <div class="approval-input-group flex-column">
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker9" readonly>
+                                        </div>
+                                        <span class="date-division">~</span>
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker10" readonly>
+                                        </div>
+                                        <div class="form-input-group radio-group">
+                                            <div class="square-radio-group">
+                                                <input type="radio" id="todaysecondapproval3" value=""
+                                                    name="radio-group-test5" checked>
+                                                <label class="first" for="todaysecondapproval3"><span>오늘</span></label>
+                                                <input type="radio" id="7secondapproval3" value=""
+                                                    name="radio-group-test5">
+                                                <label for="7secondapproval3"><span>7일</span></label>
+                                                <input type="radio" id="30secondapproval3" value=""
+                                                    name="radio-group-test5">
+                                                <label for="30secondapproval3"><span>30일</span></label>
+                                                <input type="radio" id="90secondapproval3" value=""
+                                                    name="radio-group-test5">
+                                                <label for="90secondapproval3"><span>90일</span></label>
+                                                <input type="radio" id="180secondapproval3" value=""
+                                                    name="radio-group-test5">
+                                                <label class="last" for="180secondapproval3"><span>180일</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-row short">
+                                    <div class="title">복사 사용</div>
+                                    <div class="approval-input-group chk">
+                                        <input type="checkbox" id="cb6" />
+                                        <label for="cb6">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="input-row date-set-wrap height-auto-mobile  ">
+                                    <div class="title">복사 사용 기간</div>
+                                    <div class="approval-input-group flex-column">
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker23" readonly>
+                                        </div>
+                                        <span class="date-division">~</span>
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker24" readonly>
+                                        </div>
+                                        <div class="form-input-group radio-group">
+                                            <div class="square-radio-group">
+                                                <input type="radio" id="todaythirdapproval3" value=""
+                                                    name="radio-group-test6" checked>
+                                                <label class="first" for="todaythirdapproval3"><span>오늘</span></label>
+                                                <input type="radio" id="7thirdapproval3" value=""
+                                                    name="radio-group-test6">
+                                                <label for="7thirdapproval3"><span>7일</span></label>
+                                                <input type="radio" id="30thirdapproval3" value=""
+                                                    name="radio-group-test6">
+                                                <label for="30thirdapproval3"><span>30일</span></label>
+                                                <input type="radio" id="90thirdapproval3" value=""
+                                                    name="radio-group-test6">
+                                                <label for="90thirdapproval3"><span>90일</span></label>
+                                                <input type="radio" id="180thirdapproval3" value=""
+                                                    name="radio-group-test6">
+                                                <label class="last" for="180thirdapproval3"><span>180일</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-row short">
+                                    <div class="title">스캔 사용</div>
+                                    <div class="approval-input-group chk">
+                                        <input type="checkbox" id="cb7" />
+                                        <label for="cb7">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="input-row date-set-wrap height-auto-mobile ">
+                                    <div class="title">스캔 사용 기간</div>
+                                    <div class="approval-input-group flex-column">
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker13" readonly>
+                                        </div>
+                                        <span class="date-division">~</span>
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker14" readonly>
+                                        </div>
+                                        <div class="form-input-group radio-group">
+                                            <div class="square-radio-group">
+                                                <input type="radio" id="todayfourthapproval3" value=""
+                                                    name="radio-group-test7" checked>
+                                                <label class="first" for="todayfourthapproval3"><span>오늘</span></label>
+                                                <input type="radio" id="7fourthapproval3" value=""
+                                                    name="radio-group-test7">
+                                                <label for="7fourthapproval3"><span>7일</span></label>
+                                                <input type="radio" id="30fourthapproval3" value=""
+                                                    name="radio-group-test7">
+                                                <label for="30fourthapproval3"><span>30일</span></label>
+                                                <input type="radio" id="90fourthapproval3" value=""
+                                                    name="radio-group-test7">
+                                                <label for="90fourthapproval3"><span>90일</span></label>
+                                                <input type="radio" id="180fourthapproval3" value=""
+                                                    name="radio-group-test7">
+                                                <label class="last" for="180fourthapproval3"><span>180일</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-row short">
+                                    <div class="title">팩스 사용</div>
+                                    <div class="approval-input-group chk">
+                                        <input type="checkbox" id="cb8" />
+                                        <label for="cb8">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="input-row date-set-wrap height-auto-mobile  ">
+                                    <div class="title">팩스 사용 기간</div>
+                                    <div class="approval-input-group flex-column">
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker15" readonly>
+                                        </div>
+                                        <span class="date-division">~</span>
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker16" readonly>
+                                        </div>
+                                        <div class="form-input-group radio-group">
+                                            <div class="square-radio-group">
+                                                <input type="radio" id="todayfifthapproval3" value=""
+                                                    name="radio-group-test8" checked>
+                                                <label class="first" for="todayfifthapproval3"><span>오늘</span></label>
+                                                <input type="radio" id="7fifthapproval3" value=""
+                                                    name="radio-group-test8">
+                                                <label for="7fifthapproval3"><span>7일</span></label>
+                                                <input type="radio" id="30fifthapproval3" value=""
+                                                    name="radio-group-test8">
+                                                <label for="30fifthapproval3"><span>30일</span></label>
+                                                <input type="radio" id="90fifthapproval3" value=""
+                                                    name="radio-group-test8">
+                                                <label for="90fifthapproval3"><span>90일</span></label>
+                                                <input type="radio" id="180fifthapproval3" value=""
+                                                    name="radio-group-test8">
+                                                <label class="last" for="180fifthapproval3"><span>180일</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="approval-input-box margin approval-tab-content full-row" id="approval4">
+                            <div class="row">
+                                <div class="input-row  height-auto-mobile">
+                                    <div class="title">포인트 사용 기간</div>
+                                    <div class="approval-input-group flex-column approval-input-group-pd">
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker17" readonly>
+                                        </div>
+                                        <span class="date-division">~</span>
+                                        <div class="form-input-group">
+                                            <input type="text" class="date" id="datepicker18" readonly>
+                                        </div>
+                                        <div class="form-input-group radio-group">
+                                            <div class="square-radio-group">
+                                                <input type="radio" id="todaysecondapproval4" value=""
+                                                    name="radio-group-test9" checked>
+                                                <label class="first" for="todaysecondapproval4"><span>오늘</span></label>
+                                                <input type="radio" id="7secondapproval4" value=""
+                                                    name="radio-group-test9">
+                                                <label for="7secondapproval4"><span>7일</span></label>
+                                                <input type="radio" id="30secondapproval4" value=""
+                                                    name="radio-group-test9">
+                                                <label for="30secondapproval4"><span>30일</span></label>
+                                                <input type="radio" id="90secondapproval4" value=""
+                                                    name="radio-group-test9">
+                                                <label for="90secondapproval4"><span>90일</span></label>
+                                                <input type="radio" id="180secondapproval4" value=""
+                                                    name="radio-group-test9">
+                                                <label class="last" for="180secondapproval4"><span>180일</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-btn-group">
+                        <button type="button" class="cancel-btn bdcolor ftcolor">
+                            취소
+                        </button>
+                        <button type="button" class="confirm-btn bgcolor" id="approvalConfirm1">
+                            상신
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>Copyright © 캐논코리아. All rights reserved.</footer>
+    </div>
+    <!-- 팝업 -->
+    <div class="approval-modal-background modal">
+        <div class="approval-modal-content">
+            <div class="title">
+                <span>결재선</span>
+                <button type="button" class="close-btn"></button>
+            </div>
+            <div class="search-form">
+                <form action="" method="post">
+                    <span class="title">조회</span>
+                    <div class="row-mobile row"> 
+                        <div class="form-input-group short-mobile">
+                            <select>
+                                <option value="">문서ID</option>
+                                <option value="">이름</option>
+                                <option value="">문서 + 제목</option>
+                            </select>
+                        </div>
+                        <div class="form-input-text-group mr0_l10">
+                            <input type="text" name="" value="" />
+                        </div>
+                    </div>
+                    <button class="submit-btn bgcolor" type="submit">조회</button>
+                </form>
+            </div>
+            <form action="" method="post">
+                <div class="approval-modal-content-bottom steppd">
+                    <div class="approval-modal-navi-mobile">
+                        <div class="li step active step_tab01" data-id="tab1"><span>STEP 1</span><span>CKBS</span></div>
+                        <div class="li step step_tab02" data-id="tab2"><span>STEP 2</span><span>결재자 선택</span></div>
+                    </div>
+                    <div class="step_con left tab-content active" id="tab1">
+                        <div class="title">
+                            CKBS
+                        </div>
+                        <div class="check-box-content height205 write_max_w">
+                            <div id="jstree-div"></div>
+                        </div>
+                    </div>
+                    <div class="step_con middle tab-content" id="tab2">
+                        <div class="title">
+                            결재자 선택
+                            <select>
+                                <option value="">15개씩</option>
+                                <option value="">30개씩</option>
+                                <option value="">50개씩</option>
+                                <option value="">100개씩</option>
+                            </select>
+                        </div>
+                        <div class="table-scroll step-con-user-s">
+                            <table class="jb-table">
+                                <tr class="jb-table-header-group">
+                                    <th class=" jb-table-cell jb-middle">
+
+                                        <input type="checkbox" id="cba5" />
+                                        <label for="cba5">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p><button type="button" class="arrow"></button>ID</p>
+                                    </th>
+                                    <th class="jb-table-cell jb-middle">
+                                        <p><button type="button" class="arrow down"></button>이름</p>
+                                    </th>
+                                    <th class=" jb-table-cell jb-middle">
+                                        <p><button type="button" class="arrow"></button>부서</p>
+                                    </th>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check1" />
+                                        <label for="check1">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check2" />
+                                        <label for="check2">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check3" />
+                                        <label for="check3">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check4" />
+                                        <label for="check4">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check5" />
+                                        <label for="check5">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check6" />
+                                        <label for="check6">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check7" />
+                                        <label for="check7">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check8" />
+                                        <label for="check8">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check9" />
+                                        <label for="check9">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                                <tr class="jb-table-row">
+                                    <td class=" jb-table-cell jb-middle">
+                                        <input type="checkbox" name="check" id="check10" />
+                                        <label for="check10">
+                                            <span class="ico"></span>
+                                        </label>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>idididid</p>
+                                    </td>
+                                    <td class="jb-table-cell jb-middle">
+                                        <p>홍길동</p>
+                                    </td>
+                                    <td class=" jb-table-cell jb-middle">
+                                        <p>인사총무 1팀</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="pagenation">
+                            <button type="button" class="back-end disabled"></button>
+                            <button type="button" class="back disabled"></button>
+                            <button type="button" class="number">1</button>
+                            <button type="button" class="number active">2</button>
+                            <button type="button" class="number">3</button>
+                            <button type="button" class="number">4</button>
+                            <button type="button" class="number">5</button>
+                            <button type="button" class="number mobile">6</button>
+                            <button type="button" class="number mobile">7</button>
+                            <button type="button" class="number mobile">8</button>
+                            <button type="button" class="number mobile">9</button>
+                            <button type="button" class="next"></button>
+                            <button type="button" class="next-end"></button>
+
+                        </div>
+
+                        <!-- <div class="vertical-btn-group">
+                            <button type="button">순차<br>결재<br><img src="./imges/ico_arrow_r.png" alt="icoArrow" /></button>
+                            <button type="button">병렬<br>결재<br><img src="./imges/ico_arrow_r.png" alt="icoArrow" /></button>
+                        </div>
+    
+                        <div class="right">
+                            <div class="title">
+                                결재선
+                            </div>
+                            <div class="manager-box">
+                              <div class="row">
+                                <div class="num">
+                                    1
+                                </div>
+                                <span class="user">
+                                    홍길동
+                                </span>
+                                <span class="department">
+                                    솔루션개발담당
+                                </span>
+                                <span class="type">
+                                    기안결재
+                                </span>
+                                <button type="button" class="delete-btn"></button>
+                                </div>
+                                <div class="row">
+                                  <div class="num">
+                                      1
+                                  </div>
+                                  <span class="user">
+                                      홍길동
+                                  </span>
+                                  <span class="department">
+                                      솔루션개발담당
+                                  </span>
+                                  <span class="type">
+                                      기안결재
+                                  </span>
+                                  <button type="button" class="delete-btn"></button>
+                                  </div>
+                              <div class="row">
+                                <div class="num">
+                                    1
+                                </div>
+                                <span class="user">
+                                    홍길동
+                                </span>
+                                <span class="department">
+                                    솔루션개발담당
+                                </span>
+                                <span class="type">
+                                    기안결재
+                                </span>
+                                <button type="button" class="delete-btn"></button>
+                                </div>
+                                <div class="row">
+                                  <div class="num">
+                                      1
+                                  </div>
+                                  <span class="user">
+                                      홍길동
+                                  </span>
+                                  <span class="department">
+                                      솔루션개발담당
+                                  </span>
+                                  <span class="type">
+                                      기안결재
+                                  </span>
+                                  <button type="button" class="delete-btn"></button>
+                                  </div>
+                              <div class="row">
+                                <div class="num">
+                                    1
+                                </div>
+                                <span class="user">
+                                    홍길동
+                                </span>
+                                <span class="department">
+                                    솔루션개발담당
+                                </span>
+                                <span class="type">
+                                    기안결재
+                                </span>
+                                <button type="button" class="delete-btn"></button>
+                                </div>
+                                <div class="row">
+                                  <div class="num">
+                                      1
+                                  </div>
+                                  <span class="user">
+                                      홍길동
+                                  </span>
+                                  <span class="department">
+                                      솔루션개발담당
+                                  </span>
+                                  <span class="type">
+                                      기안결재
+                                  </span>
+                                  <button type="button" class="delete-btn"></button>
+                                  </div>
+                                  <div class="row">
+                                    <div class="num">
+                                        1
+                                    </div>
+                                    <span class="user">
+                                        홍길동
+                                    </span>
+                                    <span class="department">
+                                        솔루션개발담당
+                                    </span>
+                                    <span class="type">
+                                        기안결재
+                                    </span>
+                                    <button type="button" class="delete-btn"></button>
+                                    </div>
+                                <div class="row">
+                                  <div class="num">
+                                      1
+                                  </div>
+                                  <span class="user">
+                                      홍길동
+                                  </span>
+                                  <span class="department">
+                                      솔루션개발담당
+                                  </span>
+                                  <span class="type">
+                                      기안결재
+                                  </span>
+                                  <button type="button" class="delete-btn"></button>
+                                </div>
+                                <div class="row">
+                                    <div class="num">
+                                        1
+                                    </div>
+                                    <span class="user">
+                                        홍길동
+                                    </span>
+                                    <span class="department">
+                                        솔루션개발담당
+                                    </span>
+                                    <span class="type">
+                                        기안결재
+                                    </span>
+                                    <button type="button" class="delete-btn"></button>
+                                </div>
+                                <div class="row">
+                                    <div class="num">
+                                        2
+                                    </div>
+                                    <span class="user">
+                                        홍길동
+                                    </span>
+                                    <span class="department">
+                                        솔루션개발담당
+                                    </span>
+                                    <span class="type">
+                                        기안결재
+                                    </span>
+                                    <button type="button" class="delete-btn"></button>
+                                </div>
+                                <div class="row">
+                                    <div class="num">
+                                        3
+                                    </div>
+                                    <span class="user">
+                                        홍길동
+                                    </span>
+                                    <span class="department">
+                                        솔루션개발담당
+                                    </span>
+                                    <span class="type">
+                                        기안결재
+                                    </span>
+                                    <button type="button" class="delete-btn"></button>
+                                </div>
+                                <div class="row">
+                                    <div class="num">
+                                        4
+                                    </div>
+                                    <span class="user">
+                                        홍길동
+                                    </span>
+                                    <span class="department">
+                                        솔루션개발담당
+                                    </span>
+                                    <span class="type">
+                                        기안결재
+                                    </span>
+                                    <button type="button" class="delete-btn"></button>
+                                </div>
+                            </div>
+                        </div> -->
+    
+                    </div>
+                    <div class="vertical-btn-group">
+                        <button type="button">순차<br>결재<br><img src="./imges/ico_arrow_r.png" alt="icoArrow" /></button>
+                        <button type="button">병렬<br>결재<br><img src="./imges/ico_arrow_r.png" alt="icoArrow" /></button>
+                    </div>
+
+                    <div class="right write_over">
+                        <div class="title">
+                            결재선
+                        </div>
+                        <div class="manager-box">
+                          <div class="row">
+                            <div class="num">
+                                1
+                            </div>
+                            <span class="user">
+                                홍길동
+                            </span>
+                            <span class="department">
+                                솔루션개발담당
+                            </span>
+                            <span class="type">
+                                기안결재
+                            </span>
+                            <button type="button" class="delete-btn"></button>
+                            </div>
+                            <div class="row">
+                              <div class="num">
+                                  1
+                              </div>
+                              <span class="user">
+                                  홍길동
+                              </span>
+                              <span class="department">
+                                  솔루션개발담당
+                              </span>
+                              <span class="type">
+                                  기안결재
+                              </span>
+                              <button type="button" class="delete-btn"></button>
+                              </div>
+                          <div class="row">
+                            <div class="num">
+                                1
+                            </div>
+                            <span class="user">
+                                홍길동
+                            </span>
+                            <span class="department">
+                                솔루션개발담당
+                            </span>
+                            <span class="type">
+                                기안결재
+                            </span>
+                            <button type="button" class="delete-btn"></button>
+                            </div>
+                            <div class="row">
+                              <div class="num">
+                                  1
+                              </div>
+                              <span class="user">
+                                  홍길동
+                              </span>
+                              <span class="department">
+                                  솔루션개발담당
+                              </span>
+                              <span class="type">
+                                  기안결재
+                              </span>
+                              <button type="button" class="delete-btn"></button>
+                              </div>
+                          <div class="row">
+                            <div class="num">
+                                1
+                            </div>
+                            <span class="user">
+                                홍길동
+                            </span>
+                            <span class="department">
+                                솔루션개발담당
+                            </span>
+                            <span class="type">
+                                기안결재
+                            </span>
+                            <button type="button" class="delete-btn"></button>
+                            </div>
+                            <div class="row">
+                              <div class="num">
+                                  1
+                              </div>
+                              <span class="user">
+                                  홍길동
+                              </span>
+                              <span class="department">
+                                  솔루션개발담당
+                              </span>
+                              <span class="type">
+                                  기안결재
+                              </span>
+                              <button type="button" class="delete-btn"></button>
+                              </div>
+                              <div class="row">
+                                <div class="num">
+                                    1
+                                </div>
+                                <span class="user">
+                                    홍길동
+                                </span>
+                                <span class="department">
+                                    솔루션개발담당
+                                </span>
+                                <span class="type">
+                                    기안결재
+                                </span>
+                                <button type="button" class="delete-btn"></button>
+                                </div>
+                            <div class="row">
+                              <div class="num">
+                                  1
+                              </div>
+                              <span class="user">
+                                  홍길동
+                              </span>
+                              <span class="department">
+                                  솔루션개발담당
+                              </span>
+                              <span class="type">
+                                  기안결재
+                              </span>
+                              <button type="button" class="delete-btn"></button>
+                            </div>
+                            <div class="row">
+                                <div class="num">
+                                    1
+                                </div>
+                                <span class="user">
+                                    홍길동
+                                </span>
+                                <span class="department">
+                                    솔루션개발담당
+                                </span>
+                                <span class="type">
+                                    기안결재
+                                </span>
+                                <button type="button" class="delete-btn"></button>
+                            </div>
+                            <div class="row">
+                                <div class="num">
+                                    2
+                                </div>
+                                <span class="user">
+                                    홍길동
+                                </span>
+                                <span class="department">
+                                    솔루션개발담당
+                                </span>
+                                <span class="type">
+                                    기안결재
+                                </span>
+                                <button type="button" class="delete-btn"></button>
+                            </div>
+                            <div class="row">
+                                <div class="num">
+                                    3
+                                </div>
+                                <span class="user">
+                                    홍길동
+                                </span>
+                                <span class="department">
+                                    솔루션개발담당
+                                </span>
+                                <span class="type">
+                                    기안결재
+                                </span>
+                                <button type="button" class="delete-btn"></button>
+                            </div>
+                            <div class="row">
+                                <div class="num">
+                                    4
+                                </div>
+                                <span class="user">
+                                    홍길동
+                                </span>
+                                <span class="department">
+                                    솔루션개발담당
+                                </span>
+                                <span class="type">
+                                    기안결재
+                                </span>
+                                <button type="button" class="delete-btn"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="confirm-btn-group">
+                    <button type="button" class="modal-before-btn m-btn confirm" id="preStepBtn">이전</button>
+                    <button type="button" class="modal-cancel-btn bdcolor ftcolor">취소</button>
+                    <button type="button" class="confirm-btn m-btn next" id="nextStepBtn">다음</button>
+                    <button type="button" class="confirm-btn confirm bgcolor" onclick="openAlert()">확인</button>
+                </div>
+            </form>
+        </div>
+    </div>
+ <!-- 팝업 -->
+ <div class="user-update-modal-background dpt-update-modal sub-modal user-update-modal-background-none">
+    <div class="user-update-modal-content">
+        <div class="title">
+            <span>부서이름 변경</span>
+            <button type="button" class="sub-modal-close-btn"></button>
+        </div>
+        <form action="" method="post" class="approval-write-box">
+            <div class="approval-input-box margin approval-tab-content active">
+                <div class="row">
+                    <div class="input-row">
+                        <div class="title">기존 부서이름</div>
+                        <div class="approval-input-group">
+                            <input type="text" readonly id="ex-dpt-name" placeholder=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-row">
+                        <div class="title ">새 부서이름</div>
+                        <div class="approval-input-group">
+                            <input type="text" id="new-dpt-name"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="confirm-btn-group">
+                <button type="button" class="sub-modal-cancel-btn bdcolor ftcolor">취소</button>
+                <button type="button" class="confirm-btn bgcolor" onclick="openAlert()">확인</button>
+            </div>
+        </form>
+    </div>
+</div>
+ <div class="number-modal-background modal">
+    <div class="alert-modal-content">
+        <div class="title">
+            <span>알림</span>
+            <button type="button" class="modal-close-btn"></button>
+        </div>
+        <div class="content">
+            숫자만 입력 가능합니다.
+        </div>
+        <div class="confirm-btn-group">
+            <button type="button" class="confirm-btn">확인</button>
+        </div>
+    </div>
+</div>
+    <div class="confirm-modal-background modal" id="approvalWConfirm-writer">
+        <div class="confirm-modal-content">
+            <div class="title">
+                <span>상신의견</span>
+                <button type="button" class="modal-close-btn"></button>
+            </div>
+            <div class="info">
+                <div class="title">
+                    작성자
+                </div>
+                <div class="writer">
+                    홍길동
+                </div>
+            </div>
+            <div class="text-area-box">
+                <textarea></textarea>
+            </div>
+            <div class="confirm-btn-group">
+                <button type="button" class="modal-cancel-btn">취소</button>
+                <button type="button" class="confirm-btn" onclick="openAlert()">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <!--작성자 작성내용-->
+    <div class="confirm-modal-background modal">
+      <div class="confirm-modal-content">
+          <div class="title">
+              <span>상신의견</span>
+              <button type="button" class="modal-close-btn"></button>
+          </div>
+          <div class="info">
+              <div class="title">
+                  작성자
+              </div>
+              <div class="writer">
+                  홍길동
+              </div>
+          </div>
+          <div class="text-area-box">
+              <textarea readonly>상신내역 출력</textarea>
+          </div>
+          <div class="confirm-btn-group">
+            <button type="button" class="confirm-btn modal-wcancel-btn">확인</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="alert-modal-background modal">
+        <div class="alert-modal-content">
+            <div class="title">
+                <span>팝업 타이틀</span>
+                <button type="button" class="modal-close-btn"></button>
+            </div>
+            <div class="content">
+                <span>적용되었습니다.</span>
+            </div>
+            <div class="confirm-btn-group">
+                <button type="button" class="confirm-btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/mobile.js"></script>
+    <script src="./js/jstree.js"></script>
+
+
+    <script>
+        
+           
+        $(function () {
+
+            // $('#nextStepBtn').on('click', function () {
+            //     $('.approval-modal-content-bottom').addClass('next');
+            //     $(this).parent('.confirm-btn-group').addClass('next');
+            // })
+            // $('#preStepBtn').on('click', function () {
+            //     $('.approval-modal-content-bottom').removeClass('next');
+            //     $(this).parent('.confirm-btn-group').removeClass('next');
+            // })
+            
+            // $('#nextStepBtn').on('click', function () {
+            //     $('.tab-li-content').toggleClass('active');
+            //     $('.tab-content').toggleClass('active');
+            //     $(this).parent('.confirm-btn-group').addClass('next');
+            // })
+            // $('#preStepBtn').on('click', function () {
+            //     $('.tab-li-content').toggleClass('active');
+            //     $('.tab-content').toggleClass('active');
+            //     $(this).parent('.confirm-btn-group').removeClass('next');
+            // })
+            $('#nextStepBtn').on('click', function () {
+                $('.step_tab02').toggleClass('active');
+                $('.tab-content').toggleClass('active');
+                $(this).parent('.confirm-btn-group').addClass('next');
+                $('.step_tab01').removeClass('active');
+                tab=$('.step_tab02.active');
+                right=$('.approval-modal-background .approval-modal-content .approval-modal-content-bottom .right');
+                
+                if(tab){
+                    right.css('display','flex');
+                    $('.vertical-btn-group').css('display','flex'); 
+                }
+            })
+            $('#preStepBtn').on('click', function () {
+                $('.step_tab01').toggleClass('active');
+                $('.tab-content').toggleClass('active');
+                tab=$('.step_tab01.active');
+                $('.step_tab02').removeClass('active');
+                right.css('display','none');
+                $('.vertical-btn-group').css('display','none'); 
+                $(this).parent('.confirm-btn-group').removeClass('next');
+            })
+            // 체크되면 달력조회메뉴 펼치기
+            $('input[id^=cb]').click(function(){
+                var dateMenu = $(this).closest('.input-row').siblings();
+                dateMenu.toggleClass('active');
+            })
+            // 결재선 팝업 내 삭제기능
+            $(document).on('click','.approval-modal-content-bottom .delete-btn', function(){
+                $(this).closest('.row').remove();
+            })
+            // 부서트리
+            $('#jstree-div').jstree({
+                "core": {
+                    'data': [{
+                            "id": "ajson1",
+                            "parent": "#",
+                            "text": "Simple root node"
+                        },
+                        {
+                            "id": "ajson2",
+                            "parent": "#",
+                            "text": "Root node 2"
+                        },
+                        {
+                            "id": "ajson3",
+                            "parent": "ajson2",
+                            "text": "Child 1"
+                        },
+                        {
+                            "id": "ajson4",
+                            "parent": "ajson2",
+                            "text": "Child 2"
+                        },
+                        {
+                            "id": "ajson5",
+                            "parent": "ajson2",
+                            "text": "Child 3"
+                        },
+                        {
+                            "id": "ajson6",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+                        {
+                            "id": "ajson7",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+                        {
+                            "id": "ajson8",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+                        {
+                            "id": "ajson9",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+                        
+                        {
+                            "id": "ajson10",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+                        
+                        {
+                            "id": "ajson11",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+                        
+                        {
+                            "id": "ajson12",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+                        
+                        {
+                            "id": "ajson13",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+                        
+                        {
+                            "id": "ajson14",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+                        
+                        {
+                            "id": "ajson15",
+                            "parent": "ajson5",
+                            "text": "Child 4"
+                        },
+                        
+                        
+                    ]
+                },
+                "plugins": ["wholerow", "checkbox"],
+                
+            });
+        });
+    </script>
+</body>
+
+</html>
